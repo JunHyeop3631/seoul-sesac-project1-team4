@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum YutThrowResult
 {
@@ -11,14 +12,28 @@ public enum YutThrowResult
     Mo
 }
 
-public class YutThrower : MonoBehaviour
+public class YutThrowController : MonoBehaviour
 {
     private const int StickCount = 4;
 
     [SerializeField] private YutStick[] sticks = new YutStick[StickCount];
+    [SerializeField] private Image resultImage;
+    [SerializeField] private Sprite doSprite;
+    [SerializeField] private Sprite gaeSprite;
+    [SerializeField] private Sprite geolSprite;
+    [SerializeField] private Sprite yutSprite;
+    [SerializeField] private Sprite moSprite;
 
     public YutThrowResult? LastResult { get; private set; }
     public event Action<YutThrowResult> ThrowCompleted;
+
+    private void Awake()
+    {
+        if (resultImage != null)
+        {
+            resultImage.enabled = false;
+        }
+    }
 
     public void Throw()
     {
@@ -53,7 +68,27 @@ public class YutThrower : MonoBehaviour
         };
 
         LastResult = result;
+        ShowResult(result);
         ThrowCompleted?.Invoke(result);
+    }
+
+    private void ShowResult(YutThrowResult result)
+    {
+        if (resultImage == null)
+        {
+            return;
+        }
+
+        resultImage.sprite = result switch
+        {
+            YutThrowResult.Do => doSprite,
+            YutThrowResult.Gae => gaeSprite,
+            YutThrowResult.Geol => geolSprite,
+            YutThrowResult.Yut => yutSprite,
+            YutThrowResult.Mo => moSprite,
+            _ => null
+        };
+        resultImage.enabled = resultImage.sprite != null;
     }
 
     private bool HasReadySticks()
