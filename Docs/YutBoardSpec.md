@@ -14,14 +14,14 @@
 
 ## 현재 구현
 
-- [YutBoard](../Assets/Scripts/YutBoard.cs)는 29칸의 단방향 연결과 분기를 정의한다. `GetDestinationCells`로 시작 칸과 윷 결과에 따른 도착 후보를 계산한다.
-- [Ally](../Assets/Scripts/Ally.cs)는 아군 오브젝트에 붙이는 Unity 컴포넌트다.
-- [YutBoardOccupancy](../Assets/Scripts/YutBoardOccupancy.cs)는 생성 시 `YutBoard.CellCount`를 기준으로 각 칸에 비어 있는 `List<Ally>`를 만든다. 현재는 칸별 저장 공간 초기화까지 구현되어 있다.
+- [YutBoard](../Assets/Scripts/YutBoard.cs)는 29칸의 단방향 연결과 분기를 정의한다. `GetDestinationCells`는 도·개·걸·윷·모에 각각 1~5칸을 적용해 도착 후보를 계산한다. 5번, 10번, 22번 칸에서 이동을 시작하면 연결된 경로가 각각 후보가 된다. 이동 중 5번이나 10번 칸을 지나면 바깥길을 따르고, 22번 칸을 지나면 진입한 대각선을 따라 진행한다.
+- [Ally](../Assets/Scripts/Ally/Ally.cs)는 아군 오브젝트에 붙이는 공통 Unity 컴포넌트다.
+- [YutBoardOccupancy](../Assets/Scripts/YutBoardOccupancy.cs)는 칸별 아군 목록을 관리한다. 소환한 아군을 등록하고, 아군이 있는 칸과 칸에 있는 아군을 조회하며, 이동이 확정되면 출발 칸에서 제거해 도착 칸에 등록한다. 소환·이동 흐름은 [윷 행동 명세](YutActionSpec.md)에서 다룬다.
 
 ## 미정 규칙
 
 - **가득 찬 칸에 도착하는 경우** — 유닛의 최종 위치와 이동 기회 처리.
 - **여러 유닛이 같은 칸에 도착하는 경우** — 남은 자리보다 도착 유닛이 많을 때의 진입 순서와 부분 진입 여부.
 - **적군이 있는 칸에 도착하는 경우** — 아군과 적군의 공존 여부 및 전투 처리.
-- **윷판 경로** — 도착점, 분기 경로, 윷 결과별 이동 규칙.
+- **완주 처리** — 도착점과 완주 조건을 정한다. 현재 경로에서 0번 칸에 도착한 아군은 이후 이동 시 1번 칸 방향으로 진행할 수 있다.
 - **칸 표시** — 한 칸에 여러 유닛이 있을 때의 배치와 수용 인원 표시 방식.
