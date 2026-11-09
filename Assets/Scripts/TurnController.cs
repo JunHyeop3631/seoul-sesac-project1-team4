@@ -14,12 +14,20 @@ public sealed class TurnController : MonoBehaviour
     [SerializeField] private YutThrowController throwController;
     [SerializeField] private YutActionController actionController;
     [SerializeField] private GameObject actionButtons;
+    [SerializeField] private WaveManager waveManager;
+    [SerializeField, Min(0)] private int currentTurnNumber = 0;
 
+    public int CurrentTurnNumber => currentTurnNumber;
     public YutThrowResult? CurrentYutResult { get; private set; }
     private YutAction chosenAction;
 
     private void OnEnable()
     {
+        if (waveManager != null)
+        {
+            waveManager.WaveCompleted += EndBattle;
+        }
+
         if (throwController != null)
         {
             throwController.ThrowCompleted += ReceiveYutResult;
@@ -28,6 +36,11 @@ public sealed class TurnController : MonoBehaviour
 
     private void OnDisable()
     {
+        if (waveManager != null)
+        {
+            waveManager.WaveCompleted -= EndBattle;
+        }
+
         if (throwController != null)
         {
             throwController.ThrowCompleted -= ReceiveYutResult;
@@ -88,6 +101,37 @@ public sealed class TurnController : MonoBehaviour
     public void ChooseMove()
     {
         TryChooseAction(YutAction.Move);
+    }
+
+    public void StartBattle()
+    {
+        // 전투 시작 조건과 단계 전환은 이후 구현한다.
+        waveManager?.StartWave(currentTurnNumber);
+    }
+
+    private void Start()
+    {
+        StartTurn();
+    }
+
+    private void StartTurn()
+    {
+        // 턴 번호 갱신과 턴 시작 처리는 이후 구현한다.
+        BeginPreparation();
+    }
+
+    private void BeginPreparation()
+    {
+    }
+
+    private void EndBattle()
+    {
+        EndTurn();
+    }
+
+    private void EndTurn()
+    {
+        StartTurn();
     }
 
     public void SelectAlly(Ally ally)

@@ -638,6 +638,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2111}
+  - {fileID: 2531}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1105,7 +1106,8 @@ Transform:
   m_LocalPosition: {x: -1.5300002, y: -1.655, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51003}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2500
@@ -1409,6 +1411,138 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &2530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2531}
+  - component: {fileID: 2532}
+  - component: {fileID: 2533}
+  - component: {fileID: 2534}
+  m_Layer: 5
+  m_Name: Start Battle Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2531
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2530}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2101}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -140, y: 80}
+  m_SizeDelta: {x: 230, y: 79.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2532
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2530}
+  m_CullTransparentMesh: 1
+--- !u!114 &2533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -6665992754455045714, guid: 0bf77c8d5f6ad8a4ca64295a205097f0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2533}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2602}
+        m_TargetAssemblyTypeName: TurnController, Assembly-CSharp
+        m_MethodName: StartBattle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2600
 GameObject:
   m_ObjectHideFlags: 0
@@ -1440,6 +1574,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2701}
+  - {fileID: 2801}
+  - {fileID: 2901}
   - {fileID: 1213653157}
   - {fileID: 797450834}
   m_Father: {fileID: 0}
@@ -1459,6 +1596,8 @@ MonoBehaviour:
   throwController: {fileID: 2002}
   actionController: {fileID: 2603}
   actionButtons: {fileID: 2500}
+  waveManager: {fileID: 2702}
+  currentTurnNumber: 0
 --- !u!114 &2603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1478,6 +1617,161 @@ MonoBehaviour:
   ally5Prefab: {fileID: 11400001, guid: 0d7ff37e6dd03f445bbc71dd2db0bdb9, type: 3}
   boardRoot: {fileID: 797450834}
   destinationMarkerSprite: {fileID: -2633329411055009434, guid: 4c3874b15a3e62844b2cfb4908c69831, type: 3}
+  targetingWave: {fileID: 2802}
+--- !u!1 &2700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2701}
+  - component: {fileID: 2702}
+  m_Layer: 0
+  m_Name: WaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2701
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2700}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2601}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74450bf36d44014a95672567b86e7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - {fileID: 11400000, guid: 1812b6882114419c9e033f9b0acc3b9f, type: 2}
+  wave: {fileID: 2802}
+  enemyPool: {fileID: 2902}
+  spawnInterval: 0.1
+--- !u!1 &2800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2801}
+  - component: {fileID: 2802}
+  m_Layer: 0
+  m_Name: Wave
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2801
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2800}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 40001}
+  - {fileID: 40011}
+  - {fileID: 40021}
+  m_Father: {fileID: 2601}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b9f012d82c4ebfb5024ccfbde8b1ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 2801}
+  - {fileID: 40001}
+  - {fileID: 40011}
+  - {fileID: 40021}
+  targetSearchMode: 0
+  enemyTargetLayers:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!1 &2900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2901}
+  - component: {fileID: 2902}
+  m_Layer: 0
+  m_Name: EnemyPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2901
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2900}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2601}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9971b4ff47e942c1b3fe451a446f4b50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - enemyId: 0
+    prefab: {fileID: 310511580605650271, guid: d112b3b7205647f99751b955dda8de46, type: 3}
+  - enemyId: 1
+    prefab: {fileID: 310511580605650271, guid: 8fd3396caa464d9a92d4ec377f4ccccd, type: 3}
 --- !u!1 &30000
 GameObject:
   m_ObjectHideFlags: 0
@@ -1507,7 +1801,8 @@ Transform:
   m_LocalPosition: {x: -1.5400002, y: -2.865, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51001}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30004
@@ -1539,7 +1834,8 @@ Transform:
   m_LocalPosition: {x: -1.5300002, y: -0.46500003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51005}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30006
@@ -1571,7 +1867,8 @@ Transform:
   m_LocalPosition: {x: -1.5300002, y: 0.665, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51007}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30008
@@ -1603,7 +1900,8 @@ Transform:
   m_LocalPosition: {x: -1.5300002, y: 1.825, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51009}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30010
@@ -1635,7 +1933,8 @@ Transform:
   m_LocalPosition: {x: -1.5500002, y: 3.105, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51011}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30012
@@ -1667,7 +1966,8 @@ Transform:
   m_LocalPosition: {x: -2.77, y: 3.105, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51013}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30014
@@ -1699,7 +1999,8 @@ Transform:
   m_LocalPosition: {x: -3.8200002, y: 3.095, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51015}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30016
@@ -1731,7 +2032,8 @@ Transform:
   m_LocalPosition: {x: -5.05, y: 3.105, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51017}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30018
@@ -1763,7 +2065,8 @@ Transform:
   m_LocalPosition: {x: -6.16, y: 3.105, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51019}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30020
@@ -1795,7 +2098,8 @@ Transform:
   m_LocalPosition: {x: -7.44, y: 3.105, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51021}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30022
@@ -1827,7 +2131,8 @@ Transform:
   m_LocalPosition: {x: -7.45, y: 1.825, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51023}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30024
@@ -1859,7 +2164,8 @@ Transform:
   m_LocalPosition: {x: -7.45, y: 0.665, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51025}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30026
@@ -1891,7 +2197,8 @@ Transform:
   m_LocalPosition: {x: -7.45, y: -0.47500002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51027}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30028
@@ -1923,7 +2230,8 @@ Transform:
   m_LocalPosition: {x: -7.45, y: -1.655, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51029}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30030
@@ -1955,7 +2263,8 @@ Transform:
   m_LocalPosition: {x: -7.4300003, y: -2.865, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51031}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30032
@@ -1987,7 +2296,8 @@ Transform:
   m_LocalPosition: {x: -6.28, y: -2.865, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51033}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30034
@@ -2019,7 +2329,8 @@ Transform:
   m_LocalPosition: {x: -5.11, y: -2.865, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51035}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30036
@@ -2051,7 +2362,8 @@ Transform:
   m_LocalPosition: {x: -3.93, y: -2.865, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51037}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30038
@@ -2083,7 +2395,8 @@ Transform:
   m_LocalPosition: {x: -2.77, y: -2.865, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51039}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30040
@@ -2115,7 +2428,8 @@ Transform:
   m_LocalPosition: {x: -2.54, y: 2.085, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51041}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30042
@@ -2147,7 +2461,8 @@ Transform:
   m_LocalPosition: {x: -3.5600002, y: 1.045, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51043}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30044
@@ -2179,7 +2494,8 @@ Transform:
   m_LocalPosition: {x: -4.48, y: 0.09499999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51045}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30046
@@ -2211,7 +2527,8 @@ Transform:
   m_LocalPosition: {x: -5.41, y: -0.86500007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51047}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30048
@@ -2243,7 +2560,8 @@ Transform:
   m_LocalPosition: {x: -6.41, y: -1.855, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51049}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30050
@@ -2275,7 +2593,8 @@ Transform:
   m_LocalPosition: {x: -6.48, y: 2.085, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51051}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30052
@@ -2307,7 +2626,8 @@ Transform:
   m_LocalPosition: {x: -5.42, y: 1.045, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51053}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30054
@@ -2339,7 +2659,8 @@ Transform:
   m_LocalPosition: {x: -3.5600002, y: -0.86500007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51055}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30056
@@ -2371,7 +2692,8 @@ Transform:
   m_LocalPosition: {x: -2.58, y: -1.855, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 51057}
   m_Father: {fileID: 797450834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &30100
@@ -2751,6 +3073,737 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellId: 28
+--- !u!1 &40000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 40001}
+  m_Layer: 0
+  m_Name: Path 01 Top Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &40001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40000}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 8.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2801}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &40010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 40011}
+  m_Layer: 0
+  m_Name: Path 02 Top Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &40011
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40010}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.8, y: 8.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2801}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &40020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 40021}
+  m_Layer: 0
+  m_Name: Path 03 Bottom Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &40021
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40020}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.8, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2801}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &51000
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30001}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51001 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51000}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51002
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2401}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51003 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51002}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51004
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30005}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51005 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51004}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51006
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30007}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51007 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51006}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51008
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30009}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51009 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51008}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51010
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30011}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51011 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51010}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51012
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30013}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51013 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51014
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30015}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51015 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51014}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51016
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30017}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51017 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51016}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51018
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30019}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51019 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51018}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51020
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30021}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51021 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51020}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51022
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30023}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51023 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51022}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51024
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30025}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51025 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51026
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30027}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51027 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51028
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30029}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51029 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51030
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30031}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51031 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51030}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51032
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30033}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51033 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51032}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51034
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30035}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51035 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51034}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51036
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30037}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51037 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51036}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51038
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30039}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51039 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51040
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30041}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51041 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51040}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51042
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30043}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51043 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51042}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51044
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30045}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51045 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51044}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51046
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30047}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51047 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51046}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51048
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30049}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51049 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51048}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51050
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30051}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51051 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51050}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51052
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30053}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51053 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51052}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51054
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30055}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51055 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &51056
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 30057}
+    m_Modifications:
+    - target: {fileID: 429893386439141259, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+      propertyPath: m_Name
+      value: AllyWarriorDo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+--- !u!4 &51057 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3340825722192779098, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
+  m_PrefabInstance: {fileID: 51056}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

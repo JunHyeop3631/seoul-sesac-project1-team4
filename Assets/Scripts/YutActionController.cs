@@ -12,6 +12,7 @@ public sealed class YutActionController : MonoBehaviour
     [SerializeField] private Ally5 ally5Prefab;
     [SerializeField] private Transform boardRoot;
     [SerializeField] private Sprite destinationMarkerSprite;
+    [SerializeField] private Wave targetingWave;
 
     private readonly Transform[] cells = new Transform[YutBoard.CellCount];
     private readonly YutBoardOccupancy occupancy = new YutBoardOccupancy();
@@ -42,6 +43,13 @@ public sealed class YutActionController : MonoBehaviour
             }
 
             cells[cellId] = child;
+            foreach (Transform occupant in child)
+            {
+                if (occupant.TryGetComponent(out Ally ally))
+                {
+                    RegisterAlly(cellId, ally);
+                }
+            }
         }
     }
 
@@ -76,8 +84,14 @@ public sealed class YutActionController : MonoBehaviour
 
         Ally ally = Instantiate(prefab, cell, false);
         ally.transform.localPosition = Vector3.zero;
-        occupancy.AddAlly(DeploymentCellId, ally);
+        RegisterAlly(DeploymentCellId, ally);
         return true;
+    }
+
+    private void RegisterAlly(int cellId, Ally ally)
+    {
+        ally.SetTargetingWave(targetingWave);
+        occupancy.AddAlly(cellId, ally);
     }
 
     public void SelectAlly(Ally ally, YutThrowResult result)
