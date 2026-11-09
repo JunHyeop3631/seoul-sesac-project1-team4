@@ -97,7 +97,7 @@
 
 `EnemyPool`은 적 ID로 종류별 풀을 찾는 딕셔너리와, 재사용할 객체를 보관하는 `ObjectPool<Enemy>`를 구분한다.
 
-적 ID는 문자열 대신 공통 [EnemyId enum](../Assets/Scripts/EnemyId.cs)을 사용한다. `Enemy1 = 0`, `Enemy2 = 1`로 명시하며 웨이브 구성, 프리팹 등록, 풀 딕셔너리의 키와 요청 함수 인자에 같은 타입을 사용한다. Inspector에서는 enum 항목을 선택한다. 씬과 에셋에는 숫자로 저장하므로 적 종류를 추가할 때 기존 숫자를 변경하거나 다른 종류에 재사용하지 않는다. enum에 정의되어 있어도 프리팹 등록이 없으면 소환할 수 없다.
+적 ID는 문자열 대신 공통 [EnemyId enum](../Assets/Scripts/EnemyId.cs)을 사용한다. `Basic_Enemy_left = 0`, `Enemy2 = 1`로 명시하며 웨이브 구성, 프리팹 등록, 풀 딕셔너리의 키와 요청 함수 인자에 같은 타입을 사용한다. Inspector에서는 enum 항목을 선택한다. 씬과 에셋에는 숫자로 저장하므로 적 종류를 추가할 때 기존 숫자를 변경하거나 다른 종류에 재사용하지 않는다. enum에 정의되어 있어도 프리팹 등록이 없으면 소환할 수 없다.
 
 | 저장 위치 | 보관하는 정보 | 접근 목적 |
 | --- | --- | --- |
@@ -108,7 +108,7 @@
 
 ```text
 pools
-├─ EnemyId.Enemy1 → Enemy1용 ObjectPool → 반환되어 대기 중인 Enemy1 객체들
+├─ EnemyId.Basic_Enemy_left → Basic_Enemy_left용 ObjectPool → 반환되어 대기 중인 Basic_Enemy_left 객체들
 └─ EnemyId.Enemy2 → Enemy2용 ObjectPool → 반환되어 대기 중인 Enemy2 객체들
 ```
 
@@ -135,16 +135,16 @@ pools
 ### 이렇게 나눈 설계 이유
 
 1. **편집할 설정과 실행 중 조회를 구분한다.** 웨이브 구성과 적 프리팹 등록은 배열로 Inspector에서 설정하고, 생성된 풀과 객체의 소속은 실행 중 딕셔너리에 기록한다. 등록 목록과 런타임 관리 정보의 역할을 구분하기 위한 구조다.
-2. **풀은 종류별로 재사용한다.** 같은 Enemy1 요청은 같은 풀을 사용하고 Enemy2는 다른 풀을 사용한다. `Wave`가 직접 매번 생성·파괴하지 않고 적 ID로 요청하게 하여, 웨이브의 등장 진행과 객체 재사용 책임을 분리한다.
+2. **풀은 종류별로 재사용한다.** 같은 Basic_Enemy_left 요청은 같은 풀을 사용하고 Enemy2는 다른 풀을 사용한다. `Wave`가 직접 매번 생성·파괴하지 않고 적 ID로 요청하게 하여, 웨이브의 등장 진행과 객체 재사용 책임을 분리한다.
 3. **대기 객체의 관리와 웨이브의 생존 적 관리를 분리한다.** `ObjectPool`에 객체의 재사용을 맡기고, `Wave`는 이번 웨이브의 소환 진행과 필드에 남은 적을 기준으로 완료를 판정한다.
 4. **모든 생성 객체를 별도 리스트에 중복 보관하지 않는다.** 대기 객체는 `ObjectPool`이 보관하고, 소속 정보는 `owners`에 있다. 재사용과 반환을 위해 같은 객체들을 다시 별도 리스트로 관리하면 등록·제거 상태를 추가로 동기화해야 한다. 현재 범위에서는 별도 전체 객체 리스트를 두지 않는다.
 5. **조회 최적화의 현재 한계를 명시한다.** 풀과 소속 풀은 딕셔너리로 조회하지만, 현재 `RequestEnemy`는 기존 풀을 조회하기 전에도 `FindPrefab`을 호출한다. 따라서 함수 전체를 평균 `O(1)`이라고 표현하지 않는다. 적 종류 수와 요청 빈도가 늘어나면 프리팹 조회 캐시 또는 기존 풀 우선 조회를 검토할 수 있으나, 이번 문서 작성으로 구현을 바꾸지는 않는다.
 
-예를 들어 Enemy1 객체 100개가 풀에 반환되어 대기 중일 때, 요청 시 `pools`에서 Enemy1 풀을 한 번 조회하고 `Get()`으로 객체 하나를 꺼낸다. 사용 코드가 100개를 직접 순회해 비활성 객체를 찾는 구조가 아니다. 다만 그 요청 앞단의 프리팹 검색은 현재 등록된 적 종류 배열을 순회한다.
+예를 들어 Basic_Enemy_left 객체 100개가 풀에 반환되어 대기 중일 때, 요청 시 `pools`에서 Basic_Enemy_left 풀을 한 번 조회하고 `Get()`으로 객체 하나를 꺼낸다. 사용 코드가 100개를 직접 순회해 비활성 객체를 찾는 구조가 아니다. 다만 그 요청 앞단의 프리팹 검색은 현재 등록된 적 종류 배열을 순회한다.
 
 ### 적 참조 타입과 이동 상태
 
-- `EnemyPool`의 프리팹 등록 필드 `EnemyPrefabEntry.prefab`은 `Enemy` 타입이다. `ThrowYut` 씬에는 각 프리팹 루트의 `Enemy1`, `Enemy2` 컴포넌트를 연결한다. 두 클래스가 `Enemy`를 상속하므로 같은 등록 필드와 풀 API를 사용할 수 있다.
+- `EnemyPool`의 프리팹 등록 필드 `EnemyPrefabEntry.prefab`은 `Enemy` 타입이다. `ThrowYut` 씬에는 각 프리팹 루트의 `Basic_Enemy`, `Enemy2` 컴포넌트를 연결한다. 두 클래스가 `Enemy`를 상속하므로 같은 등록 필드와 풀 API를 사용할 수 있다.
 - 풀은 `ObjectPool<Enemy>`로 적을 보관하고 `RequestEnemy`와 `ReturnEnemy`에서도 `Enemy`를 사용한다. 따라서 `Wave`는 소환 직후 컴포넌트를 다시 찾는 과정 없이 `StartMoving(waypoints)`를 호출한다. 풀의 활성화·비활성화·폐기는 적 오브젝트 전체에 적용하므로 `enemy.gameObject`를 사용한다.
 - 현재 적의 행동은 이동 하나다. 상태 패턴 도입은 보류하고, 공통 부모 `Enemy`의 `IsMoving`으로 프레임마다 이동할지 결정한다. 적 종류별로 이동 속도는 프리팹에서 설정할 수 있다.
 
@@ -158,7 +158,7 @@ pools
 4. 객체의 소속 풀을 `owners`에 기록하고, 요청받은 월드 위치·회전을 적용한다.
 5. `SetActive(true)`로 활성화한 뒤 Enemy 컴포넌트를 반환한다.
 
-예를 들어 Enemy1 풀에 반환되어 대기 중인 객체가 100개 있다면, 한 개를 요청할 때 새로 생성하지 않고 기존 객체 하나를 꺼낸다. 대기 객체는 99개가 되고 꺼낸 객체 하나를 사용한다. 대기 객체를 모두 꺼낸 뒤 추가 요청이 오면 새 객체를 생성한다.
+예를 들어 Basic_Enemy_left 풀에 반환되어 대기 중인 객체가 100개 있다면, 한 개를 요청할 때 새로 생성하지 않고 기존 객체 하나를 꺼낸다. 대기 객체는 99개가 되고 꺼낸 객체 하나를 사용한다. 대기 객체를 모두 꺼낸 뒤 추가 요청이 오면 새 객체를 생성한다.
 
 ### 반환과 생존 적 추적의 구분
 
@@ -174,10 +174,10 @@ pools
 ## 씬 구성과 구현 상태
 
 - [ThrowYut 씬](../Assets/Scenes/ThrowYut.unity)의 `TurnController` 아래에 `WaveManager`, `Wave`, `EnemyPool`을 배치하고 참조를 연결했다.
-- [Wave1](../Assets/Wave1.asset)를 첫 번째 웨이브로 등록했다. 현재 테스트 설정은 `EnemyId.Enemy1` 총 1,000마리다.
-- [Enemy1 프리팹](../Assets/Prefabs/Enemy1.prefab)과 [Enemy2 프리팹](../Assets/Prefabs/Enemy2.prefab)에 각각 기존 적 이미지를 적용하고 `EnemyPool`에 같은 ID로 등록했다.
+- [Wave1](../Assets/Wave1.asset)를 첫 번째 웨이브로 등록했다. 현재 설정은 `EnemyId.Basic_Enemy_left` 총 100마리다.
+- [Basic_Enemy 프리팹](../Assets/Prefabs/Basic_Enemy.prefab)과 [Enemy2 프리팹](../Assets/Prefabs/Enemy2.prefab)을 `EnemyPool`에 종류별 ID로 등록했다.
 - 전투 시작 버튼을 누르면 첫 적이 즉시 등장하고, 이후에는 현재 테스트 설정인 0.1초 간격으로 구성 목록의 순서에 따라 소환한다.
-- `Wave`의 `Waypoints` 배열에 오른쪽 아래 → 오른쪽 위 → 왼쪽 위 → 왼쪽 아래 순서로 경유점을 지정한다. 첫 경유점이 소환 위치이며 현재 씬에서는 `Wave` 자신의 Transform `(0, -4, 0)`이다. 나머지 경유점은 `Wave` 아래의 `Path 01 Top Right`, `Path 02 Top Left`, `Path 03 Bottom Left`다. 경유점 좌표는 씬에서 조정할 수 있다.
+- `Wave`의 `Waypoints` 배열에 오른쪽 아래 → 오른쪽 위 → 왼쪽 위 → 왼쪽 아래 순서로 경유점을 지정한다. 네 경유점은 모두 `Wave`의 자식이다. 첫 경유점은 소환 위치인 `Path 00 Bottom Right` `(1.65, -3.9, 0)`이며, 나머지는 `Path 01 Top Right`, `Path 02 Top Left`, `Path 03 Bottom Left`다. 경유점 좌표는 씬에서 조정할 수 있다.
 - `EnemyPool`은 종류별로 풀을 만들고 요청 시 적을 활성화하여 지정한 위치에 놓는다. 반환 시 비활성화하며 이후 같은 종류의 요청에 재사용한다.
 - 실행 중인 웨이브에 시작 요청이 반복되어도 중복 소환하지 않는다.
 - `Wave`는 이동 시작 시 이탈 처리 콜백을 전달한다. 한 바퀴를 마친 적은 이 콜백을 통해 풀로 반환되며, 비활성화 시 `Enemy.OnDisable`이 이동 상태와 콜백을 초기화한다.

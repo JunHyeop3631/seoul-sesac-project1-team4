@@ -1,5 +1,5 @@
 public enum EnemyId
 {
-    Enemy1 = 0,
+    Basic_Enemy = 0,
     Enemy2 = 1
 }

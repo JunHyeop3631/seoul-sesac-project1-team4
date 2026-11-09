@@ -1,0 +1,2847 @@
+fileFormatVersion: 2
+guid: d71b31ea8a36e9848ad29fdeb5f9f4e5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7171257470101129822
+    second: attect_effect_example_0
+  - first:
+      213: 6150221709031116571
+    second: attect_effect_example_1
+  - first:
+      213: -6505085068202775888
+    second: attect_effect_example_2
+  - first:
+      213: 5862644584458832803
+    second: attect_effect_example_3
+  - first:
+      213: -8904973950769233408
+    second: attect_effect_example_4
+  - first:
+      213: -39210123252864893
+    second: attect_effect_example_5
+  - first:
+      213: 4939419330548176599
+    second: attect_effect_example_6
+  - first:
+      213: -9209669635106243765
+    second: attect_effect_example_7
+  - first:
+      213: -1535505440131611250
+    second: attect_effect_example_8
+  - first:
+      213: -4206326821662340892
+    second: attect_effect_example_9
+  - first:
+      213: -8897319577902021694
+    second: attect_effect_example_10
+  - first:
+      213: -2063853495472075280
+    second: attect_effect_example_11
+  - first:
+      213: -374513060188516549
+    second: attect_effect_example_12
+  - first:
+      213: 1035828015178236756
+    second: attect_effect_example_13
+  - first:
+      213: 8432987239660342481
+    second: attect_effect_example_14
+  - first:
+      213: 1959023099373290485
+    second: attect_effect_example_15
+  - first:
+      213: -8239887937201054472
+    second: attect_effect_example_16
+  - first:
+      213: -4167837448074327251
+    second: attect_effect_example_17
+  - first:
+      213: 5880570851575151817
+    second: attect_effect_example_18
+  - first:
+      213: -5837964076497125465
+    second: attect_effect_example_19
+  - first:
+      213: -934794316249330941
+    second: attect_effect_example_20
+  - first:
+      213: 3845566676924419027
+    second: attect_effect_example_21
+  - first:
+      213: -3805735438358009673
+    second: attect_effect_example_22
+  - first:
+      213: 3001508345352100619
+    second: attect_effect_example_23
+  - first:
+      213: 4645889551915484357
+    second: attect_effect_example_24
+  - first:
+      213: 4281651574034685423
+    second: attect_effect_example_25
+  - first:
+      213: 4259211901450683266
+    second: attect_effect_example_26
+  - first:
+      213: 945119358601850151
+    second: attect_effect_example_27
+  - first:
+      213: 8224520921226960297
+    second: attect_effect_example_28
+  - first:
+      213: -2467561389807929157
+    second: attect_effect_example_29
+  - first:
+      213: -4753313853957794571
+    second: attect_effect_example_30
+  - first:
+      213: 1264256781820729338
+    second: attect_effect_example_31
+  - first:
+      213: -1406117916088469517
+    second: attect_effect_example_32
+  - first:
+      213: 2226439009838423489
+    second: attect_effect_example_33
+  - first:
+      213: -2707873781234137892
+    second: attect_effect_example_34
+  - first:
+      213: 8842057291761632543
+    second: attect_effect_example_35
+  - first:
+      213: -2630563287393976779
+    second: attect_effect_example_36
+  - first:
+      213: 5410589691404696965
+    second: attect_effect_example_37
+  - first:
+      213: 4600824511102295565
+    second: attect_effect_example_38
+  - first:
+      213: -5900119819785804669
+    second: attect_effect_example_39
+  - first:
+      213: 8973313917879654047
+    second: attect_effect_example_40
+  - first:
+      213: -2997523854988245901
+    second: attect_effect_example_41
+  - first:
+      213: 5768622811277391556
+    second: attect_effect_example_42
+  - first:
+      213: -2943771733233723490
+    second: attect_effect_example_43
+  - first:
+      213: -9168607595227629309
+    second: attect_effect_example_44
+  - first:
+      213: 6209989548357557245
+    second: attect_effect_example_45
+  - first:
+      213: -3127873487781007909
+    second: attect_effect_example_46
+  - first:
+      213: 3744363862091085163
+    second: attect_effect_example_47
+  - first:
+      213: 6855721916400355804
+    second: attect_effect_example_48
+  - first:
+      213: -6657269835990272916
+    second: attect_effect_example_49
+  - first:
+      213: 4313513027030074492
+    second: attect_effect_example_50
+  - first:
+      213: -5759965700897431200
+    second: attect_effect_example_51
+  - first:
+      213: -6787938541964448263
+    second: attect_effect_example_52
+  - first:
+      213: -1012226110086432956
+    second: attect_effect_example_53
+  - first:
+      213: -2402189430130383358
+    second: attect_effect_example_54
+  - first:
+      213: 9222950317043503961
+    second: attect_effect_example_55
+  - first:
+      213: 6967960003003600566
+    second: attect_effect_example_56
+  - first:
+      213: 5505823425606979316
+    second: attect_effect_example_57
+  - first:
+      213: -9018846214303576563
+    second: attect_effect_example_58
+  - first:
+      213: -4156471791905810294
+    second: attect_effect_example_59
+  - first:
+      213: 5675416694116569140
+    second: attect_effect_example_60
+  - first:
+      213: 6054745036044295999
+    second: attect_effect_example_61
+  - first:
+      213: -4272072874186527367
+    second: attect_effect_example_62
+  - first:
+      213: -3794911023964235671
+    second: attect_effect_example_63
+  - first:
+      213: -730786782716383650
+    second: attect_effect_example_64
+  - first:
+      213: 2385305836501804728
+    second: attect_effect_example_65
+  - first:
+      213: 3471394233980641466
+    second: attect_effect_example_66
+  - first:
+      213: 3219669079973610787
+    second: attect_effect_example_67
+  - first:
+      213: 7175369501738113927
+    second: attect_effect_example_68
+  - first:
+      213: -2774417598340872641
+    second: attect_effect_example_69
+  - first:
+      213: 4531334023188753493
+    second: attect_effect_example_70
+  - first:
+      213: 1822562476575417222
+    second: attect_effect_example_71
+  - first:
+      213: -4870880734496755445
+    second: attect_effect_example_72
+  - first:
+      213: -6581363499001119607
+    second: attect_effect_example_73
+  - first:
+      213: -5612576500469245088
+    second: attect_effect_example_74
+  - first:
+      213: -6349662983033432503
+    second: attect_effect_example_75
+  - first:
+      213: -2146937452005568091
+    second: attect_effect_example_76
+  - first:
+      213: 5682585859224723489
+    second: attect_effect_example_77
+  - first:
+      213: 6544181225314360588
+    second: attect_effect_example_78
+  - first:
+      213: -1883297574169733885
+    second: attect_effect_example_79
+  - first:
+      213: 7772101330011542301
+    second: attect_effect_example_80
+  - first:
+      213: 7459745182689263805
+    second: attect_effect_example_81
+  - first:
+      213: -7415246486951424363
+    second: attect_effect_example_82
+  - first:
+      213: 6465232696425870379
+    second: attect_effect_example_83
+  - first:
+      213: -4690896301988528151
+    second: attect_effect_example_84
+  - first:
+      213: 5404998785193763672
+    second: attect_effect_example_85
+  - first:
+      213: -2228165789563243848
+    second: attect_effect_example_86
+  - first:
+      213: 4336267628462465708
+    second: attect_effect_example_87
+  - first:
+      213: 7677608105234737454
+    second: attect_effect_example_88
+  - first:
+      213: -2978899558419907431
+    second: attect_effect_example_89
+  - first:
+      213: -4693669274098094075
+    second: attect_effect_example_90
+  - first:
+      213: 2070820585529467251
+    second: attect_effect_example_91
+  - first:
+      213: 2215846191094368342
+    second: attect_effect_example_92
+  - first:
+      213: 7710271883706374504
+    second: attect_effect_example_93
+  - first:
+      213: 6280043320826329143
+    second: attect_effect_example_94
+  - first:
+      213: 1611046604093981916
+    second: attect_effect_example_95
+  - first:
+      213: 681421243611930322
+    second: attect_effect_example_96
+  - first:
+      213: -8864228126079963262
+    second: attect_effect_example_97
+  - first:
+      213: 4065562504476137961
+    second: attect_effect_example_98
+  - first:
+      213: 8750653645094372348
+    second: attect_effect_example_99
+  - first:
+      213: 2114132050445739253
+    second: attect_effect_example_100
+  - first:
+      213: -6546566263881427302
+    second: attect_effect_example_101
+  - first:
+      213: 97503181386508013
+    second: attect_effect_example_102
+  - first:
+      213: -1974605283480787576
+    second: attect_effect_example_103
+  - first:
+      213: -8333354046725652091
+    second: attect_effect_example_104
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: attect_effect_example_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 254
+        width: 385
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a571cd63539a7c90800000000000000
+      internalID: -7171257470101129822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_1
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 657
+        width: 96
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f02b02f0af95550800000000000000
+      internalID: 6150221709031116571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 608
+        width: 87
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba631c889b49b5a0800000000000000
+      internalID: -6505085068202775888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_3
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 689
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab490d103c4c5150800000000000000
+      internalID: 5862644584458832803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_4
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 683
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0020b425f5d2b6480800000000000000
+      internalID: -8904973950769233408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_5
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 568
+        width: 158
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 388e9e3c992b47ff0800000000000000
+      internalID: -39210123252864893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_6
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 284
+        width: 661
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6950206b75c8440800000000000000
+      internalID: 4939419330548176599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_7
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 644
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b7ac4034ea03080800000000000000
+      internalID: -9209669635106243765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_8
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 642
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e85864a00f9c0bae0800000000000000
+      internalID: -1535505440131611250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_9
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 642
+        width: 76
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e84e91ba0020a5c0800000000000000
+      internalID: -4206326821662340892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_10
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 628
+        width: 90
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c38502ebfe568480800000000000000
+      internalID: -8897319577902021694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_11
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 626
+        width: 46
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd40fd3e28bb53e0800000000000000
+      internalID: -2063853495472075280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_12
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 642
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f08b32b567dcaf0800000000000000
+      internalID: -374513060188516549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_13
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 552
+        width: 67
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 453c81d7710006e00800000000000000
+      internalID: 1035828015178236756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_14
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 632
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc4b5fe63df70570800000000000000
+      internalID: 8432987239660342481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_15
+      rect:
+        serializedVersion: 2
+        x: 2081
+        y: 621
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f30ee82129df2b10800000000000000
+      internalID: 1959023099373290485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_16
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 287
+        width: 791
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fcda12f39906ad80800000000000000
+      internalID: -8239887937201054472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_17
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 608
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b85f15cedd826c0800000000000000
+      internalID: -4167837448074327251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_18
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 498
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cc37ac680cfb9150800000000000000
+      internalID: 5880570851575151817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_19
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 514
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7afb5e07a926bfea0800000000000000
+      internalID: -5837964076497125465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_20
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 512
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b87e9a581f603f0800000000000000
+      internalID: -934794316249330941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_21
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 521
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dbc82a94823e5530800000000000000
+      internalID: 3845566676924419027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_22
+      rect:
+        serializedVersion: 2
+        x: 1822
+        y: 313
+        width: 335
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b82e8f48cf4f2bc0800000000000000
+      internalID: -3805735438358009673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_23
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 498
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b151bffef77a920800000000000000
+      internalID: 3001508345352100619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_24
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 503
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c40f97bee3897040800000000000000
+      internalID: 4645889551915484357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_25
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 383
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fed5452eb6b7b6b30800000000000000
+      internalID: 4281651574034685423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_26
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 403
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283851978a2cb1b30800000000000000
+      internalID: 4259211901450683266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_27
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 387
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72deec79c0dbd1d00800000000000000
+      internalID: 945119358601850151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_28
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 381
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad5085d33e532270800000000000000
+      internalID: 8224520921226960297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_29
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 387
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8770b5df571cdd0800000000000000
+      internalID: -2467561389807929157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_30
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 393
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f417e4eb36d80eb0800000000000000
+      internalID: -4753313853957794571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_31
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 353
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af79d4148da8b8110800000000000000
+      internalID: 1264256781820729338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_32
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 372
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7fb3b84377c7ce0800000000000000
+      internalID: -1406117916088469517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_33
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 369
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cddd77bb76e5ee10800000000000000
+      internalID: 2226439009838423489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_34
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 371
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd402f49423bb6ad0800000000000000
+      internalID: -2707873781234137892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_35
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 369
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f15ca17724c45ba70800000000000000
+      internalID: 8842057291761632543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_36
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 345
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53eb2bf90ac5e7bd0800000000000000
+      internalID: -2630563287393976779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_37
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 303
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d319568a6461b40800000000000000
+      internalID: 5410589691404696965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_38
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 319
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e9922448969df30800000000000000
+      internalID: 4600824511102295565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_39
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 329
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 384ec69b8409e1ea0800000000000000
+      internalID: -5900119819785804669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_40
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 339
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f961945377d978c70800000000000000
+      internalID: 8973313917879654047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_41
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 281
+        width: 66
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3748aa97fe7a666d0800000000000000
+      internalID: -2997523854988245901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_42
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 329
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c6776522e34e0050800000000000000
+      internalID: 5768622811277391556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_43
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 329
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9794c4943f9527d0800000000000000
+      internalID: -2943771733233723490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_44
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 329
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 309328138ff82c080800000000000000
+      internalID: -9168607595227629309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_45
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 321
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfb9db0a7905e2650800000000000000
+      internalID: 6209989548357557245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_46
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 321
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd637292af8794d0800000000000000
+      internalID: -3127873487781007909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_47
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 320
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b65bfb51817a6f330800000000000000
+      internalID: 3744363862091085163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_48
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 293
+        width: 49
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd947e182ca642f50800000000000000
+      internalID: 6855721916400355804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_49
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 317
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6470eb1b50ac93a0800000000000000
+      internalID: -6657269835990272916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_50
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 267
+        width: 41
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c74c52e7e3dacdb30800000000000000
+      internalID: 4313513027030074492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_51
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 323
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 061239f66bd7010b0800000000000000
+      internalID: -5759965700897431200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_52
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 315
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fda6013cd56cc1a0800000000000000
+      internalID: -6787938541964448263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_53
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 323
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4473ce347b9d3f1f0800000000000000
+      internalID: -1012226110086432956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_54
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 317
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20661edc075b9aed0800000000000000
+      internalID: -2402189430130383358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_55
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 309
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9535474b2708eff70800000000000000
+      internalID: 9222950317043503961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_56
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 307
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bec82474ba23b060800000000000000
+      internalID: 6967960003003600566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_57
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 305
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe04570c3d986c40800000000000000
+      internalID: 5505823425606979316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_58
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 297
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e0f88e62f96d280800000000000000
+      internalID: -9018846214303576563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_59
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 286
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a88d58c5dee3156c0800000000000000
+      internalID: -4156471791905810294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_60
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 301
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 430d325e96123ce40800000000000000
+      internalID: 5675416694116569140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_61
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 295
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3fdaf6e786c60450800000000000000
+      internalID: 6054745036044295999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_62
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 33
+        width: 327
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97da787fa5c86b4c0800000000000000
+      internalID: -4272072874186527367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_63
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 309
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 968d56ea784c55bc0800000000000000
+      internalID: -3794911023964235671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_64
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 301
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5ea3a10b49bbd5f0800000000000000
+      internalID: -730786782716383650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_65
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 305
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b62b59350f4a1120800000000000000
+      internalID: 2385305836501804728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_66
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 297
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab061cfd9aedc2030800000000000000
+      internalID: 3471394233980641466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_67
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 17
+        width: 317
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 325c22e38ff8eac20800000000000000
+      internalID: 3219669079973610787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_68
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 307
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b954b8b88049360800000000000000
+      internalID: 7175369501738113927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_69
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 291
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f36cc40d4e94f79d0800000000000000
+      internalID: -2774417598340872641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_70
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 269
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55caeca394882ee30800000000000000
+      internalID: 4531334023188753493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_71
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 278
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 683eb358aea0b4910800000000000000
+      internalID: 1822562476575417222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_72
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 296
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b01f60d67c7276cb0800000000000000
+      internalID: -4870880734496755445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_73
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 31
+        width: 343
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98cf05864cc4aa4a0800000000000000
+      internalID: -6581363499001119607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_74
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 286
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b53d6d86f1c12b0800000000000000
+      internalID: -5612576500469245088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_75
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 270
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94658dca82771e7a0800000000000000
+      internalID: -6349662983033432503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_76
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 216
+        width: 36
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1d93a23cb8432e0800000000000000
+      internalID: -2146937452005568091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_77
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 272
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1206fb83bb99cde40800000000000000
+      internalID: 5682585859224723489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_78
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 276
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d94a0e62a91da50800000000000000
+      internalID: 6544181225314360588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_79
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 23
+        width: 817
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 305124d95de2dd5e0800000000000000
+      internalID: -1883297574169733885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_80
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 278
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13dda53bfc0cdb60800000000000000
+      internalID: 7772101330011542301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_81
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 281
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db0002168b6568760800000000000000
+      internalID: 7459745182689263805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_82
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 280
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e0c479b90c71990800000000000000
+      internalID: -7415246486951424363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_83
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 266
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2474b412ee19b950800000000000000
+      internalID: 6465232696425870379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_84
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 281
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9efb7c1baa696eeb0800000000000000
+      internalID: -4690896301988528151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_85
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 270
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85364ea12c9620b40800000000000000
+      internalID: 5404998785193763672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_86
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 262
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b2b76c0507f311e0800000000000000
+      internalID: -2228165789563243848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_87
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 264
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca2e78dfe648d2c30800000000000000
+      internalID: 4336267628462465708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_88
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 266
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e292d2dd4e75c8a60800000000000000
+      internalID: 7677608105234737454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_89
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 268
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c30de62a2d8a6d0800000000000000
+      internalID: -2978899558419907431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_90
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 264
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500b730d9acbcdeb0800000000000000
+      internalID: -4693669274098094075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_91
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 264
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371ec02d9580dbc10800000000000000
+      internalID: 2070820585529467251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_92
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 238
+        width: 17
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6580519ee5440ce10800000000000000
+      internalID: 2215846191094368342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_93
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 87
+        width: 307
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869100e6d63600b60800000000000000
+      internalID: 7710271883706374504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_94
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 240
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 738faef8022372750800000000000000
+      internalID: 6280043320826329143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_95
+      rect:
+        serializedVersion: 2
+        x: 1784
+        y: 224
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd40f99c9569b5610800000000000000
+      internalID: 1611046604093981916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_96
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 224
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ded4efb205e47900800000000000000
+      internalID: 681421243611930322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_97
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 196
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f2af8eb7febf480800000000000000
+      internalID: -8864228126079963262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_98
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 176
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e9927bbe87cb6830800000000000000
+      internalID: 4065562504476137961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_99
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 162
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf3c3549021907970800000000000000
+      internalID: 8750653645094372348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_100
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 119
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f4261316e7e65d10800000000000000
+      internalID: 2114132050445739253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_101
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 83
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a969ace0bace525a0800000000000000
+      internalID: -6546566263881427302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_102
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 79
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de6630b70a66a5100800000000000000
+      internalID: 97503181386508013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_103
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 87
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885a482e4fac894e0800000000000000
+      internalID: -1974605283480787576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attect_effect_example_104
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 79
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5818a5185aaf95c80800000000000000
+      internalID: -8333354046725652091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      attect_effect_example_0: -7171257470101129822
+      attect_effect_example_1: 6150221709031116571
+      attect_effect_example_10: -8897319577902021694
+      attect_effect_example_100: 2114132050445739253
+      attect_effect_example_101: -6546566263881427302
+      attect_effect_example_102: 97503181386508013
+      attect_effect_example_103: -1974605283480787576
+      attect_effect_example_104: -8333354046725652091
+      attect_effect_example_11: -2063853495472075280
+      attect_effect_example_12: -374513060188516549
+      attect_effect_example_13: 1035828015178236756
+      attect_effect_example_14: 8432987239660342481
+      attect_effect_example_15: 1959023099373290485
+      attect_effect_example_16: -8239887937201054472
+      attect_effect_example_17: -4167837448074327251
+      attect_effect_example_18: 5880570851575151817
+      attect_effect_example_19: -5837964076497125465
+      attect_effect_example_2: -6505085068202775888
+      attect_effect_example_20: -934794316249330941
+      attect_effect_example_21: 3845566676924419027
+      attect_effect_example_22: -3805735438358009673
+      attect_effect_example_23: 3001508345352100619
+      attect_effect_example_24: 4645889551915484357
+      attect_effect_example_25: 4281651574034685423
+      attect_effect_example_26: 4259211901450683266
+      attect_effect_example_27: 945119358601850151
+      attect_effect_example_28: 8224520921226960297
+      attect_effect_example_29: -2467561389807929157
+      attect_effect_example_3: 5862644584458832803
+      attect_effect_example_30: -4753313853957794571
+      attect_effect_example_31: 1264256781820729338
+      attect_effect_example_32: -1406117916088469517
+      attect_effect_example_33: 2226439009838423489
+      attect_effect_example_34: -2707873781234137892
+      attect_effect_example_35: 8842057291761632543
+      attect_effect_example_36: -2630563287393976779
+      attect_effect_example_37: 5410589691404696965
+      attect_effect_example_38: 4600824511102295565
+      attect_effect_example_39: -5900119819785804669
+      attect_effect_example_4: -8904973950769233408
+      attect_effect_example_40: 8973313917879654047
+      attect_effect_example_41: -2997523854988245901
+      attect_effect_example_42: 5768622811277391556
+      attect_effect_example_43: -2943771733233723490
+      attect_effect_example_44: -9168607595227629309
+      attect_effect_example_45: 6209989548357557245
+      attect_effect_example_46: -3127873487781007909
+      attect_effect_example_47: 3744363862091085163
+      attect_effect_example_48: 6855721916400355804
+      attect_effect_example_49: -6657269835990272916
+      attect_effect_example_5: -39210123252864893
+      attect_effect_example_50: 4313513027030074492
+      attect_effect_example_51: -5759965700897431200
+      attect_effect_example_52: -6787938541964448263
+      attect_effect_example_53: -1012226110086432956
+      attect_effect_example_54: -2402189430130383358
+      attect_effect_example_55: 9222950317043503961
+      attect_effect_example_56: 6967960003003600566
+      attect_effect_example_57: 5505823425606979316
+      attect_effect_example_58: -9018846214303576563
+      attect_effect_example_59: -4156471791905810294
+      attect_effect_example_6: 4939419330548176599
+      attect_effect_example_60: 5675416694116569140
+      attect_effect_example_61: 6054745036044295999
+      attect_effect_example_62: -4272072874186527367
+      attect_effect_example_63: -3794911023964235671
+      attect_effect_example_64: -730786782716383650
+      attect_effect_example_65: 2385305836501804728
+      attect_effect_example_66: 3471394233980641466
+      attect_effect_example_67: 3219669079973610787
+      attect_effect_example_68: 7175369501738113927
+      attect_effect_example_69: -2774417598340872641
+      attect_effect_example_7: -9209669635106243765
+      attect_effect_example_70: 4531334023188753493
+      attect_effect_example_71: 1822562476575417222
+      attect_effect_example_72: -4870880734496755445
+      attect_effect_example_73: -6581363499001119607
+      attect_effect_example_74: -5612576500469245088
+      attect_effect_example_75: -6349662983033432503
+      attect_effect_example_76: -2146937452005568091
+      attect_effect_example_77: 5682585859224723489
+      attect_effect_example_78: 6544181225314360588
+      attect_effect_example_79: -1883297574169733885
+      attect_effect_example_8: -1535505440131611250
+      attect_effect_example_80: 7772101330011542301
+      attect_effect_example_81: 7459745182689263805
+      attect_effect_example_82: -7415246486951424363
+      attect_effect_example_83: 6465232696425870379
+      attect_effect_example_84: -4690896301988528151
+      attect_effect_example_85: 5404998785193763672
+      attect_effect_example_86: -2228165789563243848
+      attect_effect_example_87: 4336267628462465708
+      attect_effect_example_88: 7677608105234737454
+      attect_effect_example_89: -2978899558419907431
+      attect_effect_example_9: -4206326821662340892
+      attect_effect_example_90: -4693669274098094075
+      attect_effect_example_91: 2070820585529467251
+      attect_effect_example_92: 2215846191094368342
+      attect_effect_example_93: 7710271883706374504
+      attect_effect_example_94: 6280043320826329143
+      attect_effect_example_95: 1611046604093981916
+      attect_effect_example_96: 681421243611930322
+      attect_effect_example_97: -8864228126079963262
+      attect_effect_example_98: 4065562504476137961
+      attect_effect_example_99: 8750653645094372348
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

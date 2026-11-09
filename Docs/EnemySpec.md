@@ -4,7 +4,7 @@
 
 ## 종류와 설정
 
-`Enemy1`과 `Enemy2`는 공통 [Enemy](../Assets/Scripts/Enemy/Enemy.cs)를 상속한다. 웨이브 데이터와 적 풀은 `EnemyId`를 사용해 종류를 구분한다. 두 적 프리팹의 콜라이더는 [아군의 대상 탐색](AllySpec.md#대상-선택과-유지)에 사용한다.
+`Basic_Enemy`와 `Enemy2`는 공통 [Enemy](../Assets/Scripts/Enemy/Enemy.cs)를 상속한다. 웨이브 데이터와 적 풀은 `EnemyId`를 사용해 종류를 구분한다. 기본 적은 [Basic_Enemy 프리팹](../Assets/Prefabs/Basic_Enemy.prefab)과 [왼쪽 스프라이트](../Assets/Art/Enemy/Basic_Enemy_left.png)를 사용한다. 두 적 프리팹의 콜라이더는 [아군의 대상 탐색](AllySpec.md#대상-선택과-유지)에 사용한다.
 
 | 프리팹 설정 | 코드 기본값 |
 | --- | ---: |

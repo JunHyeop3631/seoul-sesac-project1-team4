@@ -19,3 +19,6 @@
 *.apk
 *.aab
 *.unitypackage
+
+[Dd]esktop.ini
+[Dd]esktop.ini.meta

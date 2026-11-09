@@ -1,10 +1,12 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
     [SerializeField, Min(0.01f)] private float moveSpeed = 2f;
     [SerializeField, Min(1)] private int maxHealth = 10;
+    [SerializeField] private Image healthBarFill;
 
     private Vector3[] pathPoints;
     private int targetIndex;
@@ -18,6 +20,7 @@ public class Enemy : MonoBehaviour
     protected virtual void OnEnable()
     {
         CurrentHealth = maxHealth;
+        UpdateHealthBar();
     }
 
     public void TakeDamage(int damage)
@@ -28,6 +31,7 @@ public class Enemy : MonoBehaviour
         }
 
         CurrentHealth = Mathf.Max(0, CurrentHealth - damage);
+        UpdateHealthBar();
         if (CurrentHealth == 0)
         {
             if (Defeated != null)
@@ -38,6 +42,14 @@ public class Enemy : MonoBehaviour
             {
                 gameObject.SetActive(false);
             }
+        }
+    }
+
+    private void UpdateHealthBar()
+    {
+        if (healthBarFill != null)
+        {
+            healthBarFill.fillAmount = (float)CurrentHealth / Mathf.Max(1, maxHealth);
         }
     }
 

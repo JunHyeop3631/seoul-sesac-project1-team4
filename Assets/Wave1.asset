@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - enemyId: 0
-    count: 1000
+    count: 100

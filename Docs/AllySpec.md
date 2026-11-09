@@ -4,7 +4,7 @@
 
 ## 종류와 배치
 
-`Ally1`부터 `Ally5`까지 공통 [Ally](../Assets/Scripts/Ally/Ally.cs)를 상속하며, 도·개·걸·윷·모에 각각 대응한다. 소환, 칸 점유, 이동은 [윷 행동 명세](YutActionSpec.md)를 따른다. `YutActionController`는 씬에 미리 배치된 아군과 새로 소환한 아군을 등록하고 대상 탐색에 사용할 `Wave`를 연결한다.
+도·개·걸·윷·모 아군은 각각 `Ally1`, `Gae_Archer`, `Ally3`, `Ally4`, `Ally5`이며 공통 [Ally](../Assets/Scripts/Ally/Ally.cs)를 상속한다. 개 아군은 [Gae_Archer 프리팹](../Assets/Prefabs/Gae_Archer.prefab)과 [Gae_Archer_left 이미지](../Assets/Art/Ally/Gae_Archer_left.png)를 사용한다. 소환, 칸 점유, 이동은 [윷 행동 명세](YutActionSpec.md)를 따른다. `YutActionController`는 씬에 미리 배치된 아군과 새로 소환한 아군을 등록하고 대상 탐색에 사용할 `Wave`를 연결한다.
 
 ## 대상 선택과 유지
 
