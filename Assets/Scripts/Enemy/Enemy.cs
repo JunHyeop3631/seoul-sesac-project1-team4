@@ -4,12 +4,42 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField, Min(0.01f)] private float moveSpeed = 2f;
+    [SerializeField, Min(1)] private int maxHealth = 10;
 
     private Vector3[] pathPoints;
     private int targetIndex;
     private Action<Enemy> onArrived;
 
     public bool IsMoving { get; private set; }
+    public int CurrentHealth { get; private set; }
+    internal int ActivationVersion { get; private set; }
+    internal event Action<Enemy> Defeated;
+
+    protected virtual void OnEnable()
+    {
+        CurrentHealth = maxHealth;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        if (!isActiveAndEnabled || damage <= 0 || CurrentHealth <= 0)
+        {
+            return;
+        }
+
+        CurrentHealth = Mathf.Max(0, CurrentHealth - damage);
+        if (CurrentHealth == 0)
+        {
+            if (Defeated != null)
+            {
+                Defeated(this);
+            }
+            else
+            {
+                gameObject.SetActive(false);
+            }
+        }
+    }
 
     public void StartMoving(Transform[] waypoints, Action<Enemy> onArrived = null)
     {
@@ -88,6 +118,8 @@ public class Enemy : MonoBehaviour
 
     protected virtual void OnDisable()
     {
+        // A pooled object can be returned and reused before the next target check.
+        ActivationVersion++;
         StopMoving();
     }
 }

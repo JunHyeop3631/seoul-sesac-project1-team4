@@ -1,23 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Profiling;
 using UnityEngine;
 
 public class Wave : MonoBehaviour
 {
-    private enum TargetSearchMode
-    {
-        WaveList,
-        OverlapCircle
-    }
-
-    private static readonly ProfilerMarker WaveListMarker = new("Ally.TargetSearch.WaveList");
-    private static readonly ProfilerMarker OverlapCircleMarker = new("Ally.TargetSearch.OverlapCircle");
-    private static readonly ProfilerMarker SyncTransformsMarker = new("Ally.TargetSearch.SyncTransforms");
-
     [SerializeField] private Transform[] waypoints = Array.Empty<Transform>();
-    [SerializeField] private TargetSearchMode targetSearchMode;
     [SerializeField] private LayerMask enemyTargetLayers;
 
     private readonly HashSet<Enemy> spawnedEnemies = new();
@@ -56,7 +44,7 @@ public class Wave : MonoBehaviour
 
     private IEnumerator SpawnEnemies(WaveData data, EnemyPool enemyPool, float spawnInterval)
     {
-        Action<Enemy> returnOnArrival = enemyPool.ReturnEnemy;
+        Action<Enemy> releaseEnemy = ReleaseEnemy;
         bool firstEnemy = true;
         foreach (WaveData.EnemyGroup group in data.Enemies)
         {
@@ -71,13 +59,23 @@ public class Wave : MonoBehaviour
                 Enemy enemy = enemyPool.RequestEnemy(group.enemyId, waypoints[0].position, waypoints[0].rotation);
                 if (enemy != null)
                 {
-                    enemy.StartMoving(waypoints, returnOnArrival);
                     spawnedEnemies.Add(enemy);
+                    enemy.Defeated += releaseEnemy;
+                    enemy.StartMoving(waypoints, releaseEnemy);
                 }
             }
         }
 
         // 생성 종료만으로 웨이브 완료를 알리지 않는다.
+
+        void ReleaseEnemy(Enemy enemy)
+        {
+            if (spawnedEnemies.Remove(enemy))
+            {
+                enemy.Defeated -= ReleaseEnemy;
+                enemyPool.ReturnEnemy(enemy);
+            }
+        }
     }
 
     internal Enemy FindAttackTarget(Vector2 origin, float range)
@@ -90,42 +88,22 @@ public class Wave : MonoBehaviour
         Enemy closest = null;
         float closestDistanceSquared = range * range;
 
-        if (targetSearchMode == TargetSearchMode.WaveList)
-        {
-            using (WaveListMarker.Auto())
-            {
-                foreach (Enemy enemy in spawnedEnemies)
-                {
-                    ConsiderTarget(enemy, origin, ref closest, ref closestDistanceSquared);
-                }
-            }
-
-            return closest;
-        }
-
         // Enemy movement writes transforms in Update. Synchronize once before the
-        // first overlap query in LateUpdate so both modes read the same positions.
+        // first overlap query in LateUpdate so it sees the latest positions.
         if (lastPhysicsSyncFrame != Time.frameCount)
         {
-            using (SyncTransformsMarker.Auto())
-            {
-                Physics2D.SyncTransforms();
-            }
-
+            Physics2D.SyncTransforms();
             lastPhysicsSyncFrame = Time.frameCount;
         }
 
-        using (OverlapCircleMarker.Auto())
+        var filter = new ContactFilter2D { useTriggers = true };
+        filter.SetLayerMask(enemyTargetLayers);
+        int hitCount = Physics2D.OverlapCircle(origin, range, filter, overlapResults);
+        for (int index = 0; index < hitCount; index++)
         {
-            var filter = new ContactFilter2D { useTriggers = true };
-            filter.SetLayerMask(enemyTargetLayers);
-            int hitCount = Physics2D.OverlapCircle(origin, range, filter, overlapResults);
-            for (int index = 0; index < hitCount; index++)
+            if (overlapResults[index].TryGetComponent(out Enemy enemy) && spawnedEnemies.Contains(enemy))
             {
-                if (overlapResults[index].TryGetComponent(out Enemy enemy) && spawnedEnemies.Contains(enemy))
-                {
-                    ConsiderTarget(enemy, origin, ref closest, ref closestDistanceSquared);
-                }
+                ConsiderTarget(enemy, origin, ref closest, ref closestDistanceSquared);
             }
         }
 
