@@ -1719,7 +1719,7 @@ MonoBehaviour:
   - {fileID: 40001}
   - {fileID: 40011}
   - {fileID: 40021}
-  targetSearchMode: 0
+  targetSearchMode: 1
   enemyTargetLayers:
     serializedVersion: 2
     m_Bits: 256
