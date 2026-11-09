@@ -102,7 +102,7 @@
 - `TurnController`가 현재 턴 번호를 보관한다. `currentTurnNumber`는 0부터 시작한다. 한 턴에 한 웨이브이므로 해당 번호를 `WaveManager.StartWave`에 전달한다. 별도의 웨이브 번호 증가는 두지 않는다.
 - `StartTurn → BeginPreparation`, 전투 시작 버튼의 `StartBattle → WaveManager.StartWave → Wave.StartWave` 호출 경로를 연결했다.
 - `Wave`의 `Completed → WaveManager`의 `WaveCompleted → TurnController.EndBattle → EndTurn → StartTurn → BeginPreparation` 완료 알림 경로를 연결했다.
-- 위 항목은 연결 골격만 구성한 상태다. 단계 상태 변경, 턴 번호 증가, 전투 시작 조건 검사는 아직 구현하지 않았다. 웨이브 완료 알림도 자동 발생하지 않는다.
+- 예정된 적의 소환이 끝나고 남은 적이 없으면 웨이브 완료 알림이 자동으로 발생한다. `TurnController`의 단계 상태 변경, 턴 번호 증가, 전투 시작 조건 검사는 후속 구현 범위다.
 - 웨이브 관련 데이터 구조와 호출 관계는 [클래스별 책임과 현재 연결](WaveSpec.md#클래스별-책임과-현재-연결), 실제 연결 상태는 [씬 구성과 구현 상태](WaveSpec.md#씬-구성과-구현-상태), 미구현 항목은 [미정 및 후속 범위](WaveSpec.md#미정-및-후속-범위)에 기록한다.
 
 ## 후속 범위

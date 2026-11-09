@@ -11,6 +11,7 @@ public class Wave : MonoBehaviour
     private readonly HashSet<Enemy> spawnedEnemies = new();
     private readonly List<Collider2D> overlapResults = new();
     private int lastPhysicsSyncFrame = -1;
+    private bool spawningComplete;
 
     public bool IsRunning { get; private set; }
     public event Action Completed;
@@ -38,6 +39,7 @@ public class Wave : MonoBehaviour
         }
 
         spawnedEnemies.Clear();
+        spawningComplete = false;
         IsRunning = true;
         StartCoroutine(SpawnEnemies(data, enemyPool, Mathf.Max(0f, spawnInterval)));
     }
@@ -66,7 +68,8 @@ public class Wave : MonoBehaviour
             }
         }
 
-        // 생성 종료만으로 웨이브 완료를 알리지 않는다.
+        spawningComplete = true;
+        TryCompleteWave();
 
         void ReleaseEnemy(Enemy enemy)
         {
@@ -74,6 +77,7 @@ public class Wave : MonoBehaviour
             {
                 enemy.Defeated -= ReleaseEnemy;
                 enemyPool.ReturnEnemy(enemy);
+                TryCompleteWave();
             }
         }
     }
@@ -128,9 +132,13 @@ public class Wave : MonoBehaviour
         }
     }
 
-    private void CompleteWave()
+    private void TryCompleteWave()
     {
-        // 실제 완료 조건 판정이 구현되면 이 알림을 호출한다.
+        if (!IsRunning || !spawningComplete || spawnedEnemies.Count != 0)
+        {
+            return;
+        }
+
         IsRunning = false;
         Completed?.Invoke();
     }
