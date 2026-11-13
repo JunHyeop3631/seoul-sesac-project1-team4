@@ -14,7 +14,10 @@ public class Wave : MonoBehaviour
     private bool spawningComplete;
 
     public bool IsRunning { get; private set; }
+    public int AliveEnemyCount => spawnedEnemies.Count;
+    public int DefeatedEnemyCount { get; private set; }
     public event Action Completed;
+    public event Action EnemyArrived;
 
     public void StartWave(WaveData data, EnemyPool enemyPool, float spawnInterval)
     {
@@ -39,6 +42,7 @@ public class Wave : MonoBehaviour
         }
 
         spawnedEnemies.Clear();
+        DefeatedEnemyCount = 0;
         spawningComplete = false;
         IsRunning = true;
         StartCoroutine(SpawnEnemies(data, enemyPool, Mathf.Max(0f, spawnInterval)));
@@ -75,6 +79,15 @@ public class Wave : MonoBehaviour
         {
             if (spawnedEnemies.Remove(enemy))
             {
+                if (enemy.CurrentHealth == 0)
+                {
+                    DefeatedEnemyCount++;
+                }
+                else
+                {
+                    EnemyArrived?.Invoke();
+                }
+
                 enemy.Defeated -= ReleaseEnemy;
                 enemyPool.ReturnEnemy(enemy);
                 TryCompleteWave();

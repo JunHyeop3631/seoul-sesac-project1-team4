@@ -2,6 +2,8 @@ using System.Collections.Generic;
 
 public sealed class YutBoardOccupancy
 {
+    internal const int MaxAlliesPerCell = 6;
+
     private readonly List<Ally>[] alliesByCell = new List<Ally>[YutBoard.CellCount];
 
     public YutBoardOccupancy()
@@ -12,9 +14,21 @@ public sealed class YutBoardOccupancy
         }
     }
 
-    internal void AddAlly(int cellId, Ally ally)
+    internal bool HasSpace(int cellId, int incomingCount = 1)
     {
-        alliesByCell[cellId].Add(ally);
+        alliesByCell[cellId].RemoveAll(ally => ally == null);
+        return incomingCount > 0 && alliesByCell[cellId].Count + incomingCount <= MaxAlliesPerCell;
+    }
+
+    internal bool TryAddAlly(int cellId, Ally ally)
+    {
+        if (ally == null || !HasSpace(cellId) || TryGetCell(ally, out _))
+        {
+            return false;
+        }
+
+         alliesByCell[cellId].Add(ally);
+        return true;
     }
 
     internal IReadOnlyList<Ally> GetAllies(int cellId)
@@ -38,13 +52,42 @@ public sealed class YutBoardOccupancy
 
     internal bool TryMoveAlly(Ally ally, int destinationCellId)
     {
-        if (!TryGetCell(ally, out int currentCellId))
+        return TryMoveAllies(new[] { ally }, destinationCellId);
+    }
+
+    internal bool TryMoveAllies(IReadOnlyList<Ally> allies, int destinationCellId)
+    {
+        if (allies.Count == 0 || allies[0] == null ||
+            !TryGetCell(allies[0], out int currentCellId))
         {
             return false;
         }
 
-        alliesByCell[currentCellId].Remove(ally);
-        AddAlly(destinationCellId, ally);
+        var uniqueAllies = new HashSet<Ally>();
+        foreach (Ally ally in allies)
+        {
+            if (ally == null || !uniqueAllies.Add(ally) ||
+                !alliesByCell[currentCellId].Contains(ally))
+            {
+                return false;
+            }
+        }
+
+        if (currentCellId == destinationCellId)
+        {
+            return true;
+        }
+
+        if (!HasSpace(destinationCellId, allies.Count))
+        {
+            return false;
+        }
+
+        foreach (Ally ally in allies)
+        {
+            alliesByCell[currentCellId].Remove(ally);
+            alliesByCell[destinationCellId].Add(ally);
+        }
         return true;
     }
 }

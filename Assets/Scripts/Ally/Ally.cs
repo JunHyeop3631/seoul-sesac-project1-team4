@@ -3,7 +3,7 @@ using UnityEngine;
 public class Ally : MonoBehaviour
 {
     [SerializeField, Min(0f)] private float attackRange = 3f;
-    [SerializeField, Min(1)] private int attackDamage = 10;
+    [SerializeField, Min(1)] private int attackDamage = 2;
     [SerializeField, Min(0.01f)] private float attackInterval = 1f;
 
     private Wave wave;

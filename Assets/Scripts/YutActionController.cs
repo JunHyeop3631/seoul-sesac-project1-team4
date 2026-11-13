@@ -13,12 +13,14 @@ public sealed class YutActionController : MonoBehaviour
     [SerializeField] private Transform boardRoot;
     [SerializeField] private Sprite destinationMarkerSprite;
     [SerializeField] private Wave targetingWave;
+    [SerializeField] private Vector2 allySlotSpacing = new Vector2(0.3f, 0.5f);
 
     private readonly Transform[] cells = new Transform[YutBoard.CellCount];
     private readonly YutBoardOccupancy occupancy = new YutBoardOccupancy();
     private readonly List<int> destinationCellIds = new List<int>();
     private readonly SpriteRenderer[] destinationMarkers = new SpriteRenderer[YutBoard.CellCount];
     private Ally selectedAlly;
+    private readonly List<Ally> selectedAllies = new List<Ally>();
 
     private void Awake()
     {
@@ -82,16 +84,56 @@ public sealed class YutActionController : MonoBehaviour
             return false;
         }
 
+        if (!occupancy.HasSpace(DeploymentCellId))
+        {
+            return false;
+        }
+
         Ally ally = Instantiate(prefab, cell, false);
         ally.transform.localPosition = Vector3.zero;
-        RegisterAlly(DeploymentCellId, ally);
+        if (!RegisterAlly(DeploymentCellId, ally))
+        {
+            Destroy(ally.gameObject);
+            return false;
+        }
+
         return true;
     }
 
-    private void RegisterAlly(int cellId, Ally ally)
+    private bool RegisterAlly(int cellId, Ally ally)
     {
+        if (!occupancy.TryAddAlly(cellId, ally))
+        {
+            Debug.LogWarning($"Cell {cellId:00} cannot register more than {YutBoardOccupancy.MaxAlliesPerCell} allies or duplicate allies.", ally);
+            return false;
+        }
+
         ally.SetTargetingWave(targetingWave);
-        occupancy.AddAlly(cellId, ally);
+        ArrangeAllies(cellId);
+        return true;
+    }
+
+    private void ArrangeAllies(int cellId)
+    {
+        const int columns = 3;
+        IReadOnlyList<Ally> allies = occupancy.GetAllies(cellId);
+        int slotIndex = 0;
+        foreach (Ally ally in allies)
+        {
+            if (ally == null)
+            {
+                continue;
+            }
+
+            // Fill the top row left to right, then the bottom row.
+            int column = slotIndex % columns;
+            int row = slotIndex / columns;
+            ally.transform.localPosition = new Vector3(
+                (column - 1) * allySlotSpacing.x,
+                (0.5f - row) * allySlotSpacing.y,
+                0f);
+            slotIndex++;
+        }
     }
 
     public void SelectAlly(Ally ally, YutThrowResult result)
@@ -104,7 +146,21 @@ public sealed class YutActionController : MonoBehaviour
 
         ClearSelection();
         selectedAlly = ally;
-        destinationCellIds.AddRange(YutBoard.GetDestinationCells(currentCellId, result));
+        foreach (Ally occupant in occupancy.GetAllies(currentCellId))
+        {
+            if (occupant != null && occupant.GetType() == ally.GetType())
+            {
+                selectedAllies.Add(occupant);
+            }
+        }
+
+        foreach (int cellId in YutBoard.GetDestinationCells(currentCellId, result))
+        {
+            if (cellId == currentCellId || occupancy.HasSpace(cellId, selectedAllies.Count))
+            {
+                destinationCellIds.Add(cellId);
+            }
+        }
 
         foreach (int cellId in destinationCellIds)
         {
@@ -127,13 +183,18 @@ public sealed class YutActionController : MonoBehaviour
             return false;
         }
 
-        if (!occupancy.TryMoveAlly(selectedAlly, destinationCellId))
+        if (!occupancy.TryGetCell(selectedAlly, out int sourceCellId) ||
+            !occupancy.TryMoveAllies(selectedAllies, destinationCellId))
         {
             return false;
         }
 
-        selectedAlly.transform.SetParent(cell, false);
-        selectedAlly.transform.localPosition = Vector3.zero;
+        foreach (Ally ally in selectedAllies)
+        {
+            ally.transform.SetParent(cell, false);
+        }
+        ArrangeAllies(sourceCellId);
+        ArrangeAllies(destinationCellId);
         ClearSelection();
         return true;
     }
@@ -141,6 +202,7 @@ public sealed class YutActionController : MonoBehaviour
     internal void ClearSelection()
     {
         selectedAlly = null;
+        selectedAllies.Clear();
         foreach (int cellId in destinationCellIds)
         {
             SetMarkerActive(cellId, false);

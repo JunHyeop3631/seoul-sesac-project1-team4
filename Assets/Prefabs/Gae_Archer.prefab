@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8091dc0eaa2743cad54dfa3ba4b0c8f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gae_Archer
   attackRange: 3
-  attackDamage: 1
+  attackDamage: 2
   attackInterval: 1

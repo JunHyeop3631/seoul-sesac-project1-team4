@@ -16,16 +16,29 @@ public sealed class TurnController : MonoBehaviour
     [SerializeField] private GameObject actionButtons;
     [SerializeField] private WaveManager waveManager;
     [SerializeField, Min(0)] private int currentTurnNumber = 0;
+    [SerializeField, Min(1)] private int startingLives = 10;
 
     public int CurrentTurnNumber => currentTurnNumber;
+    public int RemainingLives { get; private set; }
     public YutThrowResult? CurrentYutResult { get; private set; }
     private YutAction chosenAction;
+
+    private void Awake()
+    {
+        RemainingLives = Mathf.Max(1, startingLives);
+    }
+
+    private void LoseLife()
+    {
+        RemainingLives = Mathf.Max(0, RemainingLives - 1);
+    }
 
     private void OnEnable()
     {
         if (waveManager != null)
         {
             waveManager.WaveCompleted += EndBattle;
+            waveManager.EnemyArrived += LoseLife;
         }
 
         if (throwController != null)
@@ -39,6 +52,7 @@ public sealed class TurnController : MonoBehaviour
         if (waveManager != null)
         {
             waveManager.WaveCompleted -= EndBattle;
+            waveManager.EnemyArrived -= LoseLife;
         }
 
         if (throwController != null)
@@ -92,9 +106,21 @@ public sealed class TurnController : MonoBehaviour
 
     public void ChooseSummon()
     {
-        if (TryChooseAction(YutAction.Summon) && actionController.DeployAlly(CurrentYutResult.Value))
+        if (!TryChooseAction(YutAction.Summon))
+        {
+            return;
+        }
+
+        if (actionController.DeployAlly(CurrentYutResult.Value))
         {
             CompleteYutAction();
+            return;
+        }
+
+        chosenAction = YutAction.None;
+        if (actionButtons != null)
+        {
+            actionButtons.SetActive(true);
         }
     }
 
