@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 38b8aa4d07742e948ac0ea353628a97c
+guid: 9830b44eba76b1645bf1b6f936804967
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1892245073212297159
-    second: SpeedMultiplierDisplay_press_0
+      213: 6375743016231685615
+    second: Top_Heart_HUD_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpeedMultiplierDisplay_press_0
+      name: Top_Heart_HUD_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1055
-        height: 330
+        width: 912
+        height: 324
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 140, y: 120, z: 140, w: 130}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7cf4dc85eda924a10800000000000000
-      internalID: 1892245073212297159
+      spriteID: fedcaad3e703b7850800000000000000
+      internalID: 6375743016231685615
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f2852db2ed03023499b34e155c9f4746
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SpeedMultiplierDisplay_press_0: 1892245073212297159
+      Top_Heart_HUD_0: 6375743016231685615
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

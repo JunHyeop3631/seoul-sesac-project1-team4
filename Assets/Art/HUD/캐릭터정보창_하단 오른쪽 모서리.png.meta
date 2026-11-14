@@ -1,16 +1,11 @@
 fileFormatVersion: 2
-guid: 94f53d65c0d94754dbc9a5d410907d08
+guid: 168f6697b324851409ad5627e8e6cad7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2047151713472875315
-    second: xbox_x_0
-  - first:
-      213: 1659847346457425010
-    second: xbox_x_1
-  - first:
-      213: 568027374759181124
-    second: xbox_x_2
+      213: -3302756433492652041
+    second: "\uCE90\uB9AD\uD130\uC815\uBCF4\uCC3D_\uD558\uB2E8 \uC624\uB978\uCABD
+      \uBAA8\uC11C\uB9AC_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,13 +101,14 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: xbox_x_0
+      name: "\uCE90\uB9AD\uD130\uC815\uBCF4\uCC3D_\uD558\uB2E8 \uC624\uB978\uCABD
+        \uBAA8\uC11C\uB9AC_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 119
-        height: 116
+        width: 132
+        height: 129
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,52 +117,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 33b02ea13a1f86c10800000000000000
-      internalID: 2047151713472875315
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: xbox_x_1
-      rect:
-        serializedVersion: 2
-        x: 113
-        y: 85
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 27438fa0e56f80710800000000000000
-      internalID: 1659847346457425010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: xbox_x_2
-      rect:
-        serializedVersion: 2
-        x: 114
-        y: 92
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 44bf73743e902e700800000000000000
-      internalID: 568027374759181124
+      spriteID: 7ffc802c5804a22d0800000000000000
+      internalID: -3302756433492652041
       vertices: []
       indices: 
       edges: []
@@ -185,9 +137,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      xbox_x_0: 2047151713472875315
-      xbox_x_1: 1659847346457425010
-      xbox_x_2: 568027374759181124
+      "\uCE90\uB9AD\uD130\uC815\uBCF4\uCC3D_\uD558\uB2E8 \uC624\uB978\uCABD \uBAA8\uC11C\uB9AC_0": -3302756433492652041
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

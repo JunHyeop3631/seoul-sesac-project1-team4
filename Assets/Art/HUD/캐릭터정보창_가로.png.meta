@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: f6aa3ac545125db42a4e4c5485bbda9f
+guid: ba72c279aad56df40ad77f193ca16091
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6589083654508725051
-    second: xbox_0
+      213: -1749975510489789042
+    second: "\uCE90\uB9AD\uD130\uC815\uBCF4\uCC3D_\uAC00\uB85C_0"
+  - first:
+      213: 3678345354376436700
+    second: "\uCE90\uB9AD\uD130\uC815\uBCF4\uCC3D_\uAC00\uB85C_1"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: xbox_0
+      name: "\uCE90\uB9AD\uD130\uC815\uBCF4\uCC3D_\uAC00\uB85C_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 912
-        height: 324
+        width: 547
+        height: 109
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b33435e5ca0217b50800000000000000
-      internalID: 6589083654508725051
+      spriteID: e8d8f938b86d6b7e0800000000000000
+      internalID: -1749975510489789042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCE90\uB9AD\uD130\uC815\uBCF4\uCC3D_\uAC00\uB85C_1"
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 0
+        width: 31
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdbd0d07c9b1c0330800000000000000
+      internalID: 3678345354376436700
       vertices: []
       indices: 
       edges: []
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      xbox_0: 6589083654508725051
+      "\uCE90\uB9AD\uD130\uC815\uBCF4\uCC3D_\uAC00\uB85C_0": -1749975510489789042
+      "\uCE90\uB9AD\uD130\uC815\uBCF4\uCC3D_\uAC00\uB85C_1": 3678345354376436700
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

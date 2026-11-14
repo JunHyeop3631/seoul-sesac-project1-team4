@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: eac42e1fac8a5fa4193a5c228c698a4a
+guid: e1d722a593f51e14ab1f6ddeb867bcc3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6545192671174223641
-    second: wavebox_0
+      213: 2121117393158305972
+    second: SpeedMultiplierDisplay_pressed_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wavebox_0
+      name: SpeedMultiplierDisplay_pressed_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1142
-        height: 597
+        width: 1055
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 120, y: 125, z: 120, w: 110}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7e89b2881fdca25a0800000000000000
-      internalID: -6545192671174223641
+      spriteID: 4b87a1ae709bf6d10800000000000000
+      internalID: 2121117393158305972
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2400ec748bd45f8438d63c2599cb511f
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      wavebox_0: -6545192671174223641
+      SpeedMultiplierDisplay_pressed_0: 2121117393158305972
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

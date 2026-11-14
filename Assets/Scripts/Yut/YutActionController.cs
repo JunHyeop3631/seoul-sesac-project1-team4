@@ -268,7 +268,7 @@ public sealed class YutActionController : MonoBehaviour
         {
             GameObject markerObject = new GameObject("Destination Marker");
             markerObject.transform.SetParent(cell, false);
-            markerObject.transform.localScale = new Vector3(0.4f, 0.4f, 1f);
+            //markerObject.transform.localScale = new Vector3(0.6f, 0.6f, 1f);
             marker = markerObject.AddComponent<SpriteRenderer>();
             marker.sprite = destinationMarkerSprite;
             marker.sortingOrder = 2;

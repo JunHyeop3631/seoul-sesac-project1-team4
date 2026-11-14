@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7057d8ab06363a84cb9eae8b91449934
+guid: 94ff8c85ac1ec094880fdae021fe3d8e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4829508152458733743
-    second: waveHUD_BOX_0
+      213: 5629380479528670125
+    second: "\uCE90\uB9AD\uD130\uC815\uBCF4\uCC3D_\uAC80\uC815\uBC30\uACBD2_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: waveHUD_BOX_0
+      name: "\uCE90\uB9AD\uD130\uC815\uBCF4\uCC3D_\uAC80\uC815\uBC30\uACBD2_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1142
-        height: 597
+        width: 1103
+        height: 533
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 15718d45ce32afcb0800000000000000
-      internalID: -4829508152458733743
+      spriteID: da313db68b39f1e40800000000000000
+      internalID: 5629380479528670125
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      waveHUD_BOX_0: -4829508152458733743
+      "\uCE90\uB9AD\uD130\uC815\uBCF4\uCC3D_\uAC80\uC815\uBC30\uACBD2_0": 5629380479528670125
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
