@@ -25,10 +25,10 @@
 | 정보 | 제공 주체 | 사용 목적 |
 | --- | --- | --- |
 | 행동에 사용할 윷 결과 | `DeployAlly` 또는 `SelectAlly`의 호출 인자 | 배치할 프리팹이나 이동 후보를 결정한다. |
-| 칸 연결과 이동 후보 | [YutBoard](../Assets/Scripts/YutBoard.cs)의 `GetDestinationCells` | 아군의 현재 칸과 윷 결과를 바탕으로 도착 후보를 계산한다. |
-| 윷판 칸 | 씬의 `TurnController > Cells` 바로 아래에 있는 [YutCell](../Assets/Scripts/YutCell.cs) 컴포넌트 | `Board Root`에 `Cells`를 연결한다. 시작할 때 자식의 `CellId`로 칸을 등록하며, 배치된 아군과 도착 후보 표시는 해당 Cell의 자식이다. |
+| 칸 연결과 이동 후보 | [YutBoard](../Assets/Scripts/Yut/YutBoard.cs)의 `GetDestinationCells` | 아군의 현재 칸과 윷 결과를 바탕으로 도착 후보를 계산한다. |
+| 윷판 칸 | 씬의 `TurnController > Cells` 바로 아래에 있는 [YutCell](../Assets/Scripts/Yut/YutCell.cs) 컴포넌트 | `Board Root`에 `Cells`를 연결한다. 시작할 때 자식의 `CellId`로 칸을 등록하며, 배치된 아군과 도착 후보 표시는 해당 Cell의 자식이다. |
 | 아군 유형과 프리팹 | [Ally](../Assets/Scripts/Ally/Ally.cs) 및 `Ally1`~`Ally5` 컴포넌트가 붙은 프리팹 | 컨트롤러가 윷 결과에 맞는 프리팹을 선택해 생성한다. |
-| 아군의 현재 칸 | [YutBoardOccupancy](../Assets/Scripts/YutBoardOccupancy.cs) | 배치와 이동이 같은 점유 상태를 공유한다. 선택한 아군의 현재 칸을 조회하고, 동작이 완료되면 해당 아군의 칸을 갱신한다. |
+| 아군의 현재 칸 | [YutBoardOccupancy](../Assets/Scripts/Yut/YutBoardOccupancy.cs) | 배치와 이동이 같은 점유 상태를 공유한다. 선택한 아군의 현재 칸을 조회하고, 동작이 완료되면 해당 아군의 칸을 갱신한다. |
 
 ## 동작 규칙
 
