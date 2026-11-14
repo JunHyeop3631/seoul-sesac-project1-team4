@@ -25,6 +25,8 @@ public sealed class TurnController : MonoBehaviour
     public event Action BattleStarted;
     public event Action BattleWon;
     public event Action BattleLost;
+    public event Action PreparationStarted;
+    public bool IsAwaitingNextWave { get; private set; }
     private YutAction chosenAction;
 
     private void Awake()
@@ -144,7 +146,7 @@ public sealed class TurnController : MonoBehaviour
 
     public void StartBattle()
     {
-        if (RemainingLives == 0 || waveManager == null || waveManager.IsRunning)
+        if (RemainingLives == 0 || IsAwaitingNextWave || waveManager == null || waveManager.IsRunning)
         {
             return;
         }
@@ -164,12 +166,13 @@ public sealed class TurnController : MonoBehaviour
 
     private void StartTurn()
     {
-        // 턴 번호 갱신과 턴 시작 처리는 이후 구현한다.
         BeginPreparation();
     }
 
     private void BeginPreparation()
     {
+        waveManager?.PrepareWave();
+        PreparationStarted?.Invoke();
     }
 
     private void EndBattle()
@@ -182,7 +185,9 @@ public sealed class TurnController : MonoBehaviour
         int totalEnemies = waveManager != null ? waveManager.GetTotalEnemyCount(currentTurnNumber) : 0;
         if (totalEnemies > 0 && waveManager.DefeatedEnemyCount == totalEnemies)
         {
+            IsAwaitingNextWave = true;
             BattleWon?.Invoke();
+            return;
         }
 
         EndTurn();
@@ -190,7 +195,19 @@ public sealed class TurnController : MonoBehaviour
 
     private void EndTurn()
     {
+        currentTurnNumber++;
         StartTurn();
+    }
+
+    public void NextWave()
+    {
+        if (!IsAwaitingNextWave || RemainingLives == 0 || waveManager == null || waveManager.IsRunning)
+        {
+            return;
+        }
+
+        IsAwaitingNextWave = false;
+        EndTurn();
     }
 
     public void SelectAlly(Ally ally)

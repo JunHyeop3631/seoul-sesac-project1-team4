@@ -64,6 +64,11 @@ public class WaveManager : MonoBehaviour
         wave.StartWave(waves[index], enemyPool, spawnInterval);
     }
 
+    public void PrepareWave()
+    {
+        wave?.Prepare();
+    }
+
     private void HandleEnemyArrived()
     {
         EnemyArrived?.Invoke();

@@ -3,12 +3,12 @@ using UnityEngine;
 public sealed class BattleResultHUD : MonoBehaviour
 {
     [SerializeField] private TurnController turnController;
-    [SerializeField] private GameObject victoryFlag;
-    [SerializeField] private GameObject defeatFlag;
+    [SerializeField] private GameObject victoryPanel;
+    [SerializeField] private GameObject defeatPanel;
 
     private void Awake()
     {
-        HideFlags();
+        HidePanels();
     }
 
     private void OnEnable()
@@ -18,7 +18,8 @@ public sealed class BattleResultHUD : MonoBehaviour
             return;
         }
 
-        turnController.BattleStarted += HideFlags;
+        turnController.BattleStarted += HidePanels;
+        turnController.PreparationStarted += HidePanels;
         turnController.BattleWon += ShowVictory;
         turnController.BattleLost += ShowDefeat;
     }
@@ -30,39 +31,40 @@ public sealed class BattleResultHUD : MonoBehaviour
             return;
         }
 
-        turnController.BattleStarted -= HideFlags;
+        turnController.BattleStarted -= HidePanels;
+        turnController.PreparationStarted -= HidePanels;
         turnController.BattleWon -= ShowVictory;
         turnController.BattleLost -= ShowDefeat;
     }
 
-    private void HideFlags()
+    private void HidePanels()
     {
-        SetFlags(false, false);
+        SetPanels(false, false);
     }
 
     private void ShowVictory()
     {
         if (turnController != null && turnController.RemainingLives > 0)
         {
-            SetFlags(true, false);
+            SetPanels(true, false);
         }
     }
 
     private void ShowDefeat()
     {
-        SetFlags(false, true);
+        SetPanels(false, true);
     }
 
-    private void SetFlags(bool victory, bool defeat)
+    private void SetPanels(bool victory, bool defeat)
     {
-        if (victoryFlag != null)
+        if (victoryPanel != null)
         {
-            victoryFlag.SetActive(victory);
+            victoryPanel.SetActive(victory);
         }
 
-        if (defeatFlag != null)
+        if (defeatPanel != null)
         {
-            defeatFlag.SetActive(defeat);
+            defeatPanel.SetActive(defeat);
         }
     }
 }

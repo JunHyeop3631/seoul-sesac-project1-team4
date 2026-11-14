@@ -5,11 +5,11 @@ public sealed class YutActionController : MonoBehaviour
 {
     private const int DeploymentCellId = 1;
 
-    [SerializeField] private Ally1 ally1Prefab;
-    [SerializeField] private Gae_Archer gaeArcherPrefab;
-    [SerializeField] private Ally3 ally3Prefab;
-    [SerializeField] private Ally4 ally4Prefab;
-    [SerializeField] private Ally5 ally5Prefab;
+    [SerializeField] private Do_Taoist doTaoistPrefab;
+    [SerializeField] private Gae_Warrior gaeWarriorPrefab;
+    [SerializeField] private Geol_Spearman geolSpearmanPrefab;
+    [SerializeField] private Yut_Maceman yutMacemanPrefab;
+    [SerializeField] private Mo_Archer moArcherPrefab;
     [SerializeField] private Transform boardRoot;
     [SerializeField] private Sprite destinationMarkerSprite;
     [SerializeField] private Wave targetingWave;
@@ -69,11 +69,11 @@ public sealed class YutActionController : MonoBehaviour
 
         Ally prefab = result switch
         {
-            YutThrowResult.Do => ally1Prefab,
-            YutThrowResult.Gae => gaeArcherPrefab,
-            YutThrowResult.Geol => ally3Prefab,
-            YutThrowResult.Yut => ally4Prefab,
-            YutThrowResult.Mo => ally5Prefab,
+            YutThrowResult.Do => doTaoistPrefab,
+            YutThrowResult.Gae => gaeWarriorPrefab,
+            YutThrowResult.Geol => geolSpearmanPrefab,
+            YutThrowResult.Yut => yutMacemanPrefab,
+            YutThrowResult.Mo => moArcherPrefab,
             _ => null
         };
 

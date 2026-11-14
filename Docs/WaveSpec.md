@@ -91,7 +91,7 @@
 
 `Wave.StartWave`에서 `spawningComplete`를 초기화한다. 소환 코루틴이 예정된 소환을 마치면 이 값을 켜고 `TryCompleteWave()`를 호출한다. 적이 처치되거나 경로 끝에 도착해 풀로 반환된 직후에도 같은 검사를 실행한다.
 
-`TryCompleteWave()`는 웨이브 실행 중이고, 소환이 완료됐으며, `spawnedEnemies.Count == 0`일 때 완료로 판정한다. `IsRunning`을 먼저 끈 뒤 `Completed`를 한 번 보낸다. 다음 웨이브 번호 증가와 준비 단계 상태 전환은 [턴 명세의 후속 범위](TurnSpec.md#후속-범위)에서 다룬다.
+`TryCompleteWave()`는 웨이브 실행 중이고, 소환이 완료됐으며, `spawnedEnemies.Count == 0`일 때 완료로 판정한다. `IsRunning`을 먼저 끈 뒤 `Completed`를 한 번 보낸다. 승리 시 Next Wave 버튼을 기다린 뒤 턴 번호를 증가시키고 다음 준비 단계로 진입하는 처리는 [턴 종료와 다음 준비 단계](TurnSpec.md#턴-종료와-다음-준비-단계)를 따른다. 다음 준비 단계에서 `WaveManager.PrepareWave → Wave.Prepare`로 이전 처치 수를 0으로 초기화하며, 이 호출만으로 몬스터를 소환하지 않는다.
 
 ## 적 오브젝트 풀 구조
 
@@ -176,7 +176,8 @@ pools
 ## 씬 구성과 구현 상태
 
 - [ThrowYut 씬](../Assets/Scenes/ThrowYut.unity)의 `TurnController` 아래에 `WaveManager`, `Wave`, `EnemyPool`을 배치하고 참조를 연결했다.
-- [Wave1](../Assets/Wave1.asset)를 첫 번째 웨이브로 등록했다. 현재 설정은 `EnemyId.Basic_Enemy_left` 총 100마리다.
+- [Wave1](../Assets/Wave1.asset)를 첫 번째 웨이브로 등록했다. 적 종류와 수량은 해당 데이터 에셋에서 설정한다.
+- [Wave2](../Assets/Wave2.asset)를 두 번째 웨이브인 `waves[1]`에 등록했다. 현재 구성은 등록된 두 적 종류가 각 3마리씩, 총 6마리다. Next Wave 버튼으로 다음 준비 단계에 진입한 뒤 Start Battle 버튼을 누르면 이 데이터를 실행한다.
 - [Basic_Enemy 프리팹](../Assets/Prefabs/Basic_Enemy.prefab)과 [Enemy2 프리팹](../Assets/Prefabs/Enemy2.prefab)을 `EnemyPool`에 종류별 ID로 등록했다.
 - 전투 시작 버튼을 누르면 첫 적이 즉시 등장하고, 이후에는 현재 테스트 설정인 0.1초 간격으로 구성 목록의 순서에 따라 소환한다.
 - `Wave`의 `Waypoints` 배열에 오른쪽 아래 → 오른쪽 위 → 왼쪽 위 → 왼쪽 아래 순서로 경유점을 지정한다. 네 경유점은 모두 `Wave`의 자식이다. 첫 경유점은 소환 위치인 `Path 00 Bottom Right` `(1.65, -3.9, 0)`이며, 나머지는 `Path 01 Top Right`, `Path 02 Top Left`, `Path 03 Bottom Left`다. 경유점 좌표는 씬에서 조정할 수 있다.

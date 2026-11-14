@@ -19,6 +19,14 @@ public class Wave : MonoBehaviour
     public event Action Completed;
     public event Action EnemyArrived;
 
+    public void Prepare()
+    {
+        if (!IsRunning)
+        {
+            DefeatedEnemyCount = 0;
+        }
+    }
+
     public void StartWave(WaveData data, EnemyPool enemyPool, float spawnInterval)
     {
         if (IsRunning || !isActiveAndEnabled || data == null || enemyPool == null)
