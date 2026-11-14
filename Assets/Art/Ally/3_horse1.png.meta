@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 555486a5aae588c488ad904479db822e
+guid: 7e87f53a2b89d7d4caaf6c642032a12c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8050263466658252962
-    second: "\uC2B9\uB9AC \uAE43\uBC1C_0"
+      213: 1173553440689194561
+    second: 3_horse1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\uC2B9\uB9AC \uAE43\uBC1C_0"
+      name: 3_horse1_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 5
         y: 0
-        width: 680
-        height: 989
+        width: 43
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a8487688f748bf60800000000000000
-      internalID: 8050263466658252962
+      spriteID: 1468735f2ac494010800000000000000
+      internalID: 1173553440689194561
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\uC2B9\uB9AC \uAE43\uBC1C_0": 8050263466658252962
+      3_horse1_0: 1173553440689194561
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
