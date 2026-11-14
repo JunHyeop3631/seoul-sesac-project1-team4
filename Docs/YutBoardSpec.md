@@ -25,9 +25,9 @@
 
 ## 현재 구현
 
-- [YutBoard](../Assets/Scripts/YutBoard.cs)는 29칸의 단방향 연결과 분기를 정의한다. `GetDestinationCells`는 도·개·걸·윷·모에 각각 1~5칸을 적용해 도착 후보를 계산한다. 5번, 10번, 22번 칸에서 이동을 시작하면 연결된 경로가 각각 후보가 된다. 이동 중 5번이나 10번 칸을 지나면 바깥길을 따르고, 22번 칸을 지나면 진입한 대각선을 따라 진행한다.
+- [YutBoard](../Assets/Scripts/Yut/YutBoard.cs)는 29칸의 단방향 연결과 분기를 정의한다. `GetDestinationCells`는 도·개·걸·윷·모에 각각 1~5칸을 적용해 도착 후보를 계산한다. 5번, 10번, 22번 칸에서 이동을 시작하면 연결된 경로가 각각 후보가 된다. 이동 중 5번이나 10번 칸을 지나면 바깥길을 따르고, 22번 칸을 지나면 진입한 대각선을 따라 진행한다.
 - [Ally](../Assets/Scripts/Ally/Ally.cs)는 아군 오브젝트에 붙이는 공통 Unity 컴포넌트다.
-- [YutBoardOccupancy](../Assets/Scripts/YutBoardOccupancy.cs)는 칸별 아군 목록을 관리한다. 소환한 아군을 등록하고, 아군이 있는 칸과 칸에 있는 아군을 조회하며, 이동이 확정되면 출발 칸에서 제거해 도착 칸에 등록한다. 등록 시점은 [아군 배치](YutActionSpec.md#아군-배치), 도착 칸 선택과 점유 갱신 순서는 [아군 이동](YutActionSpec.md#아군-이동)에서 다룬다.
+- [YutBoardOccupancy](../Assets/Scripts/Yut/YutBoardOccupancy.cs)는 칸별 아군 목록을 관리한다. 소환한 아군을 등록하고, 아군이 있는 칸과 칸에 있는 아군을 조회하며, 이동이 확정되면 출발 칸에서 제거해 도착 칸에 등록한다. 등록 시점은 [아군 배치](YutActionSpec.md#아군-배치), 도착 칸 선택과 점유 갱신 순서는 [아군 이동](YutActionSpec.md#아군-이동)에서 다룬다.
 
 ## 미정 규칙
 

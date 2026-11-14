@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -21,6 +22,9 @@ public sealed class TurnController : MonoBehaviour
     public int CurrentTurnNumber => currentTurnNumber;
     public int RemainingLives { get; private set; }
     public YutThrowResult? CurrentYutResult { get; private set; }
+    public event Action BattleStarted;
+    public event Action BattleWon;
+    public event Action BattleLost;
     private YutAction chosenAction;
 
     private void Awake()
@@ -30,7 +34,16 @@ public sealed class TurnController : MonoBehaviour
 
     private void LoseLife()
     {
+        if (RemainingLives == 0)
+        {
+            return;
+        }
+
         RemainingLives = Mathf.Max(0, RemainingLives - 1);
+        if (RemainingLives == 0)
+        {
+            BattleLost?.Invoke();
+        }
     }
 
     private void OnEnable()
@@ -131,8 +144,17 @@ public sealed class TurnController : MonoBehaviour
 
     public void StartBattle()
     {
+        if (RemainingLives == 0 || waveManager == null || waveManager.IsRunning)
+        {
+            return;
+        }
+
         // 전투 시작 조건과 단계 전환은 이후 구현한다.
-        waveManager?.StartWave(currentTurnNumber);
+        waveManager.StartWave(currentTurnNumber);
+        if (waveManager.IsRunning)
+        {
+            BattleStarted?.Invoke();
+        }
     }
 
     private void Start()
@@ -152,6 +174,17 @@ public sealed class TurnController : MonoBehaviour
 
     private void EndBattle()
     {
+        if (RemainingLives == 0)
+        {
+            return;
+        }
+
+        int totalEnemies = waveManager != null ? waveManager.GetTotalEnemyCount(currentTurnNumber) : 0;
+        if (totalEnemies > 0 && waveManager.DefeatedEnemyCount == totalEnemies)
+        {
+            BattleWon?.Invoke();
+        }
+
         EndTurn();
     }
 

@@ -38,11 +38,11 @@
 
 ### 버튼 입력부터 결과 전달까지
 
-1. [YutThrowController.Throw()](../Assets/Scripts/YutThrowController.cs)는 컴포넌트가 활성 상태인지 확인한다. `HasReadySticks()`에서 서로 다른 윷 네 개가 활성 상태이고 각 윷의 렌더러와 두 면의 스프라이트가 연결됐는지 검사한다. 설정이 올바르지 않으면 경고를 남기고 던지기를 시작하지 않는다.
-2. [YutStick.Throw()](../Assets/Scripts/YutStick.cs)는 각 윷에서 한 번씩 같은 프레임에 호출된다. `Random.Range(0, 2)`로 자기 면을 뽑아 해당 스프라이트를 즉시 표시하고, `YutFace.Belly` 또는 `YutFace.Back`을 반환한다.
+1. [YutThrowController.Throw()](../Assets/Scripts/Yut/YutThrowController.cs)는 컴포넌트가 활성 상태인지 확인한다. `HasReadySticks()`에서 서로 다른 윷 네 개가 활성 상태이고 각 윷의 렌더러와 두 면의 스프라이트가 연결됐는지 검사한다. 설정이 올바르지 않으면 경고를 남기고 던지기를 시작하지 않는다.
+2. [YutStick.Throw()](../Assets/Scripts/Yut/YutStick.cs)는 각 윷에서 한 번씩 같은 프레임에 호출된다. `Random.Range(0, 2)`로 자기 면을 뽑아 해당 스프라이트를 즉시 표시하고, `YutFace.Belly` 또는 `YutFace.Back`을 반환한다.
 3. `YutThrowController`는 반환값에서 배의 수를 세어 위 표에 따라 `YutThrowResult`를 정하고 `LastResult`에 저장한다.
 4. `YutThrowController.ShowResult()`는 판정에 해당하는 스프라이트를 `Yut Result`에 표시한다. 이어서 `ThrowCompleted` 이벤트로 판정 결과를 전달한다.
-5. [TurnController](../Assets/Scripts/TurnController.cs)가 이벤트를 받아 결과를 보관하고 소환·이동 버튼을 표시한다. 선택한 행동에 결과를 전달하는 흐름은 [턴 흐름 명세](TurnSpec.md)에서 다룬다.
+5. [TurnController](../Assets/Scripts/Turn/TurnController.cs)가 이벤트를 받아 결과를 보관하고 소환·이동 버튼을 표시한다. 선택한 행동에 결과를 전달하는 흐름은 [턴 흐름 명세](TurnSpec.md)에서 다룬다.
 
 ## 남은 구현
 

@@ -59,17 +59,19 @@
 
 처치된 몬스터와 기지에 도달해 사라진 몬스터 모두 필드에서 제거된 것으로 처리한다. 예정된 몬스터가 아직 남았다면, 다음 등장 대기 중 필드가 잠시 비어도 웨이브는 완료되지 않는다.
 
+승리 깃발은 웨이브 완료만으로 표시하지 않는다. 예정된 적을 모두 처치하고 잔여 하트가 남아 있어야 한다. 하트 0에 따른 패배 깃발과 결과 표시 이벤트는 [턴 명세의 전투 결과 깃발](TurnSpec.md#전투-결과-깃발)을 따른다.
+
 웨이브 완료를 턴 관리에 알리면, 이후 전투 종료·턴 종료·다음 턴 시작 및 준비 단계 진입은 [턴 종료와 다음 준비 단계](TurnSpec.md#턴-종료와-다음-준비-단계)를 따른다.
 
 ## 클래스별 책임과 현재 연결
 
 | 클래스 | 책임 및 연결 |
 | --- | --- |
-| [TurnController](../Assets/Scripts/TurnController.cs) | 현재 턴 번호를 보관하고 `WaveManager.StartWave`에 전달한다. 웨이브 완료 알림을 받아 전투·턴 종료 흐름으로 연결한다. |
-| [WaveManager](../Assets/Scripts/WaveManager.cs) | 웨이브 데이터 목록, 실행할 `Wave`, `EnemyPool`, 공통 등장 간격을 참조한다. 전달받은 번호의 데이터를 골라 실행 요청하고 완료 알림을 전달한다. |
-| [Wave](../Assets/Scripts/Wave.cs) | 몬스터를 순차 소환하고, 공격 대상 탐색과 적 이탈 처리, 웨이브 완료 판정을 담당한다. |
-| [WaveData](../Assets/Scripts/WaveData.cs) | 적 ID와 등장 수량 목록을 보관하는 `ScriptableObject`다. |
-| [EnemyPool](../Assets/Scripts/EnemyPool.cs) | 적 ID와 프리팹 목록을 보관하며, 종류별 풀에서 적을 요청하고 반환한다. |
+| [TurnController](../Assets/Scripts/Turn/TurnController.cs) | 현재 턴 번호를 보관하고 `WaveManager.StartWave`에 전달한다. 웨이브 완료 알림을 받아 전투·턴 종료 흐름으로 연결한다. |
+| [WaveManager](../Assets/Scripts/Wave/WaveManager.cs) | 웨이브 데이터 목록, 실행할 `Wave`, `EnemyPool`, 공통 등장 간격을 참조한다. 전달받은 번호의 데이터를 골라 실행 요청하고 완료 알림을 전달한다. |
+| [Wave](../Assets/Scripts/Wave/Wave.cs) | 몬스터를 순차 소환하고, 공격 대상 탐색과 적 이탈 처리, 웨이브 완료 판정을 담당한다. |
+| [WaveData](../Assets/Scripts/Wave/WaveData.cs) | 적 ID와 등장 수량 목록을 보관하는 `ScriptableObject`다. |
+| [EnemyPool](../Assets/Scripts/Enemy/EnemyPool.cs) | 적 ID와 프리팹 목록을 보관하며, 종류별 풀에서 적을 요청하고 반환한다. |
 | [Ally](../Assets/Scripts/Ally/Ally.cs) | 현재 대상을 유지하고 공격 간격에 맞춰 피해를 준다. |
 | [Enemy](../Assets/Scripts/Enemy/Enemy.cs) | 경로 이동과 체력을 관리하고, 처치와 경로 도착을 각각 알린다. |
 
@@ -97,7 +99,7 @@
 
 `EnemyPool`은 적 ID로 종류별 풀을 찾는 딕셔너리와, 재사용할 객체를 보관하는 `ObjectPool<Enemy>`를 구분한다.
 
-적 ID는 문자열 대신 공통 [EnemyId enum](../Assets/Scripts/EnemyId.cs)을 사용한다. `Basic_Enemy_left = 0`, `Enemy2 = 1`로 명시하며 웨이브 구성, 프리팹 등록, 풀 딕셔너리의 키와 요청 함수 인자에 같은 타입을 사용한다. Inspector에서는 enum 항목을 선택한다. 씬과 에셋에는 숫자로 저장하므로 적 종류를 추가할 때 기존 숫자를 변경하거나 다른 종류에 재사용하지 않는다. enum에 정의되어 있어도 프리팹 등록이 없으면 소환할 수 없다.
+적 ID는 문자열 대신 공통 [EnemyId enum](../Assets/Scripts/Enemy/EnemyId.cs)을 사용한다. `Basic_Enemy_left = 0`, `Enemy2 = 1`로 명시하며 웨이브 구성, 프리팹 등록, 풀 딕셔너리의 키와 요청 함수 인자에 같은 타입을 사용한다. Inspector에서는 enum 항목을 선택한다. 씬과 에셋에는 숫자로 저장하므로 적 종류를 추가할 때 기존 숫자를 변경하거나 다른 종류에 재사용하지 않는다. enum에 정의되어 있어도 프리팹 등록이 없으면 소환할 수 없다.
 
 | 저장 위치 | 보관하는 정보 | 접근 목적 |
 | --- | --- | --- |
@@ -195,4 +197,4 @@ pools
 - 기지 도달 피해와 처치 재화 지급 연결.
 - 웨이브 데이터가 없는 경우 및 마지막 웨이브 이후 처리.
 
-게임 패배 조건, 일반 진화, 특별진화 및 목표지점 도착 구상은 이번 명세에서 확정하지 않는다.
+하트 0에 따른 패배 깃발 표시는 [턴 명세](TurnSpec.md#전투-결과-깃발)에 기록한다. 일반 진화, 특별진화 및 목표지점 도착 구상은 이번 명세에서 확정하지 않는다.
