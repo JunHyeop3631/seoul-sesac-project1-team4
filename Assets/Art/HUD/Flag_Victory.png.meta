@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 292ee2cc8a3fafd4a822d3e4996fe754
+guid: f9cf1a317385d2b43a5142b1eed8de4f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5000927251509650613
-    second: Back_0
+      213: -6826807251025518732
+    second: Flag_Victory_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Back_0
+      name: Flag_Victory_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 137
-        height: 365
+        width: 680
+        height: 989
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b4adc5d6dcd66540800000000000000
-      internalID: 5000927251509650613
+      spriteID: 47f1094a9fe4241a0800000000000000
+      internalID: -6826807251025518732
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Back_0: 5000927251509650613
+      Flag_Victory_0: -6826807251025518732
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -73,7 +73,7 @@
 - 패배를 승리보다 우선한다. 하트가 0인 상태에서 웨이브가 완료되어도 승리를 알리거나 다음 턴 시작 흐름을 실행하지 않는다.
 - 게임 시작 시 두 깃발은 숨겨진다. 결과 깃발은 표시 후 유지하며 다음 전투가 실제로 시작되면 숨긴다. 하트가 0이면 새 전투를 시작할 수 없다.
 - `TurnController`가 `BattleStarted`, `BattleWon`, `BattleLost` 이벤트를 보내고, [BattleResultHUD](../Assets/Scripts/UI/BattleResultHUD.cs)가 이를 받아 깃발 표시를 전환한다.
-- [ThrowYut 씬](../Assets/Scenes/ThrowYut.unity)의 `Canvas`에 `BattleResultHUD`를 연결하고 자식인 `승리 깃발`, `패배 깃발` Image를 참조한다. 이미지는 원본 비율을 유지해 화면 중앙에 표시하며 클릭 입력을 가로채지 않는다.
+- [ThrowYut 씬](../Assets/Scenes/ThrowYut.unity)의 `Canvas`에 `BattleResultHUD`를 연결하고 자식인 `Victory Flag`, `Defeat Flag` Image를 참조한다. 두 이미지는 원본 비율을 유지해 오른쪽 조작 패널을 제외한 왼쪽 전장의 윷판 중앙에 표시하며 클릭 입력을 가로채지 않는다. 현재 배경 배치에 맞춘 앵커는 `(0.335, 0.445)`, 기준 위치 오프셋은 `(0, 0)`이다. Unity Game 뷰에서 두 이미지를 각각 활성화해 위치를 확인했으며, 확인 후 초기 숨김 상태로 복원했다.
 
 ### 행동 선택과 준비 중 상점 이용
 
