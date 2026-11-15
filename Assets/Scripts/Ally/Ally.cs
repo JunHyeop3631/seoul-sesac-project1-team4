@@ -15,6 +15,7 @@ public class Ally : MonoBehaviour
     private Animator animator;
 
     public Enemy CurrentTarget { get; private set; }
+    public float AttackRange => attackRange;
 
     private void Awake()
     {
@@ -70,6 +71,7 @@ public class Ally : MonoBehaviour
     private bool HasTargetInRange(Vector2 origin)
     {
         return CurrentTarget != null && CurrentTarget.isActiveAndEnabled &&
+               CurrentTarget.CurrentHealth > 0 &&
                CurrentTarget.ActivationVersion == targetActivationVersion &&
                ((Vector2)CurrentTarget.transform.position - origin).sqrMagnitude <= attackRange * attackRange;
     }

@@ -15,5 +15,3 @@ MonoBehaviour:
   enemies:
   - enemyId: 0
     count: 3
-  - enemyId: 1
-    count: 3

@@ -114,7 +114,7 @@ TextureImporter:
         width: 1236
         height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -127,55 +127,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: "\uC544\uC774\uD15C_\uB3C4\uAE68\uBE44 \uBCF5\uC8FC\uBA38\uB2C8_1"
-      rect:
-        serializedVersion: 2
-        x: 981
-        y: 1031
-        width: 11
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aa8851e04f779fdb0800000000000000
-      internalID: -4757639641248200534
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\uC544\uC774\uD15C_\uB3C4\uAE68\uBE44 \uBCF5\uC8FC\uBA38\uB2C8_2"
-      rect:
-        serializedVersion: 2
-        x: 1152
-        y: 853
-        width: 11
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 35db99fdf0a627be0800000000000000
-      internalID: -1481004711043023533
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b1c61818b4f69a04b90abd0452080ec6
     internalID: 0
     vertices: []
     indices: 
@@ -183,11 +139,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1236.0,"y":1080.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       "\uC544\uC774\uD15C_\uB3C4\uAE68\uBE44 \uBCF5\uC8FC\uBA38\uB2C8_0": 1950481371178066771
-      "\uC544\uC774\uD15C_\uB3C4\uAE68\uBE44 \uBCF5\uC8FC\uBA38\uB2C8_1": -4757639641248200534
-      "\uC544\uC774\uD15C_\uB3C4\uAE68\uBE44 \uBCF5\uC8FC\uBA38\uB2C8_2": -1481004711043023533
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

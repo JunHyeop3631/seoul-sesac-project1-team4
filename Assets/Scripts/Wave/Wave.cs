@@ -9,6 +9,7 @@ public class Wave : MonoBehaviour
     [SerializeField] private LayerMask enemyTargetLayers;
 
     private readonly HashSet<Enemy> spawnedEnemies = new();
+    private readonly HashSet<Enemy> dyingEnemies = new();
     private readonly List<Collider2D> overlapResults = new();
     private int lastPhysicsSyncFrame = -1;
     private bool spawningComplete;
@@ -50,6 +51,7 @@ public class Wave : MonoBehaviour
         }
 
         spawnedEnemies.Clear();
+        dyingEnemies.Clear();
         DefeatedEnemyCount = 0;
         spawningComplete = false;
         IsRunning = true;
@@ -59,6 +61,7 @@ public class Wave : MonoBehaviour
     private IEnumerator SpawnEnemies(WaveData data, EnemyPool enemyPool, float spawnInterval)
     {
         Action<Enemy> releaseEnemy = ReleaseEnemy;
+        Action<Enemy> defeatEnemy = DefeatEnemy;
         bool firstEnemy = true;
         foreach (WaveData.EnemyGroup group in data.Enemies)
         {
@@ -74,7 +77,8 @@ public class Wave : MonoBehaviour
                 if (enemy != null)
                 {
                     spawnedEnemies.Add(enemy);
-                    enemy.Defeated += releaseEnemy;
+                    enemy.Defeated += defeatEnemy;
+                    enemy.DeathCompleted += releaseEnemy;
                     enemy.StartMoving(waypoints, releaseEnemy);
                 }
             }
@@ -83,20 +87,27 @@ public class Wave : MonoBehaviour
         spawningComplete = true;
         TryCompleteWave();
 
-        void ReleaseEnemy(Enemy enemy)
+        void DefeatEnemy(Enemy enemy)
         {
             if (spawnedEnemies.Remove(enemy))
             {
-                if (enemy.CurrentHealth == 0)
-                {
-                    DefeatedEnemyCount++;
-                }
-                else
+                DefeatedEnemyCount++;
+                dyingEnemies.Add(enemy);
+            }
+        }
+
+        void ReleaseEnemy(Enemy enemy)
+        {
+            bool arrived = spawnedEnemies.Remove(enemy);
+            if (arrived || dyingEnemies.Remove(enemy))
+            {
+                if (arrived)
                 {
                     EnemyArrived?.Invoke();
                 }
 
-                enemy.Defeated -= ReleaseEnemy;
+                enemy.Defeated -= DefeatEnemy;
+                enemy.DeathCompleted -= ReleaseEnemy;
                 enemyPool.ReturnEnemy(enemy);
                 TryCompleteWave();
             }
@@ -138,7 +149,7 @@ public class Wave : MonoBehaviour
     private static void ConsiderTarget(
         Enemy enemy, Vector2 origin, ref Enemy closest, ref float closestDistanceSquared)
     {
-        if (enemy == null || !enemy.isActiveAndEnabled)
+        if (enemy == null || !enemy.isActiveAndEnabled || enemy.CurrentHealth <= 0)
         {
             return;
         }
@@ -155,7 +166,7 @@ public class Wave : MonoBehaviour
 
     private void TryCompleteWave()
     {
-        if (!IsRunning || !spawningComplete || spawnedEnemies.Count != 0)
+        if (!IsRunning || !spawningComplete || spawnedEnemies.Count != 0 || dyingEnemies.Count != 0)
         {
             return;
         }

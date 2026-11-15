@@ -14,6 +14,7 @@ public sealed class TurnController : MonoBehaviour
 
     [SerializeField] private YutThrowController throwController;
     [SerializeField] private YutActionController actionController;
+    [SerializeField] private AllyRangeDisplay allyRangeDisplay;
     [SerializeField] private GameObject actionButtons;
     [SerializeField] private WaveManager waveManager;
     [SerializeField, Min(0)] private int currentTurnNumber = 0;
@@ -79,12 +80,14 @@ public sealed class TurnController : MonoBehaviour
         {
             actionController.ClearSelection();
         }
+
+        allyRangeDisplay?.Hide();
     }
 
     private void LateUpdate()
     {
         Mouse mouse = Mouse.current;
-        if (chosenAction != YutAction.Move || actionController == null ||
+        if (actionController == null ||
             mouse == null || !mouse.leftButton.wasPressedThisFrame ||
             (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()))
         {
@@ -98,13 +101,23 @@ public sealed class TurnController : MonoBehaviour
         }
 
         Vector2 worldPoint = boardCamera.ScreenToWorldPoint(mouse.position.ReadValue());
-        if (actionController.TryGetDestinationAt(worldPoint, out int cellId))
+        if (chosenAction == YutAction.Move)
         {
-            SelectDestination(cellId);
+            if (actionController.TryGetDestinationAt(worldPoint, out int cellId))
+            {
+                SelectDestination(cellId);
+                return;
+            }
+
+            SelectAlly(actionController.GetAllyAt(worldPoint));
             return;
         }
 
-        SelectAlly(actionController.GetAllyAt(worldPoint));
+        Ally clickedAlly = actionController.GetAllyAt(worldPoint);
+        if (clickedAlly != null)
+        {
+            allyRangeDisplay?.Show(clickedAlly);
+        }
     }
 
     private void ReceiveYutResult(YutThrowResult result)
@@ -235,6 +248,10 @@ public sealed class TurnController : MonoBehaviour
         }
 
         chosenAction = action;
+        if (action == YutAction.Move)
+        {
+            allyRangeDisplay?.Hide();
+        }
 
         if (actionButtons != null)
         {
