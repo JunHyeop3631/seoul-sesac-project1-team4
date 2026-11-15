@@ -1,0 +1,2613 @@
+fileFormatVersion: 2
+guid: 0ea56dec378840799f10357e2f38ff24
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Yut_BellyToBack_X_0
+  - first:
+      213: 21300001
+    second: Yut_BellyToBack_X_1
+  - first:
+      213: 21300002
+    second: Yut_BellyToBack_X_2
+  - first:
+      213: 21300003
+    second: Yut_BellyToBack_X_3
+  - first:
+      213: 21300004
+    second: Yut_BellyToBack_X_4
+  - first:
+      213: 21300005
+    second: Yut_BellyToBack_X_5
+  - first:
+      213: 21300006
+    second: Yut_BellyToBack_X_6
+  - first:
+      213: 21300007
+    second: Yut_BellyToBack_X_7
+  - first:
+      213: 21300008
+    second: Yut_BellyToBack_X_8
+  - first:
+      213: 21300009
+    second: Yut_BellyToBack_X_9
+  - first:
+      213: 21300010
+    second: Yut_BellyToBack_X_10
+  - first:
+      213: 21300011
+    second: Yut_BellyToBack_X_11
+  - first:
+      213: 21300012
+    second: Yut_BellyToBack_X_12
+  - first:
+      213: 21300013
+    second: Yut_BellyToBack_X_13
+  - first:
+      213: 21300014
+    second: Yut_BellyToBack_X_14
+  - first:
+      213: 21300015
+    second: Yut_BellyToBack_X_15
+  - first:
+      213: 21300016
+    second: Yut_BellyToBack_X_16
+  - first:
+      213: 21300017
+    second: Yut_BellyToBack_X_17
+  - first:
+      213: 21300018
+    second: Yut_BellyToBack_X_18
+  - first:
+      213: 21300019
+    second: Yut_BellyToBack_X_19
+  - first:
+      213: 21300020
+    second: Yut_BellyToBack_X_20
+  - first:
+      213: 21300021
+    second: Yut_BellyToBack_X_21
+  - first:
+      213: 21300022
+    second: Yut_BellyToBack_X_22
+  - first:
+      213: 21300023
+    second: Yut_BellyToBack_X_23
+  - first:
+      213: 21300024
+    second: Yut_BellyToBack_X_24
+  - first:
+      213: 21300025
+    second: Yut_BellyToBack_X_25
+  - first:
+      213: 21300026
+    second: Yut_BellyToBack_X_26
+  - first:
+      213: 21300027
+    second: Yut_BellyToBack_X_27
+  - first:
+      213: 21300028
+    second: Yut_BellyToBack_X_28
+  - first:
+      213: 21300029
+    second: Yut_BellyToBack_X_29
+  - first:
+      213: 21300030
+    second: Yut_BellyToBack_X_30
+  - first:
+      213: 21300031
+    second: Yut_BellyToBack_X_31
+  - first:
+      213: 21300032
+    second: Yut_BellyToBack_X_32
+  - first:
+      213: 21300033
+    second: Yut_BellyToBack_X_33
+  - first:
+      213: 21300034
+    second: Yut_BellyToBack_X_34
+  - first:
+      213: 21300035
+    second: Yut_BellyToBack_X_35
+  - first:
+      213: 21300036
+    second: Yut_BellyToBack_X_36
+  - first:
+      213: 21300037
+    second: Yut_BellyToBack_X_37
+  - first:
+      213: 21300038
+    second: Yut_BellyToBack_X_38
+  - first:
+      213: 21300039
+    second: Yut_BellyToBack_X_39
+  - first:
+      213: 21300040
+    second: Yut_BellyToBack_X_40
+  - first:
+      213: 21300041
+    second: Yut_BellyToBack_X_41
+  - first:
+      213: 21300042
+    second: Yut_BellyToBack_X_42
+  - first:
+      213: 21300043
+    second: Yut_BellyToBack_X_43
+  - first:
+      213: 21300044
+    second: Yut_BellyToBack_X_44
+  - first:
+      213: 21300045
+    second: Yut_BellyToBack_X_45
+  - first:
+      213: 21300046
+    second: Yut_BellyToBack_X_46
+  - first:
+      213: 21300047
+    second: Yut_BellyToBack_X_47
+  - first:
+      213: 21300048
+    second: Yut_BellyToBack_X_48
+  - first:
+      213: 21300049
+    second: Yut_BellyToBack_X_49
+  - first:
+      213: 21300050
+    second: Yut_BellyToBack_X_50
+  - first:
+      213: 21300051
+    second: Yut_BellyToBack_X_51
+  - first:
+      213: 21300052
+    second: Yut_BellyToBack_X_52
+  - first:
+      213: 21300053
+    second: Yut_BellyToBack_X_53
+  - first:
+      213: 21300054
+    second: Yut_BellyToBack_X_54
+  - first:
+      213: 21300055
+    second: Yut_BellyToBack_X_55
+  - first:
+      213: 21300056
+    second: Yut_BellyToBack_X_56
+  - first:
+      213: 21300057
+    second: Yut_BellyToBack_X_57
+  - first:
+      213: 21300058
+    second: Yut_BellyToBack_X_58
+  - first:
+      213: 21300059
+    second: Yut_BellyToBack_X_59
+  - first:
+      213: 21300060
+    second: Yut_BellyToBack_X_60
+  - first:
+      213: 21300061
+    second: Yut_BellyToBack_X_61
+  - first:
+      213: 21300062
+    second: Yut_BellyToBack_X_62
+  - first:
+      213: 21300063
+    second: Yut_BellyToBack_X_63
+  - first:
+      213: 21300064
+    second: Yut_BellyToBack_X_64
+  - first:
+      213: 21300065
+    second: Yut_BellyToBack_X_65
+  - first:
+      213: 21300066
+    second: Yut_BellyToBack_X_66
+  - first:
+      213: 21300067
+    second: Yut_BellyToBack_X_67
+  - first:
+      213: 21300068
+    second: Yut_BellyToBack_X_68
+  - first:
+      213: 21300069
+    second: Yut_BellyToBack_X_69
+  - first:
+      213: 21300070
+    second: Yut_BellyToBack_X_70
+  - first:
+      213: 21300071
+    second: Yut_BellyToBack_X_71
+  - first:
+      213: 21300072
+    second: Yut_BellyToBack_X_72
+  - first:
+      213: 21300073
+    second: Yut_BellyToBack_X_73
+  - first:
+      213: 21300074
+    second: Yut_BellyToBack_X_74
+  - first:
+      213: 21300075
+    second: Yut_BellyToBack_X_75
+  - first:
+      213: 21300076
+    second: Yut_BellyToBack_X_76
+  - first:
+      213: 21300077
+    second: Yut_BellyToBack_X_77
+  - first:
+      213: 21300078
+    second: Yut_BellyToBack_X_78
+  - first:
+      213: 21300079
+    second: Yut_BellyToBack_X_79
+  - first:
+      213: 21300080
+    second: Yut_BellyToBack_X_80
+  - first:
+      213: 21300081
+    second: Yut_BellyToBack_X_81
+  - first:
+      213: 21300082
+    second: Yut_BellyToBack_X_82
+  - first:
+      213: 21300083
+    second: Yut_BellyToBack_X_83
+  - first:
+      213: 21300084
+    second: Yut_BellyToBack_X_84
+  - first:
+      213: 21300085
+    second: Yut_BellyToBack_X_85
+  - first:
+      213: 21300086
+    second: Yut_BellyToBack_X_86
+  - first:
+      213: 21300087
+    second: Yut_BellyToBack_X_87
+  - first:
+      213: 21300088
+    second: Yut_BellyToBack_X_88
+  - first:
+      213: 21300089
+    second: Yut_BellyToBack_X_89
+  - first:
+      213: 21300090
+    second: Yut_BellyToBack_X_90
+  - first:
+      213: 21300091
+    second: Yut_BellyToBack_X_91
+  - first:
+      213: 21300092
+    second: Yut_BellyToBack_X_92
+  - first:
+      213: 21300093
+    second: Yut_BellyToBack_X_93
+  - first:
+      213: 21300094
+    second: Yut_BellyToBack_X_94
+  - first:
+      213: 21300095
+    second: Yut_BellyToBack_X_95
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 16384
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9408
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a48163f46564cc2b60ac5dd2dd8283b
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_1
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 9408
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26df3e295ac64afb957a1a922a25de44
+      internalID: 21300001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_2
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 9408
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b20d6bf4b9c47ffaf1b76c27879a34e
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_3
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 9408
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c7e096f0b26430dab16f0aaadd69d4c
+      internalID: 21300003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_4
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 9408
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91893d2989494f349d08edfef117aad3
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_5
+      rect:
+        serializedVersion: 2
+        x: 3440
+        y: 9408
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccaffb0929b0455292d1c7367d94cc9e
+      internalID: 21300005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_6
+      rect:
+        serializedVersion: 2
+        x: 4128
+        y: 9408
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81a80f0b00804fe4b298a8055f2cb31f
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_7
+      rect:
+        serializedVersion: 2
+        x: 4816
+        y: 9408
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab7bffea1064d27930832722c41394b
+      internalID: 21300007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_8
+      rect:
+        serializedVersion: 2
+        x: 5504
+        y: 9408
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498963a721bc461888f96acabefb22b6
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_9
+      rect:
+        serializedVersion: 2
+        x: 6192
+        y: 9408
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3170ac31b12c45abbbb7ffc077f5b013
+      internalID: 21300009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_10
+      rect:
+        serializedVersion: 2
+        x: 6880
+        y: 9408
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd82199ba4a4a92b824dc0b40fb453b
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_11
+      rect:
+        serializedVersion: 2
+        x: 7568
+        y: 9408
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1e4119dceec4677bb24aa004fbce712
+      internalID: 21300011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8064
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fea823dda9e4e4c9bfb6824c92108d6
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_13
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 8064
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d5946491c9645cb96cc5ea8ee828f6c
+      internalID: 21300013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_14
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 8064
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a99abb8e5cd411aad3eec77a16aff12
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_15
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 8064
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3207998ee3f4c52986713d5ef45343d
+      internalID: 21300015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_16
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 8064
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a1478bbe90d406699f39ec298293902
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_17
+      rect:
+        serializedVersion: 2
+        x: 3440
+        y: 8064
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 489fb395dd4948f58ad76f0f108b8c5b
+      internalID: 21300017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_18
+      rect:
+        serializedVersion: 2
+        x: 4128
+        y: 8064
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e9b5f3bc3814ad1b1186f090c25d4bd
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_19
+      rect:
+        serializedVersion: 2
+        x: 4816
+        y: 8064
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8340426881394220a06e454cb8f7d44c
+      internalID: 21300019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_20
+      rect:
+        serializedVersion: 2
+        x: 5504
+        y: 8064
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e4e7c75a9f4ae1a2f38f73466bbcda
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_21
+      rect:
+        serializedVersion: 2
+        x: 6192
+        y: 8064
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02463d5e74c641869982ee69920d448a
+      internalID: 21300021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_22
+      rect:
+        serializedVersion: 2
+        x: 6880
+        y: 8064
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7260a0e86d249d4bef27d83d3b458a2
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_23
+      rect:
+        serializedVersion: 2
+        x: 7568
+        y: 8064
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 300d18afa0444c1cb4f2f8a574805915
+      internalID: 21300023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6720
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f762472f066a4566b35b40872ddb154e
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_25
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 6720
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e45830631e454990359cd9c08e8502
+      internalID: 21300025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_26
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 6720
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 460e3a5131004b0882ab8dda86da0c35
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_27
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 6720
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 057a9b4a877e49e5a7cbb6a6dce2d153
+      internalID: 21300027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_28
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 6720
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a89df1503424eedba7639bfb20ad86a
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_29
+      rect:
+        serializedVersion: 2
+        x: 3440
+        y: 6720
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4018eeffd00c49b0b12d76057483eb47
+      internalID: 21300029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_30
+      rect:
+        serializedVersion: 2
+        x: 4128
+        y: 6720
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc35b404815a4fd39d9d066a9ef51d10
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_31
+      rect:
+        serializedVersion: 2
+        x: 4816
+        y: 6720
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc2d0060a7ee439f8dccdce8f683c886
+      internalID: 21300031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_32
+      rect:
+        serializedVersion: 2
+        x: 5504
+        y: 6720
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1e8206e07343ae87c6e05b48e722a7
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_33
+      rect:
+        serializedVersion: 2
+        x: 6192
+        y: 6720
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18593cc18f6c4d5f842aa6b1f7f2d11d
+      internalID: 21300033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_34
+      rect:
+        serializedVersion: 2
+        x: 6880
+        y: 6720
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e51f4955254d3bb61ec489d379bb3d
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_35
+      rect:
+        serializedVersion: 2
+        x: 7568
+        y: 6720
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 722d9a63b3b443989ce7bfa8ed8a0246
+      internalID: 21300035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5376
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c4da74ed1794d32ae1a11051702f4e9
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_37
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 5376
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976af1a868ac4f2cb1c9cf6f0ff6de77
+      internalID: 21300037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_38
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 5376
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 321c5497904b424f9f0af139fa1a3e1f
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_39
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 5376
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de12da4d22e646a2b0c1ce65f403e05c
+      internalID: 21300039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_40
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 5376
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e879ab2bb04c43b711ecb6a784bf19
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_41
+      rect:
+        serializedVersion: 2
+        x: 3440
+        y: 5376
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 903eeb09d828448187a691ec6d8a1c62
+      internalID: 21300041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_42
+      rect:
+        serializedVersion: 2
+        x: 4128
+        y: 5376
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feff6362cb634939968b406e4b5e69f2
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_43
+      rect:
+        serializedVersion: 2
+        x: 4816
+        y: 5376
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 399ecf6768244ec39ce7bf528f7091d4
+      internalID: 21300043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_44
+      rect:
+        serializedVersion: 2
+        x: 5504
+        y: 5376
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050885b8d29c4885ae0df30d2fa3d3ff
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_45
+      rect:
+        serializedVersion: 2
+        x: 6192
+        y: 5376
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a2f9efa8ab410c9f60962736b10f06
+      internalID: 21300045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_46
+      rect:
+        serializedVersion: 2
+        x: 6880
+        y: 5376
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 875d7a0541144e69a88938825c2543c7
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_47
+      rect:
+        serializedVersion: 2
+        x: 7568
+        y: 5376
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3debd68c721542e28d4b2eb1e4357fc7
+      internalID: 21300047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4032
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc5404caee34610b1f677f19eee4a28
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_49
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 4032
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5358a0f5d61416cb3f16974c6328b8f
+      internalID: 21300049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_50
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 4032
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91e7fd5004d44e5a7d53ff1c21ece34
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_51
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 4032
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767f099aebba4001a4fca4d3626d34c0
+      internalID: 21300051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_52
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 4032
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70ae487e8e7449cb56adddfdfdf4bc6
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_53
+      rect:
+        serializedVersion: 2
+        x: 3440
+        y: 4032
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5e1a2f4e8854fb7a14df00af1b61448
+      internalID: 21300053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_54
+      rect:
+        serializedVersion: 2
+        x: 4128
+        y: 4032
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b89c5f208b544c8a05a65cc5356d93b
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_55
+      rect:
+        serializedVersion: 2
+        x: 4816
+        y: 4032
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3640799027094fad88c363ee807f4789
+      internalID: 21300055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_56
+      rect:
+        serializedVersion: 2
+        x: 5504
+        y: 4032
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c01af9ae7e842aabece5e57fee03c5b
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_57
+      rect:
+        serializedVersion: 2
+        x: 6192
+        y: 4032
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef06ed916a40481680894c6a2426ebf3
+      internalID: 21300057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_58
+      rect:
+        serializedVersion: 2
+        x: 6880
+        y: 4032
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2be761965f2844eca63c7acb10ac731b
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_59
+      rect:
+        serializedVersion: 2
+        x: 7568
+        y: 4032
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29876cdb528641acac36fce9e9228834
+      internalID: 21300059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2688
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f05cd70ec5c4711b57e61434d5ae637
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_61
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 2688
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2862580257c14b88aea9f2f9624ac71a
+      internalID: 21300061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_62
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 2688
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0303ccc13384401c80855bd0bed8949b
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_63
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 2688
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2649ba20ee1b41729083acbd3389e6b1
+      internalID: 21300063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_64
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 2688
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c05973fbb7546649f06a4979f6eab67
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_65
+      rect:
+        serializedVersion: 2
+        x: 3440
+        y: 2688
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05aa572a9234863ab238a58cf7c3cf4
+      internalID: 21300065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_66
+      rect:
+        serializedVersion: 2
+        x: 4128
+        y: 2688
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c9dcc4bead04a46a39ac0ed09772a5a
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_67
+      rect:
+        serializedVersion: 2
+        x: 4816
+        y: 2688
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e670aafa1df46b6ae79bb86dbb5a5e9
+      internalID: 21300067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_68
+      rect:
+        serializedVersion: 2
+        x: 5504
+        y: 2688
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f2d1766f97749aeb6f4e4f124367a3f
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_69
+      rect:
+        serializedVersion: 2
+        x: 6192
+        y: 2688
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f77170e63a14496981de8db42452eeb
+      internalID: 21300069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_70
+      rect:
+        serializedVersion: 2
+        x: 6880
+        y: 2688
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69eec3b5bedb429abe75c07a64afe980
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_71
+      rect:
+        serializedVersion: 2
+        x: 7568
+        y: 2688
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c1626520c174e5d96285e18e3367e5b
+      internalID: 21300071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1344
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cdeaaa8d2044dce89fe964bb50cee57
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_73
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 1344
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9bdd53799d46deb7d58171cfefb7f8
+      internalID: 21300073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_74
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 1344
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc31f02da4e44e62bacef4f8e461ed02
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_75
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 1344
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fca50c70fe8406681200f5d453f3ab4
+      internalID: 21300075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_76
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 1344
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 901022ab543a4b768c19ca33d30835a9
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_77
+      rect:
+        serializedVersion: 2
+        x: 3440
+        y: 1344
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85687094ad344a88a556888da89d333c
+      internalID: 21300077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_78
+      rect:
+        serializedVersion: 2
+        x: 4128
+        y: 1344
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429c67998da84e6bb2d236cca8eba7a1
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_79
+      rect:
+        serializedVersion: 2
+        x: 4816
+        y: 1344
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ab0964385b47ee88163367be134c30
+      internalID: 21300079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_80
+      rect:
+        serializedVersion: 2
+        x: 5504
+        y: 1344
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 878f1236e02547f883086b96a4259544
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_81
+      rect:
+        serializedVersion: 2
+        x: 6192
+        y: 1344
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a95f0dd7b74f928c28d2115d394a0a
+      internalID: 21300081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_82
+      rect:
+        serializedVersion: 2
+        x: 6880
+        y: 1344
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ecf0ad2999c42639cb8d62450da302c
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_83
+      rect:
+        serializedVersion: 2
+        x: 7568
+        y: 1344
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc44708e45cd4ee5b0a43671eef2d6fc
+      internalID: 21300083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f4534cc97c44e397553f226f28b659
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_85
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 0
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2cdf3f8cbc442f6b1f7dfb55c939e1f
+      internalID: 21300085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_86
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 0
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef8e71071fef4aefa7280470d22d586a
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_87
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 0
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c864987a3a4c51a1fcd0ffee4acb2d
+      internalID: 21300087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_88
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 0
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d07f46b16e7c469ba6be970b54c4fe22
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_89
+      rect:
+        serializedVersion: 2
+        x: 3440
+        y: 0
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f64d9bcd1c7448e0beccd714ae1ea361
+      internalID: 21300089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_90
+      rect:
+        serializedVersion: 2
+        x: 4128
+        y: 0
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 727b68892834453b9d5f8edf9c06b112
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_91
+      rect:
+        serializedVersion: 2
+        x: 4816
+        y: 0
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21bac0cc65064b3fa3b002a41e4cd2eb
+      internalID: 21300091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_92
+      rect:
+        serializedVersion: 2
+        x: 5504
+        y: 0
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62206ec3c67743da88bf7b5b4871b053
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_93
+      rect:
+        serializedVersion: 2
+        x: 6192
+        y: 0
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5835105a400f4d589ee794d0ef5e7eb0
+      internalID: 21300093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_94
+      rect:
+        serializedVersion: 2
+        x: 6880
+        y: 0
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3786e3515850463baea1a2be16639500
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_BellyToBack_X_95
+      rect:
+        serializedVersion: 2
+        x: 7568
+        y: 0
+        width: 688
+        height: 1344
+      alignment: 9
+      pivot: {x: 0.4992732558139535, y: 0.24367559523809523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fba6484068e426ea275bbbc89e3e4a6
+      internalID: 21300095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Yut_BellyToBack_X_0: 21300000
+      Yut_BellyToBack_X_1: 21300001
+      Yut_BellyToBack_X_10: 21300010
+      Yut_BellyToBack_X_11: 21300011
+      Yut_BellyToBack_X_12: 21300012
+      Yut_BellyToBack_X_13: 21300013
+      Yut_BellyToBack_X_14: 21300014
+      Yut_BellyToBack_X_15: 21300015
+      Yut_BellyToBack_X_16: 21300016
+      Yut_BellyToBack_X_17: 21300017
+      Yut_BellyToBack_X_18: 21300018
+      Yut_BellyToBack_X_19: 21300019
+      Yut_BellyToBack_X_2: 21300002
+      Yut_BellyToBack_X_20: 21300020
+      Yut_BellyToBack_X_21: 21300021
+      Yut_BellyToBack_X_22: 21300022
+      Yut_BellyToBack_X_23: 21300023
+      Yut_BellyToBack_X_24: 21300024
+      Yut_BellyToBack_X_25: 21300025
+      Yut_BellyToBack_X_26: 21300026
+      Yut_BellyToBack_X_27: 21300027
+      Yut_BellyToBack_X_28: 21300028
+      Yut_BellyToBack_X_29: 21300029
+      Yut_BellyToBack_X_3: 21300003
+      Yut_BellyToBack_X_30: 21300030
+      Yut_BellyToBack_X_31: 21300031
+      Yut_BellyToBack_X_32: 21300032
+      Yut_BellyToBack_X_33: 21300033
+      Yut_BellyToBack_X_34: 21300034
+      Yut_BellyToBack_X_35: 21300035
+      Yut_BellyToBack_X_36: 21300036
+      Yut_BellyToBack_X_37: 21300037
+      Yut_BellyToBack_X_38: 21300038
+      Yut_BellyToBack_X_39: 21300039
+      Yut_BellyToBack_X_4: 21300004
+      Yut_BellyToBack_X_40: 21300040
+      Yut_BellyToBack_X_41: 21300041
+      Yut_BellyToBack_X_42: 21300042
+      Yut_BellyToBack_X_43: 21300043
+      Yut_BellyToBack_X_44: 21300044
+      Yut_BellyToBack_X_45: 21300045
+      Yut_BellyToBack_X_46: 21300046
+      Yut_BellyToBack_X_47: 21300047
+      Yut_BellyToBack_X_48: 21300048
+      Yut_BellyToBack_X_49: 21300049
+      Yut_BellyToBack_X_5: 21300005
+      Yut_BellyToBack_X_50: 21300050
+      Yut_BellyToBack_X_51: 21300051
+      Yut_BellyToBack_X_52: 21300052
+      Yut_BellyToBack_X_53: 21300053
+      Yut_BellyToBack_X_54: 21300054
+      Yut_BellyToBack_X_55: 21300055
+      Yut_BellyToBack_X_56: 21300056
+      Yut_BellyToBack_X_57: 21300057
+      Yut_BellyToBack_X_58: 21300058
+      Yut_BellyToBack_X_59: 21300059
+      Yut_BellyToBack_X_6: 21300006
+      Yut_BellyToBack_X_60: 21300060
+      Yut_BellyToBack_X_61: 21300061
+      Yut_BellyToBack_X_62: 21300062
+      Yut_BellyToBack_X_63: 21300063
+      Yut_BellyToBack_X_64: 21300064
+      Yut_BellyToBack_X_65: 21300065
+      Yut_BellyToBack_X_66: 21300066
+      Yut_BellyToBack_X_67: 21300067
+      Yut_BellyToBack_X_68: 21300068
+      Yut_BellyToBack_X_69: 21300069
+      Yut_BellyToBack_X_7: 21300007
+      Yut_BellyToBack_X_70: 21300070
+      Yut_BellyToBack_X_71: 21300071
+      Yut_BellyToBack_X_72: 21300072
+      Yut_BellyToBack_X_73: 21300073
+      Yut_BellyToBack_X_74: 21300074
+      Yut_BellyToBack_X_75: 21300075
+      Yut_BellyToBack_X_76: 21300076
+      Yut_BellyToBack_X_77: 21300077
+      Yut_BellyToBack_X_78: 21300078
+      Yut_BellyToBack_X_79: 21300079
+      Yut_BellyToBack_X_8: 21300008
+      Yut_BellyToBack_X_80: 21300080
+      Yut_BellyToBack_X_81: 21300081
+      Yut_BellyToBack_X_82: 21300082
+      Yut_BellyToBack_X_83: 21300083
+      Yut_BellyToBack_X_84: 21300084
+      Yut_BellyToBack_X_85: 21300085
+      Yut_BellyToBack_X_86: 21300086
+      Yut_BellyToBack_X_87: 21300087
+      Yut_BellyToBack_X_88: 21300088
+      Yut_BellyToBack_X_89: 21300089
+      Yut_BellyToBack_X_9: 21300009
+      Yut_BellyToBack_X_90: 21300090
+      Yut_BellyToBack_X_91: 21300091
+      Yut_BellyToBack_X_92: 21300092
+      Yut_BellyToBack_X_93: 21300093
+      Yut_BellyToBack_X_94: 21300094
+      Yut_BellyToBack_X_95: 21300095
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

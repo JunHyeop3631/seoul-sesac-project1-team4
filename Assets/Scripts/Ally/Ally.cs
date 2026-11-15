@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class Ally : MonoBehaviour
 {
+    private static readonly int AttackLeftState = Animator.StringToHash("AttackLeft");
+    private static readonly int AttackRightState = Animator.StringToHash("AttackRight");
+
     [SerializeField, Min(0f)] private float attackRange = 3f;
     [SerializeField, Min(1)] private int attackDamage = 2;
     [SerializeField, Min(0.01f)] private float attackInterval = 1f;
@@ -9,8 +12,14 @@ public class Ally : MonoBehaviour
     private Wave wave;
     private int targetActivationVersion;
     private double nextAttackTime;
+    private Animator animator;
 
     public Enemy CurrentTarget { get; private set; }
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     internal void SetTargetingWave(Wave targetingWave)
     {
@@ -40,6 +49,14 @@ public class Ally : MonoBehaviour
         if (CurrentTarget == null || CurrentTarget.CurrentHealth <= 0 || now < nextAttackTime)
         {
             return;
+        }
+
+        if (animator != null)
+        {
+            int state = CurrentTarget.transform.position.x > transform.position.x
+                ? AttackRightState
+                : AttackLeftState;
+            animator.Play(state, 0, 0f);
         }
 
         CurrentTarget.TakeDamage(attackDamage);
