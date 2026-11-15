@@ -39,11 +39,15 @@
 ### 버튼 입력부터 결과 전달까지
 
 1. [YutThrowController.Throw()](../Assets/Scripts/Yut/YutThrowController.cs)는 컴포넌트가 활성 상태인지 확인한다. `HasReadySticks()`에서 서로 다른 윷 네 개가 활성 상태이고 각 윷의 렌더러와 두 면의 스프라이트가 연결됐는지 검사한다. 설정이 올바르지 않으면 경고를 남기고 던지기를 시작하지 않는다.
-2. [YutStick.Throw()](../Assets/Scripts/Yut/YutStick.cs)는 각 윷에서 한 번씩 같은 프레임에 호출된다. `Random.Range(0, 2)`로 자기 면을 뽑아 해당 스프라이트를 즉시 표시하고, `YutFace.Belly` 또는 `YutFace.Back`을 반환한다.
+2. [YutStick.Throw()](../Assets/Scripts/Yut/YutStick.cs)는 각 윷에서 한 번씩 같은 프레임에 호출된다. `Random.Range(0, 2)`로 자기 면을 뽑고 `YutFace.Belly` 또는 `YutFace.Back`을 즉시 반환한다. 현재 면과 뽑힌 면에 따라 등 → 등, 등 → 배, 배 → 등, 배 → 배 클립을 선택해 재생한다.
 3. `YutThrowController`는 반환값에서 배의 수를 세어 위 표에 따라 `YutThrowResult`를 정하고 `LastResult`에 저장한다.
-4. `YutThrowController.ShowResult()`는 판정에 해당하는 스프라이트를 `Yut Result`에 표시한다. 이어서 `ThrowCompleted` 이벤트로 판정 결과를 전달한다.
+4. `YutThrowController`는 네 윷의 재생 완료를 기다린 뒤 `ShowResult()`로 결과 이미지를 표시하고 `ThrowCompleted` 이벤트를 전달한다. 재생 중에는 추가 던지기를 받지 않는다.
 5. [TurnController](../Assets/Scripts/Turn/TurnController.cs)가 이벤트를 받아 결과를 보관하고 소환·이동 버튼을 표시한다. 선택한 행동에 결과를 전달하는 흐름은 [턴 흐름 명세](TurnSpec.md)에서 다룬다.
+
+### 던지기 애니메이션
+
+`YutStick` 프리팹에 `Animator`와 `Yut_BackToBack`, `Yut_BackToBelly`, `Yut_BellyToBack`, `Yut_BellyToBelly` 클립을 연결한다. `YutStick`은 Unity Playables로 선택한 `.anim` 클립을 직접 재생한다. 재생 시간은 클립 길이를 사용하며, 현재 네 클립은 60fps, 96프레임, 1.6초이고 반복하지 않는다. 재생 완료 후에는 최종 면의 기본 스프라이트를 표시한다.
 
 ## 남은 구현
 
-- 윷이 떠올랐다가 착지하는 연출을 연결한다. 각 윷의 면과 전체 판정은 던지는 순간 결정한다. 네 윷이 모두 착지해 최종 면을 표시하면 `YutThrowController`가 완료를 알린다. 임시 연출 시간은 두지 않는다.
+- 비활성화 등으로 재생이 중단된 경우에는 윷을 결정된 최종 면으로 정리한다. 컨트롤러의 대기가 취소되면 완료 이벤트를 전달하지 않는다.

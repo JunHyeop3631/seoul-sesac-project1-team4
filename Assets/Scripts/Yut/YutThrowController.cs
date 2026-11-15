@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -25,6 +26,7 @@ public class YutThrowController : MonoBehaviour
     [SerializeField] private Sprite moSprite;
 
     public YutThrowResult? LastResult { get; private set; }
+    public bool IsThrowing { get; private set; }
     public event Action<YutThrowResult> ThrowCompleted;
 
     private void Awake()
@@ -37,15 +39,21 @@ public class YutThrowController : MonoBehaviour
 
     public void Throw()
     {
-        if (!isActiveAndEnabled)
+        if (!isActiveAndEnabled || IsThrowing)
         {
             return;
         }
 
         if (!HasReadySticks())
         {
-            Debug.LogWarning("Assign four distinct, active yut sticks with both face sprites.", this);
+            Debug.LogWarning("Assign four distinct, ready yut sticks with their face sprites and animation clips.", this);
             return;
+        }
+
+        IsThrowing = true;
+        if (resultImage != null)
+        {
+            resultImage.enabled = false;
         }
 
         int bellyCount = 0;
@@ -68,8 +76,28 @@ public class YutThrowController : MonoBehaviour
         };
 
         LastResult = result;
+        StartCoroutine(CompleteThrow(result));
+    }
+
+    private IEnumerator CompleteThrow(YutThrowResult result)
+    {
+        foreach (YutStick stick in sticks)
+        {
+            while (stick != null && stick.IsAnimating)
+            {
+                yield return null;
+            }
+        }
+
+        IsThrowing = false;
         ShowResult(result);
         ThrowCompleted?.Invoke(result);
+    }
+
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+        IsThrowing = false;
     }
 
     private void ShowResult(YutThrowResult result)
