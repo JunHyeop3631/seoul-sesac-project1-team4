@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: 466e7bf5d926c87438fe03342be04458
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7530248071109377639
+    second: 1_epact_arrow_79x13_0
+  - first:
+      213: 6131210196705132659
+    second: 1_epact_arrow_79x13_1
+  - first:
+      213: -7131769932903583130
+    second: 1_epact_arrow_79x13_2
+  - first:
+      213: 4261738743954783379
+    second: 1_epact_arrow_79x13_3
+  - first:
+      213: 4989631173753494480
+    second: 1_epact_arrow_79x13_4
+  - first:
+      213: 5303856162777489043
+    second: 1_epact_arrow_79x13_5
+  - first:
+      213: 7590296357743672528
+    second: 1_epact_arrow_79x13_6
+  - first:
+      213: 5933549907553645575
+    second: 1_epact_arrow_79x13_7
+  - first:
+      213: -5586102271333426367
+    second: 1_epact_arrow_79x13_8
+  - first:
+      213: 6938643782947957587
+    second: 1_epact_arrow_79x13_9
+  - first:
+      213: 5646478865350450017
+    second: 1_epact_arrow_79x13_10
+  - first:
+      213: 1603864835928574881
+    second: 1_epact_arrow_79x13_11
+  - first:
+      213: -6630746561017702078
+    second: 1_epact_arrow_79x13_12
+  - first:
+      213: 7479808332773651529
+    second: 1_epact_arrow_79x13_13
+  - first:
+      213: -6423630675202357210
+    second: 1_epact_arrow_79x13_14
+  - first:
+      213: 1887069145366767316
+    second: 1_epact_arrow_79x13_15
+  - first:
+      213: -4638027204636140550
+    second: 1_epact_arrow_79x13_16
+  - first:
+      213: 1713459095469997330
+    second: 1_epact_arrow_79x13_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 1_epact_arrow_79x13_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 2
+        width: 63
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99184fab64f2f7790800000000000000
+      internalID: -7530248071109377639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_arrow_79x13_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 47
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 370ccd9703f661550800000000000000
+      internalID: 6131210196705132659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_arrow_79x13_2
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1
+        width: 41
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6627871280dd60d90800000000000000
+      internalID: -7131769932903583130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_arrow_79x13_3
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 1
+        width: 56
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39cb1f6deccb42b30800000000000000
+      internalID: 4261738743954783379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_arrow_79x13_4
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1
+        width: 99
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dbdac7cd1bbe3540800000000000000
+      internalID: 4989631173753494480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_arrow_79x13_5
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 0
+        width: 84
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39e5e1a34151b9940800000000000000
+      internalID: 5303856162777489043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_arrow_79x13_6
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3
+        width: 42
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dcb04f7256265960800000000000000
+      internalID: 7590296357743672528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_arrow_79x13_7
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 1
+        width: 64
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70479c02434385250800000000000000
+      internalID: 5933549907553645575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_arrow_79x13_8
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 0
+        width: 90
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b1b26a49d2a72b0800000000000000
+      internalID: -5586102271333426367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_arrow_79x13_9
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 93
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35be59112c30b4060800000000000000
+      internalID: 6938643782947957587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_arrow_79x13_10
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 0
+        width: 85
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16bd6f89c925c5e40800000000000000
+      internalID: 5646478865350450017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_arrow_79x13_11
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 0
+        width: 67
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab43451292124610800000000000000
+      internalID: 1603864835928574881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_arrow_79x13_12
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 0
+        width: 61
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24995ea422bdaf3a0800000000000000
+      internalID: -6630746561017702078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_arrow_79x13_13
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 3
+        width: 47
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 944faf68c0e9dc760800000000000000
+      internalID: 7479808332773651529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_arrow_79x13_14
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 3
+        width: 54
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 628c24c4fedaad6a0800000000000000
+      internalID: -6423630675202357210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_arrow_79x13_15
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 3
+        width: 89
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d6af2cb367303a10800000000000000
+      internalID: 1887069145366767316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_arrow_79x13_16
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 3
+        width: 58
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afb9019a4da62afb0800000000000000
+      internalID: -4638027204636140550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_arrow_79x13_17
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 3
+        width: 51
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21db6a218fd67c710800000000000000
+      internalID: 1713459095469997330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      1_epact_arrow_79x13_0: -7530248071109377639
+      1_epact_arrow_79x13_1: 6131210196705132659
+      1_epact_arrow_79x13_10: 5646478865350450017
+      1_epact_arrow_79x13_11: 1603864835928574881
+      1_epact_arrow_79x13_12: -6630746561017702078
+      1_epact_arrow_79x13_13: 7479808332773651529
+      1_epact_arrow_79x13_14: -6423630675202357210
+      1_epact_arrow_79x13_15: 1887069145366767316
+      1_epact_arrow_79x13_16: -4638027204636140550
+      1_epact_arrow_79x13_17: 1713459095469997330
+      1_epact_arrow_79x13_2: -7131769932903583130
+      1_epact_arrow_79x13_3: 4261738743954783379
+      1_epact_arrow_79x13_4: 4989631173753494480
+      1_epact_arrow_79x13_5: 5303856162777489043
+      1_epact_arrow_79x13_6: 7590296357743672528
+      1_epact_arrow_79x13_7: 5933549907553645575
+      1_epact_arrow_79x13_8: -5586102271333426367
+      1_epact_arrow_79x13_9: 6938643782947957587
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

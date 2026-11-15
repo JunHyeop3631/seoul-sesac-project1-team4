@@ -1,0 +1,2171 @@
+fileFormatVersion: 2
+guid: 6bcfd7a8b03912440a8b519da1ed7e39
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1764297885831538809
+    second: 1_epact_hit-240x275_0
+  - first:
+      213: -8016362255754013938
+    second: 1_epact_hit-240x275_1
+  - first:
+      213: -7913103641142922584
+    second: 1_epact_hit-240x275_2
+  - first:
+      213: -5064149868196077388
+    second: 1_epact_hit-240x275_3
+  - first:
+      213: -7736689450668834414
+    second: 1_epact_hit-240x275_4
+  - first:
+      213: -2786859814649115575
+    second: 1_epact_hit-240x275_5
+  - first:
+      213: -7928933127053483667
+    second: 1_epact_hit-240x275_6
+  - first:
+      213: 395781883541284553
+    second: 1_epact_hit-240x275_7
+  - first:
+      213: -7926456246946665585
+    second: 1_epact_hit-240x275_8
+  - first:
+      213: 6182964787576799176
+    second: 1_epact_hit-240x275_9
+  - first:
+      213: 6830523970082150301
+    second: 1_epact_hit-240x275_10
+  - first:
+      213: -1801858275037457572
+    second: 1_epact_hit-240x275_11
+  - first:
+      213: -3036793335837321409
+    second: 1_epact_hit-240x275_12
+  - first:
+      213: 5826363708544739151
+    second: 1_epact_hit-240x275_13
+  - first:
+      213: -6487264795468362739
+    second: 1_epact_hit-240x275_14
+  - first:
+      213: 5894409260557450689
+    second: 1_epact_hit-240x275_15
+  - first:
+      213: -3540246548692273397
+    second: 1_epact_hit-240x275_16
+  - first:
+      213: 6288337215798904238
+    second: 1_epact_hit-240x275_17
+  - first:
+      213: 759891936707756537
+    second: 1_epact_hit-240x275_18
+  - first:
+      213: 983362770360822756
+    second: 1_epact_hit-240x275_19
+  - first:
+      213: 8062020330471952519
+    second: 1_epact_hit-240x275_20
+  - first:
+      213: 1528767335412587199
+    second: 1_epact_hit-240x275_21
+  - first:
+      213: 2929000126335346656
+    second: 1_epact_hit-240x275_22
+  - first:
+      213: 6302303756668851321
+    second: 1_epact_hit-240x275_23
+  - first:
+      213: 4946259074520913166
+    second: 1_epact_hit-240x275_24
+  - first:
+      213: 7293519297580930210
+    second: 1_epact_hit-240x275_25
+  - first:
+      213: -2313852204569221976
+    second: 1_epact_hit-240x275_26
+  - first:
+      213: -5109403251076302690
+    second: 1_epact_hit-240x275_27
+  - first:
+      213: 2793733154008828760
+    second: 1_epact_hit-240x275_28
+  - first:
+      213: 1359064869205492112
+    second: 1_epact_hit-240x275_29
+  - first:
+      213: -7887591678324806160
+    second: 1_epact_hit-240x275_30
+  - first:
+      213: 4993856640434413686
+    second: 1_epact_hit-240x275_31
+  - first:
+      213: -8836761629469739409
+    second: 1_epact_hit-240x275_32
+  - first:
+      213: -1278867703089947947
+    second: 1_epact_hit-240x275_33
+  - first:
+      213: 7674611840178976265
+    second: 1_epact_hit-240x275_34
+  - first:
+      213: 8845384158209235511
+    second: 1_epact_hit-240x275_35
+  - first:
+      213: 7463797602337180979
+    second: 1_epact_hit-240x275_36
+  - first:
+      213: 4153420583011032489
+    second: 1_epact_hit-240x275_37
+  - first:
+      213: 2114957428307674403
+    second: 1_epact_hit-240x275_38
+  - first:
+      213: -8451402143614399761
+    second: 1_epact_hit-240x275_39
+  - first:
+      213: -2966851430240486895
+    second: 1_epact_hit-240x275_40
+  - first:
+      213: -8867996810023987674
+    second: 1_epact_hit-240x275_41
+  - first:
+      213: -7925801674061033035
+    second: 1_epact_hit-240x275_42
+  - first:
+      213: -4300760986476010915
+    second: 1_epact_hit-240x275_43
+  - first:
+      213: 1699014585014724151
+    second: 1_epact_hit-240x275_44
+  - first:
+      213: 9185667406034109367
+    second: 1_epact_hit-240x275_45
+  - first:
+      213: -8446321257512829328
+    second: 1_epact_hit-240x275_46
+  - first:
+      213: -3081195801864007826
+    second: 1_epact_hit-240x275_47
+  - first:
+      213: 1032454896467346127
+    second: 1_epact_hit-240x275_48
+  - first:
+      213: -9144093948363393818
+    second: 1_epact_hit-240x275_49
+  - first:
+      213: 8271244492302384945
+    second: 1_epact_hit-240x275_50
+  - first:
+      213: -7243002363922623790
+    second: 1_epact_hit-240x275_51
+  - first:
+      213: 6042786835879413122
+    second: 1_epact_hit-240x275_52
+  - first:
+      213: 8149613230455927848
+    second: 1_epact_hit-240x275_53
+  - first:
+      213: -6437585993673044564
+    second: 1_epact_hit-240x275_54
+  - first:
+      213: -2643361370265358635
+    second: 1_epact_hit-240x275_55
+  - first:
+      213: -4526048335877060822
+    second: 1_epact_hit-240x275_56
+  - first:
+      213: 564954886098388402
+    second: 1_epact_hit-240x275_57
+  - first:
+      213: -9169675198231032413
+    second: 1_epact_hit-240x275_58
+  - first:
+      213: -2499291123358500233
+    second: 1_epact_hit-240x275_59
+  - first:
+      213: -5916632311341165211
+    second: 1_epact_hit-240x275_60
+  - first:
+      213: -8831935040319223084
+    second: 1_epact_hit-240x275_61
+  - first:
+      213: -2004226716468148905
+    second: 1_epact_hit-240x275_62
+  - first:
+      213: 5393484468924481041
+    second: 1_epact_hit-240x275_63
+  - first:
+      213: -877635552300633132
+    second: 1_epact_hit-240x275_64
+  - first:
+      213: 3562368382132681467
+    second: 1_epact_hit-240x275_65
+  - first:
+      213: 2005066653568536219
+    second: 1_epact_hit-240x275_66
+  - first:
+      213: -7692712108304811748
+    second: 1_epact_hit-240x275_67
+  - first:
+      213: 708007360324367297
+    second: 1_epact_hit-240x275_68
+  - first:
+      213: -673398314006678275
+    second: 1_epact_hit-240x275_69
+  - first:
+      213: -5598283653988234182
+    second: 1_epact_hit-240x275_70
+  - first:
+      213: 2844337381059750276
+    second: 1_epact_hit-240x275_71
+  - first:
+      213: -8568313396082581326
+    second: 1_epact_hit-240x275_72
+  - first:
+      213: -8551860333615956519
+    second: 1_epact_hit-240x275_73
+  - first:
+      213: -2811069199343423657
+    second: 1_epact_hit-240x275_74
+  - first:
+      213: 96773839208536543
+    second: 1_epact_hit-240x275_75
+  - first:
+      213: 2662474795965271738
+    second: 1_epact_hit-240x275_76
+  - first:
+      213: 4617815157583351231
+    second: 1_epact_hit-240x275_77
+  - first:
+      213: -6222069797238311765
+    second: 1_epact_hit-240x275_78
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 24
+        width: 226
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 787d905ab64f387e0800000000000000
+      internalID: -1764297885831538809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 30
+        width: 220
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e03deea300920c090800000000000000
+      internalID: -8016362255754013938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_2
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 46
+        width: 186
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a273dee9220f2290800000000000000
+      internalID: -7913103641142922584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_3
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 78
+        width: 126
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b0e4d0a68688b9b0800000000000000
+      internalID: -5064149868196077388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_4
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 62
+        width: 142
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2914f537fe1c1a490800000000000000
+      internalID: -7736689450668834414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_5
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 194
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c470593c51359d0800000000000000
+      internalID: -2786859814649115575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_6
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 198
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61662a8455c6f190800000000000000
+      internalID: -7928933127053483667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_7
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 194
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c66301b6891e7500800000000000000
+      internalID: 395781883541284553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_8
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 199
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b61112a029ff190800000000000000
+      internalID: -7926456246946665585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_9
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 195
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cf734e27bd4ec550800000000000000
+      internalID: 6182964787576799176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_10
+      rect:
+        serializedVersion: 2
+        x: 2054
+        y: 195
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9799827c55eace50800000000000000
+      internalID: 6830523970082150301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_11
+      rect:
+        serializedVersion: 2
+        x: 2231
+        y: 196
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c535bcc02738ef6e0800000000000000
+      internalID: -1801858275037457572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_12
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 82
+        width: 118
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f379429fc842bd5d0800000000000000
+      internalID: -3036793335837321409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_13
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 83
+        width: 110
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f47690c6ce66bd050800000000000000
+      internalID: 5826363708544739151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_14
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 83
+        width: 118
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c063e1a0b98f5a0800000000000000
+      internalID: -6487264795468362739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_15
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 187
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cdbc481ef52dc150800000000000000
+      internalID: 5894409260557450689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_16
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 84
+        width: 118
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07f4ef55848edec0800000000000000
+      internalID: -3540246548692273397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_17
+      rect:
+        serializedVersion: 2
+        x: 2227
+        y: 81
+        width: 106
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea500977169a44750800000000000000
+      internalID: 6288337215798904238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_18
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 188
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1462bb0bdab8a00800000000000000
+      internalID: 759891936707756537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_19
+      rect:
+        serializedVersion: 2
+        x: 2468
+        y: 186
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb63b4ca3b95ad00800000000000000
+      internalID: 983362770360822756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_20
+      rect:
+        serializedVersion: 2
+        x: 2536
+        y: 178
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78012c1b6cc02ef60800000000000000
+      internalID: 8062020330471952519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_21
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 166
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbadc73bac5473510800000000000000
+      internalID: 1528767335412587199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_22
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 171
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e7ea4da816e5a820800000000000000
+      internalID: 2929000126335346656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_23
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 65
+        width: 111
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9745bda20e7467750800000000000000
+      internalID: 6302303756668851321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_24
+      rect:
+        serializedVersion: 2
+        x: 2331
+        y: 160
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e051fdffb64a4a440800000000000000
+      internalID: 4946259074520913166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_25
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 149
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a494ce8829c73560800000000000000
+      internalID: 7293519297580930210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_26
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 149
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a4a5e3edab83efd0800000000000000
+      internalID: -2313852204569221976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_27
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 150
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e98fe5d50d0c719b0800000000000000
+      internalID: -5109403251076302690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_28
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 150
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85b8de1708555c620800000000000000
+      internalID: 2793733154008828760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_29
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 150
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 091c4b34c4e5cd210800000000000000
+      internalID: 1359064869205492112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_30
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 150
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd6f18a825a98290800000000000000
+      internalID: -7887591678324806160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_31
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 151
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 670a158e72ebd4540800000000000000
+      internalID: 4993856640434413686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_32
+      rect:
+        serializedVersion: 2
+        x: 2574
+        y: 148
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6677aefd148d5580800000000000000
+      internalID: -8836761629469739409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_33
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 138
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da9a9a899c804ee0800000000000000
+      internalID: -1278867703089947947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_34
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 138
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906ffda8ec2b18a60800000000000000
+      internalID: 7674611840178976265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_35
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 139
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73addebe60e11ca70800000000000000
+      internalID: 8845384158209235511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_36
+      rect:
+        serializedVersion: 2
+        x: 2367
+        y: 144
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33d48badf5cb49760800000000000000
+      internalID: 7463797602337180979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_37
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 137
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad1b25b30ae3a930800000000000000
+      internalID: 4153420583011032489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_38
+      rect:
+        serializedVersion: 2
+        x: 2339
+        y: 132
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3254a555396d95d10800000000000000
+      internalID: 2114957428307674403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_39
+      rect:
+        serializedVersion: 2
+        x: 2612
+        y: 131
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fea83ef178696ba80800000000000000
+      internalID: -8451402143614399761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_40
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 126
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11af72fd750a3d6d0800000000000000
+      internalID: -2966851430240486895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_41
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 107
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626193dc2eb8ee480800000000000000
+      internalID: -8867996810023987674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_42
+      rect:
+        serializedVersion: 2
+        x: 2583
+        y: 119
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b15561ce55e10290800000000000000
+      internalID: -7925801674061033035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_43
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 110
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d522d315ba0a054c0800000000000000
+      internalID: -4300760986476010915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_44
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 114
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 736a20863cc149710800000000000000
+      internalID: 1699014585014724151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_45
+      rect:
+        serializedVersion: 2
+        x: 1483
+        y: 111
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b30c8986db0a7f70800000000000000
+      internalID: 9185667406034109367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_46
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 111
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07efd1b1193a8ca80800000000000000
+      internalID: -8446321257512829328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_47
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 108
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f887a3eb46d35d0800000000000000
+      internalID: -3081195801864007826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_48
+      rect:
+        serializedVersion: 2
+        x: 2335
+        y: 113
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc28c861244045e00800000000000000
+      internalID: 1032454896467346127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_49
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 102
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e4300f5007a91180800000000000000
+      internalID: -9144093948363393818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_50
+      rect:
+        serializedVersion: 2
+        x: 1483
+        y: 99
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ff616fa0d59c270800000000000000
+      internalID: 8271244492302384945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_51
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 107
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2d31f99bfab7b90800000000000000
+      internalID: -7243002363922623790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_52
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 99
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 285cff57c9a4cd350800000000000000
+      internalID: 6042786835879413122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_53
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 95
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 824362afd0e391170800000000000000
+      internalID: 8149613230455927848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_54
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 96
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad861485a919a6a0800000000000000
+      internalID: -6437585993673044564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_55
+      rect:
+        serializedVersion: 2
+        x: 2187
+        y: 97
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dee750c6d4e05bd0800000000000000
+      internalID: -2643361370265358635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_56
+      rect:
+        serializedVersion: 2
+        x: 2579
+        y: 99
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27cccfb40f3031c0800000000000000
+      internalID: -4526048335877060822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_57
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 83
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b50404c97f17d700800000000000000
+      internalID: 564954886098388402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_58
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 92
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3adcabf7df4ceb080800000000000000
+      internalID: -9169675198231032413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_59
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 79
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77afde117fbb05dd0800000000000000
+      internalID: -2499291123358500233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_60
+      rect:
+        serializedVersion: 2
+        x: 2191
+        y: 85
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56559efa246e3eda0800000000000000
+      internalID: -5916632311341165211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_61
+      rect:
+        serializedVersion: 2
+        x: 2203
+        y: 85
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da827adfd9ae6580800000000000000
+      internalID: -8831935040319223084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_62
+      rect:
+        serializedVersion: 2
+        x: 2422
+        y: 82
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75581939b6e8f24e0800000000000000
+      internalID: -2004226716468148905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_63
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 70
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e74df6c8189da40800000000000000
+      internalID: 5393484468924481041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_64
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 70
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3fdd67d1302d3f0800000000000000
+      internalID: -877635552300633132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_65
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 66
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfaf9185b23107130800000000000000
+      internalID: 3562368382132681467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_66
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 63
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e0fe48f7d63db10800000000000000
+      internalID: 2005066653568536219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_67
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 67
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c193521681ffd3590800000000000000
+      internalID: -7692712108304811748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_68
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 59
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c3fe7a61f853d900800000000000000
+      internalID: 708007360324367297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_69
+      rect:
+        serializedVersion: 2
+        x: 1783
+        y: 63
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df4f84d1dcb97a6f0800000000000000
+      internalID: -673398314006678275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_70
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 64
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3cc72c7da6ee42b0800000000000000
+      internalID: -5598283653988234182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_71
+      rect:
+        serializedVersion: 2
+        x: 2426
+        y: 69
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4896e6337cd197720800000000000000
+      internalID: 2844337381059750276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_72
+      rect:
+        serializedVersion: 2
+        x: 2439
+        y: 69
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b0e646fc5c371980800000000000000
+      internalID: -8568313396082581326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_73
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 59
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd31161650b15980800000000000000
+      internalID: -8551860333615956519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_74
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 55
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75fe716f4731df8d0800000000000000
+      internalID: -2811069199343423657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_75
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 56
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd953954b4fc75100800000000000000
+      internalID: 96773839208536543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_76
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 52
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abec0f478b203f420800000000000000
+      internalID: 2662474795965271738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_77
+      rect:
+        serializedVersion: 2
+        x: 2211
+        y: 45
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbd8b2a6b66c51040800000000000000
+      internalID: 4617815157583351231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_epact_hit-240x275_78
+      rect:
+        serializedVersion: 2
+        x: 2447
+        y: 27
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba47cef3c74c6a9a0800000000000000
+      internalID: -6222069797238311765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      1_epact_hit-240x275_0: -1764297885831538809
+      1_epact_hit-240x275_1: -8016362255754013938
+      1_epact_hit-240x275_10: 6830523970082150301
+      1_epact_hit-240x275_11: -1801858275037457572
+      1_epact_hit-240x275_12: -3036793335837321409
+      1_epact_hit-240x275_13: 5826363708544739151
+      1_epact_hit-240x275_14: -6487264795468362739
+      1_epact_hit-240x275_15: 5894409260557450689
+      1_epact_hit-240x275_16: -3540246548692273397
+      1_epact_hit-240x275_17: 6288337215798904238
+      1_epact_hit-240x275_18: 759891936707756537
+      1_epact_hit-240x275_19: 983362770360822756
+      1_epact_hit-240x275_2: -7913103641142922584
+      1_epact_hit-240x275_20: 8062020330471952519
+      1_epact_hit-240x275_21: 1528767335412587199
+      1_epact_hit-240x275_22: 2929000126335346656
+      1_epact_hit-240x275_23: 6302303756668851321
+      1_epact_hit-240x275_24: 4946259074520913166
+      1_epact_hit-240x275_25: 7293519297580930210
+      1_epact_hit-240x275_26: -2313852204569221976
+      1_epact_hit-240x275_27: -5109403251076302690
+      1_epact_hit-240x275_28: 2793733154008828760
+      1_epact_hit-240x275_29: 1359064869205492112
+      1_epact_hit-240x275_3: -5064149868196077388
+      1_epact_hit-240x275_30: -7887591678324806160
+      1_epact_hit-240x275_31: 4993856640434413686
+      1_epact_hit-240x275_32: -8836761629469739409
+      1_epact_hit-240x275_33: -1278867703089947947
+      1_epact_hit-240x275_34: 7674611840178976265
+      1_epact_hit-240x275_35: 8845384158209235511
+      1_epact_hit-240x275_36: 7463797602337180979
+      1_epact_hit-240x275_37: 4153420583011032489
+      1_epact_hit-240x275_38: 2114957428307674403
+      1_epact_hit-240x275_39: -8451402143614399761
+      1_epact_hit-240x275_4: -7736689450668834414
+      1_epact_hit-240x275_40: -2966851430240486895
+      1_epact_hit-240x275_41: -8867996810023987674
+      1_epact_hit-240x275_42: -7925801674061033035
+      1_epact_hit-240x275_43: -4300760986476010915
+      1_epact_hit-240x275_44: 1699014585014724151
+      1_epact_hit-240x275_45: 9185667406034109367
+      1_epact_hit-240x275_46: -8446321257512829328
+      1_epact_hit-240x275_47: -3081195801864007826
+      1_epact_hit-240x275_48: 1032454896467346127
+      1_epact_hit-240x275_49: -9144093948363393818
+      1_epact_hit-240x275_5: -2786859814649115575
+      1_epact_hit-240x275_50: 8271244492302384945
+      1_epact_hit-240x275_51: -7243002363922623790
+      1_epact_hit-240x275_52: 6042786835879413122
+      1_epact_hit-240x275_53: 8149613230455927848
+      1_epact_hit-240x275_54: -6437585993673044564
+      1_epact_hit-240x275_55: -2643361370265358635
+      1_epact_hit-240x275_56: -4526048335877060822
+      1_epact_hit-240x275_57: 564954886098388402
+      1_epact_hit-240x275_58: -9169675198231032413
+      1_epact_hit-240x275_59: -2499291123358500233
+      1_epact_hit-240x275_6: -7928933127053483667
+      1_epact_hit-240x275_60: -5916632311341165211
+      1_epact_hit-240x275_61: -8831935040319223084
+      1_epact_hit-240x275_62: -2004226716468148905
+      1_epact_hit-240x275_63: 5393484468924481041
+      1_epact_hit-240x275_64: -877635552300633132
+      1_epact_hit-240x275_65: 3562368382132681467
+      1_epact_hit-240x275_66: 2005066653568536219
+      1_epact_hit-240x275_67: -7692712108304811748
+      1_epact_hit-240x275_68: 708007360324367297
+      1_epact_hit-240x275_69: -673398314006678275
+      1_epact_hit-240x275_7: 395781883541284553
+      1_epact_hit-240x275_70: -5598283653988234182
+      1_epact_hit-240x275_71: 2844337381059750276
+      1_epact_hit-240x275_72: -8568313396082581326
+      1_epact_hit-240x275_73: -8551860333615956519
+      1_epact_hit-240x275_74: -2811069199343423657
+      1_epact_hit-240x275_75: 96773839208536543
+      1_epact_hit-240x275_76: 2662474795965271738
+      1_epact_hit-240x275_77: 4617815157583351231
+      1_epact_hit-240x275_78: -6222069797238311765
+      1_epact_hit-240x275_8: -7926456246946665585
+      1_epact_hit-240x275_9: 6182964787576799176
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

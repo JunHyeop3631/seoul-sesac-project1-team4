@@ -1,11 +1,15 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public sealed class AllyRangeDisplay : MonoBehaviour
 {
     [SerializeField] private Sprite attackRangeSprite;
+    [SerializeField] private UnityEvent<bool> visibilityChanged = new UnityEvent<bool>();
+    [SerializeField] private UnityEvent<Ally> targetChanged = new UnityEvent<Ally>();
 
     private Ally rangeAlly;
     private SpriteRenderer attackRangeMarker;
+    private bool isVisible;
 
     private void OnDisable()
     {
@@ -48,17 +52,31 @@ public sealed class AllyRangeDisplay : MonoBehaviour
         }
 
         rangeAlly = ally;
+        targetChanged.Invoke(ally);
         UpdateAttackRangeMarker();
-        attackRangeMarker.gameObject.SetActive(ally.AttackRange > 0f);
+        SetVisible(ally.AttackRange > 0f);
     }
 
     public void Hide()
     {
         rangeAlly = null;
+        SetVisible(false);
+    }
+
+    private void SetVisible(bool visible)
+    {
         if (attackRangeMarker != null)
         {
-            attackRangeMarker.gameObject.SetActive(false);
+            attackRangeMarker.gameObject.SetActive(visible);
         }
+
+        if (isVisible == visible)
+        {
+            return;
+        }
+
+        isVisible = visible;
+        visibilityChanged.Invoke(visible);
     }
 
     private void UpdateAttackRangeMarker()

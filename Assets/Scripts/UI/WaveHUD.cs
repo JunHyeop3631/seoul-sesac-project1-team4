@@ -33,7 +33,7 @@ public sealed class WaveHUD : MonoBehaviour
         if (enemyCountText != null &&
             (displayedDefeatedCount != defeatedCount || displayedTotalCount != totalCount))
         {
-            enemyCountText.text = $"{defeatedCount} / {totalCount}";
+            enemyCountText.text = $"{totalCount - defeatedCount} / {totalCount}";
             displayedDefeatedCount = defeatedCount;
             displayedTotalCount = totalCount;
         }

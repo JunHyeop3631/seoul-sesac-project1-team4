@@ -118,6 +118,10 @@ public sealed class TurnController : MonoBehaviour
         {
             allyRangeDisplay?.Show(clickedAlly);
         }
+        else
+        {
+            allyRangeDisplay?.Hide();
+        }
     }
 
     private void ReceiveYutResult(YutThrowResult result)
