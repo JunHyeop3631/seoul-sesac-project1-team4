@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 89b47df9baaaa91458d5298c1f411000
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7496201323508172262
+    second: 5_amy_sprit_destroy_left-02_0
+  - first:
+      213: -4718321889538633898
+    second: 5_amy_sprit_destroy_left-02_1
+  - first:
+      213: -7437700833757594787
+    second: 5_amy_sprit_destroy_left-02_2
+  - first:
+      213: 4042767071898888156
+    second: 5_amy_sprit_destroy_left-02_3
+  - first:
+      213: -5481214350241687191
+    second: 5_amy_sprit_destroy_left-02_4
+  - first:
+      213: -8675344879173359145
+    second: 5_amy_sprit_destroy_left-02_5
+  - first:
+      213: 2084705795197798003
+    second: 5_amy_sprit_destroy_left-02_6
+  - first:
+      213: -8096229404396955960
+    second: 5_amy_sprit_destroy_left-02_7
+  - first:
+      213: 4169273560592122934
+    second: 5_amy_sprit_destroy_left-02_8
+  - first:
+      213: -3771796414543458262
+    second: 5_amy_sprit_destroy_left-02_9
+  - first:
+      213: 4339688785495623794
+    second: 5_amy_sprit_destroy_left-02_10
+  - first:
+      213: -8727585471596180719
+    second: 5_amy_sprit_destroy_left-02_11
+  - first:
+      213: -1134868153199975724
+    second: 5_amy_sprit_destroy_left-02_12
+  - first:
+      213: 4650287368745376261
+    second: 5_amy_sprit_destroy_left-02_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 5_amy_sprit_destroy_left-02_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 2
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1a7b73ec9428f790800000000000000
+      internalID: -7496201323508172262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5_amy_sprit_destroy_left-02_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 0
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f891e7d37258eb0800000000000000
+      internalID: -4718321889538633898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5_amy_sprit_destroy_left-02_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b70429f7af7c890800000000000000
+      internalID: -7437700833757594787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5_amy_sprit_destroy_left-02_3
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 16
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd7ed2e7b3bca1830800000000000000
+      internalID: 4042767071898888156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5_amy_sprit_destroy_left-02_4
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 29
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9691214d690dee3b0800000000000000
+      internalID: -5481214350241687191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5_amy_sprit_destroy_left-02_5
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 21
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d92edcdbcbfa9780800000000000000
+      internalID: -8675344879173359145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5_amy_sprit_destroy_left-02_6
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 37
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37686ff10ec5eec10800000000000000
+      internalID: 2084705795197798003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5_amy_sprit_destroy_left-02_7
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 22
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c6d8da904a64af80800000000000000
+      internalID: -8096229404396955960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5_amy_sprit_destroy_left-02_8
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634858ea63c3cd930800000000000000
+      internalID: 4169273560592122934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5_amy_sprit_destroy_left-02_9
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a209b021523e7abc0800000000000000
+      internalID: -3771796414543458262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5_amy_sprit_destroy_left-02_10
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 278863f25fba93c30800000000000000
+      internalID: 4339688785495623794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5_amy_sprit_destroy_left-02_11
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 14
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b46aa114361e680800000000000000
+      internalID: -8727585471596180719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5_amy_sprit_destroy_left-02_12
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 4
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d2ac9d6d632040f0800000000000000
+      internalID: -1134868153199975724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5_amy_sprit_destroy_left-02_13
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 4
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50add8d39b3298040800000000000000
+      internalID: 4650287368745376261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      5_amy_sprit_destroy_left-02_0: -7496201323508172262
+      5_amy_sprit_destroy_left-02_1: -4718321889538633898
+      5_amy_sprit_destroy_left-02_10: 4339688785495623794
+      5_amy_sprit_destroy_left-02_11: -8727585471596180719
+      5_amy_sprit_destroy_left-02_12: -1134868153199975724
+      5_amy_sprit_destroy_left-02_13: 4650287368745376261
+      5_amy_sprit_destroy_left-02_2: -7437700833757594787
+      5_amy_sprit_destroy_left-02_3: 4042767071898888156
+      5_amy_sprit_destroy_left-02_4: -5481214350241687191
+      5_amy_sprit_destroy_left-02_5: -8675344879173359145
+      5_amy_sprit_destroy_left-02_6: 2084705795197798003
+      5_amy_sprit_destroy_left-02_7: -8096229404396955960
+      5_amy_sprit_destroy_left-02_8: 4169273560592122934
+      5_amy_sprit_destroy_left-02_9: -3771796414543458262
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

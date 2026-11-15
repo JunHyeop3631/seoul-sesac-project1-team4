@@ -18,19 +18,19 @@ ROOT = Path(__file__).resolve().parents[1]
 ART = ROOT / "Assets/Art/Yut"
 PREVIEW = ROOT / "Docs/Previews"
 CELL_W, CELL_H, COLS, COUNT, AIR_LAST = 688, 1344, 12, 96, 79
-REST_X, REST_Y, RISE, BOUNCE = 343.5, 1016.5, 592.45, 52.0
+REST_X, REST_Y, RISE, BOUNCE = 343.5, 1016.5, 213.282, 52.0
 PREVIEW_SIZE = (344, 672)
 SS = 2
 W, LENGTH, DEPTH = 1.0, 3.60, 0.50
 PIXELS_X, PIXELS_Y = 170.0, 163.0
 PRESETS = {
-    "Yut_BackToBelly": dict(start="back", end="belly", turns=2.5,
+    "Yut_BackToBelly": dict(start="back", end="belly", turns=1.5,
                            axis=(.92, .25, .30), fps=60),
-    "Yut_BackToBack": dict(start="back", end="back", turns=3,
+    "Yut_BackToBack": dict(start="back", end="back", turns=2,
                           axis=(.20, .94, .28), fps=52),
-    "Yut_BellyToBelly": dict(start="belly", end="belly", turns=3,
+    "Yut_BellyToBelly": dict(start="belly", end="belly", turns=2,
                             axis=(.56, -.55, .62), fps=56),
-    "Yut_BellyToBack": dict(start="belly", end="back", turns=2.5,
+    "Yut_BellyToBack": dict(start="belly", end="back", turns=1.5,
                            axis=(.59, -.51, -.626), fps=64),
 }
 LANDING_ALIGN_START = .75
@@ -94,7 +94,7 @@ def mesh():
         normal = [math.cos((a+b)/2)/(W/2), 0, math.sin((a+b)/2)/DEPTH]
         quad(points, [(ua, 0), (ua, 1), (ub, 1), (ub, 0)], normal, "back")
 
-    # Belly UV is oriented to match the supplied upright belly after 2.5 turns.
+    # Belly UV matches the supplied upright belly in the landing orientation.
     quad([(-W/2, LENGTH/2, -DEPTH/2), (W/2, LENGTH/2, -DEPTH/2),
           (W/2, -LENGTH/2, -DEPTH/2), (-W/2, -LENGTH/2, -DEPTH/2)],
          [(0, 1), (1, 1), (1, 0), (0, 0)], [0, 0, -1], "belly")
