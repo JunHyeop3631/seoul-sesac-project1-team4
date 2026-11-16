@@ -2013,6 +2013,8 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier:
   gapBelowAlly: 8
+  actionController: {fileID: 2603}
+  evolveButton: {fileID: 91014}
 --- !u!1 &91010
 GameObject:
   m_ObjectHideFlags: 0
@@ -2132,7 +2134,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 91013}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 91002}
+        m_TargetAssemblyTypeName: AllyActionButtons, Assembly-CSharp
+        m_MethodName: RequestEvolution
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument:
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &91020
 GameObject:
   m_ObjectHideFlags: 0

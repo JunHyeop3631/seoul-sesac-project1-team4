@@ -22,6 +22,39 @@ public sealed class YutActionController : MonoBehaviour
     private Ally selectedAlly;
     private readonly List<Ally> selectedAllies = new List<Ally>();
 
+    public event System.Action<Ally> EvolutionRequested;
+
+    public bool CanEvolve(Ally ally)
+    {
+        if (!isActiveAndEnabled || ally == null || !ally.isActiveAndEnabled ||
+            !occupancy.TryGetCell(ally, out int cellId))
+        {
+            return false;
+        }
+
+        int count = 0;
+        foreach (Ally occupant in occupancy.GetAllies(cellId))
+        {
+            if (occupant != null && occupant.isActiveAndEnabled && occupant.GetType() == ally.GetType())
+            {
+                count++;
+            }
+        }
+
+        return count >= 3;
+    }
+
+    public void RequestEvolution(Ally ally)
+    {
+        if (!CanEvolve(ally))
+        {
+            return;
+        }
+
+        Debug.Log($"Evolution requested for {ally.GetType().Name}.", ally);
+        EvolutionRequested?.Invoke(ally);
+    }
+
     private void Awake()
     {
         if (boardRoot == null)

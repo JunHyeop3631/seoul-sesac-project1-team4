@@ -199,15 +199,8 @@ public sealed class TurnController : MonoBehaviour
             return;
         }
 
-        int totalEnemies = waveManager != null ? waveManager.GetTotalEnemyCount(currentTurnNumber) : 0;
-        if (totalEnemies > 0 && waveManager.DefeatedEnemyCount == totalEnemies)
-        {
-            IsAwaitingNextWave = true;
-            BattleWon?.Invoke();
-            return;
-        }
-
-        EndTurn();
+        IsAwaitingNextWave = true;
+        BattleWon?.Invoke();
     }
 
     private void EndTurn()

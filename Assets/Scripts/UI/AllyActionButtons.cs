@@ -1,8 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public sealed class AllyActionButtons : MonoBehaviour
 {
     [SerializeField, Min(0f)] private float gapBelowAlly = 8f;
+    [SerializeField] private YutActionController actionController;
+    [SerializeField] private Button evolveButton;
 
     private Ally target;
     private SpriteRenderer targetRenderer;
@@ -12,11 +15,29 @@ public sealed class AllyActionButtons : MonoBehaviour
         target = ally;
         targetRenderer = ally != null ? ally.GetComponent<SpriteRenderer>() : null;
         UpdatePosition();
+        UpdateEvolutionButton();
     }
 
     private void LateUpdate()
     {
         UpdatePosition();
+        UpdateEvolutionButton();
+    }
+
+    public void RequestEvolution()
+    {
+        if (actionController != null)
+        {
+            actionController.RequestEvolution(target);
+        }
+    }
+
+    private void UpdateEvolutionButton()
+    {
+        if (evolveButton != null)
+        {
+            evolveButton.interactable = actionController != null && actionController.CanEvolve(target);
+        }
     }
 
     private void OnDisable()

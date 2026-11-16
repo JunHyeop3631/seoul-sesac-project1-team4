@@ -1,0 +1,975 @@
+fileFormatVersion: 2
+guid: 6db0b80d6ed04fc44823ae6f5c2e4fba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8791009948283806171
+    second: 1_2nd Evolution_cow_hit_128x96_0
+  - first:
+      213: 6204117022005127526
+    second: 1_2nd Evolution_cow_hit_128x96_1
+  - first:
+      213: 5680353181523862050
+    second: 1_2nd Evolution_cow_hit_128x96_2
+  - first:
+      213: 2731568371297726170
+    second: 1_2nd Evolution_cow_hit_128x96_3
+  - first:
+      213: 4141966626205017185
+    second: 1_2nd Evolution_cow_hit_128x96_4
+  - first:
+      213: -6663097797736331006
+    second: 1_2nd Evolution_cow_hit_128x96_5
+  - first:
+      213: -5998319497357000085
+    second: 1_2nd Evolution_cow_hit_128x96_6
+  - first:
+      213: -4133342370294895219
+    second: 1_2nd Evolution_cow_hit_128x96_7
+  - first:
+      213: 2675356786839234439
+    second: 1_2nd Evolution_cow_hit_128x96_8
+  - first:
+      213: -4265446225105456661
+    second: 1_2nd Evolution_cow_hit_128x96_9
+  - first:
+      213: 9200691698809114966
+    second: 1_2nd Evolution_cow_hit_128x96_10
+  - first:
+      213: -3304222676548542773
+    second: 1_2nd Evolution_cow_hit_128x96_11
+  - first:
+      213: -5974164447922937248
+    second: 1_2nd Evolution_cow_hit_128x96_12
+  - first:
+      213: 6574485732597225953
+    second: 1_2nd Evolution_cow_hit_128x96_13
+  - first:
+      213: -3215866495622948687
+    second: 1_2nd Evolution_cow_hit_128x96_14
+  - first:
+      213: -1567506159263563635
+    second: 1_2nd Evolution_cow_hit_128x96_15
+  - first:
+      213: -5457871523119985423
+    second: 1_2nd Evolution_cow_hit_128x96_16
+  - first:
+      213: 4990888662499989247
+    second: 1_2nd Evolution_cow_hit_128x96_17
+  - first:
+      213: -915767197594617731
+    second: 1_2nd Evolution_cow_hit_128x96_18
+  - first:
+      213: 3029424098072479733
+    second: 1_2nd Evolution_cow_hit_128x96_19
+  - first:
+      213: 4708006007640619968
+    second: 1_2nd Evolution_cow_hit_128x96_20
+  - first:
+      213: 32567699277614391
+    second: 1_2nd Evolution_cow_hit_128x96_21
+  - first:
+      213: -6149973363461113160
+    second: 1_2nd Evolution_cow_hit_128x96_22
+  - first:
+      213: 3623517973922347037
+    second: 1_2nd Evolution_cow_hit_128x96_23
+  - first:
+      213: -8437703439133077933
+    second: 1_2nd Evolution_cow_hit_128x96_24
+  - first:
+      213: -470939912683431696
+    second: 1_2nd Evolution_cow_hit_128x96_25
+  - first:
+      213: -6376449007159795487
+    second: 1_2nd Evolution_cow_hit_128x96_26
+  - first:
+      213: -2680636544103817583
+    second: 1_2nd Evolution_cow_hit_128x96_27
+  - first:
+      213: -841895725127591439
+    second: 1_2nd Evolution_cow_hit_128x96_28
+  - first:
+      213: 6869275116794728713
+    second: 1_2nd Evolution_cow_hit_128x96_29
+  - first:
+      213: 5653560234169338185
+    second: 1_2nd Evolution_cow_hit_128x96_30
+  - first:
+      213: 6590410134440583727
+    second: 1_2nd Evolution_cow_hit_128x96_31
+  - first:
+      213: 7566750122562058887
+    second: 1_2nd Evolution_cow_hit_128x96_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 295
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e5e9f570f000680800000000000000
+      internalID: -8791009948283806171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_1
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 298
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 669e1998f83791650800000000000000
+      internalID: 6204117022005127526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_2
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 299
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2226d7f6f1ba4de40800000000000000
+      internalID: 5680353181523862050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_3
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 300
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adea4e216fa78e520800000000000000
+      internalID: 2731568371297726170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_4
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 303
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164297293b83b7930800000000000000
+      internalID: 4141966626205017185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_5
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 303
+        width: 36
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2090d360bdbe783a0800000000000000
+      internalID: -6663097797736331006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_6
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 302
+        width: 40
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b628cb69230b1cca0800000000000000
+      internalID: -5998319497357000085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_7
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 302
+        width: 44
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8d608b730b63a6c0800000000000000
+      internalID: -4133342370294895219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_8
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 302
+        width: 46
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 787abfea2d6c02520800000000000000
+      internalID: 2675356786839234439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_9
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 301
+        width: 50
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be1fe00f1471ec4c0800000000000000
+      internalID: -4265446225105456661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_10
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 205
+        width: 54
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 651176b4a5c6faf70800000000000000
+      internalID: 9200691698809114966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_11
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 204
+        width: 58
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce98817bfa0522d0800000000000000
+      internalID: -3304222676548542773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_12
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 204
+        width: 60
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06229cb4611871da0800000000000000
+      internalID: -5974164447922937248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 204
+        width: 64
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e9d450d0f34d3b50800000000000000
+      internalID: 6574485732597225953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_14
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 203
+        width: 68
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8505be572fe53d0800000000000000
+      internalID: -3215866495622948687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_15
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 203
+        width: 70
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d80cbd104791f3ae0800000000000000
+      internalID: -1567506159263563635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_16
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 202
+        width: 74
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc86ba44ceb144b0800000000000000
+      internalID: -5457871523119985423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_17
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 202
+        width: 78
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff616d1bbc2334540800000000000000
+      internalID: 4990888662499989247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_18
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 202
+        width: 80
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d78fa62f59a8a43f0800000000000000
+      internalID: -915767197594617731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_19
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 201
+        width: 84
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f74e97aa2daa0a20800000000000000
+      internalID: 3029424098072479733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_20
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 105
+        width: 88
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cbf2d51582365140800000000000000
+      internalID: 4708006007640619968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_21
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 104
+        width: 92
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d08926624b37000800000000000000
+      internalID: 32567699277614391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_22
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 104
+        width: 94
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ba39c45fc7e6aaa0800000000000000
+      internalID: -6149973363461113160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_23
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 103
+        width: 98
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1872e82662594230800000000000000
+      internalID: 3623517973922347037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_24
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 103
+        width: 102
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e816e4d6147ea80800000000000000
+      internalID: -8437703439133077933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_25
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 103
+        width: 104
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f853f105a2e679f0800000000000000
+      internalID: -470939912683431696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_26
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 103
+        width: 106
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e029df696d4287a0800000000000000
+      internalID: -6376449007159795487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_27
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 103
+        width: 106
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19ed2c804477ccad0800000000000000
+      internalID: -2680636544103817583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_28
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 103
+        width: 106
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f999dd6c4cf054f0800000000000000
+      internalID: -841895725127591439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_29
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 103
+        width: 106
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 901daf0e251945f50800000000000000
+      internalID: 6869275116794728713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_30
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 7
+        width: 106
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94900f1441b757e40800000000000000
+      internalID: 5653560234169338185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_31
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 7
+        width: 106
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22277b8917d57b50800000000000000
+      internalID: 6590410134440583727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_2nd Evolution_cow_hit_128x96_32
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 7
+        width: 106
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a7477652f720960800000000000000
+      internalID: 7566750122562058887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      1_2nd Evolution_cow_hit_128x96_0: -8791009948283806171
+      1_2nd Evolution_cow_hit_128x96_1: 6204117022005127526
+      1_2nd Evolution_cow_hit_128x96_10: 9200691698809114966
+      1_2nd Evolution_cow_hit_128x96_11: -3304222676548542773
+      1_2nd Evolution_cow_hit_128x96_12: -5974164447922937248
+      1_2nd Evolution_cow_hit_128x96_13: 6574485732597225953
+      1_2nd Evolution_cow_hit_128x96_14: -3215866495622948687
+      1_2nd Evolution_cow_hit_128x96_15: -1567506159263563635
+      1_2nd Evolution_cow_hit_128x96_16: -5457871523119985423
+      1_2nd Evolution_cow_hit_128x96_17: 4990888662499989247
+      1_2nd Evolution_cow_hit_128x96_18: -915767197594617731
+      1_2nd Evolution_cow_hit_128x96_19: 3029424098072479733
+      1_2nd Evolution_cow_hit_128x96_2: 5680353181523862050
+      1_2nd Evolution_cow_hit_128x96_20: 4708006007640619968
+      1_2nd Evolution_cow_hit_128x96_21: 32567699277614391
+      1_2nd Evolution_cow_hit_128x96_22: -6149973363461113160
+      1_2nd Evolution_cow_hit_128x96_23: 3623517973922347037
+      1_2nd Evolution_cow_hit_128x96_24: -8437703439133077933
+      1_2nd Evolution_cow_hit_128x96_25: -470939912683431696
+      1_2nd Evolution_cow_hit_128x96_26: -6376449007159795487
+      1_2nd Evolution_cow_hit_128x96_27: -2680636544103817583
+      1_2nd Evolution_cow_hit_128x96_28: -841895725127591439
+      1_2nd Evolution_cow_hit_128x96_29: 6869275116794728713
+      1_2nd Evolution_cow_hit_128x96_3: 2731568371297726170
+      1_2nd Evolution_cow_hit_128x96_30: 5653560234169338185
+      1_2nd Evolution_cow_hit_128x96_31: 6590410134440583727
+      1_2nd Evolution_cow_hit_128x96_32: 7566750122562058887
+      1_2nd Evolution_cow_hit_128x96_4: 4141966626205017185
+      1_2nd Evolution_cow_hit_128x96_5: -6663097797736331006
+      1_2nd Evolution_cow_hit_128x96_6: -5998319497357000085
+      1_2nd Evolution_cow_hit_128x96_7: -4133342370294895219
+      1_2nd Evolution_cow_hit_128x96_8: 2675356786839234439
+      1_2nd Evolution_cow_hit_128x96_9: -4265446225105456661
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
