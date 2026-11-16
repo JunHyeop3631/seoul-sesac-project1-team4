@@ -1,0 +1,35 @@
+정보창 구분선·꽃 장식 추가 에셋
+
+이 05_DividersAndOrnaments 폴더를 기존 캐릭터 정보창 에셋 폴더에 합쳐서 사용하세요.
+확정한 1920 × 1080 미리보기의 구분선과 꽃을 투명 PNG로 분리했습니다.
+모두 4배 해상도로 저장했으며, 아래 권장 크기는 화면에서 표시할 크기입니다.
+
+파일 / PNG 크기 / 권장 표시 크기
+divider-title.png / 1824 × 28 / 456 × 7
+divider-stats-top.png / 1824 × 28 / 456 × 7
+divider-section.png / 1824 × 28 / 456 × 7
+story-ornament-left.png / 476 × 176 / 119 × 44
+story-ornament-right.png / 476 × 176 / 119 × 44
+story-flower.png / 96 × 96 / 24 × 24
+bottom-flower.png / 300 × 300 / 75 × 75
+
+배치
+- divider-title: ‘캐릭터 정보’ 제목 아래. 실제 선 두께는 화면 기준 3px입니다.
+- divider-stats-top: 초상·이름 아래, 공격력 행 위. 실제 선 두께는 2px입니다.
+- divider-section: 공격력과 공격 속도 사이, 공격 속도 아래. 동일 파일을 재사용합니다.
+- 이야기 제목 양옆: story-ornament-left와 story-ornament-right를 한 개씩 배치합니다.
+  [선 ─ 꽃]  캐릭터 이야기  [꽃 ─ 선] 순서입니다.
+  장식과 제목 사이의 간격은 화면 기준 약 16px입니다.
+- story-flower: 선과 꽃을 개별 조정하고 싶을 때 사용하는 단품입니다.
+  합쳐진 좌우 장식을 썼다면 이 꽃을 중복 배치할 필요는 없습니다.
+- bottom-flower: 오른쪽 아래 큰 꽃입니다. 미리보기의 55% 불투명도를 PNG에 반영했습니다.
+
+Unity 설정
+- Texture Type: Sprite (2D and UI), Sprite Mode: Single.
+- UI Image의 Color는 흰색, Alpha는 1로 시작하면 파일에 담긴 색·투명도가 유지됩니다.
+- 구분선은 Preserve Aspect를 끄고 폭을 늘리거나 줄여도 됩니다. 높이는 7로 유지하세요.
+- 좌우 합성 장식과 꽃은 가로세로 비율을 유지해서 사용합니다.
+- 본문 폰트 파일은 이 장식 PNG를 표시하는 데 필요하지 않습니다.
+- Unity가 생성한 .meta 파일도 이미지와 함께 커밋하세요.
+
+이번 파일은 배치용 이미지입니다. Unity 장면에 자동 배치하거나 게임 동작을 변경하지 않았습니다.

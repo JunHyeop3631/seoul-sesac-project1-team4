@@ -1,0 +1,62 @@
+캐릭터 정보창 최종 에셋 — 이순신체 Bold
+정리일: 2026-11-17
+
+구성
+01_Icons: 투명 PNG 3개
+  star.png — 성급 별 (2성은 같은 이미지를 두 개 배치)
+  attack-sword.png — 공격력 아이콘
+  attack-speed-hourglass.png — 공격 속도 아이콘
+
+02_BrushText: 투명 PNG 10개
+  title-character-info.png — 캐릭터 정보
+  name-dog-warrior.png — 개 전사
+  name-pig-taoist.png — 돼지 도사
+  name-sheep-spearman.png — 양창병
+  name-ox-maceman.png — 소 철퇴병
+  name-horse-archer.png — 말 궁수
+  name-white-tiger-general.png — 백호 대장군
+  label-attack.png — 공격력
+  label-attack-speed.png — 공격 속도
+  heading-character-story.png — 캐릭터 이야기
+
+03_Fonts
+  YiSunShin-Bold.otf — 아산시 공식 배포본, 승인한 미리보기에 사용한 동일 파일
+  이야기 본문과 능력치 숫자를 직접 입력할 때 사용하는 글꼴입니다.
+  제목과 이름 PNG는 별도 제작한 붓글씨 이미지이며 이 폰트로 조판한 글자가 아닙니다.
+
+04_Licenses
+  이순신체_라이선스_및_출처.txt — 공식 이용 조건 요약, 저작권 고지, 원문 링크
+  크레딧_출처표시.txt — 게임 크레딧 또는 라이선스 화면에 넣을 출처 문구
+
+Unity에서 사용하기
+1. 이 폴더를 Unity 프로젝트의 Assets 안으로 복사합니다.
+2. PNG의 Texture Type은 Sprite (2D and UI), Sprite Mode는 Single로 설정합니다.
+   UI Image의 Preserve Aspect를 켜서 비율을 유지하세요.
+   아이콘은 256 × 256 px, 붓글씨는 높이 224 px이고 폭은 문구마다 다릅니다.
+3. TextMesh Pro를 사용하는 경우 YiSunShin-Bold.otf를 선택하고
+   Create > TextMeshPro > Font Asset 메뉴에서 폰트 에셋을 만듭니다.
+   Unity/패키지 버전에 따라 하위 메뉴에 SDF가 표시될 수 있습니다.
+   생성한 폰트 에셋을 이야기 본문과 능력치 숫자에 지정합니다.
+   새 한글 문구를 계속 입력한다면 Dynamic 방식으로 설정하고 원본 OTF를 함께 보관하세요.
+4. 이 파일 자체가 Bold 디자인입니다. 미리보기와 비교할 때 추가 Bold 효과는 끈 상태로 시작하세요.
+5. Unity가 생성한 이미지·폰트·폴더의 .meta 파일과 생성한 폰트 에셋도 함께 커밋합니다.
+6. 게임을 배포할 때 04_Licenses의 출처 문구를 크레딧/라이선스 화면에 반영하세요.
+
+1920 × 1080 미리보기 기준
+- 이야기 본문: 이순신체 Bold, 27px, 가운데 정렬, 줄 높이 약 50px
+- 능력치 숫자: 이순신체 Bold, 36px, 오른쪽 정렬
+- 단위(회/초): 이순신체 Bold, 24px
+- 본문과 숫자 색: #351B0E
+위 수치는 브라우저 미리보기 기준입니다. Unity에서는 실제 화면을 보며 크기와 줄 간격을 맞추세요.
+
+포함하지 않은 항목
+- 캐릭터 초상, 초상 테두리, 공통 배경, 전체 게임 화면 이미지
+- 이야기 본문과 능력치 수치를 고정한 이미지
+- 이전 후보 폰트, 정보/진화 버튼, Unity 장면·스크립트
+
+확인 범위
+이미지 투명 배경과 원본 일치 여부, 폰트 원본 일치 여부를 확인했습니다.
+Unity 가져오기와 엔진 내 표시·재생은 이번 정리 작업에서 확인하지 않았습니다.
+
+TextMesh Pro 참고
+https://learn.unity.com/tutorial/textmesh-pro-font-asset-creation-1
