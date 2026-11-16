@@ -1,0 +1,1679 @@
+fileFormatVersion: 2
+guid: cb59b97d700a06a4180dc58a2401f3bb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8153057003066843315
+    second: Do_Taoist_Projectile_0
+  - first:
+      213: -5482793671515597231
+    second: Do_Taoist_Projectile_1
+  - first:
+      213: 2979039317163823744
+    second: Do_Taoist_Projectile_2
+  - first:
+      213: 5385908541733423303
+    second: Do_Taoist_Projectile_3
+  - first:
+      213: 2356824269482855006
+    second: Do_Taoist_Projectile_4
+  - first:
+      213: 3689519874355298725
+    second: Do_Taoist_Projectile_5
+  - first:
+      213: 1190142168472809474
+    second: Do_Taoist_Projectile_6
+  - first:
+      213: -6935355940514308560
+    second: Do_Taoist_Projectile_7
+  - first:
+      213: -6290611740862361419
+    second: Do_Taoist_Projectile_8
+  - first:
+      213: 3727190420343849172
+    second: Do_Taoist_Projectile_9
+  - first:
+      213: -481372783965373854
+    second: Do_Taoist_Projectile_10
+  - first:
+      213: 4175906285496033911
+    second: Do_Taoist_Projectile_11
+  - first:
+      213: 373406899289759591
+    second: Do_Taoist_Projectile_12
+  - first:
+      213: -5554123492340302923
+    second: Do_Taoist_Projectile_13
+  - first:
+      213: 8723119816285996268
+    second: Do_Taoist_Projectile_14
+  - first:
+      213: 6905253494844555413
+    second: Do_Taoist_Projectile_15
+  - first:
+      213: -6303927991253097803
+    second: Do_Taoist_Projectile_16
+  - first:
+      213: -4328335550561270826
+    second: Do_Taoist_Projectile_17
+  - first:
+      213: 5140820532895226448
+    second: Do_Taoist_Projectile_18
+  - first:
+      213: 6161252411305224082
+    second: Do_Taoist_Projectile_19
+  - first:
+      213: -7877920713093995088
+    second: Do_Taoist_Projectile_20
+  - first:
+      213: -1208782559307014843
+    second: Do_Taoist_Projectile_21
+  - first:
+      213: 1257282618853652996
+    second: Do_Taoist_Projectile_22
+  - first:
+      213: 1185230177524231118
+    second: Do_Taoist_Projectile_23
+  - first:
+      213: 1161445695642272215
+    second: Do_Taoist_Projectile_24
+  - first:
+      213: 3863737929120424909
+    second: Do_Taoist_Projectile_25
+  - first:
+      213: -7242744995581709972
+    second: Do_Taoist_Projectile_26
+  - first:
+      213: -4263753873205388179
+    second: Do_Taoist_Projectile_27
+  - first:
+      213: 1770741137097903003
+    second: Do_Taoist_Projectile_28
+  - first:
+      213: -4291212432462071635
+    second: Do_Taoist_Projectile_29
+  - first:
+      213: -5048526469604177214
+    second: Do_Taoist_Projectile_30
+  - first:
+      213: -3599357308840902809
+    second: Do_Taoist_Projectile_31
+  - first:
+      213: -6277401797014723643
+    second: Do_Taoist_Projectile_32
+  - first:
+      213: -7891726503763304655
+    second: Do_Taoist_Projectile_33
+  - first:
+      213: 2583884348425839962
+    second: Do_Taoist_Projectile_34
+  - first:
+      213: -5666606971998595863
+    second: Do_Taoist_Projectile_35
+  - first:
+      213: 8188306508204104532
+    second: Do_Taoist_Projectile_36
+  - first:
+      213: 3600999735412541908
+    second: Do_Taoist_Projectile_37
+  - first:
+      213: 3300871238394355533
+    second: Do_Taoist_Projectile_38
+  - first:
+      213: -897607465655850363
+    second: Do_Taoist_Projectile_39
+  - first:
+      213: 584978033481687849
+    second: Do_Taoist_Projectile_40
+  - first:
+      213: 6423966450402668051
+    second: Do_Taoist_Projectile_41
+  - first:
+      213: 3226106898584054304
+    second: Do_Taoist_Projectile_42
+  - first:
+      213: -4856502928576973811
+    second: Do_Taoist_Projectile_43
+  - first:
+      213: 6676814932810523002
+    second: Do_Taoist_Projectile_44
+  - first:
+      213: 2251640562599136624
+    second: Do_Taoist_Projectile_45
+  - first:
+      213: -2255564061544711989
+    second: Do_Taoist_Projectile_46
+  - first:
+      213: 1709725973235406505
+    second: Do_Taoist_Projectile_47
+  - first:
+      213: -8607609349509995369
+    second: Do_Taoist_Projectile_48
+  - first:
+      213: -3889961779345374794
+    second: Do_Taoist_Projectile_49
+  - first:
+      213: -701036612807068473
+    second: Do_Taoist_Projectile_50
+  - first:
+      213: -5565439928103283079
+    second: Do_Taoist_Projectile_51
+  - first:
+      213: -8829518239528800284
+    second: Do_Taoist_Projectile_52
+  - first:
+      213: 5142667918407312665
+    second: Do_Taoist_Projectile_53
+  - first:
+      213: 3412702753805172549
+    second: Do_Taoist_Projectile_54
+  - first:
+      213: -9185069774950542397
+    second: Do_Taoist_Projectile_55
+  - first:
+      213: 4597353141189536306
+    second: Do_Taoist_Projectile_56
+  - first:
+      213: 2950525840864246190
+    second: Do_Taoist_Projectile_57
+  - first:
+      213: 5125871090084299100
+    second: Do_Taoist_Projectile_58
+  - first:
+      213: 3473836035967648298
+    second: Do_Taoist_Projectile_59
+  - first:
+      213: -3940100783385740946
+    second: Do_Taoist_Projectile_60
+  - first:
+      213: 1863073251179953160
+    second: Do_Taoist_Projectile_61
+  - first:
+      213: 6418677239396104208
+    second: Do_Taoist_Projectile_62
+  - first:
+      213: 467152798001414362
+    second: Do_Taoist_Projectile_63
+  - first:
+      213: 8883537985172770080
+    second: Do_Taoist_Projectile_64
+  - first:
+      213: -1912458538206691556
+    second: Do_Taoist_Projectile_65
+  - first:
+      213: -7737981297966018958
+    second: Do_Taoist_Projectile_66
+  - first:
+      213: 3367401173631576988
+    second: Do_Taoist_Projectile_67
+  - first:
+      213: -7752355046910089911
+    second: Do_Taoist_Projectile_68
+  - first:
+      213: -2191970721816324373
+    second: Do_Taoist_Projectile_69
+  - first:
+      213: -490016200446395530
+    second: Do_Taoist_Projectile_70
+  - first:
+      213: 6862427118518410721
+    second: Do_Taoist_Projectile_71
+  - first:
+      213: -2839540282555341583
+    second: Do_Taoist_Projectile_72
+  - first:
+      213: 70826218866982958
+    second: Do_Taoist_Projectile_73
+  - first:
+      213: -16849209282372019
+    second: Do_Taoist_Projectile_74
+  - first:
+      213: 9166565019946129672
+    second: Do_Taoist_Projectile_75
+  - first:
+      213: -3657017264222420771
+    second: Do_Taoist_Projectile_76
+  - first:
+      213: 1408991650666102913
+    second: Do_Taoist_Projectile_77
+  - first:
+      213: 760173854902026152
+    second: Do_Taoist_Projectile_78
+  - first:
+      213: 615103289405779876
+    second: Do_Taoist_Projectile_79
+  - first:
+      213: -32716754108945652
+    second: Do_Taoist_Projectile_80
+  - first:
+      213: -3034395250847094680
+    second: Do_Taoist_Projectile_81
+  - first:
+      213: -7097064470755609927
+    second: Do_Taoist_Projectile_82
+  - first:
+      213: 1493126739878661857
+    second: Do_Taoist_Projectile_83
+  - first:
+      213: 480922859969211113
+    second: Do_Taoist_Projectile_84
+  - first:
+      213: -7280423807470785913
+    second: Do_Taoist_Projectile_85
+  - first:
+      213: -299520355860815497
+    second: Do_Taoist_Projectile_86
+  - first:
+      213: 5092777403211969817
+    second: Do_Taoist_Projectile_87
+  - first:
+      213: 6905586890537360583
+    second: Do_Taoist_Projectile_88
+  - first:
+      213: 968484602384863183
+    second: Do_Taoist_Projectile_89
+  - first:
+      213: -6846000732469830503
+    second: Do_Taoist_Projectile_90
+  - first:
+      213: 6540398230610890423
+    second: Do_Taoist_Projectile_91
+  - first:
+      213: -5183618757686650148
+    second: Do_Taoist_Projectile_92
+  - first:
+      213: 4553079225404596714
+    second: Do_Taoist_Projectile_93
+  - first:
+      213: 8613877139374529001
+    second: Do_Taoist_Projectile_94
+  - first:
+      213: 262749711236906129
+    second: Do_Taoist_Projectile_95
+  - first:
+      213: -1530679018422556905
+    second: Do_Taoist_Projectile_96
+  - first:
+      213: 3990995424446982777
+    second: Do_Taoist_Projectile_97
+  - first:
+      213: 7998148477608212786
+    second: Do_Taoist_Projectile_98
+  - first:
+      213: -3886291664092421590
+    second: Do_Taoist_Projectile_99
+  - first:
+      213: -8870055444515769492
+    second: Do_Taoist_Projectile_100
+  - first:
+      213: -7064576109409403208
+    second: Do_Taoist_Projectile_101
+  - first:
+      213: 9001343468563044896
+    second: Do_Taoist_Projectile_102
+  - first:
+      213: 3890519586893858212
+    second: Do_Taoist_Projectile_103
+  - first:
+      213: 8561352697263429843
+    second: Do_Taoist_Projectile_104
+  - first:
+      213: -4778289070303276069
+    second: Do_Taoist_Projectile_105
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4f90ba3ad58ade80800000000000000
+      internalID: -8153057003066843315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 896
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1569d80743439e3b0800000000000000
+      internalID: -5482793671515597231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_2
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 896
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 082d87fa97ca75920800000000000000
+      internalID: 2979039317163823744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_3
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 896
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c843ce68479eba40800000000000000
+      internalID: 5385908541733423303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_4
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 896
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a8b84af2f15b020800000000000000
+      internalID: 2356824269482855006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_5
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 896
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a101be17cec33330800000000000000
+      internalID: 3689519874355298725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 784
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 200f8002ffb348010800000000000000
+      internalID: 1190142168472809474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_7
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 784
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03edfb6648aa0cf90800000000000000
+      internalID: -6935355940514308560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_8
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 784
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b05ff563f143b8a0800000000000000
+      internalID: -6290611740862361419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_9
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 784
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d085d690f3a9b330800000000000000
+      internalID: 3727190420343849172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_10
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 784
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26af33fd002d159f0800000000000000
+      internalID: -481372783965373854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_11
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 784
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 772ef4a44acc3f930800000000000000
+      internalID: 4175906285496033911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f98d4b89b9e2500800000000000000
+      internalID: 373406899289759591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 672
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb77685c1acbe2b0800000000000000
+      internalID: -5554123492340302923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_14
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 672
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4c5ee714fbe0970800000000000000
+      internalID: 8723119816285996268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_15
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 672
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5900c3cc77364df50800000000000000
+      internalID: 6905253494844555413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_16
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 672
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2a7bf34e2f388a0800000000000000
+      internalID: -6303927991253097803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_17
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 672
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d3c910dfb9aee3c0800000000000000
+      internalID: -4328335550561270826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 560
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a1145990dd75740800000000000000
+      internalID: 5140820532895226448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_19
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 560
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 297ed53ac6a218550800000000000000
+      internalID: 6161252411305224082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_20
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 560
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b52757b9d00ca290800000000000000
+      internalID: -7877920713093995088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_21
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 560
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d51ddaaaa893fe0800000000000000
+      internalID: -1208782559307014843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_22
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 560
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a7b0761e3c27110800000000000000
+      internalID: 1257282618853652996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_23
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 560
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecba76c1198c27010800000000000000
+      internalID: 1185230177524231118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d10aa2e4b84e1010800000000000000
+      internalID: 1161445695642272215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_25
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 448
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc32d62fc21ce9530800000000000000
+      internalID: 3863737929120424909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_26
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 448
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c613d9bdcc99c7b90800000000000000
+      internalID: -7242744995581709972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_27
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 448
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c95e1517a14d4c0800000000000000
+      internalID: -4263753873205388179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_28
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 448
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9b44e1beafe29810800000000000000
+      internalID: 1770741137097903003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_29
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 448
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8bb5b470d8274c0800000000000000
+      internalID: -4291212432462071635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca06149ce700f9b0800000000000000
+      internalID: -5048526469604177214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_31
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 336
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ff4da09938c0ec0800000000000000
+      internalID: -3599357308840902809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_32
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 336
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c3e980235032e8a0800000000000000
+      internalID: -6277401797014723643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_33
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 336
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13f17a69e84fa7290800000000000000
+      internalID: -7891726503763304655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_34
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 336
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a552d98ff1dcbd320800000000000000
+      internalID: 2583884348425839962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_35
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 336
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e495406bfa2c51b0800000000000000
+      internalID: -5666606971998595863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b568db265b2a170800000000000000
+      internalID: 8188306508204104532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_37
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 224
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d94a813e2259f130800000000000000
+      internalID: 3600999735412541908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_38
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 224
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4f9ccd07ec0fcd20800000000000000
+      internalID: 3300871238394355533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_39
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 224
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a28d504ce0b83f0800000000000000
+      internalID: -897607465655850363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_40
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 224
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 923251f0c624e1800800000000000000
+      internalID: 584978033481687849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_41
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 224
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31e27457373862950800000000000000
+      internalID: 6423966450402668051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a2a81b12f65cc20800000000000000
+      internalID: 3226106898584054304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_43
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 112
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d04768b315c3a9cb0800000000000000
+      internalID: -4856502928576973811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_44
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 112
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a71e13d5ecfc8ac50800000000000000
+      internalID: 6676814932810523002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_45
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 112
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d0597792f6f3f10800000000000000
+      internalID: 2251640562599136624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_46
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 112
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc87d7fbf60a2b0e0800000000000000
+      internalID: -2255564061544711989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_47
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 112
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a694f1d6ba2ab710800000000000000
+      internalID: 1709725973235406505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7942025d6e0ab8880800000000000000
+      internalID: -8607609349509995369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_49
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1c5402f54140ac0800000000000000
+      internalID: -3889961779345374794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_50
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c477173aea6546f0800000000000000
+      internalID: -701036612807068473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_51
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 0
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976d0a25fd593c2b0800000000000000
+      internalID: -5565439928103283079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_52
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4efad0321ff377580800000000000000
+      internalID: -8829518239528800284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_Projectile_53
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 0
+        width: 208
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 915277a893d6e5740800000000000000
+      internalID: 5142667918407312665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bd6b3e20ad8884241a6f5849633ce924
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":9.0},"gridSpriteSize":{"x":208.0,"y":112.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Do_Taoist_Projectile_0: -8153057003066843315
+      Do_Taoist_Projectile_1: -5482793671515597231
+      Do_Taoist_Projectile_10: -481372783965373854
+      Do_Taoist_Projectile_11: 4175906285496033911
+      Do_Taoist_Projectile_12: 373406899289759591
+      Do_Taoist_Projectile_13: -5554123492340302923
+      Do_Taoist_Projectile_14: 8723119816285996268
+      Do_Taoist_Projectile_15: 6905253494844555413
+      Do_Taoist_Projectile_16: -6303927991253097803
+      Do_Taoist_Projectile_17: -4328335550561270826
+      Do_Taoist_Projectile_18: 5140820532895226448
+      Do_Taoist_Projectile_19: 6161252411305224082
+      Do_Taoist_Projectile_2: 2979039317163823744
+      Do_Taoist_Projectile_20: -7877920713093995088
+      Do_Taoist_Projectile_21: -1208782559307014843
+      Do_Taoist_Projectile_22: 1257282618853652996
+      Do_Taoist_Projectile_23: 1185230177524231118
+      Do_Taoist_Projectile_24: 1161445695642272215
+      Do_Taoist_Projectile_25: 3863737929120424909
+      Do_Taoist_Projectile_26: -7242744995581709972
+      Do_Taoist_Projectile_27: -4263753873205388179
+      Do_Taoist_Projectile_28: 1770741137097903003
+      Do_Taoist_Projectile_29: -4291212432462071635
+      Do_Taoist_Projectile_3: 5385908541733423303
+      Do_Taoist_Projectile_30: -5048526469604177214
+      Do_Taoist_Projectile_31: -3599357308840902809
+      Do_Taoist_Projectile_32: -6277401797014723643
+      Do_Taoist_Projectile_33: -7891726503763304655
+      Do_Taoist_Projectile_34: 2583884348425839962
+      Do_Taoist_Projectile_35: -5666606971998595863
+      Do_Taoist_Projectile_36: 8188306508204104532
+      Do_Taoist_Projectile_37: 3600999735412541908
+      Do_Taoist_Projectile_38: 3300871238394355533
+      Do_Taoist_Projectile_39: -897607465655850363
+      Do_Taoist_Projectile_4: 2356824269482855006
+      Do_Taoist_Projectile_40: 584978033481687849
+      Do_Taoist_Projectile_41: 6423966450402668051
+      Do_Taoist_Projectile_42: 3226106898584054304
+      Do_Taoist_Projectile_43: -4856502928576973811
+      Do_Taoist_Projectile_44: 6676814932810523002
+      Do_Taoist_Projectile_45: 2251640562599136624
+      Do_Taoist_Projectile_46: -2255564061544711989
+      Do_Taoist_Projectile_47: 1709725973235406505
+      Do_Taoist_Projectile_48: -8607609349509995369
+      Do_Taoist_Projectile_49: -3889961779345374794
+      Do_Taoist_Projectile_5: 3689519874355298725
+      Do_Taoist_Projectile_50: -701036612807068473
+      Do_Taoist_Projectile_51: -5565439928103283079
+      Do_Taoist_Projectile_52: -8829518239528800284
+      Do_Taoist_Projectile_53: 5142667918407312665
+      Do_Taoist_Projectile_6: 1190142168472809474
+      Do_Taoist_Projectile_7: -6935355940514308560
+      Do_Taoist_Projectile_8: -6290611740862361419
+      Do_Taoist_Projectile_9: 3727190420343849172
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

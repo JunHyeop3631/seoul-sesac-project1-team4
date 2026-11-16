@@ -1,5 +1,13 @@
 # 적군 명세
 
+## 피격 효과 풀링
+
+`TakeDamage(damage, attackHitEffect)`는 공격자가 전달한 피격 효과를 우선 재생한다. 생략하면 적 프리팹의 기본 효과를 사용한다. 종류별 효과도 동일한 `HitEffectPool`에서 프리팹별로 재사용한다.
+
+`HitEffectPool`은 `ThrowYut` 씬의 `TurnController` 아래에 배치한다. `EnemyPool`의 Inspector 참조로 연결하고, 적을 요청할 때 `SetHitEffectPool`로 해당 적에 전달한다.
+
+피해가 적용되면 `Enemy.TakeDamage`가 [HitEffectPool](../Assets/Scripts/Enemy/HitEffectPool.cs)에 `Common_Hit` 재생을 요청한다. 프리팹별 풀에서 대기 효과를 재사용하고, 대기 객체가 없으면 생성한다. 매 재생 시 위치와 회전을 설정하고 Hit 상태를 처음부터 재생한다. 애니메이션 종료 이벤트 `OnHitAnimationFinished`에서 효과를 비활성화해 풀에 반환한다. 같은 프레임의 여러 피격 효과는 각각 독립된 객체로 재생한다. 풀은 적과 별도 오브젝트가 관리하며 씬 종료 시 정리한다.
+
 [명세 색인](README.md) · [아군](AllySpec.md) · [웨이브](WaveSpec.md)
 
 ## 종류와 설정
@@ -26,7 +34,7 @@
 ## 피해와 처치
 
 - 활성 상태이고 체력이 남은 적에 양수 피해가 들어오면 `TakeDamage`가 현재 체력을 낮춘다. 최솟값은 0이다.
-- 피해가 적용될 때 적 중심에 `Enemy_Hit` 효과를 생성한다. 일반·빠른·보스 프리팹에 연결했으며, 기존 이동·사망 Animator와 독립적으로 11개 스프라이트를 60fps로 한 번 재생한다. 클립 끝의 `OnHitAnimationFinished` 이벤트에서 제거하며 속도 1일 때 약 0.1833초다. 자세한 연결은 [전투 효과 애니메이션](CombatEffects.md)을 따른다.
+- 피해가 적용될 때 적 중심에 `Common_Hit` 효과를 생성한다. 일반·빠른·보스 프리팹에 연결했으며, 기존 이동·사망 Animator와 독립적으로 11개 스프라이트를 60fps로 한 번 재생한다. 클립 끝의 `OnHitAnimationFinished` 이벤트에서 제거하며 속도 1일 때 약 0.1833초다. 자세한 연결은 [전투 효과 애니메이션](CombatEffects.md)을 따른다.
 - 체력이 처음 0이 되면 이동을 멈추고 `Defeated` 이벤트가 한 번 발생한다. 웨이브는 적을 생존 집합에서 제거하고 처치 수를 즉시 증가시킨다. NormalEnemy는 0.5초 사망 애니메이션을 재생하고 `DeathCompleted`를 알린 뒤 풀에 반환된다. 웨이브는 사망 재생 중인 적의 반환까지 기다려 완료를 판정한다. 애니메이션을 설정하지 않은 적은 즉시 완료를 알린다.
 - 처치와 경로 도착은 각각 별도로 알리며, 두 경로 모두 [웨이브 완료 판정](WaveSpec.md#완료-알림)의 필드 잔여 적 수에 반영된다.
 

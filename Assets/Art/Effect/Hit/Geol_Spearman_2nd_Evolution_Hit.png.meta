@@ -1,0 +1,512 @@
+fileFormatVersion: 2
+guid: e5bc4b2a2d10d6046a2200e5543ed34d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8846214489645602847
+    second: Geol_Spearman_2nd_Evolution_Hit_0
+  - first:
+      213: -2174427032159370586
+    second: Geol_Spearman_2nd_Evolution_Hit_1
+  - first:
+      213: 4901452390020959834
+    second: Geol_Spearman_2nd_Evolution_Hit_2
+  - first:
+      213: -4261292978113116197
+    second: Geol_Spearman_2nd_Evolution_Hit_3
+  - first:
+      213: 169946747047314771
+    second: Geol_Spearman_2nd_Evolution_Hit_4
+  - first:
+      213: 7100893034470893758
+    second: Geol_Spearman_2nd_Evolution_Hit_5
+  - first:
+      213: 6754730780802399293
+    second: Geol_Spearman_2nd_Evolution_Hit_6
+  - first:
+      213: 4942739678189599792
+    second: Geol_Spearman_2nd_Evolution_Hit_7
+  - first:
+      213: -2739966256562356206
+    second: Geol_Spearman_2nd_Evolution_Hit_8
+  - first:
+      213: 9210707769650638262
+    second: Geol_Spearman_2nd_Evolution_Hit_9
+  - first:
+      213: -5698189266872591754
+    second: Geol_Spearman_2nd_Evolution_Hit_10
+  - first:
+      213: 5473644228077687727
+    second: Geol_Spearman_2nd_Evolution_Hit_11
+  - first:
+      213: -6890524709421565885
+    second: Geol_Spearman_2nd_Evolution_Hit_12
+  - first:
+      213: 2688704238476954917
+    second: Geol_Spearman_2nd_Evolution_Hit_13
+  - first:
+      213: -7541065628912452221
+    second: Geol_Spearman_2nd_Evolution_Hit_14
+  - first:
+      213: -254621189880141852
+    second: Geol_Spearman_2nd_Evolution_Hit_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Geol_Spearman_2nd_Evolution_Hit_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7a2c97aceeb3580800000000000000
+      internalID: -8846214489645602847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geol_Spearman_2nd_Evolution_Hit_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a242268222e2d1e0800000000000000
+      internalID: -2174427032159370586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geol_Spearman_2nd_Evolution_Hit_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e40becaf4750440800000000000000
+      internalID: 4901452390020959834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geol_Spearman_2nd_Evolution_Hit_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd783bb1d98dcd4c0800000000000000
+      internalID: -4261292978113116197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geol_Spearman_2nd_Evolution_Hit_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3550d708aa5cb5200800000000000000
+      internalID: 169946747047314771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geol_Spearman_2nd_Evolution_Hit_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb8eeabb7907b8260800000000000000
+      internalID: 7100893034470893758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geol_Spearman_2nd_Evolution_Hit_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3cbf176bdf9dbd50800000000000000
+      internalID: 6754730780802399293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geol_Spearman_2nd_Evolution_Hit_7
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c38bfac83289440800000000000000
+      internalID: 4942739678189599792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geol_Spearman_2nd_Evolution_Hit_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2104b05e43fa9f9d0800000000000000
+      internalID: -2739966256562356206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geol_Spearman_2nd_Evolution_Hit_9
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bde4f38ae103df70800000000000000
+      internalID: 9210707769650638262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geol_Spearman_2nd_Evolution_Hit_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a9d155d07fbe0b0800000000000000
+      internalID: -5698189266872591754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geol_Spearman_2nd_Evolution_Hit_11
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa31071cc6a46fb40800000000000000
+      internalID: 5473644228077687727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geol_Spearman_2nd_Evolution_Hit_12
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34830eac840ff50a0800000000000000
+      internalID: -6890524709421565885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geol_Spearman_2nd_Evolution_Hit_13
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d81807242305520800000000000000
+      internalID: 2688704238476954917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Geol_Spearman_2nd_Evolution_Hit_14
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38df3c8c3c0c85790800000000000000
+      internalID: -7541065628912452221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f45ef8f3025dab34db2fc012c45c9b8d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":10.0,"y":2.0},"gridSpriteSize":{"x":80.0,"y":80.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Geol_Spearman_2nd_Evolution_Hit_0: -8846214489645602847
+      Geol_Spearman_2nd_Evolution_Hit_1: -2174427032159370586
+      Geol_Spearman_2nd_Evolution_Hit_10: -5698189266872591754
+      Geol_Spearman_2nd_Evolution_Hit_11: 5473644228077687727
+      Geol_Spearman_2nd_Evolution_Hit_12: -6890524709421565885
+      Geol_Spearman_2nd_Evolution_Hit_13: 2688704238476954917
+      Geol_Spearman_2nd_Evolution_Hit_14: -7541065628912452221
+      Geol_Spearman_2nd_Evolution_Hit_2: 4901452390020959834
+      Geol_Spearman_2nd_Evolution_Hit_3: -4261292978113116197
+      Geol_Spearman_2nd_Evolution_Hit_4: 169946747047314771
+      Geol_Spearman_2nd_Evolution_Hit_5: 7100893034470893758
+      Geol_Spearman_2nd_Evolution_Hit_6: 6754730780802399293
+      Geol_Spearman_2nd_Evolution_Hit_7: 4942739678189599792
+      Geol_Spearman_2nd_Evolution_Hit_8: -2739966256562356206
+      Geol_Spearman_2nd_Evolution_Hit_9: 9210707769650638262
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

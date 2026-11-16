@@ -1,5 +1,19 @@
 # 아군 명세
 
+2단계 아군은 각 프리팹의 `Attack Hit Effect`에 종류별 피격 효과를 연결한다. `Do_Taoist`, `Gae_Warrior`, `Geol_Spearman`, `Yut_Maceman`, `Mo_Archer`는 각각 대응하는 `2nd_Evolution_Hit` 프리팹을 사용한다. 직접 공격은 타격 이벤트에서 전달하며, 투사체는 발사 시 효과를 저장해 명중 시 전달한다. 투사체가 풀에서 재발사되면 새 공격의 효과로 초기화한다.
+
+투사체의 Flight 애니메이션은 발사할 때 실제 상태 길이를 읽어 `애니메이션 길이 / 비행 시간`으로 Animator 속도를 설정한다. 예를 들어 0.9초 클립을 0.3초 동안 비행시키면 3배속으로 재생한다. 풀에서 재발사할 때도 새 비행 시간으로 다시 계산한다.
+
+## 1단계에서 2단계로 진화
+
+같은 칸에 동일 클래스의 활성 1단계 아군이 3마리 이상 있으면 진화 버튼을 활성화한다. 클릭 시 조건을 다시 확인하고 선택한 유닛을 포함한 3마리를 소비한다. 같은 종류의 2단계 프리팹 한 마리를 같은 칸에 등록하며, 남은 아군은 유지한다. 2단계는 현재 진화 재료로 사용할 수 없다. 이동 그룹도 같은 클래스와 같은 단계로 묶는다.
+
+`YutActionController`의 `Evolutions`에 5종의 1·2단계 프리팹을 연결한다. `AllyPool`은 씬의 `TurnController`에 컴포넌트로 배치하고 Inspector 참조로 전달한다. 씬 배치 아군과 소환 아군을 원본 프리팹별 풀에 등록하며, 진화 재료는 비활성화해 반환하고 다음 소환에 재사용한다. 재사용 시 대상·공격 진행·대기시간과 Animator를 초기화한다. 새 2단계 아군은 기존 웨이브와 투사체 풀에 연결하고 칸의 배치를 갱신한다.
+
+Unity 배치 Play Mode에서 5종 모두 3마리 소비와 2단계 생성, 재료 부족 시 거부, 다른 종류가 섞인 6마리 칸에서의 교체, 2단계 진화 제한, 반환된 재료에 대한 중복 요청 거부와 다음 소환 시 재사용을 확인했다.
+
+투사체 풀은 `ThrowYut` 씬의 `TurnController` 아래에 배치한다. `YutActionController`의 `Projectile Pool`에 연결하며, 아군 등록 시 `ProjectileAttack.SetPool`로 참조를 전달한다.
+
 [명세 색인](README.md) · [윷 행동](YutActionSpec.md) · [적군](EnemySpec.md) · [웨이브](WaveSpec.md)
 
 ## 종류와 배치
@@ -12,7 +26,7 @@
 - 루트 `Ally`는 자식 Animator와 렌더러를 명시적으로 참조한다. Visual의 애니메이션 이벤트 `ApplyAttack`, `ReleaseMagic`, `ReleaseArrow`는 `AllyAnimationEvents`가 부모 아군에 전달한다. 선택 판정, 사거리 표시 정렬, 유닛 버튼 배치는 `Ally.VisualRenderer`를 사용한다.
 
 - 2026-11-16 대화에서 확정한 공격 규칙을 아래에 기록한다. 모든 아군의 공격 실행을 Animation Event에 연결했다. 개·걸·윷은 타격 이벤트에서 직접 피해를 주고, 도·모는 발사 이벤트에서 투사체를 생성한다.
-- **모(`Mo_Archer`)는 `Mo_Arrow`, 돼지 도사(`Do_Taoist`)는 `Do_Magic`을 사용한다.** 개·걸·윷은 투사체를 사용하지 않는다.
+- **모(`Mo_Archer`)는 `Mo_Archer_Projectile`, 돼지 도사(`Do_Taoist`)는 `Do_Taoist_Projectile`을 사용한다.** 개·걸·윷은 투사체를 사용하지 않는다.
 - 대상 탐색은 아래의 기존 규칙을 사용한다. 공통 `Ally`가 대상 갱신·모션 제어·이벤트 중복 방지·공격 간격을 담당하고, 같은 오브젝트의 **`ProjectileAttack` 컴포넌트**가 도·모의 투사체 생성을 담당한다. `Do_Taoist`·`Mo_Archer`는 `Ally`를 직접 상속한다.
 
 ## 대상 선택과 유지
@@ -89,7 +103,7 @@
 
 | 항목 | 설정 |
 | --- | --- |
-| 화살 이미지 | [Mo_Arrow.png](../Assets/Art/Ally/Attack/Effect/Mo_Arrow.png)의 스프라이트 사용 |
+| 화살 이미지 | [Mo_Archer_Projectile.png](../Assets/Art/Effect/Projectile/Mo_Archer_Projectile.png)의 스프라이트 사용 |
 | 비행 시간 | 구현자가 임의의 양수 초기값을 정하고 조정 가능하게 구성. 대화의 0.3초·0.4초 등은 확정값이 아님 |
 | 발사 프레임 | 구현자가 공격 애니메이션에서 초기 위치를 임의로 정함. 좌·우 공격 모두 이벤트 연결 |
 | 발사 위치 | 아군 오브젝트 중심. 별도의 활 끝 오프셋을 적용하지 않음 |
@@ -100,16 +114,16 @@
 ### 구현 연결과 초기 설정
 
 - [Ally.cs](../Assets/Scripts/Ally/Ally.cs): 모든 아군의 모션 시작·취소·진행률 유지 방향 전환·모션 종료 대기·이벤트 시점 대기시간 계산을 담당한다. `ApplyAttack`은 개·걸·윷의 타격 이벤트 수신 함수다.
-- [ProjectileAttack.cs](../Assets/Scripts/Ally/ProjectileAttack.cs): 독립 컴포넌트로 투사체 프리팹과 비행 시간을 보관하고, 전달받은 목표·피해량으로 투사체를 생성한다. 대상 탐색과 공격 간격 계산은 하지 않는다. 기존 투사체 공격용 중간 상속 클래스는 제거했다.
+- [ProjectileAttack.cs](../Assets/Scripts/Ally/Attack/ProjectileAttack.cs): 독립 컴포넌트로 투사체 프리팹과 비행 시간을 보관하고, 전달받은 목표·피해량으로 투사체를 생성한다. 대상 탐색과 공격 간격 계산은 하지 않는다. 기존 투사체 공격용 중간 상속 클래스는 제거했다.
 - 도·모의 이벤트 수신 함수 → `Ally.ReleaseProjectile`의 대상 확인·단일 공격·공격 간격 처리 → `ProjectileAttack.Fire`의 투사체 생성 순서다. `ProjectileAttack`이 비활성 상태이거나 투사체 참조가 없으면 공격을 시작하지 않으며 발사도 하지 않는다.
 - [Mo_Archer.cs](../Assets/Scripts/Ally/Mo_Archer.cs)의 `ReleaseArrow`, [Do_Taoist.cs](../Assets/Scripts/Ally/Do_Taoist.cs)의 `ReleaseMagic`이 각 아군 좌우 클립의 Animation Event 수신 함수다.
-- [HomingProjectile.cs](../Assets/Scripts/Ally/HomingProjectile.cs): 발사 시 전달받은 목표 및 재사용 번호를 저장하고, 게임 시간 기준으로 추적·도착 피해·무효 목표에 대한 종료를 처리한다. 현재는 생성 후 종료 시 비활성화·파괴하며 풀링하지 않는다.
-- [Mo_Archer 프리팹](../Assets/Prefabs/Mo_Archer.prefab)의 **Projectile Attack 컴포넌트**의 `Projectile Prefab`에 [Mo_Arrow 프리팹](../Assets/Prefabs/Mo_Arrow.prefab)을 연결했다. 코드와 저장 필드 이름은 `projectilePrefab`이며 이전 이름 변환 속성은 없다.
-- [Do_Taoist 프리팹](../Assets/Prefabs/Do_Taoist.prefab)의 **Projectile Attack 컴포넌트**의 `Projectile Prefab`에 [Do_Magic 프리팹](../Assets/Prefabs/Do_Magic.prefab)을 연결했다. `ThrowYut` 씬의 소환 설정이 도·모 각각의 프리팹을 참조하는 것을 확인했다.
+- [HomingProjectile.cs](../Assets/Scripts/Ally/Attack/HomingProjectile.cs): 발사 시 전달받은 목표 및 재사용 번호를 저장하고, 게임 시간 기준으로 추적·도착 피해·무효 목표에 대한 종료를 처리한다. 명중하거나 목표가 무효화되면 공유 풀에 반환한다. 재사용 시 목표·피해량·출발 위치·발사 시각·비행 시간과 방향을 새로 설정하고 Flight 애니메이션을 처음부터 재생한다.
+- [Mo_Archer 프리팹](../Assets/Prefabs/Mo_Archer.prefab)의 **Projectile Attack 컴포넌트**의 `Projectile Prefab`에 [Mo_Archer_Projectile 프리팹](../Assets/Prefabs/Effects/Projectile/Mo_Archer_Projectile.prefab)을 연결했다. 코드와 저장 필드 이름은 `projectilePrefab`이며 이전 이름 변환 속성은 없다.
+- [Do_Taoist 프리팹](../Assets/Prefabs/Do_Taoist.prefab)의 **Projectile Attack 컴포넌트**의 `Projectile Prefab`에 [Do_Taoist_Projectile 프리팹](../Assets/Prefabs/Effects/Projectile/Do_Taoist_Projectile.prefab)을 연결했다. `ThrowYut` 씬의 소환 설정이 도·모 각각의 프리팹을 참조하는 것을 확인했다.
 - `Flight Duration` 초기값은 도·모 모두 **게임 시간 0.3초**다. 각 아군 프리팹의 Projectile Attack 컴포넌트에서 조정한다. 이 값은 사용자가 수치를 지정한 것이 아니라 구현자가 설정한 초기값이다.
 - [왼쪽 공격 클립](../Assets/Animations/Ally/Attack/Mo_Archer_Attack_left.anim)과 [오른쪽 공격 클립](../Assets/Animations/Ally/Attack/Mo_Archer_Attack_right.anim)에 각각 **0.8초** 시점의 `ReleaseArrow` 이벤트를 넣었다. Animation 창에서 조정하며, 방향 전환 시 진행률을 공유하므로 양쪽 이벤트 시점을 맞춘다. 이 시점 역시 구현자가 정한 초기값이다.
-- 화살은 `Mo_Arrow_0`부터 18개 스프라이트를 60fps로 재생하고 원본의 Pixels Per Unit 설정과 크기를 유지한다. 발사 시점과 비행 중에 화살의 현재 위치에서 목표의 현재 위치를 향해 회전한다. 두 위치가 겹치면 마지막 방향을 유지하며 좌우 반전은 하지 않는다.
-- 도사의 [왼쪽 공격 클립](../Assets/Animations/Ally/Attack/Do_Taoist_Attack_left.anim)과 [오른쪽 공격 클립](../Assets/Animations/Ally/Attack/Do_Taoist_Attack_right.anim)에도 **0.8초** 시점에 `ReleaseMagic` 이벤트를 넣었다. 마법은 `Do_Magic_0`부터 54개 스프라이트를 60fps로 재생한다. 발사·도착 위치는 중심이며 원본 크기로 표시하고 목표를 향해 회전한다. 발사 시점은 구현자가 정한 초기 설정이다.
+- 화살은 `Mo_Archer_Projectile_0`부터 18개 스프라이트를 60fps로 재생하고 원본의 Pixels Per Unit 설정과 크기를 유지한다. 발사 시점과 비행 중에 화살의 현재 위치에서 목표의 현재 위치를 향해 회전한다. 두 위치가 겹치면 마지막 방향을 유지하며 좌우 반전은 하지 않는다.
+- 도사의 [왼쪽 공격 클립](../Assets/Animations/Ally/Attack/Do_Taoist_Attack_left.anim)과 [오른쪽 공격 클립](../Assets/Animations/Ally/Attack/Do_Taoist_Attack_right.anim)에도 **0.8초** 시점에 `ReleaseMagic` 이벤트를 넣었다. 마법은 `Do_Taoist_Projectile_0`부터 54개 스프라이트를 60fps로 재생한다. 발사·도착 위치는 중심이며 원본 크기로 표시하고 목표를 향해 회전한다. 발사 시점은 구현자가 정한 초기 설정이다.
 - [전투 효과 애니메이션](CombatEffects.md)에 세 효과의 클립·Animator·피격 효과 연결을 기록했다. 도사 마법 클립은 0.9초이며 현재 비행 시간 0.3초에는 앞부분만 재생한다. 애니메이션에 맞춰 비행 시간을 변경하거나 재생 속도를 압축하지 않았다.
 
 ### 구현 검증 결과 — 2026-11-16
@@ -140,3 +154,5 @@
 ## 기존 구현의 검증 기록
 
 기존 문서에는 Unity 배치 실행에서 첫 타격의 체력 감소, 대기 중 체력 유지, 다음 타격, 처치 후 대상 해제와 대상 변경 시 공격 대기시간 유지를 확인한 기록이 있다. 이는 기존 즉시 피해 구현에 대한 기록이며, 새 투사체 규칙을 검증한 결과가 아니다. 탐색 방식의 비교는 [프로파일링 기록](Profiling/AllyTargetSearch.md)에 남겼다.
+
+투사체는 [ProjectilePool](../Assets/Scripts/Ally/Attack/ProjectilePool.cs)이 프리팹별 ObjectPool로 관리한다. 비활성 대기 객체를 우선 재사용하며 대기 객체가 없으면 생성한다. 풀은 아군과 별도 오브젝트에 있어 발사 아군의 비활성화 후에도 비행을 이어간다. 씬 종료 시 풀을 정리한다.

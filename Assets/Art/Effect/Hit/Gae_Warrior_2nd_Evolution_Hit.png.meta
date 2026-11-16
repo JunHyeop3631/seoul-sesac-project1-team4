@@ -1,0 +1,561 @@
+fileFormatVersion: 2
+guid: 24878c254d0d04d429396d9e05113e1b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -839005836238743398
+    second: Gae_Warrior_2nd_Evolution_Hit_0
+  - first:
+      213: -4613772521738256392
+    second: Gae_Warrior_2nd_Evolution_Hit_1
+  - first:
+      213: 7846878522884669611
+    second: Gae_Warrior_2nd_Evolution_Hit_2
+  - first:
+      213: 2973354918812256182
+    second: Gae_Warrior_2nd_Evolution_Hit_3
+  - first:
+      213: 2543978231627106204
+    second: Gae_Warrior_2nd_Evolution_Hit_4
+  - first:
+      213: -3786150057551033810
+    second: Gae_Warrior_2nd_Evolution_Hit_5
+  - first:
+      213: 6776188877127511591
+    second: Gae_Warrior_2nd_Evolution_Hit_6
+  - first:
+      213: -8031069023766981755
+    second: Gae_Warrior_2nd_Evolution_Hit_7
+  - first:
+      213: 5476720028479417785
+    second: Gae_Warrior_2nd_Evolution_Hit_8
+  - first:
+      213: 5559665699122557643
+    second: Gae_Warrior_2nd_Evolution_Hit_9
+  - first:
+      213: -4496175870811346315
+    second: Gae_Warrior_2nd_Evolution_Hit_10
+  - first:
+      213: 6297759535893590435
+    second: Gae_Warrior_2nd_Evolution_Hit_11
+  - first:
+      213: 6296534550553390609
+    second: Gae_Warrior_2nd_Evolution_Hit_12
+  - first:
+      213: -6023317836041632032
+    second: Gae_Warrior_2nd_Evolution_Hit_13
+  - first:
+      213: 3095476812055046236
+    second: Gae_Warrior_2nd_Evolution_Hit_14
+  - first:
+      213: -3028846725446785504
+    second: Gae_Warrior_2nd_Evolution_Hit_15
+  - first:
+      213: -6200066229080026673
+    second: Gae_Warrior_2nd_Evolution_Hit_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gae_Warrior_2nd_Evolution_Hit_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a98928e13a04b54f0800000000000000
+      internalID: -839005836238743398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gae_Warrior_2nd_Evolution_Hit_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff3557165698ffb0800000000000000
+      internalID: -4613772521738256392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gae_Warrior_2nd_Evolution_Hit_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0ce282176b5ec60800000000000000
+      internalID: 7846878522884669611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gae_Warrior_2nd_Evolution_Hit_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b707fe8b8a734920800000000000000
+      internalID: 2973354918812256182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gae_Warrior_2nd_Evolution_Hit_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c97c57c19b60e4320800000000000000
+      internalID: 2543978231627106204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gae_Warrior_2nd_Evolution_Hit_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a88512594e47bc0800000000000000
+      internalID: -3786150057551033810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gae_Warrior_2nd_Evolution_Hit_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72e6328c1ebd90e50800000000000000
+      internalID: 6776188877127511591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gae_Warrior_2nd_Evolution_Hit_7
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 583d9b7f549eb8090800000000000000
+      internalID: -8031069023766981755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gae_Warrior_2nd_Evolution_Hit_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd68c759d7310c40800000000000000
+      internalID: 5476720028479417785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gae_Warrior_2nd_Evolution_Hit_9
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc2bf1a3f76e72d40800000000000000
+      internalID: 5559665699122557643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gae_Warrior_2nd_Evolution_Hit_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a6b940edf5a91c0800000000000000
+      internalID: -4496175870811346315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gae_Warrior_2nd_Evolution_Hit_11
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a134c15ee2266750800000000000000
+      internalID: 6297759535893590435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gae_Warrior_2nd_Evolution_Hit_12
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e65b130d8c16750800000000000000
+      internalID: 6296534550553390609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gae_Warrior_2nd_Evolution_Hit_13
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e6c67d4750e86ca0800000000000000
+      internalID: -6023317836041632032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gae_Warrior_2nd_Evolution_Hit_14
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c58eff092c755fa20800000000000000
+      internalID: 3095476812055046236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gae_Warrior_2nd_Evolution_Hit_15
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 026a3a263ff57f5d0800000000000000
+      internalID: -3028846725446785504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gae_Warrior_2nd_Evolution_Hit_16
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc11acf2d90f4f9a0800000000000000
+      internalID: -6200066229080026673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1ed39e150ed2d0b47b18edeca4940b2c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":10.0,"y":2.0},"gridSpriteSize":{"x":80.0,"y":80.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Gae_Warrior_2nd_Evolution_Hit_0: -839005836238743398
+      Gae_Warrior_2nd_Evolution_Hit_1: -4613772521738256392
+      Gae_Warrior_2nd_Evolution_Hit_10: -4496175870811346315
+      Gae_Warrior_2nd_Evolution_Hit_11: 6297759535893590435
+      Gae_Warrior_2nd_Evolution_Hit_12: 6296534550553390609
+      Gae_Warrior_2nd_Evolution_Hit_13: -6023317836041632032
+      Gae_Warrior_2nd_Evolution_Hit_14: 3095476812055046236
+      Gae_Warrior_2nd_Evolution_Hit_15: -3028846725446785504
+      Gae_Warrior_2nd_Evolution_Hit_16: -6200066229080026673
+      Gae_Warrior_2nd_Evolution_Hit_2: 7846878522884669611
+      Gae_Warrior_2nd_Evolution_Hit_3: 2973354918812256182
+      Gae_Warrior_2nd_Evolution_Hit_4: 2543978231627106204
+      Gae_Warrior_2nd_Evolution_Hit_5: -3786150057551033810
+      Gae_Warrior_2nd_Evolution_Hit_6: 6776188877127511591
+      Gae_Warrior_2nd_Evolution_Hit_7: -8031069023766981755
+      Gae_Warrior_2nd_Evolution_Hit_8: 5476720028479417785
+      Gae_Warrior_2nd_Evolution_Hit_9: 5559665699122557643
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

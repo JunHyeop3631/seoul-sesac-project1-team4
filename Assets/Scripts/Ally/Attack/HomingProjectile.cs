@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class HomingProjectile : MonoBehaviour
@@ -8,21 +9,24 @@ public class HomingProjectile : MonoBehaviour
     private Enemy target;
     private int targetActivationVersion;
     private int damage;
+    private HitEffect hitEffect;
     private Vector3 startPosition;
     private double launchTime;
     private float flightDuration;
     private bool flying;
+    internal Action<HomingProjectile> ReturnToPool { private get; set; }
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
     }
 
-    public void Launch(Enemy enemy, int attackDamage, float duration)
+    public void Launch(Enemy enemy, int attackDamage, float duration, HitEffect attackHitEffect = null)
     {
         target = enemy;
         targetActivationVersion = enemy != null ? enemy.ActivationVersion : -1;
         damage = attackDamage;
+        hitEffect = attackHitEffect;
         startPosition = transform.position;
         launchTime = Time.timeAsDouble;
         flightDuration = Mathf.Max(0.01f, duration);
@@ -32,6 +36,12 @@ public class HomingProjectile : MonoBehaviour
         {
             animator.speed = 1f;
             animator.Play(FlightState, 0, 0f);
+            // Evaluate the selected state so its actual clip length is available
+            // on the first launch and after returning from the pool.
+            animator.Update(0f);
+            float animationDuration = animator.GetCurrentAnimatorStateInfo(0).length;
+            if (animationDuration > 0f)
+                animator.speed = animationDuration / flightDuration;
         }
         if (target != null)
             FaceTarget(target.transform.position);
@@ -61,7 +71,7 @@ public class HomingProjectile : MonoBehaviour
 
         // Clear first so this projectile can never apply damage twice.
         flying = false;
-        target.TakeDamage(damage);
+        target.TakeDamage(damage, hitEffect);
         Finish();
     }
 
@@ -80,7 +90,22 @@ public class HomingProjectile : MonoBehaviour
     {
         flying = false;
         target = null;
-        gameObject.SetActive(false);
-        Destroy(gameObject);
+        if (ReturnToPool != null)
+        {
+            ReturnToPool(this);
+        }
+        else
+        {
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnDisable()
+    {
+        flying = false;
+        target = null;
+        damage = 0;
+        hitEffect = null;
     }
 }

@@ -20,6 +20,11 @@ public sealed class AllyActionButtons : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (target != null && !target.isActiveAndEnabled)
+        {
+            gameObject.SetActive(false);
+            return;
+        }
         UpdatePosition();
         UpdateEvolutionButton();
     }

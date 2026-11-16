@@ -192,3 +192,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileAttack
   projectilePrefab: {fileID: 11400001, guid: 171c01a91dab431d8fa86df71a73feea, type: 3}
   flightDuration: 0.3
+  launchCenterRenderer: {fileID: 310511580605650270}

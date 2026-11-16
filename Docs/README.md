@@ -10,7 +10,7 @@
 | [윷판 명세](YutBoardSpec.md) | 칸과 이동 경로, 분기, 점유 상태, 칸 수용량과 미정 규칙 |
 | [아군 명세](AllySpec.md) | 종류와 배치, 대상 선택과 유지, 도·모의 발사 이벤트·공격 간격·투사체 명중 규칙, 현재 구현과 미정 사항 |
 | [적군 명세](EnemySpec.md) | 종류, 체력, 경로 이동, 처치, 풀 재사용 시 초기화 |
-| [전투 효과 애니메이션](CombatEffects.md) | Do_Magic·Mo_Arrow·Enemy_Hit의 60fps 클립, Animator 연결, 피격 효과 생성과 수명 |
+| [전투 효과 애니메이션](CombatEffects.md) | Do_Taoist_Projectile·Mo_Archer_Projectile·Common_Hit의 60fps 클립, Animator 연결, 피격 효과 생성과 수명 |
 | [웨이브 명세](WaveSpec.md) | 몬스터 구성·등장·이탈, 웨이브 완료 조건, 웨이브 데이터·실행·풀링의 책임 |
 | [오디오 구조 설계](AudioSpec.md) | 싱글톤 없는 참조 연결, 공통·유닛별 재생 책임, Mixer 출력과 볼륨 관리 |
 

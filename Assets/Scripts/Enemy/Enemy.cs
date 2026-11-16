@@ -14,6 +14,12 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Image healthBarFill;
     [SerializeField] private Animator enemyAnimator;
     [SerializeField] private HitEffect hitEffectPrefab;
+    [SerializeField] private HitEffectPool hitEffectPool;
+
+    internal void SetHitEffectPool(HitEffectPool pool)
+    {
+        hitEffectPool = pool;
+    }
 
     private Vector3[] pathPoints;
     private int targetIndex;
@@ -41,7 +47,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, HitEffect attackHitEffect = null)
     {
         if (!isActiveAndEnabled || damage <= 0 || CurrentHealth <= 0)
         {
@@ -50,8 +56,9 @@ public class Enemy : MonoBehaviour
 
         CurrentHealth = Mathf.Max(0, CurrentHealth - damage);
         UpdateHealthBar();
-        if (hitEffectPrefab != null)
-            Instantiate(hitEffectPrefab, transform.position, Quaternion.identity);
+        HitEffect effect = attackHitEffect != null ? attackHitEffect : hitEffectPrefab;
+        if (effect != null && hitEffectPool != null)
+            hitEffectPool.Play(effect, transform.position);
 
         if (CurrentHealth == 0)
         {
