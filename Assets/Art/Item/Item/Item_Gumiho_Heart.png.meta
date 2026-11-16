@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: bbbda97be22c31f418c57cabe088c279
+guid: 4895175166d60594b99046a3b47e25ab
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4589078892037572007
-    second: "\uC544\uC774\uD15C_\uCC9C\uBA85\uC804_0"
+      213: -7768224231462183471
+    second: Item_Gumiho_Heart_0
   - first:
-      213: 5030016044313410814
-    second: "\uC544\uC774\uD15C_\uCC9C\uBA85\uC804_1"
-  - first:
-      213: -6738512336242895428
-    second: "\uC544\uC774\uD15C_\uCC9C\uBA85\uC804_2"
-  - first:
-      213: -7618348237552656418
-    second: "\uC544\uC774\uD15C_\uCC9C\uBA85\uC804_3"
+      213: 993355522058460146
+    second: Item_Gumiho_Heart_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,23 +103,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\uC544\uC774\uD15C_\uCC9C\uBA85\uC804_0"
+      name: Item_Gumiho_Heart_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1312
-        height: 1199
+        width: 1305
+        height: 1173
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7a5842630feafaf30800000000000000
-      internalID: 4589078892037572007
+      spriteID: 1dd5d142839b13490800000000000000
+      internalID: -7768224231462183471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Gumiho_Heart_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 292
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fb97f3959b19cd00800000000000000
+      internalID: 993355522058460146
       vertices: []
       indices: 
       edges: []
@@ -134,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 252ce56b724ca2e4e8c58d11fd872218
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -142,11 +158,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1312.0,"y":1199.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      "\uC544\uC774\uD15C_\uCC9C\uBA85\uC804_0": 4589078892037572007
+      Item_Gumiho_Heart_0: -7768224231462183471
+      Item_Gumiho_Heart_1: 993355522058460146
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

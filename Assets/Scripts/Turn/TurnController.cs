@@ -27,7 +27,7 @@ public sealed class TurnController : MonoBehaviour
     public event Action BattleWon;
     public event Action BattleLost;
     public event Action PreparationStarted;
-    public bool IsAwaitingNextWave { get; private set; }
+    public bool IsBattleWon { get; private set; }
     private YutAction chosenAction;
 
     private void Awake()
@@ -163,7 +163,7 @@ public sealed class TurnController : MonoBehaviour
 
     public void StartBattle()
     {
-        if (RemainingLives == 0 || IsAwaitingNextWave || waveManager == null || waveManager.IsRunning)
+        if (RemainingLives == 0 || IsBattleWon || waveManager == null || waveManager.IsRunning)
         {
             return;
         }
@@ -194,30 +194,25 @@ public sealed class TurnController : MonoBehaviour
 
     private void EndBattle()
     {
-        if (RemainingLives == 0)
+        if (RemainingLives == 0 || IsBattleWon || waveManager == null)
         {
             return;
         }
 
-        IsAwaitingNextWave = true;
-        BattleWon?.Invoke();
+        if (currentTurnNumber == waveManager.WaveCount - 1)
+        {
+            IsBattleWon = true;
+            BattleWon?.Invoke();
+            return;
+        }
+
+        EndTurn();
     }
 
     private void EndTurn()
     {
         currentTurnNumber++;
         StartTurn();
-    }
-
-    public void NextWave()
-    {
-        if (!IsAwaitingNextWave || RemainingLives == 0 || waveManager == null || waveManager.IsRunning)
-        {
-            return;
-        }
-
-        IsAwaitingNextWave = false;
-        EndTurn();
     }
 
     public void SelectAlly(Ally ally)

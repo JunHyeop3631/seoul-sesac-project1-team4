@@ -1,25 +1,10 @@
 fileFormatVersion: 2
-guid: f6507782fea0aa14b9a79b80e04d96a8
+guid: b044b649da5c3e04fa8eb2be77922609
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1545886839953278155
-    second: "\uC544\uC774\uD15C_\uCC9C\uC6B4\uBD80_0"
-  - first:
-      213: 1484841222115451772
-    second: "\uC544\uC774\uD15C_\uCC9C\uC6B4\uBD80_1"
-  - first:
-      213: -4596068938271049618
-    second: "\uC544\uC774\uD15C_\uCC9C\uC6B4\uBD80_2"
-  - first:
-      213: -18208252142814224
-    second: "\uC544\uC774\uD15C_\uCC9C\uC6B4\uBD80_3"
-  - first:
-      213: -5766525792692215608
-    second: "\uC544\uC774\uD15C_\uCC9C\uC6B4\uBD80_4"
-  - first:
-      213: 5718353431548207016
-    second: "\uC544\uC774\uD15C_\uCC9C\uC6B4\uBD80_5"
+      213: 8314838363327846390
+    second: Item_Dokkaebi_Yut_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\uC544\uC774\uD15C_\uCC9C\uC6B4\uBD80_0"
+      name: Item_Dokkaebi_Yut_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1312
-        height: 1199
+        y: 15
+        width: 1524
+        height: 983
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc4cd56f3e7147510800000000000000
-      internalID: 1545886839953278155
+      spriteID: 6f752f2007d346370800000000000000
+      internalID: 8314838363327846390
       vertices: []
       indices: 
       edges: []
@@ -140,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 459069e710eef8442aa2ad8fc31975e4
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,11 +133,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1312.0,"y":1199.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      "\uC544\uC774\uD15C_\uCC9C\uC6B4\uBD80_0": 1545886839953278155
+      Item_Dokkaebi_Yut_0: 8314838363327846390
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

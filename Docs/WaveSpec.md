@@ -60,7 +60,7 @@
 
 처치된 몬스터와 기지에 도달해 사라진 몬스터 모두 필드에서 제거된 것으로 처리한다. 예정된 몬스터가 아직 남았다면, 다음 등장 대기 중 필드가 잠시 비어도 웨이브는 완료되지 않는다.
 
-웨이브 완료 시 잔여 하트가 1 이상이면 승리 패널을 표시하고 Next Wave 버튼을 기다린다. 하트 0에 따른 패배 깃발과 결과 표시 이벤트는 [턴 명세의 전투 결과 깃발](TurnSpec.md#전투-결과-깃발)을 따른다.
+웨이브 완료 시 잔여 하트가 1 이상이면 중간 웨이브는 다음 준비 단계로 자동 전환하고, 마지막 웨이브는 승리 패널을 표시한다. 마지막 웨이브는 `WaveManager.waves` 배열의 마지막 항목이다. 하트 0에 따른 패배 깃발과 결과 표시 이벤트는 [턴 명세의 전투 결과 깃발](TurnSpec.md#전투-결과-깃발)을 따른다.
 
 웨이브 완료를 턴 관리에 알리면, 이후 전투 종료·턴 종료·다음 턴 시작 및 준비 단계 진입은 [턴 종료와 다음 준비 단계](TurnSpec.md#턴-종료와-다음-준비-단계)를 따른다.
 
@@ -92,7 +92,7 @@
 
 `Wave.StartWave`에서 `spawningComplete`를 초기화한다. 소환 코루틴이 예정된 소환을 마치면 이 값을 켜고 `TryCompleteWave()`를 호출한다. 적이 처치되거나 경로 끝에 도착해 풀로 반환된 직후에도 같은 검사를 실행한다.
 
-`TryCompleteWave()`는 웨이브 실행 중이고, 소환이 완료됐으며, `spawnedEnemies.Count == 0`일 때 완료로 판정한다. `IsRunning`을 먼저 끈 뒤 `Completed`를 한 번 보낸다. 승리 시 Next Wave 버튼을 기다린 뒤 턴 번호를 증가시키고 다음 준비 단계로 진입하는 처리는 [턴 종료와 다음 준비 단계](TurnSpec.md#턴-종료와-다음-준비-단계)를 따른다. 다음 준비 단계에서 `WaveManager.PrepareWave → Wave.Prepare`로 이전 처치 수를 0으로 초기화하며, 이 호출만으로 몬스터를 소환하지 않는다.
+`TryCompleteWave()`는 웨이브 실행 중이고, 소환이 완료됐으며, `spawnedEnemies.Count == 0`일 때 완료로 판정한다. `IsRunning`을 먼저 끈 뒤 `Completed`를 한 번 보낸다. 중간 웨이브의 다음 준비 단계 전환과 마지막 웨이브의 승리 처리는 [턴 종료와 다음 준비 단계](TurnSpec.md#턴-종료와-다음-준비-단계)를 따른다. 다음 준비 단계에서 `WaveManager.PrepareWave → Wave.Prepare`로 이전 처치 수를 0으로 초기화하며, 이 호출만으로 몬스터를 소환하지 않는다.
 
 ## 적 오브젝트 풀 구조
 
@@ -178,7 +178,7 @@ pools
 
 - [ThrowYut 씬](../Assets/Scenes/ThrowYut.unity)의 `TurnController` 아래에 `WaveManager`, `Wave`, `EnemyPool`을 배치하고 참조를 연결했다.
 - [Wave1](../Assets/Wave1.asset)를 첫 번째 웨이브로 등록했다. 적 종류와 수량은 해당 데이터 에셋에서 설정한다.
-- [Wave2](../Assets/Wave2.asset)를 두 번째 웨이브인 `waves[1]`에 등록했다. 현재 구성은 등록된 두 적 종류가 각 3마리씩, 총 6마리다. Next Wave 버튼으로 다음 준비 단계에 진입한 뒤 Start Battle 버튼을 누르면 이 데이터를 실행한다.
+- [Wave2](../Assets/Wave2.asset)를 두 번째 웨이브인 `waves[1]`에 등록했다. 현재 구성은 등록된 두 적 종류가 각 3마리씩, 총 6마리다. 첫 웨이브 완료 후 자동으로 다음 준비 단계에 진입하며 Start Battle 버튼을 누르면 이 데이터를 실행한다.
 - [NormalEnemy 프리팹](../Assets/Prefabs/NormalEnemy.prefab)과 [FastEnemy 프리팹](../Assets/Prefabs/FastEnemy.prefab)을 `EnemyPool`에 종류별 ID로 등록했다.
 - 전투 시작 버튼을 누르면 첫 적이 즉시 등장하고, 이후에는 현재 테스트 설정인 0.1초 간격으로 구성 목록의 순서에 따라 소환한다.
 - `Wave`의 `Waypoints` 배열에 오른쪽 아래 → 오른쪽 위 → 왼쪽 위 → 왼쪽 아래 순서로 경유점을 지정한다. 네 경유점은 모두 `Wave`의 자식이다. 첫 경유점은 소환 위치인 `Path 00 Bottom Right` `(1.65, -3.9, 0)`이며, 나머지는 `Path 01 Top Right`, `Path 02 Top Left`, `Path 03 Bottom Left`다. 경유점 좌표는 씬에서 조정할 수 있다.

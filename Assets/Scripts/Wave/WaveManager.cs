@@ -13,6 +13,7 @@ public class WaveManager : MonoBehaviour
 
     public int AliveEnemyCount => wave != null ? wave.AliveEnemyCount : 0;
     public bool IsRunning => wave != null && wave.IsRunning;
+    public int WaveCount => waves != null ? waves.Length : 0;
     public int DefeatedEnemyCount => wave != null ? wave.DefeatedEnemyCount : 0;
 
     public int GetTotalEnemyCount(int waveNumber)

@@ -1,0 +1,2171 @@
+fileFormatVersion: 2
+guid: 9c8e2485aebe523408a7b191b4a4dfe1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8285428674139105644
+    second: Item_Soul_Crystal_0
+  - first:
+      213: -8647597276779320199
+    second: Item_Soul_Crystal_1
+  - first:
+      213: 3626912345623837779
+    second: Item_Soul_Crystal_2
+  - first:
+      213: -4787232044959953365
+    second: Item_Soul_Crystal_3
+  - first:
+      213: 8846938992272386815
+    second: Item_Soul_Crystal_4
+  - first:
+      213: 698352327730101003
+    second: Item_Soul_Crystal_5
+  - first:
+      213: -8807441697477173880
+    second: Item_Soul_Crystal_6
+  - first:
+      213: -87233126487988778
+    second: Item_Soul_Crystal_7
+  - first:
+      213: -3956603604698461697
+    second: Item_Soul_Crystal_8
+  - first:
+      213: -7765555249291049529
+    second: Item_Soul_Crystal_9
+  - first:
+      213: -7756985021330703785
+    second: Item_Soul_Crystal_10
+  - first:
+      213: 3379391781229540019
+    second: Item_Soul_Crystal_11
+  - first:
+      213: 6577559263621032636
+    second: Item_Soul_Crystal_12
+  - first:
+      213: -4382685379630047462
+    second: Item_Soul_Crystal_13
+  - first:
+      213: 1711553968819695297
+    second: Item_Soul_Crystal_14
+  - first:
+      213: -6549843185343251429
+    second: Item_Soul_Crystal_15
+  - first:
+      213: 8346002451574629273
+    second: Item_Soul_Crystal_16
+  - first:
+      213: 4617339741298526304
+    second: Item_Soul_Crystal_17
+  - first:
+      213: -6813152650902067943
+    second: Item_Soul_Crystal_18
+  - first:
+      213: 3359716330156576932
+    second: Item_Soul_Crystal_19
+  - first:
+      213: 5640434644473103333
+    second: Item_Soul_Crystal_20
+  - first:
+      213: 4550783891701989809
+    second: Item_Soul_Crystal_21
+  - first:
+      213: 180337449247356098
+    second: Item_Soul_Crystal_22
+  - first:
+      213: 1898585349701492007
+    second: Item_Soul_Crystal_23
+  - first:
+      213: -4509399472323667346
+    second: Item_Soul_Crystal_24
+  - first:
+      213: 1016210858789401636
+    second: Item_Soul_Crystal_25
+  - first:
+      213: 46859968151696168
+    second: Item_Soul_Crystal_26
+  - first:
+      213: 7413444746122209201
+    second: Item_Soul_Crystal_27
+  - first:
+      213: 2321235661241294777
+    second: Item_Soul_Crystal_28
+  - first:
+      213: -2809158956293655228
+    second: Item_Soul_Crystal_29
+  - first:
+      213: -1142321503363745103
+    second: Item_Soul_Crystal_30
+  - first:
+      213: 7121089058666789922
+    second: Item_Soul_Crystal_31
+  - first:
+      213: 3790106205034274069
+    second: Item_Soul_Crystal_32
+  - first:
+      213: -1225048690568156096
+    second: Item_Soul_Crystal_33
+  - first:
+      213: -7987763708123592162
+    second: Item_Soul_Crystal_34
+  - first:
+      213: 1134479183996723266
+    second: Item_Soul_Crystal_35
+  - first:
+      213: -7796834586719607206
+    second: Item_Soul_Crystal_36
+  - first:
+      213: 5350291557294987047
+    second: Item_Soul_Crystal_37
+  - first:
+      213: -8285394400683518510
+    second: Item_Soul_Crystal_38
+  - first:
+      213: 1581527389954671490
+    second: Item_Soul_Crystal_39
+  - first:
+      213: 7621553844441456536
+    second: Item_Soul_Crystal_40
+  - first:
+      213: -11269422253302688
+    second: Item_Soul_Crystal_41
+  - first:
+      213: 4000824290890639178
+    second: Item_Soul_Crystal_42
+  - first:
+      213: 2313169272908871073
+    second: Item_Soul_Crystal_43
+  - first:
+      213: 1796470690792927488
+    second: Item_Soul_Crystal_44
+  - first:
+      213: -7306507175963227683
+    second: Item_Soul_Crystal_45
+  - first:
+      213: -207903897105519462
+    second: Item_Soul_Crystal_46
+  - first:
+      213: 7060167631563641966
+    second: Item_Soul_Crystal_47
+  - first:
+      213: -1730875927692802162
+    second: Item_Soul_Crystal_48
+  - first:
+      213: -4019384360192239701
+    second: Item_Soul_Crystal_49
+  - first:
+      213: -5303934876460554537
+    second: Item_Soul_Crystal_50
+  - first:
+      213: -4272079728008281602
+    second: Item_Soul_Crystal_51
+  - first:
+      213: -3646810470348341646
+    second: Item_Soul_Crystal_52
+  - first:
+      213: 7274977352362623915
+    second: Item_Soul_Crystal_53
+  - first:
+      213: -1774314692771125125
+    second: Item_Soul_Crystal_54
+  - first:
+      213: 964800303447846807
+    second: Item_Soul_Crystal_55
+  - first:
+      213: 5829351607819264223
+    second: Item_Soul_Crystal_56
+  - first:
+      213: 7413526709479567023
+    second: Item_Soul_Crystal_57
+  - first:
+      213: -8951144002360059626
+    second: Item_Soul_Crystal_58
+  - first:
+      213: -570351156574485440
+    second: Item_Soul_Crystal_59
+  - first:
+      213: -4543589171067533702
+    second: Item_Soul_Crystal_60
+  - first:
+      213: 8029895062302050797
+    second: Item_Soul_Crystal_61
+  - first:
+      213: 1225413197608830340
+    second: Item_Soul_Crystal_62
+  - first:
+      213: -3399209200037570835
+    second: Item_Soul_Crystal_63
+  - first:
+      213: -5198456617369568809
+    second: Item_Soul_Crystal_64
+  - first:
+      213: 896369234210802968
+    second: Item_Soul_Crystal_65
+  - first:
+      213: -6586103618311556074
+    second: Item_Soul_Crystal_66
+  - first:
+      213: 8657007246160304456
+    second: Item_Soul_Crystal_67
+  - first:
+      213: 5759858011231908612
+    second: Item_Soul_Crystal_68
+  - first:
+      213: -5332449040842849239
+    second: Item_Soul_Crystal_69
+  - first:
+      213: -4014369830819534153
+    second: Item_Soul_Crystal_70
+  - first:
+      213: -327947579282145211
+    second: Item_Soul_Crystal_71
+  - first:
+      213: 1333743115213112813
+    second: Item_Soul_Crystal_72
+  - first:
+      213: 7366010493382374475
+    second: Item_Soul_Crystal_73
+  - first:
+      213: -737759111696263903
+    second: Item_Soul_Crystal_74
+  - first:
+      213: 993366447523058168
+    second: Item_Soul_Crystal_75
+  - first:
+      213: -1400721443420263383
+    second: Item_Soul_Crystal_76
+  - first:
+      213: 756867675413403038
+    second: Item_Soul_Crystal_77
+  - first:
+      213: 694622165798731611
+    second: Item_Soul_Crystal_78
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1149
+        height: 1230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4965a1ad48e340d80800000000000000
+      internalID: -8285428674139105644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_1
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1156
+        width: 107
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97ceeecf7109df780800000000000000
+      internalID: -8647597276779320199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_2
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1162
+        width: 112
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35c3368ef81655230800000000000000
+      internalID: 3626912345623837779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_3
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 1211
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e8bc6a1d5509db0800000000000000
+      internalID: -4787232044959953365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_4
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 1187
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffaa2ffe324a6ca70800000000000000
+      internalID: 8846938992272386815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_5
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 1181
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b7b66fdbb01b900800000000000000
+      internalID: 698352327730101003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_6
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 1084
+        width: 44
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88dd8e1a07ea5c580800000000000000
+      internalID: -8807441697477173880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_7
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 1146
+        width: 54
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d569030fe51acef0800000000000000
+      internalID: -87233126487988778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_8
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 1159
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff90be80cf15719c0800000000000000
+      internalID: -3956603604698461697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_9
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 1130
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c5465af4a43b3490800000000000000
+      internalID: -7765555249291049529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_10
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 1110
+        width: 66
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75abe8ba837a95490800000000000000
+      internalID: -7756985021330703785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_11
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 1024
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2bf059be206ee20800000000000000
+      internalID: 3379391781229540019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_12
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 1020
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba26350d4f284b50800000000000000
+      internalID: 6577559263621032636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_13
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 978
+        width: 90
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f5ad02ed29d23c0800000000000000
+      internalID: -4382685379630047462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_14
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 931
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce68653449a0c710800000000000000
+      internalID: 1711553968819695297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_15
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 964
+        width: 42
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c3a1353584a15a0800000000000000
+      internalID: -6549843185343251429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_16
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 963
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99325acb205f2d370800000000000000
+      internalID: 8346002451574629273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_17
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 763
+        width: 67
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068846fe706141040800000000000000
+      internalID: 4617339741298526304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_18
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 927
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 915a87af2c1d271a0800000000000000
+      internalID: -6813152650902067943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_19
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 949
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a0df05a33c10ae20800000000000000
+      internalID: 3359716330156576932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_20
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 943
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e340a2cc69d64e40800000000000000
+      internalID: 5640434644473103333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_21
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 939
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b18772a6d1a72f30800000000000000
+      internalID: 4550783891701989809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_22
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 921
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c4b61264ffa08200800000000000000
+      internalID: 180337449247356098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_23
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 907
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72dd7b00151295a10800000000000000
+      internalID: 1898585349701492007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_24
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 907
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a50dd52156b61c0800000000000000
+      internalID: -4509399472323667346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_25
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 921
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4247907546e4a1e00800000000000000
+      internalID: 1016210858789401636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_26
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 883
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8233edb84ea76a000800000000000000
+      internalID: 46859968151696168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_27
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 904
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7a99ee7b8d1e660800000000000000
+      internalID: 7413444746122209201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_28
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 897
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bf9144198fa63020800000000000000
+      internalID: 2321235661241294777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_29
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 825
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 445728410dcd309d0800000000000000
+      internalID: -2809158956293655228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_30
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 835
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bab6bc15a8a520f0800000000000000
+      internalID: -1142321503363745103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_31
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 783
+        width: 51
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c31cb05c033d260800000000000000
+      internalID: 7121089058666789922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_32
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 801
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51d521c3389299430800000000000000
+      internalID: 3790106205034274069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_33
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 779
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04ca02ed4b0cffee0800000000000000
+      internalID: -1225048690568156096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_34
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 783
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a498b7a33c52190800000000000000
+      internalID: -7987763708123592162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_35
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 781
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 240233f9eca7ebf00800000000000000
+      internalID: 1134479183996723266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 773
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a562916b0441cc390800000000000000
+      internalID: -7796834586719607206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_37
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 757
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 727d65503dd004a40800000000000000
+      internalID: 5350291557294987047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_38
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 722
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d59f33c0bd540d80800000000000000
+      internalID: -8285394400683518510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_39
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 738
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2838cc828c6b2f510800000000000000
+      internalID: 1581527389954671490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_40
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 676
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f127e37d235c960800000000000000
+      internalID: 7621553844441456536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_41
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 684
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06c94c92586f7dff0800000000000000
+      internalID: -11269422253302688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_42
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 596
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a476a4bce78c58730800000000000000
+      internalID: 4000824290890639178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_43
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 622
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a5f411b2370a1020800000000000000
+      internalID: 2313169272908871073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_44
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 359
+        width: 230
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 001fc1e33985ee810800000000000000
+      internalID: 1796470690792927488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_45
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 274
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd98edb5f621a9a90800000000000000
+      internalID: -7306507175963227683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_46
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 288
+        width: 55
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c2b91d1806d1df0800000000000000
+      internalID: -207903897105519462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_47
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 267
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e64df06fd01caf160800000000000000
+      internalID: 7060167631563641966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_48
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 232
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e87889ba381baf7e0800000000000000
+      internalID: -1730875927692802162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_49
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 242
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba71bf258374838c0800000000000000
+      internalID: -4019384360192239701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_50
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 47
+        width: 57
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d663c0d453a466b0800000000000000
+      internalID: -5303934876460554537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_51
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 228
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef14bef2f1686b4c0800000000000000
+      internalID: -4272079728008281602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_52
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 222
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27e36b7e23de36dc0800000000000000
+      internalID: -3646810470348341646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_53
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 232
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba306948b59e5f460800000000000000
+      internalID: 7274977352362623915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_54
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 198
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b78ee99003e5067e0800000000000000
+      internalID: -1774314692771125125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_55
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 144
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79fa236a3c8a36d00800000000000000
+      internalID: 964800303447846807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_56
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 127
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd06beee66406e050800000000000000
+      internalID: 5829351607819264223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_57
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 208
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae6663834322e660800000000000000
+      internalID: 7413526709479567023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_58
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 176
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619d5fd74f527c380800000000000000
+      internalID: -8951144002360059626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_59
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 117
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 044052b15a4b518f0800000000000000
+      internalID: -570351156574485440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_60
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 128
+        width: 45
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a76453dc8bde1f0c0800000000000000
+      internalID: -4543589171067533702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_61
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 55
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de94d24d30bef6f60800000000000000
+      internalID: 8029895062302050797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_62
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 36
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 485cc8a8fca810110800000000000000
+      internalID: 1225413197608830340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_63
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 45
+        width: 90
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de6558a0e3593d0d0800000000000000
+      internalID: -3399209200037570835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_64
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 81
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d97865cf3f5bd7b0800000000000000
+      internalID: -5198456617369568809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_65
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 15
+        width: 53
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81d49b0c11b807c00800000000000000
+      internalID: 896369234210802968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_66
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 45
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 614ff9067a57994a0800000000000000
+      internalID: -6586103618311556074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_67
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 0
+        width: 156
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8491e5d393ed32870800000000000000
+      internalID: 8657007246160304456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_68
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 55
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4037a2c18502fef40800000000000000
+      internalID: 5759858011231908612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_69
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 49
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92480b199d55ff5b0800000000000000
+      internalID: -5332449040842849239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_70
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 53
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bae4fc68e71a48c0800000000000000
+      internalID: -4014369830819534153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_71
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 29
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54040f70a65e27bf0800000000000000
+      internalID: -327947579282145211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_72
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 33
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de586ebfb48628210800000000000000
+      internalID: 1333743115213112813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_73
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 23
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b443bd55483593660800000000000000
+      internalID: 7366010493382374475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_74
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 31
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12559892ff3f2c5f0800000000000000
+      internalID: -737759111696263903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_75
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 13
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f1576c558529cd00800000000000000
+      internalID: 993366447523058168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_76
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 23
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ca9afb443af8ce0800000000000000
+      internalID: -1400721443420263383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_77
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 7
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e95ddf6042fe08a00800000000000000
+      internalID: 756867675413403038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item_Soul_Crystal_78
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 0
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5fbb85fd2bc3a900800000000000000
+      internalID: 694622165798731611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Item_Soul_Crystal_0: -8285428674139105644
+      Item_Soul_Crystal_1: -8647597276779320199
+      Item_Soul_Crystal_10: -7756985021330703785
+      Item_Soul_Crystal_11: 3379391781229540019
+      Item_Soul_Crystal_12: 6577559263621032636
+      Item_Soul_Crystal_13: -4382685379630047462
+      Item_Soul_Crystal_14: 1711553968819695297
+      Item_Soul_Crystal_15: -6549843185343251429
+      Item_Soul_Crystal_16: 8346002451574629273
+      Item_Soul_Crystal_17: 4617339741298526304
+      Item_Soul_Crystal_18: -6813152650902067943
+      Item_Soul_Crystal_19: 3359716330156576932
+      Item_Soul_Crystal_2: 3626912345623837779
+      Item_Soul_Crystal_20: 5640434644473103333
+      Item_Soul_Crystal_21: 4550783891701989809
+      Item_Soul_Crystal_22: 180337449247356098
+      Item_Soul_Crystal_23: 1898585349701492007
+      Item_Soul_Crystal_24: -4509399472323667346
+      Item_Soul_Crystal_25: 1016210858789401636
+      Item_Soul_Crystal_26: 46859968151696168
+      Item_Soul_Crystal_27: 7413444746122209201
+      Item_Soul_Crystal_28: 2321235661241294777
+      Item_Soul_Crystal_29: -2809158956293655228
+      Item_Soul_Crystal_3: -4787232044959953365
+      Item_Soul_Crystal_30: -1142321503363745103
+      Item_Soul_Crystal_31: 7121089058666789922
+      Item_Soul_Crystal_32: 3790106205034274069
+      Item_Soul_Crystal_33: -1225048690568156096
+      Item_Soul_Crystal_34: -7987763708123592162
+      Item_Soul_Crystal_35: 1134479183996723266
+      Item_Soul_Crystal_36: -7796834586719607206
+      Item_Soul_Crystal_37: 5350291557294987047
+      Item_Soul_Crystal_38: -8285394400683518510
+      Item_Soul_Crystal_39: 1581527389954671490
+      Item_Soul_Crystal_4: 8846938992272386815
+      Item_Soul_Crystal_40: 7621553844441456536
+      Item_Soul_Crystal_41: -11269422253302688
+      Item_Soul_Crystal_42: 4000824290890639178
+      Item_Soul_Crystal_43: 2313169272908871073
+      Item_Soul_Crystal_44: 1796470690792927488
+      Item_Soul_Crystal_45: -7306507175963227683
+      Item_Soul_Crystal_46: -207903897105519462
+      Item_Soul_Crystal_47: 7060167631563641966
+      Item_Soul_Crystal_48: -1730875927692802162
+      Item_Soul_Crystal_49: -4019384360192239701
+      Item_Soul_Crystal_5: 698352327730101003
+      Item_Soul_Crystal_50: -5303934876460554537
+      Item_Soul_Crystal_51: -4272079728008281602
+      Item_Soul_Crystal_52: -3646810470348341646
+      Item_Soul_Crystal_53: 7274977352362623915
+      Item_Soul_Crystal_54: -1774314692771125125
+      Item_Soul_Crystal_55: 964800303447846807
+      Item_Soul_Crystal_56: 5829351607819264223
+      Item_Soul_Crystal_57: 7413526709479567023
+      Item_Soul_Crystal_58: -8951144002360059626
+      Item_Soul_Crystal_59: -570351156574485440
+      Item_Soul_Crystal_6: -8807441697477173880
+      Item_Soul_Crystal_60: -4543589171067533702
+      Item_Soul_Crystal_61: 8029895062302050797
+      Item_Soul_Crystal_62: 1225413197608830340
+      Item_Soul_Crystal_63: -3399209200037570835
+      Item_Soul_Crystal_64: -5198456617369568809
+      Item_Soul_Crystal_65: 896369234210802968
+      Item_Soul_Crystal_66: -6586103618311556074
+      Item_Soul_Crystal_67: 8657007246160304456
+      Item_Soul_Crystal_68: 5759858011231908612
+      Item_Soul_Crystal_69: -5332449040842849239
+      Item_Soul_Crystal_7: -87233126487988778
+      Item_Soul_Crystal_70: -4014369830819534153
+      Item_Soul_Crystal_71: -327947579282145211
+      Item_Soul_Crystal_72: 1333743115213112813
+      Item_Soul_Crystal_73: 7366010493382374475
+      Item_Soul_Crystal_74: -737759111696263903
+      Item_Soul_Crystal_75: 993366447523058168
+      Item_Soul_Crystal_76: -1400721443420263383
+      Item_Soul_Crystal_77: 756867675413403038
+      Item_Soul_Crystal_78: 694622165798731611
+      Item_Soul_Crystal_8: -3956603604698461697
+      Item_Soul_Crystal_9: -7765555249291049529
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
