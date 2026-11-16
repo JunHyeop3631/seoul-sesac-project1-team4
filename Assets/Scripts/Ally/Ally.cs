@@ -8,6 +8,10 @@ public class Ally : MonoBehaviour
     [SerializeField, Min(0f)] private float attackRange = 3f;
     [SerializeField, Min(1)] private int attackDamage = 2;
     [SerializeField, Min(0.01f)] private float attackInterval = 1f;
+    [SerializeField] private Animator allyAnimator;
+    [SerializeField] private SpriteRenderer visualRenderer;
+    [SerializeField] private HitEffect attackHitEffect;
+    [SerializeField, Min(1)] private int evolutionStage = 1;
 
     private static readonly int IdleLeftState = Animator.StringToHash("IdleLeft");
     private static readonly int IdleRightState = Animator.StringToHash("IdleRight");
@@ -27,10 +31,28 @@ public class Ally : MonoBehaviour
 
     public Enemy CurrentTarget { get; private set; }
     public float AttackRange => attackRange;
+    public SpriteRenderer VisualRenderer => visualRenderer;
+    public int EvolutionStage => evolutionStage;
+
+    internal void ResetForReuse()
+    {
+        CurrentTarget = null;
+        attacking = false;
+        released = false;
+        facingRight = false;
+        nextAttackTime = 0;
+        if (animator != null)
+        {
+            animator.Rebind();
+            animator.Play(IdleLeftState, 0, 0f);
+        }
+    }
 
     protected virtual void Awake()
     {
-        animator = GetComponent<Animator>();
+        animator = allyAnimator != null ? allyAnimator : GetComponentInChildren<Animator>();
+        if (visualRenderer == null)
+            visualRenderer = GetComponentInChildren<SpriteRenderer>();
         projectileAttack = GetComponent<ProjectileAttack>();
     }
 
@@ -128,7 +150,7 @@ public class Ally : MonoBehaviour
         if (projectileAttack == null || !projectileAttack.CanFire || !TryBeginAttackEvent())
             return;
 
-        projectileAttack.Fire(CurrentTarget, AttackDamage);
+        projectileAttack.Fire(CurrentTarget, AttackDamage, attackHitEffect);
     }
 
     // Animation Event on both left/right melee attack clips.
@@ -137,7 +159,7 @@ public class Ally : MonoBehaviour
         if (!TryBeginAttackEvent())
             return;
 
-        CurrentTarget.TakeDamage(AttackDamage);
+        CurrentTarget.TakeDamage(AttackDamage, attackHitEffect);
         if (!RefreshTarget())
             OnTargetUnavailable();
     }

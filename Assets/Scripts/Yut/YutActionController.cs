@@ -13,6 +13,15 @@ public sealed class YutActionController : MonoBehaviour
     [SerializeField] private Transform boardRoot;
     [SerializeField] private Sprite destinationMarkerSprite;
     [SerializeField] private Wave targetingWave;
+    [SerializeField] private ProjectilePool projectilePool;
+    [SerializeField] private AllyPool allyPool;
+    [System.Serializable]
+    private class EvolutionEntry
+    {
+        public Ally firstStage = null;
+        public Ally secondStage = null;
+    }
+    [SerializeField] private EvolutionEntry[] evolutions = System.Array.Empty<EvolutionEntry>();
     [SerializeField] private Vector2 allySlotSpacing = new Vector2(0.3f, 0.5f);
 
     private readonly Transform[] cells = new Transform[YutBoard.CellCount];
@@ -26,7 +35,8 @@ public sealed class YutActionController : MonoBehaviour
 
     public bool CanEvolve(Ally ally)
     {
-        if (!isActiveAndEnabled || ally == null || !ally.isActiveAndEnabled ||
+        if (!isActiveAndEnabled || allyPool == null || ally == null || !ally.isActiveAndEnabled ||
+            ally.EvolutionStage != 1 || GetEvolutionPrefab(ally) == null ||
             !occupancy.TryGetCell(ally, out int cellId))
         {
             return false;
@@ -35,7 +45,8 @@ public sealed class YutActionController : MonoBehaviour
         int count = 0;
         foreach (Ally occupant in occupancy.GetAllies(cellId))
         {
-            if (occupant != null && occupant.isActiveAndEnabled && occupant.GetType() == ally.GetType())
+            if (occupant != null && occupant.isActiveAndEnabled && occupant.EvolutionStage == 1 &&
+                occupant.GetType() == ally.GetType())
             {
                 count++;
             }
@@ -51,8 +62,41 @@ public sealed class YutActionController : MonoBehaviour
             return;
         }
 
-        Debug.Log($"Evolution requested for {ally.GetType().Name}.", ally);
+        occupancy.TryGetCell(ally, out int cellId);
+        var materials = new List<Ally> { ally };
+        foreach (Ally occupant in occupancy.GetAllies(cellId))
+        {
+            if (materials.Count == 3)
+                break;
+            if (occupant != null && occupant != ally && occupant.isActiveAndEnabled &&
+                occupant.EvolutionStage == 1 && occupant.GetType() == ally.GetType())
+                materials.Add(occupant);
+        }
+
+        Ally evolved = allyPool.Request(GetEvolutionPrefab(ally), GetCell(cellId));
+        if (!occupancy.TryReplaceAllies(cellId, materials, evolved))
+        {
+            allyPool.Return(evolved);
+            return;
+        }
+
+        ClearSelection();
+        ConnectAlly(evolved);
+        foreach (Ally material in materials)
+            allyPool.Return(material);
+        ArrangeAllies(cellId);
         EvolutionRequested?.Invoke(ally);
+    }
+
+    private Ally GetEvolutionPrefab(Ally ally)
+    {
+        foreach (var entry in evolutions)
+        {
+            if (entry.firstStage != null && entry.secondStage != null &&
+                entry.firstStage.GetType() == ally.GetType())
+                return entry.secondStage;
+        }
+        return null;
     }
 
     private void Awake()
@@ -111,7 +155,7 @@ public sealed class YutActionController : MonoBehaviour
         };
 
         Transform cell = GetCell(DeploymentCellId);
-        if (prefab == null || cell == null)
+        if (prefab == null || cell == null || allyPool == null)
         {
             Debug.LogWarning("Assign the matching ally prefab and Cell 01.", this);
             return false;
@@ -122,11 +166,11 @@ public sealed class YutActionController : MonoBehaviour
             return false;
         }
 
-        Ally ally = Instantiate(prefab, cell, false);
+        Ally ally = allyPool.Request(prefab, cell);
         ally.transform.localPosition = Vector3.zero;
         if (!RegisterAlly(DeploymentCellId, ally))
         {
-            Destroy(ally.gameObject);
+            allyPool.Return(ally);
             return false;
         }
 
@@ -141,9 +185,30 @@ public sealed class YutActionController : MonoBehaviour
             return false;
         }
 
-        ally.SetTargetingWave(targetingWave);
+        if (allyPool != null)
+        {
+            foreach (var entry in evolutions)
+            {
+                Ally prefab = ally.EvolutionStage == 1 ? entry.firstStage : entry.secondStage;
+                if (prefab != null && prefab.GetType() == ally.GetType())
+                {
+                    allyPool.Register(ally, prefab);
+                    break;
+                }
+            }
+        }
+        ConnectAlly(ally);
         ArrangeAllies(cellId);
         return true;
+    }
+
+    private void ConnectAlly(Ally ally)
+    {
+        ally.SetTargetingWave(targetingWave);
+        if (ally.TryGetComponent(out ProjectileAttack projectileAttack))
+        {
+            projectileAttack.SetPool(projectilePool);
+        }
     }
 
     private void ArrangeAllies(int cellId)
@@ -181,7 +246,8 @@ public sealed class YutActionController : MonoBehaviour
         selectedAlly = ally;
         foreach (Ally occupant in occupancy.GetAllies(currentCellId))
         {
-            if (occupant != null && occupant.GetType() == ally.GetType())
+            if (occupant != null && occupant.GetType() == ally.GetType() &&
+                occupant.EvolutionStage == ally.EvolutionStage)
             {
                 selectedAllies.Add(occupant);
             }
@@ -267,7 +333,7 @@ public sealed class YutActionController : MonoBehaviour
             for (int index = allies.Count - 1; index >= 0; index--)
             {
                 Ally ally = allies[index];
-                if (ally != null && ContainsPoint(ally.GetComponent<SpriteRenderer>(), worldPoint))
+                if (ally != null && ContainsPoint(ally.VisualRenderer, worldPoint))
                 {
                     return ally;
                 }

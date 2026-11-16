@@ -1,0 +1,977 @@
+fileFormatVersion: 2
+guid: 6db0b80d6ed04fc44823ae6f5c2e4fba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8791009948283806171
+    second: Yut_Maceman_2nd_Evolution_Hit_0
+  - first:
+      213: 6204117022005127526
+    second: Yut_Maceman_2nd_Evolution_Hit_1
+  - first:
+      213: 5680353181523862050
+    second: Yut_Maceman_2nd_Evolution_Hit_2
+  - first:
+      213: 2731568371297726170
+    second: Yut_Maceman_2nd_Evolution_Hit_3
+  - first:
+      213: 4141966626205017185
+    second: Yut_Maceman_2nd_Evolution_Hit_4
+  - first:
+      213: -6663097797736331006
+    second: Yut_Maceman_2nd_Evolution_Hit_5
+  - first:
+      213: -5998319497357000085
+    second: Yut_Maceman_2nd_Evolution_Hit_6
+  - first:
+      213: -4133342370294895219
+    second: Yut_Maceman_2nd_Evolution_Hit_7
+  - first:
+      213: 2675356786839234439
+    second: Yut_Maceman_2nd_Evolution_Hit_8
+  - first:
+      213: -4265446225105456661
+    second: Yut_Maceman_2nd_Evolution_Hit_9
+  - first:
+      213: 9200691698809114966
+    second: Yut_Maceman_2nd_Evolution_Hit_10
+  - first:
+      213: -3304222676548542773
+    second: Yut_Maceman_2nd_Evolution_Hit_11
+  - first:
+      213: -5974164447922937248
+    second: Yut_Maceman_2nd_Evolution_Hit_12
+  - first:
+      213: 6574485732597225953
+    second: Yut_Maceman_2nd_Evolution_Hit_13
+  - first:
+      213: -3215866495622948687
+    second: Yut_Maceman_2nd_Evolution_Hit_14
+  - first:
+      213: -1567506159263563635
+    second: Yut_Maceman_2nd_Evolution_Hit_15
+  - first:
+      213: -5457871523119985423
+    second: Yut_Maceman_2nd_Evolution_Hit_16
+  - first:
+      213: 4990888662499989247
+    second: Yut_Maceman_2nd_Evolution_Hit_17
+  - first:
+      213: -915767197594617731
+    second: Yut_Maceman_2nd_Evolution_Hit_18
+  - first:
+      213: 3029424098072479733
+    second: Yut_Maceman_2nd_Evolution_Hit_19
+  - first:
+      213: 4708006007640619968
+    second: Yut_Maceman_2nd_Evolution_Hit_20
+  - first:
+      213: 32567699277614391
+    second: Yut_Maceman_2nd_Evolution_Hit_21
+  - first:
+      213: -6149973363461113160
+    second: Yut_Maceman_2nd_Evolution_Hit_22
+  - first:
+      213: 3623517973922347037
+    second: Yut_Maceman_2nd_Evolution_Hit_23
+  - first:
+      213: -8437703439133077933
+    second: Yut_Maceman_2nd_Evolution_Hit_24
+  - first:
+      213: -470939912683431696
+    second: Yut_Maceman_2nd_Evolution_Hit_25
+  - first:
+      213: -6376449007159795487
+    second: Yut_Maceman_2nd_Evolution_Hit_26
+  - first:
+      213: -2680636544103817583
+    second: Yut_Maceman_2nd_Evolution_Hit_27
+  - first:
+      213: -841895725127591439
+    second: Yut_Maceman_2nd_Evolution_Hit_28
+  - first:
+      213: 6869275116794728713
+    second: Yut_Maceman_2nd_Evolution_Hit_29
+  - first:
+      213: 5653560234169338185
+    second: Yut_Maceman_2nd_Evolution_Hit_30
+  - first:
+      213: 6590410134440583727
+    second: Yut_Maceman_2nd_Evolution_Hit_31
+  - first:
+      213: 7566750122562058887
+    second: Yut_Maceman_2nd_Evolution_Hit_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e5e9f570f000680800000000000000
+      internalID: -8791009948283806171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 669e1998f83791650800000000000000
+      internalID: 6204117022005127526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2226d7f6f1ba4de40800000000000000
+      internalID: 5680353181523862050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adea4e216fa78e520800000000000000
+      internalID: 2731568371297726170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 288
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164297293b83b7930800000000000000
+      internalID: 4141966626205017185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 288
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2090d360bdbe783a0800000000000000
+      internalID: -6663097797736331006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 288
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b628cb69230b1cca0800000000000000
+      internalID: -5998319497357000085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 288
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8d608b730b63a6c0800000000000000
+      internalID: -4133342370294895219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 288
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 787abfea2d6c02520800000000000000
+      internalID: 2675356786839234439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 288
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be1fe00f1471ec4c0800000000000000
+      internalID: -4265446225105456661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 651176b4a5c6faf70800000000000000
+      internalID: 9200691698809114966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce98817bfa0522d0800000000000000
+      internalID: -3304222676548542773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06229cb4611871da0800000000000000
+      internalID: -5974164447922937248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e9d450d0f34d3b50800000000000000
+      internalID: 6574485732597225953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8505be572fe53d0800000000000000
+      internalID: -3215866495622948687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_15
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 192
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d80cbd104791f3ae0800000000000000
+      internalID: -1567506159263563635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_16
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 192
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc86ba44ceb144b0800000000000000
+      internalID: -5457871523119985423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_17
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 192
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff616d1bbc2334540800000000000000
+      internalID: 4990888662499989247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_18
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 192
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d78fa62f59a8a43f0800000000000000
+      internalID: -915767197594617731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_19
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 192
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f74e97aa2daa0a20800000000000000
+      internalID: 3029424098072479733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cbf2d51582365140800000000000000
+      internalID: 4708006007640619968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_21
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d08926624b37000800000000000000
+      internalID: 32567699277614391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ba39c45fc7e6aaa0800000000000000
+      internalID: -6149973363461113160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_23
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1872e82662594230800000000000000
+      internalID: 3623517973922347037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_24
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 96
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e816e4d6147ea80800000000000000
+      internalID: -8437703439133077933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_25
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 96
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f853f105a2e679f0800000000000000
+      internalID: -470939912683431696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_26
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 96
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e029df696d4287a0800000000000000
+      internalID: -6376449007159795487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_27
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 96
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19ed2c804477ccad0800000000000000
+      internalID: -2680636544103817583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_28
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 96
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f999dd6c4cf054f0800000000000000
+      internalID: -841895725127591439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_29
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 96
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 901daf0e251945f50800000000000000
+      internalID: 6869275116794728713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94900f1441b757e40800000000000000
+      internalID: 5653560234169338185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_31
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22277b8917d57b50800000000000000
+      internalID: 6590410134440583727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yut_Maceman_2nd_Evolution_Hit_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a7477652f720960800000000000000
+      internalID: 7566750122562058887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 847c91ebdbb83d64b84898a0232b7639
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":10.0,"y":4.0},"gridSpriteSize":{"x":128.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Yut_Maceman_2nd_Evolution_Hit_0: -8791009948283806171
+      Yut_Maceman_2nd_Evolution_Hit_1: 6204117022005127526
+      Yut_Maceman_2nd_Evolution_Hit_10: 9200691698809114966
+      Yut_Maceman_2nd_Evolution_Hit_11: -3304222676548542773
+      Yut_Maceman_2nd_Evolution_Hit_12: -5974164447922937248
+      Yut_Maceman_2nd_Evolution_Hit_13: 6574485732597225953
+      Yut_Maceman_2nd_Evolution_Hit_14: -3215866495622948687
+      Yut_Maceman_2nd_Evolution_Hit_15: -1567506159263563635
+      Yut_Maceman_2nd_Evolution_Hit_16: -5457871523119985423
+      Yut_Maceman_2nd_Evolution_Hit_17: 4990888662499989247
+      Yut_Maceman_2nd_Evolution_Hit_18: -915767197594617731
+      Yut_Maceman_2nd_Evolution_Hit_19: 3029424098072479733
+      Yut_Maceman_2nd_Evolution_Hit_2: 5680353181523862050
+      Yut_Maceman_2nd_Evolution_Hit_20: 4708006007640619968
+      Yut_Maceman_2nd_Evolution_Hit_21: 32567699277614391
+      Yut_Maceman_2nd_Evolution_Hit_22: -6149973363461113160
+      Yut_Maceman_2nd_Evolution_Hit_23: 3623517973922347037
+      Yut_Maceman_2nd_Evolution_Hit_24: -8437703439133077933
+      Yut_Maceman_2nd_Evolution_Hit_25: -470939912683431696
+      Yut_Maceman_2nd_Evolution_Hit_26: -6376449007159795487
+      Yut_Maceman_2nd_Evolution_Hit_27: -2680636544103817583
+      Yut_Maceman_2nd_Evolution_Hit_28: -841895725127591439
+      Yut_Maceman_2nd_Evolution_Hit_29: 6869275116794728713
+      Yut_Maceman_2nd_Evolution_Hit_3: 2731568371297726170
+      Yut_Maceman_2nd_Evolution_Hit_30: 5653560234169338185
+      Yut_Maceman_2nd_Evolution_Hit_31: 6590410134440583727
+      Yut_Maceman_2nd_Evolution_Hit_32: 7566750122562058887
+      Yut_Maceman_2nd_Evolution_Hit_4: 4141966626205017185
+      Yut_Maceman_2nd_Evolution_Hit_5: -6663097797736331006
+      Yut_Maceman_2nd_Evolution_Hit_6: -5998319497357000085
+      Yut_Maceman_2nd_Evolution_Hit_7: -4133342370294895219
+      Yut_Maceman_2nd_Evolution_Hit_8: 2675356786839234439
+      Yut_Maceman_2nd_Evolution_Hit_9: -4265446225105456661
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

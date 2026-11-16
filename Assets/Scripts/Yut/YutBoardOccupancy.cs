@@ -55,6 +55,25 @@ public sealed class YutBoardOccupancy
         return TryMoveAllies(new[] { ally }, destinationCellId);
     }
 
+    internal bool TryReplaceAllies(int cellId, IReadOnlyList<Ally> materials, Ally replacement)
+    {
+        var occupants = alliesByCell[cellId];
+        var unique = new HashSet<Ally>(materials);
+        if (replacement == null || materials.Count != 3 || unique.Count != 3 ||
+            TryGetCell(replacement, out _))
+            return false;
+        foreach (Ally ally in materials)
+        {
+            if (ally == null || !occupants.Contains(ally))
+                return false;
+        }
+
+        foreach (Ally ally in materials)
+            occupants.Remove(ally);
+        occupants.Add(replacement);
+        return true;
+    }
+
     internal bool TryMoveAllies(IReadOnlyList<Ally> allies, int destinationCellId)
     {
         if (allies.Count == 0 || allies[0] == null ||

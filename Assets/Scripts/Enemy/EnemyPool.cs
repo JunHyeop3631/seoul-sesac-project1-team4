@@ -13,6 +13,7 @@ public class EnemyPool : MonoBehaviour
     }
 
     [SerializeField] private EnemyPrefabEntry[] enemyPrefabs = Array.Empty<EnemyPrefabEntry>();
+    [SerializeField] private HitEffectPool hitEffectPool;
 
     private readonly Dictionary<EnemyId, ObjectPool<Enemy>> pools = new();
     private readonly Dictionary<Enemy, ObjectPool<Enemy>> owners = new();
@@ -51,6 +52,7 @@ public class EnemyPool : MonoBehaviour
 
         Enemy enemy = pool.Get();
         owners[enemy] = pool;
+        enemy.SetHitEffectPool(hitEffectPool);
         enemy.transform.SetPositionAndRotation(position, rotation);
         enemy.gameObject.SetActive(true);
         return enemy;

@@ -1,0 +1,694 @@
+fileFormatVersion: 2
+guid: e759d72325769f645a5f117ac5336275
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8574446161059060203
+    second: Do_Taoist_2nd_Evolution_Hit_0
+  - first:
+      213: -4440798915922560795
+    second: Do_Taoist_2nd_Evolution_Hit_1
+  - first:
+      213: 3359124512460938224
+    second: Do_Taoist_2nd_Evolution_Hit_2
+  - first:
+      213: 6490031927686420446
+    second: Do_Taoist_2nd_Evolution_Hit_3
+  - first:
+      213: -734017689707153220
+    second: Do_Taoist_2nd_Evolution_Hit_4
+  - first:
+      213: 8658424011051493893
+    second: Do_Taoist_2nd_Evolution_Hit_5
+  - first:
+      213: -7509186248118291677
+    second: Do_Taoist_2nd_Evolution_Hit_6
+  - first:
+      213: -5526062814147591340
+    second: Do_Taoist_2nd_Evolution_Hit_7
+  - first:
+      213: -1998703834052413231
+    second: Do_Taoist_2nd_Evolution_Hit_8
+  - first:
+      213: -1795311443851373545
+    second: Do_Taoist_2nd_Evolution_Hit_9
+  - first:
+      213: 1321538107801939422
+    second: Do_Taoist_2nd_Evolution_Hit_10
+  - first:
+      213: -1715835942163637103
+    second: Do_Taoist_2nd_Evolution_Hit_11
+  - first:
+      213: -8713702030816108171
+    second: Do_Taoist_2nd_Evolution_Hit_12
+  - first:
+      213: 6140820918061093073
+    second: Do_Taoist_2nd_Evolution_Hit_13
+  - first:
+      213: -6317850613867878627
+    second: Do_Taoist_2nd_Evolution_Hit_14
+  - first:
+      213: -1796050004883602413
+    second: Do_Taoist_2nd_Evolution_Hit_15
+  - first:
+      213: -5535321447344732073
+    second: Do_Taoist_2nd_Evolution_Hit_16
+  - first:
+      213: 1156764484660990223
+    second: Do_Taoist_2nd_Evolution_Hit_17
+  - first:
+      213: 9216245194749260220
+    second: Do_Taoist_2nd_Evolution_Hit_18
+  - first:
+      213: -1656799029217569881
+    second: Do_Taoist_2nd_Evolution_Hit_19
+  - first:
+      213: -2347875187739816904
+    second: Do_Taoist_2nd_Evolution_Hit_20
+  - first:
+      213: -1797381168749543612
+    second: Do_Taoist_2nd_Evolution_Hit_21
+  - first:
+      213: 831851512492589055
+    second: Do_Taoist_2nd_Evolution_Hit_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be913a7aa5d8ef670800000000000000
+      internalID: 8574446161059060203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e8fe711aec1f52c0800000000000000
+      internalID: -4440798915922560795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fb9a8952f10e9e20800000000000000
+      internalID: 3359124512460938224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed751be07a9311a50800000000000000
+      internalID: 6490031927686420446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb8f62adcce30d5f0800000000000000
+      internalID: -734017689707153220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50aef6583c6e82870800000000000000
+      internalID: 8658424011051493893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32339a884e20ac790800000000000000
+      internalID: -7509186248118291677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 453cc3c162b7f43b0800000000000000
+      internalID: -5526062814147591340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d83818d37d2344e0800000000000000
+      internalID: -1998703834052413231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7149b08f0c5c517e0800000000000000
+      internalID: -1795311443851373545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd2da048eb075210800000000000000
+      internalID: 1321538107801939422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c1d7e2d402038e0800000000000000
+      internalID: -1715835942163637103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5712b9e8b26b21780800000000000000
+      internalID: -8713702030816108171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d0d15ae614983550800000000000000
+      internalID: 6140820918061093073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d17eb60175c7258a0800000000000000
+      internalID: -6317850613867878627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 314031459062317e0800000000000000
+      internalID: -1796050004883602413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7588a6598769e23b0800000000000000
+      internalID: -5535321447344732073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0191058b27ad0010800000000000000
+      internalID: 1156764484660990223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb13ee3cc2ea6ef70800000000000000
+      internalID: 9216245194749260220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3564f9f0ed109e0800000000000000
+      internalID: -1656799029217569881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83c80d1d4fbaa6fd0800000000000000
+      internalID: -2347875187739816904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do_Taoist_2nd_Evolution_Hit_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ff4b6995b6e07e0800000000000000
+      internalID: -1797381168749543612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c9eb0e2d5513835489d7344f695df4b6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":5.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Do_Taoist_2nd_Evolution_Hit_0: 8574446161059060203
+      Do_Taoist_2nd_Evolution_Hit_1: -4440798915922560795
+      Do_Taoist_2nd_Evolution_Hit_10: 1321538107801939422
+      Do_Taoist_2nd_Evolution_Hit_11: -1715835942163637103
+      Do_Taoist_2nd_Evolution_Hit_12: -8713702030816108171
+      Do_Taoist_2nd_Evolution_Hit_13: 6140820918061093073
+      Do_Taoist_2nd_Evolution_Hit_14: -6317850613867878627
+      Do_Taoist_2nd_Evolution_Hit_15: -1796050004883602413
+      Do_Taoist_2nd_Evolution_Hit_16: -5535321447344732073
+      Do_Taoist_2nd_Evolution_Hit_17: 1156764484660990223
+      Do_Taoist_2nd_Evolution_Hit_18: 9216245194749260220
+      Do_Taoist_2nd_Evolution_Hit_19: -1656799029217569881
+      Do_Taoist_2nd_Evolution_Hit_2: 3359124512460938224
+      Do_Taoist_2nd_Evolution_Hit_20: -2347875187739816904
+      Do_Taoist_2nd_Evolution_Hit_21: -1797381168749543612
+      Do_Taoist_2nd_Evolution_Hit_3: 6490031927686420446
+      Do_Taoist_2nd_Evolution_Hit_4: -734017689707153220
+      Do_Taoist_2nd_Evolution_Hit_5: 8658424011051493893
+      Do_Taoist_2nd_Evolution_Hit_6: -7509186248118291677
+      Do_Taoist_2nd_Evolution_Hit_7: -5526062814147591340
+      Do_Taoist_2nd_Evolution_Hit_8: -1998703834052413231
+      Do_Taoist_2nd_Evolution_Hit_9: -1795311443851373545
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
