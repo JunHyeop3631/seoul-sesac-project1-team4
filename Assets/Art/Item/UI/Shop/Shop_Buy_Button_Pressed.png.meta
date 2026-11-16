@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3d016772ff0b1bb4986db6d0570c67c2
+guid: 3299ebdedf8300446828e3e03c603955
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7092427176986241232
-    second: "\uC0C1\uC810_\uAD6C\uB9E4\uCC3D_\uBC30\uACBD\uD654\uBA74_\uAC00\uC6B4\uB370_0"
+      213: 5759461869777037858
+    second: Shop_Buy_Button_Pressed_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\uC0C1\uC810_\uAD6C\uB9E4\uCC3D_\uBC30\uACBD\uD654\uBA74_\uAC00\uC6B4\uB370_0"
+      name: Shop_Buy_Button_Pressed_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 965
-        height: 1630
+        y: 23
+        width: 2172
+        height: 681
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0d8679fa0fc5d6260800000000000000
-      internalID: 7092427176986241232
+      spriteID: 22aa77d3e08bdef40800000000000000
+      internalID: 5759461869777037858
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\uC0C1\uC810_\uAD6C\uB9E4\uCC3D_\uBC30\uACBD\uD654\uBA74_\uAC00\uC6B4\uB370_0": 7092427176986241232
+      Shop_Buy_Button_Pressed_0: 5759461869777037858
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

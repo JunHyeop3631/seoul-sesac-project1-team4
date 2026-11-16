@@ -3,8 +3,8 @@ guid: 7a0e5c2484d89ae488a3437f28795e8c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4525099711548663741
-    second: "\uC0C1\uC810_\uC544\uC774\uD15C\uC815\uBCF4\uCC3D_\uBC30\uACBD\uD654\uBA74_\uB9E8\uC624\uB978\uCABD_0"
+      213: 2024610025170692497
+    second: Shop_ItemInfo_Background_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\uC0C1\uC810_\uC544\uC774\uD15C\uC815\uBCF4\uCC3D_\uBC30\uACBD\uD654\uBA74_\uB9E8\uC624\uB978\uCABD_0"
+      name: Shop_ItemInfo_Background_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: db7a41076326cce30800000000000000
-      internalID: 4525099711548663741
+      spriteID: 1996efe471cd81c10800000000000000
+      internalID: 2024610025170692497
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\uC0C1\uC810_\uC544\uC774\uD15C\uC815\uBCF4\uCC3D_\uBC30\uACBD\uD654\uBA74_\uB9E8\uC624\uB978\uCABD_0": 4525099711548663741
+      Shop_ItemInfo_Background_0: 2024610025170692497
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

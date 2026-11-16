@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b55224343330b7840866c1b5976efaef
+guid: b4679d05237bbc044bfae8a2a73bf6a0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1527307464855626606
-    second: "\uC0C1\uC810_\uAD6C\uB9E4\uBC84\uD2BC_0"
+      213: -6538851821583340070
+    second: Shop_Coin_Icon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\uC0C1\uC810_\uAD6C\uB9E4\uBC84\uD2BC_0"
+      name: Shop_Coin_Icon_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 411
-        height: 120
+        width: 61
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e63a5891c06123510800000000000000
-      internalID: 1527307464855626606
+      spriteID: addeb9f99e45145a0800000000000000
+      internalID: -6538851821583340070
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\uC0C1\uC810_\uAD6C\uB9E4\uBC84\uD2BC_0": 1527307464855626606
+      Shop_Coin_Icon_0: -6538851821583340070
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

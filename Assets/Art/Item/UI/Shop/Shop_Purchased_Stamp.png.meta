@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 138f8a96d837cdb4590f7e7f513eaf51
+guid: 93b21d961e954954d9237faafb279681
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5087007405572887336
-    second: "\uC0C1\uC810_\uC7AC\uB8CCHUD_0"
+      213: -6848928851083603610
+    second: Shop_Purchased_Stamp_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\uC0C1\uC810_\uC7AC\uB8CCHUD_0"
+      name: Shop_Purchased_Stamp_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2172
-        height: 724
+        width: 1912
+        height: 823
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 82314f2884ea89640800000000000000
-      internalID: 5087007405572887336
+      spriteID: 661dc334f77b3f0a0800000000000000
+      internalID: -6848928851083603610
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\uC0C1\uC810_\uC7AC\uB8CCHUD_0": 5087007405572887336
+      Shop_Purchased_Stamp_0: -6848928851083603610
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

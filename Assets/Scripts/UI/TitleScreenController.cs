@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public sealed class TitleScreenController : MonoBehaviour
@@ -31,7 +32,8 @@ public sealed class TitleScreenController : MonoBehaviour
             trigger.triggers.Add(hover);
         }
 
-        // Start and Settings intentionally have no action until their behavior is defined.
+        menuButtons[0].onClick.AddListener(StartGame);
+        // Settings remains unassigned until its behavior is defined.
         menuButtons[2].onClick.AddListener(QuitGame);
         ShowPrompt();
     }
@@ -76,6 +78,11 @@ public sealed class TitleScreenController : MonoBehaviour
             menuLabels[i].color = i == index ? selectedColor : normalColor;
 
         selection.anchoredPosition = ((RectTransform)menuButtons[index].transform).anchoredPosition;
+    }
+
+    private void StartGame()
+    {
+        SceneManager.LoadScene("ThrowYut");
     }
 
     private void QuitGame()

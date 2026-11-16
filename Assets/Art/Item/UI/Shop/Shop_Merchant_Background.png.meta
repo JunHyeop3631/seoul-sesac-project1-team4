@@ -3,8 +3,8 @@ guid: 37fb14e105c5f2e458d2e29eca2f4e08
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2729598850069244615
-    second: "\uC0C1\uC810_\uC0C1\uC778_\uBC30\uACBD\uD654\uBA74_\uB9E8\uC67C\uCABD\uBC30\uCE58_0"
+      213: 9088500922216566756
+    second: Shop_Merchant_Background_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\uC0C1\uC810_\uC0C1\uC778_\uBC30\uACBD\uD654\uBA74_\uB9E8\uC67C\uCABD\uBC30\uCE58_0"
+      name: Shop_Merchant_Background_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ca21bd21bb71e520800000000000000
-      internalID: 2729598850069244615
+      spriteID: 4ef47819f67d02e70800000000000000
+      internalID: 9088500922216566756
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\uC0C1\uC810_\uC0C1\uC778_\uBC30\uACBD\uD654\uBA74_\uB9E8\uC67C\uCABD\uBC30\uCE58_0": 2729598850069244615
+      Shop_Merchant_Background_0: 9088500922216566756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
