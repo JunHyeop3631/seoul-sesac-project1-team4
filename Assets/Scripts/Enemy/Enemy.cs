@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,14 +13,13 @@ public class Enemy : MonoBehaviour
     [SerializeField, Min(1)] private int maxHealth = 10;
     [SerializeField] private Image healthBarFill;
     [SerializeField] private Animator enemyAnimator;
-    [SerializeField] private AnimationClip deathLeftClip;
-    [SerializeField] private AnimationClip deathRightClip;
+    [SerializeField] private HitEffect hitEffectPrefab;
 
     private Vector3[] pathPoints;
     private int targetIndex;
     private Action<Enemy> onArrived;
     private bool facingLeft = true;
-    private Coroutine deathRoutine;
+    private bool awaitingDeathAnimation;
 
     public bool IsMoving { get; private set; }
     public int CurrentHealth { get; private set; }
@@ -31,6 +29,7 @@ public class Enemy : MonoBehaviour
 
     protected virtual void OnEnable()
     {
+        awaitingDeathAnimation = false;
         CurrentHealth = maxHealth;
         UpdateHealthBar();
         facingLeft = true;
@@ -51,28 +50,41 @@ public class Enemy : MonoBehaviour
 
         CurrentHealth = Mathf.Max(0, CurrentHealth - damage);
         UpdateHealthBar();
+        if (hitEffectPrefab != null)
+            Instantiate(hitEffectPrefab, transform.position, Quaternion.identity);
+
         if (CurrentHealth == 0)
         {
             StopMoving();
             Defeated?.Invoke(this);
             if (isActiveAndEnabled)
             {
-                deathRoutine = StartCoroutine(PlayDeathAnimation());
+                PlayDeathAnimation();
             }
         }
     }
 
-    private IEnumerator PlayDeathAnimation()
+    private void PlayDeathAnimation()
     {
-        AnimationClip clip = facingLeft ? deathLeftClip : deathRightClip;
-        if (enemyAnimator != null && clip != null)
+        awaitingDeathAnimation = true;
+        int state = facingLeft ? DeathLeftState : DeathRightState;
+        if (enemyAnimator != null && enemyAnimator.isActiveAndEnabled &&
+            enemyAnimator.runtimeAnimatorController != null && enemyAnimator.HasState(0, state))
         {
-            enemyAnimator.speed = 1f;
-            enemyAnimator.Play(facingLeft ? DeathLeftState : DeathRightState, 0, 0f);
-            yield return new WaitForSeconds(clip.length);
+            enemyAnimator.Play(state, 0, 0f);
+            return;
         }
 
-        deathRoutine = null;
+        CompleteDeathAnimation();
+    }
+
+    // Called by EnemyAnimationEvents on the Animator's child object.
+    public void CompleteDeathAnimation()
+    {
+        if (!awaitingDeathAnimation || !isActiveAndEnabled || CurrentHealth > 0)
+            return;
+
+        awaitingDeathAnimation = false;
         if (DeathCompleted != null)
         {
             DeathCompleted(this);
@@ -183,11 +195,7 @@ public class Enemy : MonoBehaviour
 
     protected virtual void OnDisable()
     {
-        if (deathRoutine != null)
-        {
-            StopCoroutine(deathRoutine);
-            deathRoutine = null;
-        }
+        awaitingDeathAnimation = false;
 
         // A pooled object can be returned and reused before the next target check.
         ActivationVersion++;

@@ -3,59 +3,59 @@ guid: 466e7bf5d926c87438fe03342be04458
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7530248071109377639
-    second: 1_epact_arrow_79x13_0
+      213: -1977852838888770690
+    second: Mo_Arrow_0
   - first:
-      213: 6131210196705132659
-    second: 1_epact_arrow_79x13_1
+      213: -8932528075069753871
+    second: Mo_Arrow_1
   - first:
-      213: -7131769932903583130
-    second: 1_epact_arrow_79x13_2
+      213: 4843893272622390251
+    second: Mo_Arrow_2
   - first:
-      213: 4261738743954783379
-    second: 1_epact_arrow_79x13_3
+      213: 5351918534919855086
+    second: Mo_Arrow_3
   - first:
-      213: 4989631173753494480
-    second: 1_epact_arrow_79x13_4
+      213: -1674549047188867983
+    second: Mo_Arrow_4
   - first:
-      213: 5303856162777489043
-    second: 1_epact_arrow_79x13_5
+      213: 5635631682155958851
+    second: Mo_Arrow_5
   - first:
-      213: 7590296357743672528
-    second: 1_epact_arrow_79x13_6
+      213: -2985730247512518193
+    second: Mo_Arrow_6
   - first:
-      213: 5933549907553645575
-    second: 1_epact_arrow_79x13_7
+      213: 4557144317823337315
+    second: Mo_Arrow_7
   - first:
-      213: -5586102271333426367
-    second: 1_epact_arrow_79x13_8
+      213: -8291380528162778580
+    second: Mo_Arrow_8
   - first:
-      213: 6938643782947957587
-    second: 1_epact_arrow_79x13_9
+      213: -3928443108066939363
+    second: Mo_Arrow_9
   - first:
-      213: 5646478865350450017
-    second: 1_epact_arrow_79x13_10
+      213: 2253058674930112295
+    second: Mo_Arrow_10
   - first:
-      213: 1603864835928574881
-    second: 1_epact_arrow_79x13_11
+      213: -3963013943822670691
+    second: Mo_Arrow_11
   - first:
-      213: -6630746561017702078
-    second: 1_epact_arrow_79x13_12
+      213: -7413736710244902360
+    second: Mo_Arrow_12
   - first:
-      213: 7479808332773651529
-    second: 1_epact_arrow_79x13_13
+      213: -1269202947543256842
+    second: Mo_Arrow_13
   - first:
-      213: -6423630675202357210
-    second: 1_epact_arrow_79x13_14
+      213: 5082099061521721057
+    second: Mo_Arrow_14
   - first:
-      213: 1887069145366767316
-    second: 1_epact_arrow_79x13_15
+      213: 1715429854662428507
+    second: Mo_Arrow_15
   - first:
-      213: -4638027204636140550
-    second: 1_epact_arrow_79x13_16
+      213: 1069489163723577638
+    second: Mo_Arrow_16
   - first:
-      213: 1713459095469997330
-    second: 1_epact_arrow_79x13_17
+      213: 1135964340625904305
+    second: Mo_Arrow_17
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -151,397 +151,397 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1_epact_arrow_79x13_0
+      name: Mo_Arrow_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 2
-        width: 63
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 99184fab64f2f7790800000000000000
-      internalID: -7530248071109377639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1_epact_arrow_79x13_1
-      rect:
-        serializedVersion: 2
-        x: 112
+        x: 0
         y: 0
-        width: 47
+        width: 79
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 370ccd9703f661550800000000000000
-      internalID: 6131210196705132659
+      spriteID: e73790872514d84e0800000000000000
+      internalID: -1977852838888770690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_epact_arrow_79x13_2
+      name: Mo_Arrow_1
       rect:
         serializedVersion: 2
-        x: 197
-        y: 1
-        width: 41
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6627871280dd60d90800000000000000
-      internalID: -7131769932903583130
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1_epact_arrow_79x13_3
-      rect:
-        serializedVersion: 2
-        x: 261
-        y: 1
-        width: 56
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 39cb1f6deccb42b30800000000000000
-      internalID: 4261738743954783379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1_epact_arrow_79x13_4
-      rect:
-        serializedVersion: 2
-        x: 339
-        y: 1
-        width: 99
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0dbdac7cd1bbe3540800000000000000
-      internalID: 4989631173753494480
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1_epact_arrow_79x13_5
-      rect:
-        serializedVersion: 2
-        x: 436
+        x: 79
         y: 0
-        width: 84
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 39e5e1a34151b9940800000000000000
-      internalID: 5303856162777489043
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1_epact_arrow_79x13_6
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 3
-        width: 42
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0dcb04f7256265960800000000000000
-      internalID: 7590296357743672528
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1_epact_arrow_79x13_7
-      rect:
-        serializedVersion: 2
-        x: 569
-        y: 1
-        width: 64
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 70479c02434385250800000000000000
-      internalID: 5933549907553645575
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1_epact_arrow_79x13_8
-      rect:
-        serializedVersion: 2
-        x: 638
-        y: 0
-        width: 90
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 14b1b26a49d2a72b0800000000000000
-      internalID: -5586102271333426367
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1_epact_arrow_79x13_9
-      rect:
-        serializedVersion: 2
-        x: 724
-        y: 0
-        width: 93
+        width: 79
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35be59112c30b4060800000000000000
-      internalID: 6938643782947957587
+      spriteID: 1f57343da09490480800000000000000
+      internalID: -8932528075069753871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_epact_arrow_79x13_10
+      name: Mo_Arrow_2
       rect:
         serializedVersion: 2
-        x: 818
+        x: 158
         y: 0
-        width: 85
+        width: 79
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 16bd6f89c925c5e40800000000000000
-      internalID: 5646478865350450017
+      spriteID: bebdf847447f83340800000000000000
+      internalID: 4843893272622390251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_epact_arrow_79x13_11
+      name: Mo_Arrow_3
       rect:
         serializedVersion: 2
-        x: 910
+        x: 237
         y: 0
-        width: 67
+        width: 79
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ab43451292124610800000000000000
-      internalID: 1603864835928574881
+      spriteID: eeb1ab44d85d54a40800000000000000
+      internalID: 5351918534919855086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_epact_arrow_79x13_12
+      name: Mo_Arrow_4
       rect:
         serializedVersion: 2
-        x: 988
+        x: 316
         y: 0
-        width: 61
+        width: 79
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 24995ea422bdaf3a0800000000000000
-      internalID: -6630746561017702078
+      spriteID: 174b653838ec2c8e0800000000000000
+      internalID: -1674549047188867983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_epact_arrow_79x13_13
+      name: Mo_Arrow_5
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 3
-        width: 47
-        height: 11
+        x: 395
+        y: 0
+        width: 79
+        height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 944faf68c0e9dc760800000000000000
-      internalID: 7479808332773651529
+      spriteID: 342d7d3f729c53e40800000000000000
+      internalID: 5635631682155958851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_epact_arrow_79x13_14
+      name: Mo_Arrow_6
       rect:
         serializedVersion: 2
-        x: 1132
-        y: 3
-        width: 54
-        height: 11
+        x: 474
+        y: 0
+        width: 79
+        height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 628c24c4fedaad6a0800000000000000
-      internalID: -6423630675202357210
+      spriteID: fc190e1b82e8096d0800000000000000
+      internalID: -2985730247512518193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_epact_arrow_79x13_15
+      name: Mo_Arrow_7
       rect:
         serializedVersion: 2
-        x: 1201
-        y: 3
-        width: 89
-        height: 11
+        x: 553
+        y: 0
+        width: 79
+        height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d6af2cb367303a10800000000000000
-      internalID: 1887069145366767316
+      spriteID: 363cc0ebc9a3e3f30800000000000000
+      internalID: 4557144317823337315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_epact_arrow_79x13_16
+      name: Mo_Arrow_8
       rect:
         serializedVersion: 2
-        x: 1297
-        y: 3
-        width: 58
-        height: 11
+        x: 632
+        y: 0
+        width: 79
+        height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: afb9019a4da62afb0800000000000000
-      internalID: -4638027204636140550
+      spriteID: c225449d6591fec80800000000000000
+      internalID: -8291380528162778580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_epact_arrow_79x13_17
+      name: Mo_Arrow_9
       rect:
         serializedVersion: 2
-        x: 1372
-        y: 3
-        width: 51
-        height: 11
+        x: 711
+        y: 0
+        width: 79
+        height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21db6a218fd67c710800000000000000
-      internalID: 1713459095469997330
+      spriteID: d1ea6579ecd5b79c0800000000000000
+      internalID: -3928443108066939363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mo_Arrow_10
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 0
+        width: 79
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72752597de8744f10800000000000000
+      internalID: 2253058674930112295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mo_Arrow_11
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 0
+        width: 79
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d94a786a0db8009c0800000000000000
+      internalID: -3963013943822670691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mo_Arrow_12
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 0
+        width: 79
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a549fddbd1d1990800000000000000
+      internalID: -7413736710244902360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mo_Arrow_13
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 0
+        width: 79
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f03ecbc4a2e26ee0800000000000000
+      internalID: -1269202947543256842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mo_Arrow_14
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 0
+        width: 79
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6295b9b2e378640800000000000000
+      internalID: 5082099061521721057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mo_Arrow_15
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 0
+        width: 79
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5701443d5e6ec710800000000000000
+      internalID: 1715429854662428507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mo_Arrow_16
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 0
+        width: 79
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6299fde5ab697de00800000000000000
+      internalID: 1069489163723577638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mo_Arrow_17
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 0
+        width: 79
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b294889c81c3cf00800000000000000
+      internalID: 1135964340625904305
       vertices: []
       indices: 
       edges: []
@@ -550,7 +550,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 68391915f71929641be3e005ea087948
     internalID: 0
     vertices: []
     indices: 
@@ -558,26 +558,28 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":18.0,"y":1.0},"gridSpriteSize":{"x":79.0,"y":14.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      1_epact_arrow_79x13_0: -7530248071109377639
-      1_epact_arrow_79x13_1: 6131210196705132659
-      1_epact_arrow_79x13_10: 5646478865350450017
-      1_epact_arrow_79x13_11: 1603864835928574881
-      1_epact_arrow_79x13_12: -6630746561017702078
-      1_epact_arrow_79x13_13: 7479808332773651529
-      1_epact_arrow_79x13_14: -6423630675202357210
-      1_epact_arrow_79x13_15: 1887069145366767316
-      1_epact_arrow_79x13_16: -4638027204636140550
-      1_epact_arrow_79x13_17: 1713459095469997330
-      1_epact_arrow_79x13_2: -7131769932903583130
-      1_epact_arrow_79x13_3: 4261738743954783379
-      1_epact_arrow_79x13_4: 4989631173753494480
-      1_epact_arrow_79x13_5: 5303856162777489043
-      1_epact_arrow_79x13_6: 7590296357743672528
-      1_epact_arrow_79x13_7: 5933549907553645575
-      1_epact_arrow_79x13_8: -5586102271333426367
-      1_epact_arrow_79x13_9: 6938643782947957587
+      Mo_Arrow_0: -1977852838888770690
+      Mo_Arrow_1: -8932528075069753871
+      Mo_Arrow_10: 2253058674930112295
+      Mo_Arrow_11: -3963013943822670691
+      Mo_Arrow_12: -7413736710244902360
+      Mo_Arrow_13: -1269202947543256842
+      Mo_Arrow_14: 5082099061521721057
+      Mo_Arrow_15: 1715429854662428507
+      Mo_Arrow_16: 1069489163723577638
+      Mo_Arrow_17: 1135964340625904305
+      Mo_Arrow_2: 4843893272622390251
+      Mo_Arrow_3: 5351918534919855086
+      Mo_Arrow_4: -1674549047188867983
+      Mo_Arrow_5: 5635631682155958851
+      Mo_Arrow_6: -2985730247512518193
+      Mo_Arrow_7: 4557144317823337315
+      Mo_Arrow_8: -8291380528162778580
+      Mo_Arrow_9: -3928443108066939363
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

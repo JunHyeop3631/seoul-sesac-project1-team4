@@ -2481,9 +2481,9 @@ MonoBehaviour:
   enemyPrefabs:
   - enemyId: 0
     prefab: {fileID: 310511580605650271, guid: d112b3b7205647f99751b955dda8de46, type: 3}
-  - enemyId: 2
+  - enemyId: 1
     prefab: {fileID: 310511580605650271, guid: ad669c30bc534634b381838f1722040d, type: 3}
-  - enemyId: 3
+  - enemyId: 2
     prefab: {fileID: 310511580605650271, guid: 4286f61eb22847f38abf428b5774bf8e, type: 3}
 --- !u!1 &30000
 GameObject:

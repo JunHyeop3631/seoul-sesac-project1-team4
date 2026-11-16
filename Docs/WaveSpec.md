@@ -100,7 +100,7 @@
 
 `EnemyPool`은 적 ID로 종류별 풀을 찾는 딕셔너리와, 재사용할 객체를 보관하는 `ObjectPool<Enemy>`를 구분한다.
 
-적 ID는 문자열 대신 공통 [EnemyId enum](../Assets/Scripts/Enemy/EnemyId.cs)을 사용한다. `NormalEnemy = 0`, `FastEnemy = 2`, `BossEnemy = 3`로 명시하며 웨이브 구성, 프리팹 등록, 풀 딕셔너리의 키와 요청 함수 인자에 같은 타입을 사용한다. Inspector에서는 enum 항목을 선택한다. 씬과 에셋에는 숫자로 저장하므로 적 종류를 추가할 때 기존 숫자를 변경하거나 다른 종류에 재사용하지 않는다. enum에 정의되어 있어도 프리팹 등록이 없으면 소환할 수 없다.
+적 ID는 문자열 대신 공통 [EnemyId enum](../Assets/Scripts/Enemy/EnemyId.cs)을 사용한다. `NormalEnemy = 0`, `FastEnemy = 1`, `BossEnemy = 2`로 명시하며 웨이브 구성, 프리팹 등록, 풀 딕셔너리의 키와 요청 함수 인자에 같은 타입을 사용한다. Inspector에서는 enum 항목을 선택한다. 씬과 에셋에는 숫자로 저장하므로 적 종류를 추가할 때 기존 숫자를 변경하거나 다른 종류에 재사용하지 않는다. enum에 정의되어 있어도 프리팹 등록이 없으면 소환할 수 없다.
 
 | 저장 위치 | 보관하는 정보 | 접근 목적 |
 | --- | --- | --- |

@@ -4,7 +4,7 @@
 
 ## 종류와 설정
 
-`FastEnemy`와 `BossEnemy`도 공통 `Enemy`를 상속하며 각각 전용 프리팹을 사용한다. 적 풀에는 `FastEnemy = 2`, `BossEnemy = 3`으로 등록했다. 두 적의 Animator Override Controller는 NormalEnemy의 네 상태를 공유하면서 각자의 좌우 걷기·사망 클립으로 교체한다. 초기 이동 속도는 초당 2유닛, 최대 체력은 10으로 두었으며 프리팹에서 조정한다. 보스의 HP 바는 스프라이트 높이에 맞춰 배치했다.
+`FastEnemy`와 `BossEnemy`도 공통 `Enemy`를 상속하며 각각 전용 프리팹을 사용한다. 적 풀에는 `FastEnemy = 1`, `BossEnemy = 2`으로 등록했다. 두 적의 Animator Override Controller는 NormalEnemy의 네 상태를 공유하면서 각자의 좌우 걷기·사망 클립으로 교체한다. 초기 이동 속도는 초당 2유닛, 최대 체력은 10으로 두었으며 프리팹에서 조정한다. 보스의 HP 바는 스프라이트 높이에 맞춰 배치했다.
 
 `NormalEnemy`, `FastEnemy`, `BossEnemy`는 공통 [Enemy](../Assets/Scripts/Enemy/Enemy.cs)를 상속한다. 웨이브 데이터와 적 풀은 `EnemyId`를 사용해 종류를 구분한다. [NormalEnemy 프리팹](../Assets/Prefabs/NormalEnemy.prefab)의 `Visual` 자식에 SpriteRenderer와 Animator를 배치하고, [NormalEnemy Animator Controller](../Assets/Animations/Enemy/Animator/NormalEnemy.controller)를 연결했다. 새 스프라이트의 표시 높이는 자식 스케일로 기존 이미지에 맞췄다. 각 적 프리팹의 콜라이더는 [아군의 대상 탐색](AllySpec.md#대상-선택과-유지)에 사용한다.
 
@@ -26,6 +26,7 @@
 ## 피해와 처치
 
 - 활성 상태이고 체력이 남은 적에 양수 피해가 들어오면 `TakeDamage`가 현재 체력을 낮춘다. 최솟값은 0이다.
+- 피해가 적용될 때 적 중심에 `Enemy_Hit` 효과를 생성한다. 일반·빠른·보스 프리팹에 연결했으며, 기존 이동·사망 Animator와 독립적으로 11개 스프라이트를 60fps로 한 번 재생한다. 클립 끝의 `OnHitAnimationFinished` 이벤트에서 제거하며 속도 1일 때 약 0.1833초다. 자세한 연결은 [전투 효과 애니메이션](CombatEffects.md)을 따른다.
 - 체력이 처음 0이 되면 이동을 멈추고 `Defeated` 이벤트가 한 번 발생한다. 웨이브는 적을 생존 집합에서 제거하고 처치 수를 즉시 증가시킨다. NormalEnemy는 0.5초 사망 애니메이션을 재생하고 `DeathCompleted`를 알린 뒤 풀에 반환된다. 웨이브는 사망 재생 중인 적의 반환까지 기다려 완료를 판정한다. 애니메이션을 설정하지 않은 적은 즉시 완료를 알린다.
 - 처치와 경로 도착은 각각 별도로 알리며, 두 경로 모두 [웨이브 완료 판정](WaveSpec.md#완료-알림)의 필드 잔여 적 수에 반영된다.
 
@@ -34,6 +35,8 @@
 - 걷기 클립은 좌우 각각 60 FPS, 1초 반복이며 사망 클립은 60 FPS, 0.5초 단발이다.
 - 소환 시 왼쪽 걷기로 초기화하고, 수평 이동 방향이 바뀌면 해당 방향의 걷기를 재생한다. 위아래 이동 시에는 마지막 좌우 방향을 유지한다.
 - 사망 시 마지막 방향의 사망 클립을 재생한다. 체력이 0인 적은 아군의 공격 대상에서 제외한다.
+- 적 컴포넌트에는 사망 클립을 따로 참조하지 않는다. `DeathLeft`·`DeathRight` 상태와 Controller 또는 Override Controller가 실제 클립을 결정한다. 여섯 사망 클립 모두 **종료 시각 0.5초**에 `OnDeathAnimationFinished` 이벤트가 있다. 자식 Animator의 [EnemyAnimationEvents.cs](../Assets/Scripts/Enemy/EnemyAnimationEvents.cs)가 이벤트를 받아 부모 `Enemy.CompleteDeathAnimation`을 호출하고, 사망 대기 중일 때만 `DeathCompleted`를 한 번 알린다. 살아 있거나 풀에서 반환·재사용된 적에게 들어온 종료 알림은 무시한다.
+- 사망 완료 대기 코루틴과 고정 시간 대기는 사용하지 않는다. 속도 변경·일시정지는 이벤트 재생 시점에 반영된다. Animator나 해당 상태가 없는 적은 애니메이션 대기 없이 완료 처리한다. 사망 상태에는 종료 전 강제 전환을 추가하지 않는다.
 - 목적지 도착 시에는 도착 콜백으로 풀에 반환된다.
 
 ## 풀 반환과 재사용
