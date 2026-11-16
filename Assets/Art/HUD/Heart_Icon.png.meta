@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 138f8a96d837cdb4590f7e7f513eaf51
+guid: a8ac6dcba9d77054999904d413369687
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -592808501616856347
-    second: Shop_Materials_Header_0
+      213: 5768757950873148395
+    second: Heart_Icon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shop_Materials_Header_0
+      name: Heart_Icon_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2172
-        height: 724
+        width: 224
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e2bb410fcbe5c7f0800000000000000
-      internalID: -592808501616856347
+      spriteID: beb1109cacebe0050800000000000000
+      internalID: 5768757950873148395
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Shop_Materials_Header_0: -592808501616856347
+      Heart_Icon_0: 5768757950873148395
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

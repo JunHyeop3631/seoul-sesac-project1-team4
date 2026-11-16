@@ -8,6 +8,8 @@ public class Ally : MonoBehaviour
     [SerializeField, Min(0f)] private float attackRange = 3f;
     [SerializeField, Min(1)] private int attackDamage = 2;
     [SerializeField, Min(0.01f)] private float attackInterval = 1f;
+    [SerializeField] private Animator allyAnimator;
+    [SerializeField] private SpriteRenderer visualRenderer;
 
     private static readonly int IdleLeftState = Animator.StringToHash("IdleLeft");
     private static readonly int IdleRightState = Animator.StringToHash("IdleRight");
@@ -27,10 +29,13 @@ public class Ally : MonoBehaviour
 
     public Enemy CurrentTarget { get; private set; }
     public float AttackRange => attackRange;
+    public SpriteRenderer VisualRenderer => visualRenderer;
 
     protected virtual void Awake()
     {
-        animator = GetComponent<Animator>();
+        animator = allyAnimator != null ? allyAnimator : GetComponentInChildren<Animator>();
+        if (visualRenderer == null)
+            visualRenderer = GetComponentInChildren<SpriteRenderer>();
         projectileAttack = GetComponent<ProjectileAttack>();
     }
 

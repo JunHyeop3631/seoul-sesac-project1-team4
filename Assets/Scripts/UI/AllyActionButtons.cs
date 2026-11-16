@@ -13,7 +13,7 @@ public sealed class AllyActionButtons : MonoBehaviour
     public void SetTarget(Ally ally)
     {
         target = ally;
-        targetRenderer = ally != null ? ally.GetComponent<SpriteRenderer>() : null;
+        targetRenderer = ally != null ? ally.VisualRenderer : null;
         UpdatePosition();
         UpdateEvolutionButton();
     }

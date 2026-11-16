@@ -267,7 +267,7 @@ public sealed class YutActionController : MonoBehaviour
             for (int index = allies.Count - 1; index >= 0; index--)
             {
                 Ally ally = allies[index];
-                if (ally != null && ContainsPoint(ally.GetComponent<SpriteRenderer>(), worldPoint))
+                if (ally != null && ContainsPoint(ally.VisualRenderer, worldPoint))
                 {
                     return ally;
                 }

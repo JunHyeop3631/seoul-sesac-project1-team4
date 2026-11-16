@@ -1,5 +1,7 @@
 # 윷판 명세
 
+`ThrowYut` 씬의 Cell 00~28 좌표는 통합 배경 `Assets/Art/Background/Background.png`의 바깥 돌칸 20개와 안쪽 원형 발판 9개의 중앙에 맞춘다. 1920×1080 배경은 PPU 100, 배율 0.925926, 중심 (0, 0)으로 배치되므로 이미지 픽셀 좌표 (px, py)는 월드 좌표 `((px - 960) / 108, (540 - py) / 108)`로 환산한다. Cell의 Z는 0을 유지한다.
+
 [명세 색인](README.md) · [턴 흐름](TurnSpec.md) · [윷 던지기](YutThrowSpec.md) · [윷 행동](YutActionSpec.md) · **윷판** · [웨이브](WaveSpec.md)
 
 목차

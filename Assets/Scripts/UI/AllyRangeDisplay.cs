@@ -89,7 +89,7 @@ public sealed class AllyRangeDisplay : MonoBehaviour
         attackRangeMarker.transform.position = rangeAlly.transform.position -
                                                Vector3.Scale(spriteBounds.center, scale);
 
-        SpriteRenderer allyRenderer = rangeAlly.GetComponent<SpriteRenderer>();
+        SpriteRenderer allyRenderer = rangeAlly.VisualRenderer;
         if (allyRenderer != null)
         {
             attackRangeMarker.sortingLayerID = allyRenderer.sortingLayerID;

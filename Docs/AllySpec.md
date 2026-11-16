@@ -8,6 +8,9 @@
 
 ## 문서 상태와 적용 범위
 
+- 다섯 아군 프리팹은 루트에 아군 로직과 도·모의 `ProjectileAttack`을 두고, `Visual` 자식에 `SpriteRenderer`, `Animator`, `AllyAnimationEvents`를 둔다. 기존 루트 Transform과 스프라이트·컨트롤러 설정은 유지하며 Visual의 로컬 위치는 `(0, 0.15, 0)`, 배율은 `(1, 1, 1)`로 설정한다.
+- 루트 `Ally`는 자식 Animator와 렌더러를 명시적으로 참조한다. Visual의 애니메이션 이벤트 `ApplyAttack`, `ReleaseMagic`, `ReleaseArrow`는 `AllyAnimationEvents`가 부모 아군에 전달한다. 선택 판정, 사거리 표시 정렬, 유닛 버튼 배치는 `Ally.VisualRenderer`를 사용한다.
+
 - 2026-11-16 대화에서 확정한 공격 규칙을 아래에 기록한다. 모든 아군의 공격 실행을 Animation Event에 연결했다. 개·걸·윷은 타격 이벤트에서 직접 피해를 주고, 도·모는 발사 이벤트에서 투사체를 생성한다.
 - **모(`Mo_Archer`)는 `Mo_Arrow`, 돼지 도사(`Do_Taoist`)는 `Do_Magic`을 사용한다.** 개·걸·윷은 투사체를 사용하지 않는다.
 - 대상 탐색은 아래의 기존 규칙을 사용한다. 공통 `Ally`가 대상 갱신·모션 제어·이벤트 중복 방지·공격 간격을 담당하고, 같은 오브젝트의 **`ProjectileAttack` 컴포넌트**가 도·모의 투사체 생성을 담당한다. `Do_Taoist`·`Mo_Archer`는 `Ally`를 직접 상속한다.
