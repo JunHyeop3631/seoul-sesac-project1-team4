@@ -56,3 +56,5 @@
 Yut Result 표시 이미지는 Assets/Art/YutResult/Yut_Results_Grid_3x2.png의 Multiple 스프라이트를 사용한다. _0=도, _1=개, _2=걸, _3=윷, _4=모, _5=백도이며 YutThrowController의 doSprite~backdoSprite에 순서대로 연결한다.
 
 Yut Result의 RectTransform은 오른쪽 화면 중앙 Anchor X=0.8515625, Pos=(0,550), Pivot=(0.5,0.5), Size=200×120, Scale=(2,2,1)로 설정한다. 표시 영역은 400×240으로 원본 스프라이트의 640:384 비율과 일치한다. Yut Action Buttons의 Y=-5.5로 기존 화면 위치를 유지한다.
+
+현재 Throw Button 확대 배치에 맞춘 최종 Yut Result 설정: Pos=(0,600), Size=100×60, Scale=(2,2,1), Pivot=(0.5,0.5). 실제 표시 영역은 200×120이며 5:3 비율을 유지한다. Yut Action Buttons Y=-55로 기존 화면 위치를 유지한다.
