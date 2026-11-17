@@ -73,7 +73,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -130,12 +130,12 @@ TextureImporter:
       name: Throw_Normal_NoCost_0
       rect:
         serializedVersion: 2
-        x: 58
+        x: 0
         y: 0
-        width: 1743
-        height: 835
+        width: 1862
+        height: 845
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -148,209 +148,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Throw_Normal_NoCost_1
-      rect:
-        serializedVersion: 2
-        x: 532
-        y: 15
-        width: 21
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dca210f957c879f90800000000000000
-      internalID: -6946929463388984627
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Throw_Normal_NoCost_2
-      rect:
-        serializedVersion: 2
-        x: 616
-        y: 19
-        width: 8
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 192699d22390260a0800000000000000
-      internalID: -6889934368805395823
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Throw_Normal_NoCost_3
-      rect:
-        serializedVersion: 2
-        x: 620
-        y: 17
-        width: 8
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0706fba6fdf783950800000000000000
-      internalID: 6429029065616744560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Throw_Normal_NoCost_4
-      rect:
-        serializedVersion: 2
-        x: 733
-        y: 18
-        width: 37
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b5ea1fdca25f76720800000000000000
-      internalID: 2839507654272986715
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Throw_Normal_NoCost_5
-      rect:
-        serializedVersion: 2
-        x: 843
-        y: 16
-        width: 27
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5ba79e4018a4f85d0800000000000000
-      internalID: -3058143703967630667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Throw_Normal_NoCost_6
-      rect:
-        serializedVersion: 2
-        x: 885
-        y: 13
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8c1b962fc9fe7e220800000000000000
-      internalID: 2515242374270661064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Throw_Normal_NoCost_7
-      rect:
-        serializedVersion: 2
-        x: 1146
-        y: 17
-        width: 9
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 17ad797647a623990800000000000000
-      internalID: -7407741388884288911
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Throw_Normal_NoCost_8
-      rect:
-        serializedVersion: 2
-        x: 1172
-        y: 14
-        width: 11
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 35f26bc56523ff3b0800000000000000
-      internalID: -5476603275355213997
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Throw_Normal_NoCost_9
-      rect:
-        serializedVersion: 2
-        x: 1181
-        y: 15
-        width: 25
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10e9d320491cce000800000000000000
-      internalID: 66640935940627969
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7d4efeea2a997fb428703e9baf82ba52
     internalID: 0
     vertices: []
     indices: 
@@ -358,18 +160,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1862.0,"y":845.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Throw_Normal_NoCost_0: -5798042843255290242
-      Throw_Normal_NoCost_1: -6946929463388984627
-      Throw_Normal_NoCost_2: -6889934368805395823
-      Throw_Normal_NoCost_3: 6429029065616744560
-      Throw_Normal_NoCost_4: 2839507654272986715
-      Throw_Normal_NoCost_5: -3058143703967630667
-      Throw_Normal_NoCost_6: 2515242374270661064
-      Throw_Normal_NoCost_7: -7407741388884288911
-      Throw_Normal_NoCost_8: -5476603275355213997
-      Throw_Normal_NoCost_9: 66640935940627969
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -49,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -106,12 +106,12 @@ TextureImporter:
       name: Throw_Pressed_NoCost_0
       rect:
         serializedVersion: 2
-        x: 1034
-        y: 833
-        width: 22
-        height: 12
+        x: 0
+        y: 0
+        width: 1862
+        height: 845
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -124,33 +124,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Throw_Pressed_NoCost_1
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 17
-        width: 1746
-        height: 799
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ebd4ba499fcfa1860800000000000000
-      internalID: 7501586278210293182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d6dd0c338c41f8a4495f7cf37ee0a805
     internalID: 0
     vertices: []
     indices: 
@@ -158,10 +136,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1862.0,"y":845.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Throw_Pressed_NoCost_0: -5725541466567618393
-      Throw_Pressed_NoCost_1: 7501586278210293182
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

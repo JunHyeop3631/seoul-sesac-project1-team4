@@ -6,12 +6,17 @@ public sealed class AllyActionButtons : MonoBehaviour
     [SerializeField, Min(0f)] private float gapBelowAlly = 8f;
     [SerializeField] private YutActionController actionController;
     [SerializeField] private Button evolveButton;
+    [SerializeField] private GameObject characterInfoPanel;
 
     private Ally target;
     private SpriteRenderer targetRenderer;
 
     public void SetTarget(Ally ally)
     {
+        if (target != ally)
+        {
+            HideCharacterInfo();
+        }
         target = ally;
         targetRenderer = ally != null ? ally.VisualRenderer : null;
         UpdatePosition();
@@ -20,7 +25,7 @@ public sealed class AllyActionButtons : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (target != null && !target.isActiveAndEnabled)
+        if (target == null || !target.isActiveAndEnabled)
         {
             gameObject.SetActive(false);
             return;
@@ -37,6 +42,22 @@ public sealed class AllyActionButtons : MonoBehaviour
         }
     }
 
+    public void RequestInfo()
+    {
+        if (target != null && target.isActiveAndEnabled && characterInfoPanel != null)
+        {
+            characterInfoPanel.SetActive(true);
+        }
+    }
+
+    private void HideCharacterInfo()
+    {
+        if (characterInfoPanel != null)
+        {
+            characterInfoPanel.SetActive(false);
+        }
+    }
+
     private void UpdateEvolutionButton()
     {
         if (evolveButton != null)
@@ -47,6 +68,7 @@ public sealed class AllyActionButtons : MonoBehaviour
 
     private void OnDisable()
     {
+        HideCharacterInfo();
         target = null;
         targetRenderer = null;
     }
