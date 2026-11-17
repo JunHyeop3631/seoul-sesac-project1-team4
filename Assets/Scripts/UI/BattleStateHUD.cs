@@ -1,14 +1,10 @@
-using System.Collections;
 using UnityEngine;
 
 public sealed class BattleStateHUD : MonoBehaviour
 {
     [SerializeField] private TurnController turnController;
-    [SerializeField] private GameObject startWavePanel;
     [SerializeField] private GameObject victoryPanel;
     [SerializeField] private GameObject defeatPanel;
-
-    private Coroutine startWaveHideRoutine;
 
     private void Awake()
     {
@@ -22,7 +18,7 @@ public sealed class BattleStateHUD : MonoBehaviour
             return;
         }
 
-        turnController.BattleStarted += ShowStartWave;
+        turnController.BattleStarted += HidePanels;
         turnController.PreparationStarted += HidePanels;
         turnController.BattleWon += ShowVictory;
         turnController.BattleLost += ShowDefeat;
@@ -37,7 +33,7 @@ public sealed class BattleStateHUD : MonoBehaviour
             return;
         }
 
-        turnController.BattleStarted -= ShowStartWave;
+        turnController.BattleStarted -= HidePanels;
         turnController.PreparationStarted -= HidePanels;
         turnController.BattleWon -= ShowVictory;
         turnController.BattleLost -= ShowDefeat;
@@ -45,40 +41,7 @@ public sealed class BattleStateHUD : MonoBehaviour
 
     private void HidePanels()
     {
-        if (startWaveHideRoutine != null)
-        {
-            StopCoroutine(startWaveHideRoutine);
-            startWaveHideRoutine = null;
-        }
-
-        if (startWavePanel != null)
-        {
-            startWavePanel.SetActive(false);
-        }
-
         SetPanels(false, false);
-    }
-
-    private void ShowStartWave()
-    {
-        HidePanels();
-        if (startWavePanel != null)
-        {
-            startWavePanel.SetActive(true);
-            startWaveHideRoutine = StartCoroutine(HideStartWaveAfterDelay());
-        }
-    }
-
-    private IEnumerator HideStartWaveAfterDelay()
-    {
-        yield return new WaitForSecondsRealtime(1f);
-
-        if (startWavePanel != null)
-        {
-            startWavePanel.SetActive(false);
-        }
-
-        startWaveHideRoutine = null;
     }
 
     private void ShowVictory()
