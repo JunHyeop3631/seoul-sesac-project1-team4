@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public sealed class TurnController : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public sealed class TurnController : MonoBehaviour
     [SerializeField] private YutActionController actionController;
     [SerializeField] private AllyRangeDisplay allyRangeDisplay;
     [SerializeField] private GameObject actionButtons;
+    [SerializeField] private GameObject throwButton;
+    [SerializeField] private Button summonButton;
+    [SerializeField] private Button moveButton;
     [SerializeField] private WaveManager waveManager;
     [SerializeField, Min(0)] private int currentTurnNumber = 0;
     [SerializeField, Min(1)] private int startingLives = 10;
@@ -29,10 +33,17 @@ public sealed class TurnController : MonoBehaviour
     public event Action PreparationStarted;
     public bool IsBattleWon { get; private set; }
     private YutAction chosenAction;
+    private CanvasGroup summonButtonGroup;
 
     private void Awake()
     {
         RemainingLives = Mathf.Max(1, startingLives);
+        if (summonButton != null)
+        {
+            summonButtonGroup = summonButton.GetComponent<CanvasGroup>();
+            if (summonButtonGroup == null)
+                summonButtonGroup = summonButton.gameObject.AddComponent<CanvasGroup>();
+        }
     }
 
     private void LoseLife()
@@ -45,6 +56,7 @@ public sealed class TurnController : MonoBehaviour
         RemainingLives = Mathf.Max(0, RemainingLives - 1);
         if (RemainingLives == 0)
         {
+            RefreshYutButtons();
             BattleLost?.Invoke();
         }
     }
@@ -130,10 +142,44 @@ public sealed class TurnController : MonoBehaviour
         actionController?.ClearSelection();
         CurrentYutResult = result;
 
-        if (actionButtons != null)
+        if (result == YutThrowResult.Backdo && actionController != null && !actionController.CanMove(result))
         {
-            actionButtons.SetActive(true);
+            CompleteYutAction();
+            return;
         }
+        RefreshYutButtons();
+    }
+
+    public void ThrowYut()
+    {
+        if (RemainingLives == 0 || IsBattleWon || CurrentYutResult.HasValue ||
+            (waveManager != null && waveManager.IsRunning) || throwController == null || throwController.IsThrowing)
+            return;
+
+        throwController.Throw();
+        RefreshYutButtons();
+    }
+
+    private void RefreshYutButtons()
+    {
+        bool preparing = RemainingLives > 0 && !IsBattleWon &&
+            (waveManager == null || !waveManager.IsRunning);
+        bool throwing = throwController != null && throwController.IsThrowing;
+        bool choosing = preparing && !throwing && CurrentYutResult.HasValue;
+        if (throwButton != null)
+            throwButton.SetActive(preparing && !throwing && !CurrentYutResult.HasValue);
+        if (actionButtons != null)
+            actionButtons.SetActive(choosing);
+
+        bool canSummon = choosing && chosenAction == YutAction.None &&
+            CurrentYutResult != YutThrowResult.Backdo;
+        if (summonButton != null)
+            summonButton.interactable = canSummon;
+        if (summonButtonGroup != null)
+            summonButtonGroup.alpha = choosing && !canSummon ? 0.35f : 1f;
+        if (moveButton != null)
+            moveButton.interactable = choosing && chosenAction == YutAction.None &&
+                actionController != null && actionController.CanMove(CurrentYutResult.Value);
     }
 
     public void ChooseSummon()
@@ -150,10 +196,7 @@ public sealed class TurnController : MonoBehaviour
         }
 
         chosenAction = YutAction.None;
-        if (actionButtons != null)
-        {
-            actionButtons.SetActive(true);
-        }
+        RefreshYutButtons();
     }
 
     public void ChooseMove()
@@ -163,7 +206,8 @@ public sealed class TurnController : MonoBehaviour
 
     public void StartBattle()
     {
-        if (RemainingLives == 0 || IsBattleWon || waveManager == null || waveManager.IsRunning)
+        if (RemainingLives == 0 || IsBattleWon || waveManager == null || waveManager.IsRunning ||
+            CurrentYutResult.HasValue || (throwController != null && throwController.IsThrowing))
         {
             return;
         }
@@ -172,6 +216,7 @@ public sealed class TurnController : MonoBehaviour
         waveManager.StartWave(currentTurnNumber);
         if (waveManager.IsRunning)
         {
+            RefreshYutButtons();
             BattleStarted?.Invoke();
         }
     }
@@ -190,6 +235,7 @@ public sealed class TurnController : MonoBehaviour
     {
         waveManager?.PrepareWave();
         PreparationStarted?.Invoke();
+        RefreshYutButtons();
     }
 
     private void EndBattle()
@@ -202,6 +248,7 @@ public sealed class TurnController : MonoBehaviour
         if (currentTurnNumber == waveManager.WaveCount - 1)
         {
             IsBattleWon = true;
+            RefreshYutButtons();
             BattleWon?.Invoke();
             return;
         }
@@ -234,7 +281,9 @@ public sealed class TurnController : MonoBehaviour
 
     private bool TryChooseAction(YutAction action)
     {
-        if (!CurrentYutResult.HasValue || chosenAction != YutAction.None || actionController == null)
+        if (!CurrentYutResult.HasValue || chosenAction != YutAction.None || actionController == null ||
+            (action == YutAction.Summon && CurrentYutResult == YutThrowResult.Backdo) ||
+            (action == YutAction.Move && !actionController.CanMove(CurrentYutResult.Value)))
         {
             return false;
         }
@@ -245,10 +294,7 @@ public sealed class TurnController : MonoBehaviour
             allyRangeDisplay?.Hide();
         }
 
-        if (actionButtons != null)
-        {
-            actionButtons.SetActive(false);
-        }
+        RefreshYutButtons();
 
         return true;
     }
@@ -257,5 +303,6 @@ public sealed class TurnController : MonoBehaviour
     {
         CurrentYutResult = null;
         chosenAction = YutAction.None;
+        RefreshYutButtons();
     }
 }

@@ -30,8 +30,64 @@ public sealed class YutActionController : MonoBehaviour
     private readonly SpriteRenderer[] destinationMarkers = new SpriteRenderer[YutBoard.CellCount];
     private Ally selectedAlly;
     private readonly List<Ally> selectedAllies = new List<Ally>();
+    private readonly Dictionary<Ally, List<int>> travelHistory = new();
+    private readonly Dictionary<int, int[]> destinationPaths = new();
+    private bool selectedMoveIsBackward;
 
     public event System.Action<Ally> EvolutionRequested;
+
+    public bool CanMove(YutThrowResult result)
+    {
+        if (!isActiveAndEnabled)
+            return false;
+
+        for (int cellId = 0; cellId < cells.Length; cellId++)
+        {
+            foreach (Ally ally in occupancy.GetAllies(cellId))
+            {
+                if (ally == null || !ally.isActiveAndEnabled)
+                    continue;
+
+                List<Ally> group = GetMovingAllies(ally, cellId, result);
+                if (result == YutThrowResult.Backdo)
+                {
+                    int previousCell = GetPreviousCell(ally);
+                    if (previousCell >= 0 && GetCell(previousCell) != null &&
+                        occupancy.HasSpace(previousCell, group.Count))
+                        return true;
+                }
+                else
+                {
+                    foreach (int destination in YutBoard.GetDestinationCells(cellId, result))
+                    {
+                        if (GetCell(destination) != null &&
+                            (destination == cellId || occupancy.HasSpace(destination, group.Count)))
+                            return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+    private int GetPreviousCell(Ally ally)
+    {
+        return travelHistory.TryGetValue(ally, out List<int> history) && history.Count >= 2
+            ? history[history.Count - 2] : -1;
+    }
+
+    private List<Ally> GetMovingAllies(Ally ally, int cellId, YutThrowResult result)
+    {
+        var group = new List<Ally>();
+        foreach (Ally occupant in occupancy.GetAllies(cellId))
+        {
+            if (occupant != null && occupant.isActiveAndEnabled &&
+                occupant.GetType() == ally.GetType() && occupant.EvolutionStage == ally.EvolutionStage &&
+                (result != YutThrowResult.Backdo || GetPreviousCell(occupant) == GetPreviousCell(ally)))
+                group.Add(occupant);
+        }
+        return group;
+    }
 
     public bool CanEvolve(Ally ally)
     {
@@ -81,9 +137,13 @@ public sealed class YutActionController : MonoBehaviour
         }
 
         ClearSelection();
+        travelHistory[evolved] = new List<int>(travelHistory[ally]);
         ConnectAlly(evolved);
         foreach (Ally material in materials)
+        {
+            travelHistory.Remove(material);
             allyPool.Return(material);
+        }
         ArrangeAllies(cellId);
         EvolutionRequested?.Invoke(ally);
     }
@@ -198,6 +258,9 @@ public sealed class YutActionController : MonoBehaviour
             }
         }
         ConnectAlly(ally);
+        travelHistory[ally] = cellId == DeploymentCellId
+            ? new List<int> { YutBoard.StartCellId, cellId }
+            : new List<int> { cellId };
         ArrangeAllies(cellId);
         return true;
     }
@@ -244,20 +307,29 @@ public sealed class YutActionController : MonoBehaviour
 
         ClearSelection();
         selectedAlly = ally;
-        foreach (Ally occupant in occupancy.GetAllies(currentCellId))
+        selectedMoveIsBackward = result == YutThrowResult.Backdo;
+        selectedAllies.AddRange(GetMovingAllies(ally, currentCellId, result));
+        if (selectedMoveIsBackward)
         {
-            if (occupant != null && occupant.GetType() == ally.GetType() &&
-                occupant.EvolutionStage == ally.EvolutionStage)
+            int previousCell = GetPreviousCell(ally);
+            if (previousCell >= 0 && GetCell(previousCell) != null &&
+                occupancy.HasSpace(previousCell, selectedAllies.Count))
             {
-                selectedAllies.Add(occupant);
+                destinationCellIds.Add(previousCell);
             }
         }
-
-        foreach (int cellId in YutBoard.GetDestinationCells(currentCellId, result))
+        else
         {
-            if (cellId == currentCellId || occupancy.HasSpace(cellId, selectedAllies.Count))
+            foreach (int[] path in YutBoard.GetForwardPaths(currentCellId, result))
             {
-                destinationCellIds.Add(cellId);
+                int cellId = path[path.Length - 1];
+                if (GetCell(cellId) != null &&
+                    (cellId == currentCellId || occupancy.HasSpace(cellId, selectedAllies.Count)) &&
+                    !destinationPaths.ContainsKey(cellId))
+                {
+                    destinationCellIds.Add(cellId);
+                    destinationPaths.Add(cellId, path);
+                }
             }
         }
 
@@ -290,6 +362,11 @@ public sealed class YutActionController : MonoBehaviour
 
         foreach (Ally ally in selectedAllies)
         {
+            List<int> history = travelHistory[ally];
+            if (selectedMoveIsBackward)
+                history.RemoveAt(history.Count - 1);
+            else
+                history.AddRange(destinationPaths[destinationCellId]);
             ally.transform.SetParent(cell, false);
         }
         ArrangeAllies(sourceCellId);
@@ -308,6 +385,7 @@ public sealed class YutActionController : MonoBehaviour
         }
 
         destinationCellIds.Clear();
+        destinationPaths.Clear();
     }
 
     internal bool TryGetDestinationAt(Vector2 worldPoint, out int cellId)

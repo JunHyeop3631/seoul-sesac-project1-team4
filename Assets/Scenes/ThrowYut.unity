@@ -173,11 +173,12 @@ MonoBehaviour:
   - {fileID: 1951357559}
   - {fileID: 1080345233}
   resultImage: {fileID: 2303}
-  doSprite: {fileID: 5747889533200651394, guid: a9bcf51e7d312464692fff2fbd53a9f9, type: 3}
-  gaeSprite: {fileID: -369350658564059091, guid: 2af9d5a14a7b25b4394438350bd99e4a, type: 3}
-  geolSprite: {fileID: -1009399615322320626, guid: fbc489f525438e3448c3deff130b4241, type: 3}
-  yutSprite: {fileID: -6235926417949518225, guid: 7996062137ed539418a23b24fabfab97, type: 3}
-  moSprite: {fileID: 5753760280493953848, guid: cf4d11c68fe42b54fbcbc11eb2e6f6dc, type: 3}
+  doSprite: {fileID: 7434139906660036624, guid: ead6cf78e8e8b454eb14a98044821796, type: 3}
+  gaeSprite: {fileID: -3817559301474109457, guid: ead6cf78e8e8b454eb14a98044821796, type: 3}
+  geolSprite: {fileID: -281782658469537264, guid: ead6cf78e8e8b454eb14a98044821796, type: 3}
+  yutSprite: {fileID: 25785734216986101, guid: ead6cf78e8e8b454eb14a98044821796, type: 3}
+  moSprite: {fileID: -4474782738828418925, guid: ead6cf78e8e8b454eb14a98044821796, type: 3}
+  backdoSprite: {fileID: -1896944245143603272, guid: ead6cf78e8e8b454eb14a98044821796, type: 3}
 --- !u!4 &2011 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9169933847537954619, guid: cbd84ba0e4e00b64a9bd502e9985d35a, type: 3}
@@ -227,6 +228,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2111}
+  - {fileID: 2301}
   - {fileID: 2531}
   - {fileID: 2541}
   - {fileID: 2551}
@@ -339,16 +341,15 @@ RectTransform:
   m_GameObject: {fileID: 2110}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 99701}
-  - {fileID: 2301}
   m_Father: {fileID: 2101}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8515625, y: 0}
   m_AnchorMax: {x: 0.8515625, y: 0}
-  m_AnchoredPosition: {x: 0, y: 370}
+  m_AnchoredPosition: {x: 0, y: 450}
   m_SizeDelta: {x: 187.5, y: 89.82358}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2112
@@ -433,9 +434,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2002}
-        m_TargetAssemblyTypeName: YutThrowController, Assembly-CSharp
-        m_MethodName: Throw
+      - m_Target: {fileID: 2602}
+        m_TargetAssemblyTypeName: TurnController, Assembly-CSharp
+        m_MethodName: ThrowYut
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -551,17 +552,17 @@ RectTransform:
   m_GameObject: {fileID: 2300}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2501}
-  m_Father: {fileID: 2111}
+  m_Father: {fileID: 2101}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 270.2}
-  m_SizeDelta: {x: 88, y: 88}
-  m_Pivot: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0.8515625, y: 0}
+  m_AnchorMax: {x: 0.8515625, y: 0}
+  m_AnchoredPosition: {x: 0, y: 550}
+  m_SizeDelta: {x: 200, y: 120}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2302
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -666,7 +667,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -110}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 204, y: 48}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &2510
@@ -697,7 +698,7 @@ RectTransform:
   m_GameObject: {fileID: 2510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.31964594, y: 0.31964594, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 99711}
@@ -709,7 +710,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -54, y: 56.4}
+  m_AnchoredPosition: {x: -60, y: 56.4}
   m_SizeDelta: {x: 280, y: 193.84616}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &2512
@@ -834,7 +835,7 @@ RectTransform:
   m_GameObject: {fileID: 2520}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.31964594, y: 0.31964594, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 99721}
@@ -846,7 +847,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 54, y: 56.4}
+  m_AnchoredPosition: {x: 60, y: 56.4}
   m_SizeDelta: {x: 280, y: 193.84616}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &2522
@@ -1858,6 +1859,9 @@ MonoBehaviour:
   actionController: {fileID: 2603}
   allyRangeDisplay: {fileID: 2604}
   actionButtons: {fileID: 2500}
+  throwButton: {fileID: 2110}
+  summonButton: {fileID: 2514}
+  moveButton: {fileID: 2524}
   waveManager: {fileID: 2702}
   currentTurnNumber: 0
   startingLives: 10
@@ -11767,4 +11771,3 @@ SceneRoots:
   - {fileID: 2101}
   - {fileID: 2201}
   - {fileID: 2601}
-

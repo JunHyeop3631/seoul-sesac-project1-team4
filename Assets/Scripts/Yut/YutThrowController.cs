@@ -10,7 +10,8 @@ public enum YutThrowResult
     Gae,
     Geol,
     Yut,
-    Mo
+    Mo,
+    Backdo
 }
 
 public class YutThrowController : MonoBehaviour
@@ -24,6 +25,7 @@ public class YutThrowController : MonoBehaviour
     [SerializeField] private Sprite geolSprite;
     [SerializeField] private Sprite yutSprite;
     [SerializeField] private Sprite moSprite;
+    [SerializeField] private Sprite backdoSprite;
 
     public YutThrowResult? LastResult { get; private set; }
     public bool IsThrowing { get; private set; }
@@ -56,19 +58,22 @@ public class YutThrowController : MonoBehaviour
             resultImage.enabled = false;
         }
 
+        int backdoStickIndex = UnityEngine.Random.Range(0, sticks.Length);
         int bellyCount = 0;
-        foreach (YutStick stick in sticks)
+        bool markedStickIsBelly = false;
+        for (int index = 0; index < sticks.Length; index++)
         {
-            if (stick.Throw() == YutFace.Belly)
+            if (sticks[index].Throw(index == backdoStickIndex) == YutFace.Belly)
             {
                 bellyCount++;
+                markedStickIsBelly |= index == backdoStickIndex;
             }
         }
 
         YutThrowResult result = bellyCount switch
         {
             0 => YutThrowResult.Mo,
-            1 => YutThrowResult.Do,
+            1 => markedStickIsBelly ? YutThrowResult.Backdo : YutThrowResult.Do,
             2 => YutThrowResult.Gae,
             3 => YutThrowResult.Geol,
             4 => YutThrowResult.Yut,
@@ -114,6 +119,7 @@ public class YutThrowController : MonoBehaviour
             YutThrowResult.Geol => geolSprite,
             YutThrowResult.Yut => yutSprite,
             YutThrowResult.Mo => moSprite,
+            YutThrowResult.Backdo => backdoSprite,
             _ => null
         };
         resultImage.enabled = resultImage.sprite != null;

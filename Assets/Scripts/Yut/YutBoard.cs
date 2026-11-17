@@ -63,6 +63,18 @@ public static class YutBoard
 
     public static IReadOnlyList<int> GetDestinationCells(int startCellId, YutThrowResult result)
     {
+        var destinations = new List<int>();
+        foreach (int[] path in GetForwardPaths(startCellId, result))
+        {
+            int destination = path[path.Length - 1];
+            if (!destinations.Contains(destination))
+                destinations.Add(destination);
+        }
+        return destinations;
+    }
+
+    internal static IReadOnlyList<int[]> GetForwardPaths(int startCellId, YutThrowResult result)
+    {
         int stepCount = result switch
         {
             YutThrowResult.Do => 1,
@@ -74,11 +86,13 @@ public static class YutBoard
         };
 
         ReadOnlySpan<int> firstSteps = GetNextCells(startCellId);
-        var destinations = new List<int>(firstSteps.Length);
+        var paths = new List<int[]>(firstSteps.Length);
         foreach (int firstStep in firstSteps)
         {
             int previousCellId = startCellId;
             int currentCellId = firstStep;
+            var path = new int[stepCount];
+            path[0] = firstStep;
 
             // A route can branch on its first step. Later steps follow its selected path.
             for (int stepsTaken = 1; stepsTaken < stepCount; stepsTaken++)
@@ -86,15 +100,13 @@ public static class YutBoard
                 int nextCellId = GetNextCells(currentCellId, previousCellId)[0];
                 previousCellId = currentCellId;
                 currentCellId = nextCellId;
+                path[stepsTaken] = currentCellId;
             }
 
-            if (!destinations.Contains(currentCellId))
-            {
-                destinations.Add(currentCellId);
-            }
+            paths.Add(path);
         }
 
-        return destinations;
+        return paths;
     }
 
     // Omit previousCellId on the first step. Pass the immediately preceding cell on later steps.

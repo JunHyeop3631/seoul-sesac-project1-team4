@@ -113,6 +113,12 @@ MonoBehaviour:
   backToBelly: {fileID: 7400000, guid: 427da95589904300888e2933f884cc01, type: 2}
   bellyToBack: {fileID: 7400000, guid: 79037e5c70344b1b95efb88ef5bf6b93, type: 2}
   bellyToBelly: {fileID: 7400000, guid: 166a77a990f34444b2516eaa75ee923a, type: 2}
+  markedBellySprite: {fileID: 21300095, guid: a2556ff0e0f14c2da8da827522bfe0d7, type: 3}
+  markedBackSprite: {fileID: 21300095, guid: f594d0c0d1f2443aa2d537d99004e20c, type: 3}
+  markedBackToBack: {fileID: 7400000, guid: a7e7c35691904097a8562eba7d451acd, type: 2}
+  markedBackToBelly: {fileID: 7400000, guid: 3d89c3848f3e411e97efa2f659c16a44, type: 2}
+  markedBellyToBack: {fileID: 7400000, guid: b75af253278b49cd80c605ee41aad301, type: 2}
+  markedBellyToBelly: {fileID: 7400000, guid: 1e466a80ce024486946cbd93f0cce8a0, type: 2}
 --- !u!95 &9500000
 Animator:
   serializedVersion: 7
