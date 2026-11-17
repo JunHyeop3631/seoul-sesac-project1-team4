@@ -136,7 +136,9 @@ public static class WaveCompleteVerification
         Require(turn.IsBattleWon && wallet.Balance == 193 && announcements == 1 && !banner.IsPlaying,
             "Final victory must not award intermediate reward or show banner");
         var hud = Find<BattleStateHUD>();
-        Require(Get<GameObject>(hud, "victoryPanel").activeSelf, "Victory panel missing");
+        var result = Get<ResultFlagView>(hud, "result");
+        Require(result.IsVisible && result.ReachedWave == 2 && result.TotalWaves == 2, "Victory flag missing");
+        while (!result.ButtonsReady) yield return null;
         Capture("final-victory");
         SceneManager.LoadScene("ThrowYut");
         for (int i = 0; i < 8; i++) yield return null;
@@ -168,14 +170,16 @@ public static class WaveCompleteVerification
         for (int i = 0; i < 9; i++) typeof(TurnController).GetMethod("LoseLife", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(turn, null);
         Set(waves, "spawnInterval", 0f);
         turn.StartBattle();
-        while (waves.IsRunning)
+        while (turn.RemainingLives > 0)
         {
             foreach (var enemy in Enemies()) Set(enemy, "moveSpeed", 10000f);
             yield return null;
         }
         Require(turn.RemainingLives == 0 && !turn.IsBattleWon && wallet.Balance == 120 && !banner.IsPlaying,
             "Defeat grants a reward or completion banner");
-        Require(Get<GameObject>(Find<BattleStateHUD>(), "defeatPanel").activeSelf, "Defeat panel missing");
+        result = Get<ResultFlagView>(Find<BattleStateHUD>(), "result");
+        Require(result.IsVisible && Time.timeScale == 0, "Defeat flag must stop the ended battle");
+        while (!result.ButtonsReady) yield return null;
         Capture("defeat-no-completion");
         var probe = new GameObject("Currency boundary test").AddComponent<StageCurrency>();
         int changes = 0; probe.Changed += _ => changes++;
@@ -191,6 +195,9 @@ public static class WaveCompleteVerification
         var canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
         var previousMode = canvas.renderMode;
         var previousCamera = canvas.worldCamera;
+        var previousPlane = canvas.planeDistance;
+        var previousOverride = canvas.overrideSorting;
+        var previousOrder = canvas.sortingOrder;
         var previousTarget = camera.targetTexture;
         var previousActive = RenderTexture.active;
         var rt = new RenderTexture(1920, 1080, 24, RenderTextureFormat.ARGB32);
@@ -201,7 +208,8 @@ public static class WaveCompleteVerification
             camera.targetTexture = rt;
             canvas.renderMode = RenderMode.ScreenSpaceCamera;
             canvas.worldCamera = camera;
-            canvas.planeDistance = 10;
+            canvas.planeDistance = 1;
+            canvas.overrideSorting = true; canvas.sortingOrder = 32767;
             Canvas.ForceUpdateCanvases(); camera.Render();
             Canvas.ForceUpdateCanvases(); camera.Render();
             RenderTexture.active = rt;
@@ -212,6 +220,7 @@ public static class WaveCompleteVerification
         {
             camera.targetTexture = previousTarget; RenderTexture.active = previousActive;
             canvas.renderMode = previousMode; canvas.worldCamera = previousCamera;
+            canvas.planeDistance = previousPlane; canvas.overrideSorting = previousOverride; canvas.sortingOrder = previousOrder;
             UnityEngine.Object.DestroyImmediate(tex); rt.Release(); UnityEngine.Object.DestroyImmediate(rt);
         }
     }

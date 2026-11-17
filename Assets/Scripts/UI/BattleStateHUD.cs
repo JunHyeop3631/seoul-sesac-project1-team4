@@ -3,12 +3,13 @@ using UnityEngine;
 public sealed class BattleStateHUD : MonoBehaviour
 {
     [SerializeField] private TurnController turnController;
-    [SerializeField] private GameObject victoryPanel;
-    [SerializeField] private GameObject defeatPanel;
+    [SerializeField] private WaveManager waveManager;
+    [SerializeField] private ResultFlagView resultPrefab;
+    private ResultFlagView result;
 
     private void Awake()
     {
-        HidePanels();
+        if (resultPrefab != null) result = Instantiate(resultPrefab, transform);
     }
 
     private void OnEnable()
@@ -41,34 +42,25 @@ public sealed class BattleStateHUD : MonoBehaviour
 
     private void HidePanels()
     {
-        SetPanels(false, false);
+        if (result != null) result.Hide();
     }
 
     private void ShowVictory()
     {
         if (turnController != null && turnController.IsBattleWon && turnController.RemainingLives > 0)
         {
-            HidePanels();
-            SetPanels(true, false);
+            ShowResult(true);
         }
     }
 
     private void ShowDefeat()
     {
-        HidePanels();
-        SetPanels(false, true);
+        ShowResult(false);
     }
 
-    private void SetPanels(bool victory, bool defeat)
+    private void ShowResult(bool victory)
     {
-        if (victoryPanel != null)
-        {
-            victoryPanel.SetActive(victory);
-        }
-
-        if (defeatPanel != null)
-        {
-            defeatPanel.SetActive(defeat);
-        }
+        if (result == null || turnController == null || waveManager == null) return;
+        result.Show(victory, turnController.CurrentTurnNumber + 1, waveManager.WaveCount, gameObject.scene.name);
     }
 }
