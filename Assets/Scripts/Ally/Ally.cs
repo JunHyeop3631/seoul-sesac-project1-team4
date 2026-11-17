@@ -6,7 +6,7 @@ public class Ally : MonoBehaviour
     protected static readonly int AttackRightState = Animator.StringToHash("AttackRight");
 
     [SerializeField, Min(0f)] private float attackRange = 3f;
-    [SerializeField, Min(1)] private int attackDamage = 2;
+    [SerializeField, Min(0f)] private float attackDamage = 2f;
     [SerializeField, Min(0.01f)] private float attackInterval = 1f;
     [SerializeField] private Animator allyAnimator;
     [SerializeField] private SpriteRenderer visualRenderer;
@@ -26,7 +26,8 @@ public class Ally : MonoBehaviour
     protected Animator animator;
     private ProjectileAttack projectileAttack;
 
-    protected int AttackDamage => attackDamage;
+    public float AttackDamage => attackDamage;
+    public float AttacksPerSecond => 1f / Mathf.Max(0.01f, attackInterval);
     protected float AttackInterval => attackInterval;
 
     public Enemy CurrentTarget { get; private set; }
@@ -44,6 +45,7 @@ public class Ally : MonoBehaviour
         if (animator != null)
         {
             animator.Rebind();
+            animator.speed = 1f;
             animator.Play(IdleLeftState, 0, 0f);
         }
     }
@@ -105,7 +107,7 @@ public class Ally : MonoBehaviour
 
         if (attacking)
         {
-            // Play is evaluated by the Animator after the frame in which we start.
+            // Do not complete a newly started attack in the same frame.
             if (Time.frameCount == attackStartFrame)
                 return;
 
@@ -119,6 +121,7 @@ public class Ally : MonoBehaviour
             }
 
             attacking = false;
+            animator.speed = 1f;
         }
 
         if (Time.timeAsDouble < nextAttackTime || Time.timeScale <= 0f)
@@ -128,7 +131,13 @@ public class Ally : MonoBehaviour
         released = false;
         attackStartFrame = Time.frameCount;
         facingRight = CurrentTarget.transform.position.x > transform.position.x;
+        animator.speed = 1f;
         animator.Play(facingRight ? AttackRightState : AttackLeftState, 0, 0f);
+        // Evaluate the chosen state before reading its actual clip duration.
+        animator.Update(0f);
+        float duration = animator.GetCurrentAnimatorStateInfo(0).length;
+        animator.speed = duration / Mathf.Max(0.01f, AttackInterval);
+        nextAttackTime = Time.timeAsDouble + AttackInterval;
     }
 
     private void FaceTarget(float normalizedTime)
@@ -176,7 +185,6 @@ public class Ally : MonoBehaviour
         }
 
         released = true;
-        nextAttackTime = Time.timeAsDouble + AttackInterval;
         return true;
     }
 
@@ -195,7 +203,10 @@ public class Ally : MonoBehaviour
 
         attacking = false;
         if (animator != null && animator.isActiveAndEnabled)
+        {
+            animator.speed = 1f;
             animator.Play(facingRight ? IdleRightState : IdleLeftState, 0, 0f);
+        }
     }
 
     protected virtual void OnDisable()

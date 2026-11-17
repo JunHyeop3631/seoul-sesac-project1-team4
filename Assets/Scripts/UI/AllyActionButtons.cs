@@ -6,7 +6,7 @@ public sealed class AllyActionButtons : MonoBehaviour
     [SerializeField, Min(0f)] private float gapBelowAlly = 8f;
     [SerializeField] private YutActionController actionController;
     [SerializeField] private Button evolveButton;
-    [SerializeField] private GameObject characterInfoPanel;
+    [SerializeField] private CharacterInfoPanel characterInfoPanel;
 
     private Ally target;
     private SpriteRenderer targetRenderer;
@@ -46,7 +46,7 @@ public sealed class AllyActionButtons : MonoBehaviour
     {
         if (target != null && target.isActiveAndEnabled && characterInfoPanel != null)
         {
-            characterInfoPanel.SetActive(true);
+            characterInfoPanel.Show(target);
         }
     }
 
@@ -54,7 +54,7 @@ public sealed class AllyActionButtons : MonoBehaviour
     {
         if (characterInfoPanel != null)
         {
-            characterInfoPanel.SetActive(false);
+            characterInfoPanel.gameObject.SetActive(false);
         }
     }
 

@@ -108,8 +108,8 @@ MonoBehaviour:
   evolutionStage: 2
   attackHitEffect: {fileID: 2019873692110887112, guid: b7a96d2384c948cb96df7894f0b995f1, type: 3}
   attackRange: 3
-  attackDamage: 2
-  attackInterval: 1
+  attackDamage: 16.8
+  attackInterval: 0.333333333
   allyAnimator: {fileID: 9500001}
   visualRenderer: {fileID: 8359649665659631062}
 --- !u!114 &11400002

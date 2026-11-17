@@ -8,7 +8,7 @@ public class HomingProjectile : MonoBehaviour
     private Animator animator;
     private Enemy target;
     private int targetActivationVersion;
-    private int damage;
+    private float damage;
     private HitEffect hitEffect;
     private Vector3 startPosition;
     private double launchTime;
@@ -21,7 +21,7 @@ public class HomingProjectile : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    public void Launch(Enemy enemy, int attackDamage, float duration, HitEffect attackHitEffect = null)
+    public void Launch(Enemy enemy, float attackDamage, float duration, HitEffect attackHitEffect = null)
     {
         target = enemy;
         targetActivationVersion = enemy != null ? enemy.ActivationVersion : -1;

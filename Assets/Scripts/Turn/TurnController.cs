@@ -166,6 +166,8 @@ public sealed class TurnController : MonoBehaviour
             (waveManager == null || !waveManager.IsRunning);
         bool throwing = throwController != null && throwController.IsThrowing;
         bool choosing = preparing && !throwing && CurrentYutResult.HasValue;
+        if (!choosing)
+            throwController?.HideResult();
         if (throwButton != null)
             throwButton.SetActive(preparing && !throwing && !CurrentYutResult.HasValue);
         if (actionButtons != null)

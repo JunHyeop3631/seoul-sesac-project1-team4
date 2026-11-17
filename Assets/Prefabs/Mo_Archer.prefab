@@ -106,8 +106,8 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Mo_Archer
   attackRange: 3
-  attackDamage: 2
-  attackInterval: 1
+  attackDamage: 8
+  attackInterval: 0.333333333
   allyAnimator: {fileID: 9500001}
   visualRenderer: {fileID: 8359649665659631062}
 --- !u!114 &11400002

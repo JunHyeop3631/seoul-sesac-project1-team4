@@ -174,8 +174,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Do_Taoist
   attackRange: 3
-  attackDamage: 2
-  attackInterval: 1
+  attackDamage: 12
+  attackInterval: 0.833333333
   allyAnimator: {fileID: 9500001}
   visualRenderer: {fileID: 310511580605650270}
 --- !u!114 &11400002

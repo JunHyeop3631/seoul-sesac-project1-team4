@@ -58,3 +58,7 @@ Yut Result 표시 이미지는 Assets/Art/YutResult/Yut_Results_Grid_3x2.png의 
 Yut Result의 RectTransform은 오른쪽 화면 중앙 Anchor X=0.8515625, Pos=(0,550), Pivot=(0.5,0.5), Size=200×120, Scale=(2,2,1)로 설정한다. 표시 영역은 400×240으로 원본 스프라이트의 640:384 비율과 일치한다. Yut Action Buttons의 Y=-5.5로 기존 화면 위치를 유지한다.
 
 현재 Throw Button 확대 배치에 맞춘 최종 Yut Result 설정: Pos=(0,600), Size=100×60, Scale=(2,2,1), Pivot=(0.5,0.5). 실제 표시 영역은 200×120이며 5:3 비율을 유지한다. Yut Action Buttons Y=-55로 기존 화면 위치를 유지한다.
+
+결과 이미지의 표시 수명은 행동 선택 상태와 일치한다. TurnController.RefreshYutButtons에서 choosing이 false이면 YutThrowController.HideResult를 호출한다. 소환/이동 완료, 이동할 수 없는 백도 자동 소모 등으로 Throw Button이 다시 표시되는 시점에는 이전 결과 이미지를 숨긴다. HideResult는 Image만 비활성화해 자식 행동 버튼의 활성 상태에 영향을 주지 않는다.
+
+검증: 빌드 경고 0 / 오류 0. Unity Play Mode에서 도 결과 표시 후 소환 완료 시 Throw Button 재표시와 Yut Result Image 비활성화를 직접 확인했다.

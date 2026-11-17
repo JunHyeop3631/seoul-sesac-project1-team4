@@ -105,8 +105,8 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Gae_Warrior
   attackRange: 3
-  attackDamage: 2
-  attackInterval: 1
+  attackDamage: 25
+  attackInterval: 0.666666667
   allyAnimator: {fileID: 9500001}
   visualRenderer: {fileID: 1779358332962708269}
 --- !u!95 &9500001

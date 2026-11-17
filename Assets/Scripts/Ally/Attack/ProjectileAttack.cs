@@ -16,7 +16,7 @@ public class ProjectileAttack : MonoBehaviour
     }
 
     // The owning Ally selects the target and manages animation/cooldown.
-    public void Fire(Enemy target, int damage, HitEffect hitEffect = null)
+    public void Fire(Enemy target, float damage, HitEffect hitEffect = null)
     {
         if (!CanFire || target == null || !target.isActiveAndEnabled || target.CurrentHealth <= 0)
             return;

@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour
     private bool awaitingDeathAnimation;
 
     public bool IsMoving { get; private set; }
-    public int CurrentHealth { get; private set; }
+    public float CurrentHealth { get; private set; }
     internal int ActivationVersion { get; private set; }
     internal event Action<Enemy> Defeated;
     internal event Action<Enemy> DeathCompleted;
@@ -47,7 +47,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage, HitEffect attackHitEffect = null)
+    public void TakeDamage(float damage, HitEffect attackHitEffect = null)
     {
         if (!isActiveAndEnabled || damage <= 0 || CurrentHealth <= 0)
         {

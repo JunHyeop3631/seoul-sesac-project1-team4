@@ -33,6 +33,11 @@ public class YutThrowController : MonoBehaviour
 
     private void Awake()
     {
+        HideResult();
+    }
+
+    public void HideResult()
+    {
         if (resultImage != null)
         {
             resultImage.enabled = false;
@@ -53,10 +58,7 @@ public class YutThrowController : MonoBehaviour
         }
 
         IsThrowing = true;
-        if (resultImage != null)
-        {
-            resultImage.enabled = false;
-        }
+        HideResult();
 
         int backdoStickIndex = UnityEngine.Random.Range(0, sticks.Length);
         int bellyCount = 0;
