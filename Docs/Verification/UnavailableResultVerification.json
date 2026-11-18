@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "assertions": 39,
+    "runtimeErrors": 0,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "All results, final candidate checks, button state, notice, no refund, repeat input and preparation recovery passed."
+}

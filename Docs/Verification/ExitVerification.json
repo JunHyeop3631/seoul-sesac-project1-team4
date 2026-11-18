@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Exit boundary, arrival UI, cancellation, pool/occupancy, rewards, regrouping and shared special balance passed.",
+    "assertions": 68,
+    "runtimeErrors": 0
+}

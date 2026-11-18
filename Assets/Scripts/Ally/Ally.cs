@@ -36,6 +36,13 @@ public class Ally : MonoBehaviour
     public SpriteRenderer VisualRenderer => visualRenderer;
     public int EvolutionStage => evolutionStage;
     public int PopulationCost => Mathf.Max(1, populationCost);
+    public virtual int ExitReward => 0;
+    protected int GetOrdinaryExitReward(int oneStarReward) => EvolutionStage switch
+    {
+        1 => oneStarReward,
+        2 => oneStarReward * 3,
+        _ => 0,
+    };
 
     internal void ResetForReuse()
     {

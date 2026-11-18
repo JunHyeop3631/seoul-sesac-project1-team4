@@ -1985,6 +1985,7 @@ MonoBehaviour:
   moArcherPrefab: {fileID: 11400001, guid: 0d7ff37e6dd03f445bbc71dd2db0bdb9, type: 3}
   boardRoot: {fileID: 797450834}
   destinationMarkerSprite: {fileID: 21300000, guid: c338e42a86cc3224d84b07e6c5a68a0a, type: 3}
+  exitLabelFont: {fileID: 12800000, guid: d21b6dbe2c99a2d4eb0c8164673b4c3b, type: 3}
   targetingWave: {fileID: 2802}
   projectilePool: {fileID: 970002}
   allyPool: {fileID: 970022}

@@ -48,19 +48,25 @@ public sealed class TurnController : MonoBehaviour
     // Completed (one-based) wave and the amount actually credited to the wallet.
     public event Action<int, int> WaveCleared;
     public bool IsBattleWon { get; private set; }
+    internal StageCurrency Currency => currency;
+    internal Canvas PreparationCanvas => actionButtons != null ? actionButtons.GetComponentInParent<Canvas>(true) : null;
     private bool preparing;
     public bool CanUsePreparationInput => isActiveAndEnabled && preparing &&
         RemainingLives > 0 && !IsBattleWon && Time.timeScale > 0f &&
+        (actionController == null || !actionController.IsResolvingMove) &&
         (waveManager == null || !waveManager.IsRunning);
     public bool IsThrowing => throwController != null && throwController.IsThrowing;
     public bool CanEvolve => CanUsePreparationInput && !IsThrowing && !CurrentYutResult.HasValue;
     public bool CanOpenPreparationPanel => CanUsePreparationInput && !IsThrowing;
+    public bool CanCancelYutAction => CanUsePreparationInput && !IsThrowing &&
+        CurrentYutResult.HasValue && chosenAction == YutAction.Move;
     public bool CanThrowYut => CanUsePreparationInput && !IsThrowing && !CurrentYutResult.HasValue &&
         throwController != null && throwController.isActiveAndEnabled &&
         currency != null && currency.CanAfford(YutThrowCost) &&
         (shopPanel == null || !shopPanel.activeInHierarchy);
     private YutAction chosenAction;
     private CanvasGroup summonButtonGroup;
+    private PreparationNotice preparationNotice;
 
     private void Awake()
     {
@@ -127,9 +133,23 @@ public sealed class TurnController : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (!CanUsePreparationInput || actionController == null)
+            return;
+
+        if (TryConsumeUnavailableResult()) return;
+        if (CurrentYutResult.HasValue) RefreshYutButtons();
+
         Mouse mouse = Mouse.current;
-        if (!CanUsePreparationInput || actionController == null ||
-            mouse == null || !mouse.leftButton.wasPressedThisFrame ||
+        Keyboard keyboard = Keyboard.current;
+        // Cancellation is independent of left-click hit testing and UI hover.
+        if (CanCancelYutAction && ((mouse != null && mouse.rightButton.wasPressedThisFrame) ||
+            (keyboard != null && keyboard.escapeKey.wasPressedThisFrame)))
+        {
+            CancelYutAction();
+            return;
+        }
+
+        if (mouse == null || !mouse.leftButton.wasPressedThisFrame ||
             (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()))
         {
             return;
@@ -197,16 +217,45 @@ public sealed class TurnController : MonoBehaviour
             yutResultSound.PlayOneShot(resultClip);
 
         chosenAction = YutAction.None;
+        preparationNotice?.Hide();
         actionController?.ClearSelection();
         CurrentYutResult = result;
 
-        if (result == YutThrowResult.Backdo && actionController != null && !actionController.CanMove(result))
-        {
-            CompleteYutAction();
-            return;
-        }
+        if (TryConsumeUnavailableResult()) return;
 
         RefreshYutButtons();
+    }
+
+    private bool TryConsumeUnavailableResult()
+    {
+        if (!CanUsePreparationInput || IsThrowing || !CurrentYutResult.HasValue || actionController == null)
+            return false;
+        var result = CurrentYutResult.Value;
+        if (actionController.CanDeploy(result) || actionController.CanMove(result)) return false;
+
+        actionController.ClearSelection();
+        allyRangeDisplay?.Hide();
+        if (characterInfoPanel != null) characterInfoPanel.gameObject.SetActive(false);
+        EventSystem.current?.SetSelectedGameObject(null);
+        CompleteYutAction();
+        ShowPreparationNotice(result == YutThrowResult.Backdo
+            ? "빽도로 이동할 수 있는 아군이 없어 결과를 소모했습니다."
+            : "소환하거나 이동할 수 있는 곳이 없어 결과를 소모했습니다.");
+        return true;
+    }
+
+    private void ShowPreparationNotice(string message)
+    {
+        if (PreparationCanvas == null || actionController == null || actionController.PreparationFont == null)
+            return;
+        if (preparationNotice == null)
+            preparationNotice = PreparationNotice.Create(PreparationCanvas, actionController.PreparationFont);
+        preparationNotice.Show(message);
+    }
+
+    private void OnDestroy()
+    {
+        if (preparationNotice != null) Destroy(preparationNotice.gameObject);
     }
 
     public void ThrowYut()
@@ -215,6 +264,7 @@ public sealed class TurnController : MonoBehaviour
             return;
 
         throwController.Throw();
+        if (IsThrowing) preparationNotice?.Hide();
         RefreshYutButtons();
     }
 
@@ -245,7 +295,7 @@ public sealed class TurnController : MonoBehaviour
             actionButtons.SetActive(choosing);
 
         bool canSummon = choosing && chosenAction == YutAction.None &&
-            CurrentYutResult != YutThrowResult.Backdo;
+            actionController != null && actionController.CanDeploy(CurrentYutResult.Value);
         if (summonButton != null)
             summonButton.interactable = canSummon;
         if (summonButtonGroup != null)
@@ -258,7 +308,15 @@ public sealed class TurnController : MonoBehaviour
         if (inventoryToggle != null)
             inventoryToggle.interactable = CanOpenPreparationPanel;
         if (throwButton != null && throwButton.TryGetComponent(out Button button))
+        {
             button.interactable = CanThrowYut;
+            if (button.targetGraphic != null)
+            {
+                float brightness = currency != null && currency.CanAfford(YutThrowCost) ? 1f : 0.45f;
+                float alpha = button.targetGraphic.color.a;
+                button.targetGraphic.color = new Color(brightness, brightness, brightness, alpha);
+            }
+        }
     }
 
     public void OpenShop()
@@ -286,6 +344,7 @@ public sealed class TurnController : MonoBehaviour
 
     private void ClosePreparationUI()
     {
+        preparationNotice?.Hide();
         chosenAction = YutAction.None;
         actionController?.ClearSelection();
         allyRangeDisplay?.Hide();
@@ -319,12 +378,43 @@ public sealed class TurnController : MonoBehaviour
         TryChooseAction(YutAction.Move);
     }
 
+    public void CancelYutAction()
+    {
+        if (!CanCancelYutAction)
+            return;
+
+        chosenAction = YutAction.None;
+        actionController?.ClearSelection();
+        allyRangeDisplay?.Hide();
+        if (characterInfoPanel != null)
+            characterInfoPanel.gameObject.SetActive(false);
+        EventSystem.current?.SetSelectedGameObject(null);
+        // Keep the prepaid result, units, currency, and unrelated panels intact.
+        RefreshYutButtons();
+    }
+
     public void StartBattle()
     {
-        if (!CanUsePreparationInput || waveManager == null ||
-            CurrentYutResult.HasValue || IsThrowing || (shopPanel != null && shopPanel.activeInHierarchy))
-        {
+        // Check the preparation lifetime first; a processing lock also makes
+        // CanUsePreparationInput false, but still needs feedback while preparing.
+        if (!isActiveAndEnabled || !preparing || RemainingLives == 0 || IsBattleWon ||
+            Time.timeScale <= 0f || waveManager == null || waveManager.IsRunning)
             return;
+        if (actionController != null && actionController.IsResolvingMove)
+        {
+            ShowPreparationNotice("이동 처리가 끝난 뒤 전투를 시작할 수 있습니다."); return;
+        }
+        if (IsThrowing)
+        {
+            ShowPreparationNotice("윷 던지기가 끝난 뒤 결과를 먼저 사용해 주세요."); return;
+        }
+        if (CurrentYutResult.HasValue)
+        {
+            ShowPreparationNotice("남은 윷 결과를 소환 또는 이동에 먼저 사용해 주세요."); return;
+        }
+        if (shopPanel != null && shopPanel.activeInHierarchy)
+        {
+            ShowPreparationNotice("상점을 닫은 뒤 전투를 시작해 주세요."); return;
         }
 
         preparing = false;
@@ -414,7 +504,7 @@ public sealed class TurnController : MonoBehaviour
     {
         if (!CanUsePreparationInput || IsThrowing || !CurrentYutResult.HasValue ||
             chosenAction != YutAction.None || actionController == null ||
-            (action == YutAction.Summon && CurrentYutResult == YutThrowResult.Backdo) ||
+            (action == YutAction.Summon && !actionController.CanDeploy(CurrentYutResult.Value)) ||
             (action == YutAction.Move && !actionController.CanMove(CurrentYutResult.Value)))
         {
             return false;
@@ -433,6 +523,7 @@ public sealed class TurnController : MonoBehaviour
 
     private void CompleteYutAction()
     {
+        preparationNotice?.Hide();
         CurrentYutResult = null;
         chosenAction = YutAction.None;
         RefreshYutButtons();

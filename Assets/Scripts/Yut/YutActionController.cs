@@ -3,7 +3,7 @@ using UnityEngine;
 
 public sealed class YutActionController : MonoBehaviour
 {
-    private const int DeploymentCellId = 1;
+    private const int DeploymentCellId = YutBoard.DeploymentCellId;
     [SerializeField] private TurnController turnController;
 
     [SerializeField] private Do_Taoist doTaoistPrefab;
@@ -13,6 +13,8 @@ public sealed class YutActionController : MonoBehaviour
     [SerializeField] private Mo_Archer moArcherPrefab;
     [SerializeField] private Transform boardRoot;
     [SerializeField] private Sprite destinationMarkerSprite;
+    [SerializeField] private Font exitLabelFont;
+    [SerializeField] private Vector2 exitMarkerOffset = new Vector2(0f, -0.95f);
     [SerializeField] private Wave targetingWave;
     [SerializeField] private ProjectilePool projectilePool;
     [SerializeField] private AllyPool allyPool;
@@ -31,11 +33,15 @@ public sealed class YutActionController : MonoBehaviour
     private readonly SpriteRenderer[] destinationMarkers = new SpriteRenderer[YutBoard.CellCount];
     private Ally selectedAlly;
     private readonly List<Ally> selectedAllies = new List<Ally>();
-    private readonly Dictionary<Ally, List<int>> travelHistory = new();
-    private readonly Dictionary<int, int[]> destinationPaths = new();
-    private bool selectedMoveIsBackward;
+    private int selectedSourceCellId = -1;
+    private ExitDestinationView exitDestinationView;
+    private MovePreviewLabel sourcePreview;
+    private readonly MovePreviewLabel[] destinationPreviews = new MovePreviewLabel[YutBoard.CellCount];
+    private YutThrowResult selectedResult;
 
     public event System.Action<Ally> EvolutionRequested;
+    public bool IsResolvingMove { get; private set; }
+    internal Font PreparationFont => exitLabelFont;
     public bool CanUsePreparationInput => isActiveAndEnabled && turnController != null &&
         turnController.CanUsePreparationInput;
 
@@ -51,45 +57,30 @@ public sealed class YutActionController : MonoBehaviour
                 if (ally == null || !ally.isActiveAndEnabled)
                     continue;
 
-                List<Ally> group = GetMovingAllies(ally, cellId, result);
-                if (result == YutThrowResult.Backdo)
+                List<Ally> group = occupancy.GetStack(ally);
+                foreach (int destination in YutBoard.GetDestinationCells(cellId, result))
                 {
-                    int previousCell = GetPreviousCell(ally);
-                    if (previousCell >= 0 && GetCell(previousCell) != null &&
-                        occupancy.HasSpace(previousCell, YutBoardOccupancy.GetPopulationCost(group)))
+                    if (CanUseDestination(cellId, destination, group))
                         return true;
-                }
-                else
-                {
-                    foreach (int destination in YutBoard.GetDestinationCells(cellId, result))
-                    {
-                        if (GetCell(destination) != null &&
-                            (destination == cellId || occupancy.HasSpace(destination, YutBoardOccupancy.GetPopulationCost(group))))
-                            return true;
-                    }
                 }
             }
         }
         return false;
     }
 
-    private int GetPreviousCell(Ally ally)
+    private bool CanUseDestination(int sourceCellId, int destinationCellId, IReadOnlyList<Ally> group)
     {
-        return travelHistory.TryGetValue(ally, out List<int> history) && history.Count >= 2
-            ? history[history.Count - 2] : -1;
-    }
-
-    private List<Ally> GetMovingAllies(Ally ally, int cellId, YutThrowResult result)
-    {
-        var group = new List<Ally>();
-        foreach (Ally occupant in occupancy.GetAllies(cellId))
+        if (destinationCellId == YutBoard.ExitCellId)
         {
-            if (occupant != null && occupant.isActiveAndEnabled &&
-                occupant.GetType() == ally.GetType() && occupant.EvolutionStage == ally.EvolutionStage &&
-                (result != YutThrowResult.Backdo || GetPreviousCell(occupant) == GetPreviousCell(ally)))
-                group.Add(occupant);
+            if (group.Count == 0 || allyPool == null || turnController.Currency == null ||
+                turnController.PreparationCanvas == null || exitLabelFont == null || GetCell(YutBoard.LastCellId) == null)
+                return false;
+            foreach (Ally ally in group)
+                if (!allyPool.CanReturn(ally)) return false;
+            return true;
         }
-        return group;
+        return GetCell(destinationCellId) != null &&
+            (destinationCellId == sourceCellId || occupancy.HasSpace(destinationCellId, YutBoardOccupancy.GetPopulationCost(group)));
     }
 
     public bool CanEvolve(Ally ally)
@@ -141,11 +132,9 @@ public sealed class YutActionController : MonoBehaviour
         }
 
         ClearSelection();
-        travelHistory[evolved] = new List<int>(travelHistory[ally]);
         ConnectAlly(evolved);
         foreach (Ally material in materials)
         {
-            travelHistory.Remove(material);
             allyPool.Return(material);
         }
         ArrangeAllies(cellId);
@@ -201,35 +190,42 @@ public sealed class YutActionController : MonoBehaviour
         ClearSelection();
     }
 
+    private void OnDestroy()
+    {
+        if (exitDestinationView != null) Destroy(exitDestinationView.gameObject);
+        if (sourcePreview != null) Destroy(sourcePreview.gameObject);
+        foreach (var preview in destinationPreviews)
+            if (preview != null) Destroy(preview.gameObject);
+    }
+
+    private Ally GetDeploymentPrefab(YutThrowResult result) => result switch
+    {
+        YutThrowResult.Do => doTaoistPrefab,
+        YutThrowResult.Gae => gaeWarriorPrefab,
+        YutThrowResult.Geol => geolSpearmanPrefab,
+        YutThrowResult.Yut => yutMacemanPrefab,
+        YutThrowResult.Mo => moArcherPrefab,
+        _ => null
+    };
+
+    public bool CanDeploy(YutThrowResult result)
+    {
+        Ally prefab = GetDeploymentPrefab(result);
+        return CanUsePreparationInput && !turnController.IsThrowing && prefab != null &&
+            GetCell(DeploymentCellId) != null && allyPool != null &&
+            occupancy.HasSpace(DeploymentCellId, prefab.PopulationCost);
+    }
+
     public bool DeployAlly(YutThrowResult result)
     {
-        if (!CanUsePreparationInput || turnController.IsThrowing)
+        if (!CanDeploy(result))
         {
             return false;
         }
 
-        Ally prefab = result switch
-        {
-            YutThrowResult.Do => doTaoistPrefab,
-            YutThrowResult.Gae => gaeWarriorPrefab,
-            YutThrowResult.Geol => geolSpearmanPrefab,
-            YutThrowResult.Yut => yutMacemanPrefab,
-            YutThrowResult.Mo => moArcherPrefab,
-            _ => null
-        };
+        Ally prefab = GetDeploymentPrefab(result);
 
         Transform cell = GetCell(DeploymentCellId);
-        if (prefab == null || cell == null || allyPool == null)
-        {
-            Debug.LogWarning("Assign the matching ally prefab and Cell 01.", this);
-            return false;
-        }
-
-        if (!occupancy.HasSpace(DeploymentCellId, prefab.PopulationCost))
-        {
-            return false;
-        }
-
         Ally ally = allyPool.Request(prefab, cell);
         ally.transform.localPosition = Vector3.zero;
         if (!RegisterAlly(DeploymentCellId, ally))
@@ -262,9 +258,6 @@ public sealed class YutActionController : MonoBehaviour
             }
         }
         ConnectAlly(ally);
-        travelHistory[ally] = cellId == DeploymentCellId
-            ? new List<int> { YutBoard.StartCellId, cellId }
-            : new List<int> { cellId };
         ArrangeAllies(cellId);
         return true;
     }
@@ -311,31 +304,46 @@ public sealed class YutActionController : MonoBehaviour
 
         ClearSelection();
         selectedAlly = ally;
-        selectedMoveIsBackward = result == YutThrowResult.Backdo;
-        selectedAllies.AddRange(GetMovingAllies(ally, currentCellId, result));
-        if (selectedMoveIsBackward)
+        selectedSourceCellId = currentCellId;
+        selectedResult = result;
+        selectedAllies.AddRange(occupancy.GetStack(ally));
+        RefreshMovePreview();
+    }
+
+    private void LateUpdate()
+    {
+        if (selectedAlly != null) RefreshMovePreview();
+        else if (selectedAllies.Count > 0) ClearSelection();
+    }
+
+    private void RefreshMovePreview()
+    {
+        var stack = occupancy.GetStack(selectedAlly);
+        if (!CanUsePreparationInput || stack.Count != selectedAllies.Count ||
+            !stack.TrueForAll(ally => selectedAllies.Contains(ally)) ||
+            !occupancy.TryGetCell(selectedAlly, out int currentCellId) || currentCellId != selectedSourceCellId)
         {
-            int previousCell = GetPreviousCell(ally);
-            if (previousCell >= 0 && GetCell(previousCell) != null &&
-                occupancy.HasSpace(previousCell, YutBoardOccupancy.GetPopulationCost(selectedAllies)))
+            ClearSelection(); return;
+        }
+        if (turnController.PreparationCanvas != null && exitLabelFont != null)
+        {
+            if (sourcePreview == null) sourcePreview = MovePreviewLabel.Create(turnController.PreparationCanvas, exitLabelFont);
+            sourcePreview.Show(GetCell(currentCellId).position + Vector3.up * .85f,
+                $"선택 {stack.Count}기 · 인구 {YutBoardOccupancy.GetPopulationCost(stack)}");
+        }
+        var nextDestinations = new List<int>();
+        foreach (int cellId in YutBoard.GetDestinationCells(currentCellId, selectedResult))
+        {
+            if (CanUseDestination(currentCellId, cellId, selectedAllies))
             {
-                destinationCellIds.Add(previousCell);
+                nextDestinations.Add(cellId);
             }
         }
-        else
-        {
-            foreach (int[] path in YutBoard.GetForwardPaths(currentCellId, result))
-            {
-                int cellId = path[path.Length - 1];
-                if (GetCell(cellId) != null &&
-                    (cellId == currentCellId || occupancy.HasSpace(cellId, YutBoardOccupancy.GetPopulationCost(selectedAllies))) &&
-                    !destinationPaths.ContainsKey(cellId))
-                {
-                    destinationCellIds.Add(cellId);
-                    destinationPaths.Add(cellId, path);
-                }
-            }
-        }
+        // Keep existing buttons active while refreshing so pointer-down state survives a frame.
+        foreach (int previous in destinationCellIds)
+            if (!nextDestinations.Contains(previous)) SetMarkerActive(previous, false);
+        destinationCellIds.Clear();
+        destinationCellIds.AddRange(nextDestinations);
 
         foreach (int cellId in destinationCellIds)
         {
@@ -351,51 +359,67 @@ public sealed class YutActionController : MonoBehaviour
             return false;
         }
 
-        Transform cell = GetCell(destinationCellId);
-        if (cell == null)
+        List<Ally> currentStack = occupancy.GetStack(selectedAlly);
+        if (currentStack.Count != selectedAllies.Count ||
+            !currentStack.TrueForAll(ally => selectedAllies.Contains(ally)) ||
+            !occupancy.TryGetCell(selectedAlly, out int sourceCellId) || sourceCellId != selectedSourceCellId)
         {
-            Debug.LogWarning($"Assign Cell {destinationCellId:00}.", this);
+            ClearSelection();
             return false;
         }
 
-        if (!occupancy.TryGetCell(selectedAlly, out int sourceCellId) ||
-            !occupancy.TryMoveAllies(selectedAllies, destinationCellId))
-        {
+        if (!CanUseDestination(sourceCellId, destinationCellId, selectedAllies))
             return false;
-        }
 
-        foreach (Ally ally in selectedAllies)
+        IsResolvingMove = true;
+        try
         {
-            List<int> history = travelHistory[ally];
-            if (selectedMoveIsBackward)
-                history.RemoveAt(history.Count - 1);
-            else
-                history.AddRange(destinationPaths[destinationCellId]);
-            ally.transform.SetParent(cell, false);
+            if (destinationCellId == YutBoard.ExitCellId)
+            {
+                var exiting = new List<Ally>(selectedAllies);
+                int reward = GetExitReward(exiting);
+                if (!occupancy.TryRemoveAllies(exiting)) return false;
+                // Clear before pool/wallet callbacks: a repeated destination cannot pay twice.
+                ClearSelection();
+                foreach (Ally ally in exiting) allyPool.Return(ally);
+                ArrangeAllies(sourceCellId);
+                turnController.Currency.GrantSpecial(reward);
+                return true;
+            }
+
+            if (!occupancy.TryMoveAllies(selectedAllies, destinationCellId)) return false;
+            Transform cell = GetCell(destinationCellId);
+            foreach (Ally ally in selectedAllies) ally.transform.SetParent(cell, false);
+            ArrangeAllies(sourceCellId);
+            ArrangeAllies(destinationCellId);
+            ClearSelection();
+            return true;
         }
-        ArrangeAllies(sourceCellId);
-        ArrangeAllies(destinationCellId);
-        ClearSelection();
-        return true;
+        finally
+        {
+            IsResolvingMove = false;
+        }
     }
 
     internal void ClearSelection()
     {
         selectedAlly = null;
+        selectedSourceCellId = -1;
         selectedAllies.Clear();
+        if (sourcePreview != null) sourcePreview.Hide();
         foreach (int cellId in destinationCellIds)
         {
             SetMarkerActive(cellId, false);
         }
 
         destinationCellIds.Clear();
-        destinationPaths.Clear();
     }
 
     internal bool TryGetDestinationAt(Vector2 worldPoint, out int cellId)
     {
         foreach (int destination in destinationCellIds)
         {
+            if (destination == YutBoard.ExitCellId) continue; // UI Button owns off-board input.
             if (ContainsPoint(destinationMarkers[destination], worldPoint))
             {
                 cellId = destination;
@@ -438,11 +462,24 @@ public sealed class YutActionController : MonoBehaviour
 
     private Transform GetCell(int cellId)
     {
-        return cellId < cells.Length ? cells[cellId] : null;
+        return cellId >= 0 && cellId < cells.Length ? cells[cellId] : null;
     }
 
     private void SetMarkerActive(int cellId, bool active)
     {
+        if (cellId == YutBoard.ExitCellId)
+        {
+            if (active)
+            {
+                if (exitDestinationView == null)
+                    exitDestinationView = ExitDestinationView.Create(turnController.PreparationCanvas, exitLabelFont,
+                        () => turnController.SelectDestination(YutBoard.ExitCellId));
+                exitDestinationView.Show(GetCell(YutBoard.LastCellId).position + (Vector3)exitMarkerOffset,
+                    GetExitReward(selectedAllies));
+            }
+            else if (exitDestinationView != null) exitDestinationView.Hide();
+            return;
+        }
         SpriteRenderer marker = destinationMarkers[cellId];
         Transform cell = GetCell(cellId);
         if (marker == null && active && cell != null && destinationMarkerSprite != null)
@@ -460,5 +497,24 @@ public sealed class YutActionController : MonoBehaviour
         {
             marker.gameObject.SetActive(active);
         }
+        if (active && cell != null && turnController.PreparationCanvas != null && exitLabelFont != null)
+        {
+            if (destinationPreviews[cellId] == null)
+                destinationPreviews[cellId] = MovePreviewLabel.Create(turnController.PreparationCanvas, exitLabelFont);
+            int expected = occupancy.GetPopulation(cellId) +
+                (cellId == selectedSourceCellId ? 0 : YutBoardOccupancy.GetPopulationCost(selectedAllies));
+            destinationPreviews[cellId].Show(cell.position + Vector3.down * .8f,
+                $"예상 인구 {expected}/{YutBoardOccupancy.MaxPopulationPerCell}");
+        }
+        else if (destinationPreviews[cellId] != null) destinationPreviews[cellId].Hide();
+    }
+
+    private static int GetExitReward(IReadOnlyList<Ally> group)
+    {
+        int reward = 0;
+        foreach (Ally ally in group)
+            if (ally != null)
+                reward = (int)System.Math.Min((long)reward + System.Math.Max(0, ally.ExitReward), int.MaxValue);
+        return reward;
     }
 }

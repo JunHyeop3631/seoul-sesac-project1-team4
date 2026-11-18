@@ -54,6 +54,7 @@ public static class SpecialSummonUIBuilder
             importer.textureType = TextureImporterType.Sprite; importer.spriteImportMode = SpriteImportMode.Single;
             importer.mipmapEnabled = false; importer.alphaIsTransparency = true; importer.textureCompression = TextureImporterCompression.Uncompressed;
             importer.maxTextureSize = 4096; importer.filterMode = FilterMode.Bilinear; importer.wrapMode = TextureWrapMode.Clamp;
+            importer.isReadable = Path.GetFileName(file).StartsWith("Button_HUD_", StringComparison.Ordinal);
             var settings = new TextureImporterSettings(); importer.ReadTextureSettings(settings);
             settings.spriteMeshType = SpriteMeshType.FullRect; settings.spriteAlignment = (int)SpriteAlignment.Center;
             settings.spritePivot = new Vector2(.5f, .5f); importer.SetTextureSettings(settings);

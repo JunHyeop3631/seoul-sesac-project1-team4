@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "assertions": 29,
+    "runtimeErrors": 0,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Real button, all pending results, throw/move locks, shop, feedback lifetime, phase guards and normal start passed."
+}

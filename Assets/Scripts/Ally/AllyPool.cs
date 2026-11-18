@@ -52,6 +52,8 @@ public sealed class AllyPool : MonoBehaviour
         return ally;
     }
 
+    internal bool CanReturn(Ally ally) => ally != null && ally.gameObject.activeSelf && owners.ContainsKey(ally);
+
     public void Return(Ally ally)
     {
         if (ally != null && ally.gameObject.activeSelf && owners.TryGetValue(ally, out var pool))

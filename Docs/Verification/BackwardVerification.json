@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "All 29 backward rows, mixed-route stacks, branches, population recheck, boundary no-reward and evolution passed.",
+    "assertions": 84,
+    "runtimeErrors": 0
+}

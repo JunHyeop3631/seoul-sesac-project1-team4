@@ -49,12 +49,14 @@ def load_nodes():
 
 def load_edges():
     source = BOARD.read_text(encoding="utf-8")
-    entries = re.findall(r"new\[\] \{ ([\d, ]+) \}, // (\d+)", source)
-    forward = {int(i): list(map(int, values.split(","))) for values, i in entries}
-    assert set(forward) == set(range(29)) and forward[0] == [1]
+    forward_source = source.split("private static readonly int[][] NextCells =", 1)[1].split("};", 1)[0]
+    entries = re.findall(r"new\[\] \{ ([\w, -]+) \}, // (\d+)", forward_source)
+    forward = {int(i): [(-1 if v.strip() == 'ExitCellId' else int(v)) for v in values.split(',')]
+               for values, i in entries}
+    assert set(forward) == set(range(29)) and forward[0] == [-1]
     assert forward[5] == [6, 20] and forward[10] == [11, 25]
     assert forward[22] == [23, 27]
-    # Last-cell overflow is an exit, never a new lap. Task08 connects it in code.
+    # The virtual exit is drawn separately, never as one of the 29 occupied nodes.
     forward[0] = []
     backward = {i: [] for i in forward}
     for start, destinations in forward.items():
@@ -64,6 +66,10 @@ def load_edges():
     # Explicit start -> last backward boundary from chapter04. No exit/reward.
     backward[1] = [0]
     assert backward[0] == [19, 28] and backward[22] == [21, 26]
+    backward_source = source.split("private static readonly int[][] BackwardCells =", 1)[1].split("};", 1)[0]
+    actual_backward = {int(i): list(map(int, values.split(","))) for values, i in
+                       re.findall(r"new\[\] \{ ([\d, ]+) \}, // (\d+)", backward_source)}
+    assert actual_backward == backward, "Runtime backward graph differs from the documented graph"
     return forward, backward
 
 

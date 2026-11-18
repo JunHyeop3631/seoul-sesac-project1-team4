@@ -19,6 +19,8 @@ public sealed class SpecialSummonUI : MonoBehaviour
 
     private void Awake()
     {
+        // Match the HUD hit area to its visible silhouette, including rounded corners.
+        hudButton.image.alphaHitTestMinimumThreshold = 0.1f;
         hudButton.onClick.AddListener(Open);
         closeButton.onClick.AddListener(Close);
         // Kept visibly disabled until the actual summon transaction is implemented.

@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "assertions": 65,
+    "runtimeErrors": 0,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Population, branches, reward preview/commit, cancel, live refresh and rendering passed."
+}
