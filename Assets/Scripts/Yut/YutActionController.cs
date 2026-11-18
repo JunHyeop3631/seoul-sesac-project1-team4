@@ -4,6 +4,7 @@ using UnityEngine;
 public sealed class YutActionController : MonoBehaviour
 {
     private const int DeploymentCellId = 1;
+    [SerializeField] private TurnController turnController;
 
     [SerializeField] private Do_Taoist doTaoistPrefab;
     [SerializeField] private Gae_Warrior gaeWarriorPrefab;
@@ -35,10 +36,12 @@ public sealed class YutActionController : MonoBehaviour
     private bool selectedMoveIsBackward;
 
     public event System.Action<Ally> EvolutionRequested;
+    public bool CanUsePreparationInput => isActiveAndEnabled && turnController != null &&
+        turnController.CanUsePreparationInput;
 
     public bool CanMove(YutThrowResult result)
     {
-        if (!isActiveAndEnabled)
+        if (!CanUsePreparationInput || turnController.IsThrowing)
             return false;
 
         for (int cellId = 0; cellId < cells.Length; cellId++)
@@ -91,7 +94,8 @@ public sealed class YutActionController : MonoBehaviour
 
     public bool CanEvolve(Ally ally)
     {
-        if (!isActiveAndEnabled || allyPool == null || ally == null || !ally.isActiveAndEnabled ||
+        if (!CanUsePreparationInput || !turnController.CanEvolve ||
+            allyPool == null || ally == null || !ally.isActiveAndEnabled ||
             ally.EvolutionStage != 1 || GetEvolutionPrefab(ally) == null ||
             !occupancy.TryGetCell(ally, out int cellId))
         {
@@ -199,7 +203,7 @@ public sealed class YutActionController : MonoBehaviour
 
     public bool DeployAlly(YutThrowResult result)
     {
-        if (!isActiveAndEnabled)
+        if (!CanUsePreparationInput || turnController.IsThrowing)
         {
             return false;
         }
@@ -299,7 +303,7 @@ public sealed class YutActionController : MonoBehaviour
 
     public void SelectAlly(Ally ally, YutThrowResult result)
     {
-        if (!isActiveAndEnabled || ally == null ||
+        if (!CanUsePreparationInput || turnController.IsThrowing || ally == null ||
             !occupancy.TryGetCell(ally, out int currentCellId))
         {
             return;
@@ -341,7 +345,7 @@ public sealed class YutActionController : MonoBehaviour
 
     public bool MoveSelectedAlly(int destinationCellId)
     {
-        if (!isActiveAndEnabled || selectedAlly == null ||
+        if (!CanUsePreparationInput || turnController.IsThrowing || selectedAlly == null ||
             !destinationCellIds.Contains(destinationCellId))
         {
             return false;

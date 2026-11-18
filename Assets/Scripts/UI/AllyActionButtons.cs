@@ -13,6 +13,8 @@ public sealed class AllyActionButtons : MonoBehaviour
 
     public void SetTarget(Ally ally)
     {
+        if (actionController == null || !actionController.CanUsePreparationInput)
+            ally = null;
         if (target != ally)
         {
             HideCharacterInfo();
@@ -25,7 +27,8 @@ public sealed class AllyActionButtons : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (target == null || !target.isActiveAndEnabled)
+        if (actionController == null || !actionController.CanUsePreparationInput ||
+            target == null || !target.isActiveAndEnabled)
         {
             gameObject.SetActive(false);
             return;
@@ -44,7 +47,8 @@ public sealed class AllyActionButtons : MonoBehaviour
 
     public void RequestInfo()
     {
-        if (target != null && target.isActiveAndEnabled && characterInfoPanel != null)
+        if (actionController != null && actionController.CanUsePreparationInput &&
+            target != null && target.isActiveAndEnabled && characterInfoPanel != null)
         {
             characterInfoPanel.Show(target);
         }

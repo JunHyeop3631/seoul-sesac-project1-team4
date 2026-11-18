@@ -17,6 +17,7 @@ public enum YutThrowResult
 public class YutThrowController : MonoBehaviour
 {
     private const int StickCount = 4;
+    [SerializeField] private TurnController turnController;
 
     [SerializeField] private YutStick[] sticks = new YutStick[StickCount];
     [SerializeField] private Image resultImage;
@@ -46,7 +47,7 @@ public class YutThrowController : MonoBehaviour
 
     public void Throw()
     {
-        if (!isActiveAndEnabled || IsThrowing)
+        if (!isActiveAndEnabled || IsThrowing || turnController == null || !turnController.CanThrowYut)
         {
             return;
         }
@@ -58,6 +59,11 @@ public class YutThrowController : MonoBehaviour
         }
 
         IsThrowing = true;
+        if (!turnController.TryPayForYutThrow())
+        {
+            IsThrowing = false;
+            return;
+        }
         HideResult();
 
         int backdoStickIndex = UnityEngine.Random.Range(0, sticks.Length);

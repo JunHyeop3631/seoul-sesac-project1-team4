@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public sealed class CharacterInfoPanel : MonoBehaviour
 {
+    [SerializeField] private TurnController turnController;
     private enum UnitKind
     {
         DoTaoist,
@@ -33,7 +34,8 @@ public sealed class CharacterInfoPanel : MonoBehaviour
 
     public void Show(Ally ally)
     {
-        if (ally == null || !ally.isActiveAndEnabled || !TryGetKind(ally, out UnitKind kind))
+        if (turnController == null || !turnController.CanUsePreparationInput ||
+            ally == null || !ally.isActiveAndEnabled || !TryGetKind(ally, out UnitKind kind))
         {
             gameObject.SetActive(false);
             return;
@@ -72,6 +74,18 @@ public sealed class CharacterInfoPanel : MonoBehaviour
         }
 
         gameObject.SetActive(true);
+    }
+
+    private void OnEnable()
+    {
+        if (turnController == null || !turnController.CanUsePreparationInput)
+            gameObject.SetActive(false);
+    }
+
+    private void LateUpdate()
+    {
+        if (turnController == null || !turnController.CanUsePreparationInput)
+            gameObject.SetActive(false);
     }
 
     private static bool TryGetKind(Ally ally, out UnitKind kind)

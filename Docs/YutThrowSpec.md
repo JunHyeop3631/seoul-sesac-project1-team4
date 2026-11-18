@@ -39,7 +39,7 @@
 
 ### 버튼 입력부터 결과 전달까지
 
-1. [YutThrowController.Throw()](../Assets/Scripts/Yut/YutThrowController.cs)는 컴포넌트가 활성 상태인지 확인한다. `HasReadySticks()`에서 서로 다른 윷 네 개가 활성 상태이고 각 윷의 렌더러와 두 면의 스프라이트가 연결됐는지 검사한다. 설정이 올바르지 않으면 경고를 남기고 던지기를 시작하지 않는다.
+1. [YutThrowController.Throw()](../Assets/Scripts/Yut/YutThrowController.cs)는 준비 상태·미사용 결과·상점·잔액 등 `TurnController.CanThrowYut` 조건과 컴포넌트 활성 상태를 확인한다. `HasReadySticks()`에서 서로 다른 윷 네 개의 활성 상태와 표시/클립 설정을 검사한다. 설정이 올바르지 않으면 경고를 남기고 무차감으로 거부한다. 검사 통과 후 `IsThrowing=true`로 재입력을 잠그고 `TryPayForYutThrow`를 통해 일반재화20을1회 결제한 뒤 진행한다(작업03). 잔액 변경 콜백에서 던지기를 재요청해도 잠금이 적용된다.
 2. [YutStick.Throw()](../Assets/Scripts/Yut/YutStick.cs)는 각 윷에서 한 번씩 같은 프레임에 호출된다. `Random.Range(0, 2)`로 자기 면을 뽑고 `YutFace.Belly` 또는 `YutFace.Back`을 즉시 반환한다. 현재 면과 뽑힌 면에 따라 등 → 등, 등 → 배, 배 → 등, 배 → 배 클립을 선택해 재생한다.
 3. `YutThrowController`는 반환값에서 배의 수를 세어 위 표에 따라 `YutThrowResult`를 정하고 `LastResult`에 저장한다.
 4. `YutThrowController`는 네 윷의 재생 완료를 기다린 뒤 `ShowResult()`로 결과 이미지를 표시하고 `ThrowCompleted` 이벤트를 전달한다. 재생 중에는 추가 던지기를 받지 않는다.

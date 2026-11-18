@@ -3,6 +3,7 @@ using UnityEngine.Events;
 
 public sealed class AllyRangeDisplay : MonoBehaviour
 {
+    [SerializeField] private TurnController turnController;
     [SerializeField] private Sprite attackRangeSprite;
     [SerializeField] private UnityEvent<bool> visibilityChanged = new UnityEvent<bool>();
     [SerializeField] private UnityEvent<Ally> targetChanged = new UnityEvent<Ally>();
@@ -26,7 +27,8 @@ public sealed class AllyRangeDisplay : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (rangeAlly == null || !rangeAlly.isActiveAndEnabled || rangeAlly.AttackRange <= 0f)
+        if (turnController == null || !turnController.CanUsePreparationInput ||
+            rangeAlly == null || !rangeAlly.isActiveAndEnabled || rangeAlly.AttackRange <= 0f)
         {
             Hide();
             return;
@@ -37,7 +39,8 @@ public sealed class AllyRangeDisplay : MonoBehaviour
 
     public void Show(Ally ally)
     {
-        if (!isActiveAndEnabled || ally == null || !ally.isActiveAndEnabled ||
+        if (!isActiveAndEnabled || turnController == null || !turnController.CanUsePreparationInput ||
+            ally == null || !ally.isActiveAndEnabled ||
             attackRangeSprite == null)
         {
             return;
