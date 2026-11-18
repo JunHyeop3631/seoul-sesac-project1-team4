@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "assertions": 76,
+    "runtimeErrors": 0,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Five exact product definitions, actual row pointer clicks, icon/name/price/background/effect sync, excluded Gumiho, no-spend browsing, layout/text fit, reopen and preparation guards passed."
+}

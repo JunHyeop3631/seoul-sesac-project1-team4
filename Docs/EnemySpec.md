@@ -12,7 +12,7 @@
 
 ## 종류와 설정
 
-`FastEnemy`와 `BossEnemy`도 공통 `Enemy`를 상속하며 각각 전용 프리팹을 사용한다. 적 풀에는 `FastEnemy = 1`, `BossEnemy = 2`으로 등록했다. 두 적의 Animator Override Controller는 NormalEnemy의 네 상태를 공유하면서 각자의 좌우 걷기·사망 클립으로 교체한다. 초기 이동 속도는 초당 2유닛, 최대 체력은 10으로 두었으며 프리팹에서 조정한다. 보스의 HP 바는 스프라이트 높이에 맞춰 배치했다.
+`FastEnemy`와 `BossEnemy`도 공통 `Enemy`를 상속하며 각각 전용 프리팹을 사용한다. 적 풀에는 `FastEnemy = 1`, `BossEnemy = 2`으로 등록했다. 두 적의 Animator Override Controller는 NormalEnemy의 네 상태를 공유하면서 각자의 좌우 걷기·사망 클립으로 교체한다. 코드 초기값은 이동 속도2·체력10이지만 현재 스테이지는 프리팹의 통과 시간과 웨이브별 HP로 결정한다. 보스의 HP 바는 스프라이트 높이에 맞춰 배치했다.
 
 `NormalEnemy`, `FastEnemy`, `BossEnemy`는 공통 [Enemy](../Assets/Scripts/Enemy/Enemy.cs)를 상속한다. 웨이브 데이터와 적 풀은 `EnemyId`를 사용해 종류를 구분한다. [NormalEnemy 프리팹](../Assets/Prefabs/NormalEnemy.prefab)의 `Visual` 자식에 SpriteRenderer와 Animator를 배치하고, [NormalEnemy Animator Controller](../Assets/Animations/Enemy/Animator/NormalEnemy.controller)를 연결했다. 새 스프라이트의 표시 높이는 자식 스케일로 기존 이미지에 맞췄다. 각 적 프리팹의 콜라이더는 [아군의 대상 탐색](AllySpec.md#대상-선택과-유지)에 사용한다.
 
@@ -21,15 +21,15 @@
 | `Move Speed` | 초당 2유닛 |
 | `Max Health` | 10 |
 
-표의 값은 코드 기본값이다. 실제 값은 각 프리팹 Inspector에서 조정한다.
+표의 값은 코드 기본값이다. 실제 스테이지 HP는 [웨이브 체력 표](WaveHealthSpec.md), 이동은 프리팹의 Lap Duration Seconds 일반30·빠른20·보스60을 따른다. 이 값이 양수이면 StartMoving이 닫힌 경로 전체 길이/통과 시간으로 Move Speed를 덮어쓴다.0이면 기존 Move Speed 직접 사용 경로를 유지한다.
 
 ## 등장과 경로 이동
 
 1. 웨이브가 풀에서 적을 꺼내 활성화하면 `Enemy.OnEnable`에서 현재 체력을 최대 체력으로 설정한다.
-2. `StartMoving`이 경유점의 월드 좌표를 보관하고, 적을 첫 경유점에 배치한다. 적은 `IsMoving` 상태에서 이동 속도와 프레임 시간에 따라 다음 경유점으로 이동한다. 한 프레임에 모서리에 도달하면 남은 이동 거리를 다음 구간에 사용한다.
+2. `StartMoving`이 경유점의 월드 좌표를 보관하고, 마지막→첫 경유점의 닫는 구간까지 포함한 전체 길이로 종류별 통과 시간에 맞춰 속도를 계산한다. 적을 첫 경유점에 배치하고, `IsMoving` 상태에서 속도×Time.deltaTime만큼 이동한다. 한 프레임에 모서리에 도달하면 남은 이동 거리를 다음 구간에 사용한다. 풀 재사용 시 새 경로 길이를 다시 계산한다.
 3. 마지막 경유점에서 출발점으로 돌아오면 도착 콜백을 호출한다. 웨이브는 도착한 적을 필드에서 제거해 풀로 반환한다. 이 경로에서는 처치 이벤트가 발생하지 않는다.
 
-웨이브별 등장 구성과 씬의 경유점 설정은 [웨이브 명세](WaveSpec.md#씬-구성과-구현-상태)를 따른다. 경로 도착 시 기지 피해를 적용하는 기능은 후속 범위다.
+웨이브별 등장 구성과 씬의 경유점 설정은 [웨이브 명세](WaveSpec.md#씬-구성과-구현-상태)를 따른다. 일반·빠른 적의 도착은 하트-1이고,최종 보스는 작업23의 별도 탈출 이벤트로 잔여 하트와 관계없이 즉시 패배한다. [최종 보스 승패](BossOutcomeSpec.md).
 
 ## 피해와 처치
 

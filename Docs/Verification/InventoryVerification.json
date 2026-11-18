@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "assertions": 86,
+    "runtimeErrors": 0,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Nine slots, owned-only selection, shared descriptions, passive status, safe effect dispatch, consumption/reentry guards, panel lifetime and preparation restrictions passed."
+}

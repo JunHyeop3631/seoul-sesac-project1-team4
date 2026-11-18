@@ -11,11 +11,22 @@ public class WaveManager : MonoBehaviour
     public event Action WaveCompleted;
     public event Action EnemyArrived;
     public event Action<Enemy> EnemyDefeated;
+    public event Action BossDefeated;
+    public event Action BossEscaped;
 
     public int AliveEnemyCount => wave != null ? wave.AliveEnemyCount : 0;
     public bool IsRunning => wave != null && wave.IsRunning;
     public int WaveCount => waves != null ? waves.Length : 0;
     public int DefeatedEnemyCount => wave != null ? wave.DefeatedEnemyCount : 0;
+    public Enemy Boss => wave != null ? wave.Boss : null;
+
+    public int GetBossMaxHealth(int waveIndex)
+    {
+        if (waves == null || waveIndex < 0 || waveIndex >= waves.Length || waves[waveIndex] == null) return 0;
+        foreach (var group in waves[waveIndex].Enemies)
+            if (group != null && group.enemyId == EnemyId.BossEnemy) return Mathf.Max(0, group.health);
+        return 0;
+    }
 
     public int GetCompletionReward(int waveIndex)
     {
@@ -49,6 +60,7 @@ public class WaveManager : MonoBehaviour
             wave.Completed += HandleWaveCompleted;
             wave.EnemyArrived += HandleEnemyArrived;
             wave.EnemyDefeated += HandleEnemyDefeated;
+            wave.EnemyEscaped += HandleEnemyEscaped;
         }
     }
 
@@ -59,6 +71,7 @@ public class WaveManager : MonoBehaviour
             wave.Completed -= HandleWaveCompleted;
             wave.EnemyArrived -= HandleEnemyArrived;
             wave.EnemyDefeated -= HandleEnemyDefeated;
+            wave.EnemyEscaped -= HandleEnemyEscaped;
         }
     }
 
@@ -79,12 +92,24 @@ public class WaveManager : MonoBehaviour
         wave?.Prepare();
     }
 
+    public void StopWave() => wave?.StopWave();
+
     private void HandleEnemyArrived()
     {
         EnemyArrived?.Invoke();
     }
 
-    private void HandleEnemyDefeated(Enemy enemy) => EnemyDefeated?.Invoke(enemy);
+    private void HandleEnemyDefeated(Enemy enemy)
+    {
+        // Finish synchronous kill rewards before announcing the final result.
+        EnemyDefeated?.Invoke(enemy);
+        if (enemy is BossEnemy && IsRunning) BossDefeated?.Invoke();
+    }
+
+    private void HandleEnemyEscaped(Enemy enemy)
+    {
+        if (enemy is BossEnemy && IsRunning) BossEscaped?.Invoke();
+    }
 
     private void HandleWaveCompleted()
     {

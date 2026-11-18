@@ -17,7 +17,42 @@ public static class SpecialSummonUIBuilder
         ImportSprites();
         BuildPrefab();
         AssetDatabase.SaveAssets();
+        Complete();
     }
+
+    // Update the installed prefab without replacing its file IDs or scene overrides.
+    [MenuItem("Tools/Yut UI/Complete Special Summon Window")]
+    public static void Complete()
+    {
+        var root = PrefabUtility.LoadPrefabContents(PrefabPath);
+        try
+        {
+            var hud = root.transform.Find("Special Currency Button");
+            // The approved HUD image has 16 transparent pixels at both sides (608/640 visible).
+            hud.localScale = Vector3.one * (200f / (232f * .95f));
+            var ui = root.GetComponent<SpecialSummonUI>();
+            var data = new SerializedObject(ui);
+            var random = ((Button)data.FindProperty("randomButton").objectReferenceValue);
+            var close = ((Button)data.FindProperty("closeButton").objectReferenceValue);
+            random.navigation = new Navigation { mode = Navigation.Mode.Explicit,
+                selectOnUp = close, selectOnDown = close, selectOnLeft = close, selectOnRight = close };
+            var window = root.transform.Find("Special Summon Modal/Window");
+            var existing = window.Find("Availability");
+            var label = existing != null ? existing.GetComponent<Text>() :
+                Rect(window, "Availability", new Vector2(800, 56), new Vector2(650, 915), true).gameObject.AddComponent<Text>();
+            label.rectTransform.anchoredPosition = new Vector2(650, -837);
+            label.rectTransform.sizeDelta = new Vector2(800, 73);
+            label.font = AssetDatabase.LoadAssetAtPath<Font>("Assets/Art/Character_Info/03_Fonts/YiSunShin-Bold.otf");
+            label.fontSize = 28; label.color = new Color32(75, 38, 17, 255);
+            label.alignment = TextAnchor.MiddleCenter; label.raycastTarget = false;
+            label.text = ""; Ref(data, "availabilityText", label);
+            Ref(data, "startCellHint", window.Find("Start Cell Hint").gameObject); data.ApplyModifiedPropertiesWithoutUndo();
+            PrefabUtility.SaveAsPrefabAsset(root, PrefabPath);
+        }
+        finally { PrefabUtility.UnloadPrefabContents(root); }
+        AssetDatabase.SaveAssets();
+    }
+    public static void CompleteAndRun() { Complete(); SpecialSummonWindowVerification.ReimportAndRun(); }
 
     // Used on the isolated integration project. Does not replace existing sounds or turn logic.
     public static void Install()
@@ -34,6 +69,7 @@ public static class SpecialSummonUIBuilder
         var so = new SerializedObject(root.GetComponent<SpecialSummonUI>());
         Ref(so, "turnController", turn); Ref(so, "waveManager", UnityEngine.Object.FindFirstObjectByType<WaveManager>());
         Ref(so, "currency", balance); Ref(so, "clickSound", GameObject.Find("ButtonSound").GetComponent<AudioSource>());
+        Ref(so, "executor", turn.GetComponent<SpecialSummonController>());
         Ref(so, "hoverSound", GameObject.Find("HoverSound").GetComponent<AudioSource>()); so.ApplyModifiedPropertiesWithoutUndo();
         PrefabUtility.RecordPrefabInstancePropertyModifications(root.GetComponent<SpecialSummonUI>());
 

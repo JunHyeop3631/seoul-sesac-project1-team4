@@ -1,0 +1,110 @@
+{
+    "checksPassed": true,
+    "requirementSatisfied": false,
+    "assertions": 74,
+    "runtimeErrors": 0,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Observation checks passed: fresh/long-preparation attacks ready; short-preparation attacks preserve prior cooldown. GAP-028 remains unresolved.",
+    "observations": [
+        {
+            "prefab": "Do_Taoist",
+            "transition": "forced early completion (memory fixture)",
+            "freshDelay": 0.009999992913832197,
+            "remainingCooldown": 0.8333333134651184,
+            "nextWaveDelay": 0.8399994047619047,
+            "longPreparationDelay": 0.009999992913832135,
+            "readyAtNextBattle": false
+        },
+        {
+            "prefab": "Do_Taoist_2nd_Evolution",
+            "transition": "forced early completion (memory fixture)",
+            "freshDelay": 0.009999992913832135,
+            "remainingCooldown": 0.8333333134651184,
+            "nextWaveDelay": 0.8399994047619046,
+            "longPreparationDelay": 0.009999992913832135,
+            "readyAtNextBattle": false
+        },
+        {
+            "prefab": "Gae_Warrior",
+            "transition": "forced early completion (memory fixture)",
+            "freshDelay": 0.009999992913832579,
+            "remainingCooldown": 0.6666666865348816,
+            "nextWaveDelay": 0.669999525226757,
+            "longPreparationDelay": 0.009999992913832579,
+            "readyAtNextBattle": false
+        },
+        {
+            "prefab": "Gae_Warrior_2nd_Evolution",
+            "transition": "forced early completion (memory fixture)",
+            "freshDelay": 0.00999999291383169,
+            "remainingCooldown": 0.6666666865348816,
+            "nextWaveDelay": 0.6699995252267579,
+            "longPreparationDelay": 0.009999992913832579,
+            "readyAtNextBattle": false
+        },
+        {
+            "prefab": "Geol_Spearman",
+            "transition": "forced early completion (memory fixture)",
+            "freshDelay": 0.00999999291383169,
+            "remainingCooldown": 1.25,
+            "nextWaveDelay": 1.259999107142857,
+            "longPreparationDelay": 0.00999999291383169,
+            "readyAtNextBattle": false
+        },
+        {
+            "prefab": "Geol_Spearman_2nd_Evolution",
+            "transition": "forced early completion (memory fixture)",
+            "freshDelay": 0.009999992913833467,
+            "remainingCooldown": 1.25,
+            "nextWaveDelay": 1.259999107142857,
+            "longPreparationDelay": 0.00999999291383169,
+            "readyAtNextBattle": false
+        },
+        {
+            "prefab": "Yut_Maceman",
+            "transition": "forced early completion (memory fixture)",
+            "freshDelay": 0.00999999291383169,
+            "remainingCooldown": 2.0,
+            "nextWaveDelay": 2.0099985756802729,
+            "longPreparationDelay": 0.009999992913833467,
+            "readyAtNextBattle": false
+        },
+        {
+            "prefab": "Yut_Maceman_2nd_Evolution",
+            "transition": "forced early completion (memory fixture)",
+            "freshDelay": 0.00999999291383169,
+            "remainingCooldown": 2.0,
+            "nextWaveDelay": 2.009998575680271,
+            "longPreparationDelay": 0.009999992913829914,
+            "readyAtNextBattle": false
+        },
+        {
+            "prefab": "Mo_Archer",
+            "transition": "forced early completion (memory fixture)",
+            "freshDelay": 0.009999992913833467,
+            "remainingCooldown": 0.3333333432674408,
+            "nextWaveDelay": 0.3399997590702952,
+            "longPreparationDelay": 0.009999992913833467,
+            "readyAtNextBattle": false
+        },
+        {
+            "prefab": "Mo_Archer_2nd_Evolution",
+            "transition": "forced early completion (memory fixture)",
+            "freshDelay": 0.009999992913833467,
+            "remainingCooldown": 0.3333333432674408,
+            "nextWaveDelay": 0.3399997590702952,
+            "longPreparationDelay": 0.009999992913833467,
+            "readyAtNextBattle": false
+        },
+        {
+            "prefab": "Yut_Maceman",
+            "transition": "real death animation completion",
+            "freshDelay": 0.0,
+            "remainingCooldown": 1.4800003684807273,
+            "nextWaveDelay": 1.4899989441609983,
+            "longPreparationDelay": 0.0,
+            "readyAtNextBattle": false
+        }
+    ]
+}

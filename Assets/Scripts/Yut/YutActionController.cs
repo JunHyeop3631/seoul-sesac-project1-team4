@@ -11,6 +11,7 @@ public sealed class YutActionController : MonoBehaviour
     [SerializeField] private Geol_Spearman geolSpearmanPrefab;
     [SerializeField] private Yut_Maceman yutMacemanPrefab;
     [SerializeField] private Mo_Archer moArcherPrefab;
+    [SerializeField] private WhiteTiger whiteTigerPrefab;
     [SerializeField] private Transform boardRoot;
     [SerializeField] private Sprite destinationMarkerSprite;
     [SerializeField] private Font exitLabelFont;
@@ -41,7 +42,11 @@ public sealed class YutActionController : MonoBehaviour
 
     public event System.Action<Ally> EvolutionRequested;
     public bool IsResolvingMove { get; private set; }
+    public bool IsResolvingSummon { get; private set; }
     internal Font PreparationFont => exitLabelFont;
+    public bool HasDeploymentSpace(int population) => GetCell(DeploymentCellId) != null &&
+        occupancy.HasSpace(DeploymentCellId, population);
+    public bool IsRegisteredAlly(Ally ally) => ally != null && occupancy.TryGetCell(ally, out _);
     public bool CanUsePreparationInput => isActiveAndEnabled && turnController != null &&
         turnController.CanUsePreparationInput;
 
@@ -87,7 +92,7 @@ public sealed class YutActionController : MonoBehaviour
     {
         if (!CanUsePreparationInput || !turnController.CanEvolve ||
             allyPool == null || ally == null || !ally.isActiveAndEnabled ||
-            ally.EvolutionStage != 1 || GetEvolutionPrefab(ally) == null ||
+            !ally.CanEvolve || GetEvolutionPrefab(ally) == null ||
             !occupancy.TryGetCell(ally, out int cellId))
         {
             return false;
@@ -210,31 +215,66 @@ public sealed class YutActionController : MonoBehaviour
 
     public bool CanDeploy(YutThrowResult result)
     {
-        Ally prefab = GetDeploymentPrefab(result);
+        return CanDeploy(GetDeploymentPrefab(result));
+    }
+
+    public bool CanDeploy(Ally prefab)
+    {
         return CanUsePreparationInput && !turnController.IsThrowing && prefab != null &&
-            GetCell(DeploymentCellId) != null && allyPool != null &&
+            prefab.enabled && prefab.gameObject.activeSelf && GetCell(DeploymentCellId) != null &&
+            allyPool != null && allyPool.isActiveAndEnabled &&
             occupancy.HasSpace(DeploymentCellId, prefab.PopulationCost);
     }
 
     public bool DeployAlly(YutThrowResult result)
     {
-        if (!CanDeploy(result))
+        return DeployAlly(GetDeploymentPrefab(result));
+    }
+
+    // Shared placement; the special-summon transaction uses the locked path below.
+    public bool DeployAlly(Ally prefab)
+    {
+        if (!CanDeploy(prefab))
         {
             return false;
         }
 
-        Ally prefab = GetDeploymentPrefab(result);
+        return DeployAtStart(prefab) != null;
+    }
 
+    internal bool TryDeployPaidAlly(Ally prefab, StageCurrency currency, int cost, System.Action<Ally> completed)
+    {
+        if (currency == null || !CanDeploy(prefab) || IsResolvingSummon) return false;
+        IsResolvingSummon = true;
+        try
+        {
+            Ally created = null;
+            if (!currency.TrySpendSpecial(cost, () =>
+                {
+                    created = DeployAtStart(prefab);
+                    return created != null;
+                })) return false;
+            completed?.Invoke(created);
+            return true;
+        }
+        finally { IsResolvingSummon = false; }
+    }
+
+    private Ally DeployAtStart(Ally prefab)
+    {
+        if (prefab == null || allyPool == null || !allyPool.isActiveAndEnabled ||
+            !prefab.enabled || !prefab.gameObject.activeSelf || GetCell(DeploymentCellId) == null ||
+            !occupancy.HasSpace(DeploymentCellId, prefab.PopulationCost)) return null;
         Transform cell = GetCell(DeploymentCellId);
         Ally ally = allyPool.Request(prefab, cell);
         ally.transform.localPosition = Vector3.zero;
         if (!RegisterAlly(DeploymentCellId, ally))
         {
             allyPool.Return(ally);
-            return false;
+            return null;
         }
 
-        return true;
+        return ally;
     }
 
     private bool RegisterAlly(int cellId, Ally ally)
@@ -247,6 +287,8 @@ public sealed class YutActionController : MonoBehaviour
 
         if (allyPool != null)
         {
+            if (ally is WhiteTiger && whiteTigerPrefab != null)
+                allyPool.Register(ally, whiteTigerPrefab);
             foreach (var entry in evolutions)
             {
                 Ally prefab = ally.EvolutionStage == 1 ? entry.firstStage : entry.secondStage;
@@ -276,7 +318,15 @@ public sealed class YutActionController : MonoBehaviour
         const int columns = 3;
         IReadOnlyList<Ally> allies = occupancy.GetAllies(cellId);
         int slotIndex = 0;
-        foreach (Ally ally in allies)
+        // Reserve whole rows for population-three units before packing ordinary slots.
+        // Registration order within each size remains stable; stack membership is unchanged.
+        var layout = new List<Ally>(allies);
+        layout.Sort((left, right) =>
+        {
+            int order = (right != null ? right.PopulationCost : 0).CompareTo(left != null ? left.PopulationCost : 0);
+            return order != 0 ? order : IndexOf(allies, left).CompareTo(IndexOf(allies, right));
+        });
+        foreach (Ally ally in layout)
         {
             if (ally == null)
             {
@@ -284,14 +334,22 @@ public sealed class YutActionController : MonoBehaviour
             }
 
             // Fill the top row left to right, then the bottom row.
+            int span = Mathf.Clamp(ally.PopulationCost, 1, columns);
             int column = slotIndex % columns;
             int row = slotIndex / columns;
             ally.transform.localPosition = new Vector3(
-                (column - 1) * allySlotSpacing.x,
+                (column + (span - 1) * 0.5f - 1) * allySlotSpacing.x,
                 (0.5f - row) * allySlotSpacing.y,
                 0f);
-            slotIndex++;
+            slotIndex += span;
         }
+    }
+
+    private static int IndexOf(IReadOnlyList<Ally> allies, Ally target)
+    {
+        for (int index = 0; index < allies.Count; index++)
+            if (allies[index] == target) return index;
+        return -1;
     }
 
     public void SelectAlly(Ally ally, YutThrowResult result)

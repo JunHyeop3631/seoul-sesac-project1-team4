@@ -106,7 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Yut_Maceman
   evolutionStage: 2
   attackHitEffect: {fileID: 2019873692110887112, guid: 16c007d9305044bc9b712cc1cb68230c, type: 3}
-  attackRange: 3
+  attackRange: 3.5
   attackDamage: 73.5
   attackInterval: 2
   allyAnimator: {fileID: 9500001}

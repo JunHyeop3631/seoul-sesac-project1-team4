@@ -10,7 +10,7 @@ public sealed class EnemyKillRewards : MonoBehaviour
     [SerializeField] private Sprite coin;
     [SerializeField] private Sprite[] digits;
     [SerializeField] private Font font;
-    [SerializeField, Min(0)] private int normalReward = 2, fastReward = 1;
+    [SerializeField, Min(0)] private int normalReward = 2, fastReward = 2, bossReward = 100;
     [SerializeField, Min(.1f)] private float duration = .8f;
     [SerializeField, Min(.1f)] private float popupScale = 1.6f;
     private readonly List<Popup> popups = new();
@@ -37,13 +37,14 @@ public sealed class EnemyKillRewards : MonoBehaviour
     }
     private void OnKill(Enemy enemy)
     {
-        if(enemy==null||currency==null||turn==null||turn.RemainingLives<=0||turn.IsBattleWon)return;
-        int amount=enemy is NormalEnemy?normalReward:enemy is FastEnemy?fastReward:0;
-        int credited=currency.Grant(amount);
-        if(credited<=0)return;
-        // Copy position now: the enemy may return to its pool immediately afterwards.
+        if(!isActiveAndEnabled||enemy==null||currency==null||turn==null||waves==null||
+            !waves.IsRunning||turn.RemainingLives<=0||turn.IsBattleWon||turn.IsBattleLost)return;
+        int amount=enemy is BossEnemy?bossReward:enemy is NormalEnemy?normalReward:enemy is FastEnemy?fastReward:0;
+        // Wallet listeners may return/reuse the enemy; capture the kill position first.
         var visual=enemy.GetComponentInChildren<SpriteRenderer>();
         Vector3 position=visual!=null?new Vector3(visual.bounds.center.x,visual.bounds.max.y+.35f,0):enemy.transform.position+Vector3.up;
+        int credited=currency.Grant(amount);
+        if(credited<=0||turn.RemainingLives<=0||turn.IsBattleWon||turn.IsBattleLost||!waves.IsRunning)return;
         Show(position,credited);
     }
     private void Show(Vector3 world,int amount)

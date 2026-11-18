@@ -106,7 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Gae_Warrior
   evolutionStage: 2
   attackHitEffect: {fileID: 2019873692110887112, guid: cf9b57519e904007a7af486b6f92abf7, type: 3}
-  attackRange: 3
+  attackRange: 1
   attackDamage: 52.5
   attackInterval: 0.666666667
   allyAnimator: {fileID: 9500001}

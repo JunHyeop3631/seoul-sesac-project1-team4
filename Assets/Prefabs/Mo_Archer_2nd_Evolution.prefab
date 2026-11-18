@@ -107,7 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Mo_Archer
   evolutionStage: 2
   attackHitEffect: {fileID: 2019873692110887112, guid: b7a96d2384c948cb96df7894f0b995f1, type: 3}
-  attackRange: 3
+  attackRange: 5
   attackDamage: 16.8
   attackInterval: 0.333333333
   allyAnimator: {fileID: 9500001}

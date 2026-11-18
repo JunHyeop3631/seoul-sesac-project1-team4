@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b40009233df711abd44feecfad4dfa18, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Yut_Maceman
-  attackRange: 3
+  attackRange: 3.5
   attackDamage: 35
   attackInterval: 2
   allyAnimator: {fileID: 9500001}

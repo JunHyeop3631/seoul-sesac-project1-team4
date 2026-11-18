@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "assertions": 167,
+    "runtimeErrors": 0,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Sequential outgoing/incoming fades, no overlap, latest-target wins, rapid reverse/reselection, original color/layout restoration, gameplay preservation, pause/pool/disable/battle interruption and real rendered frames passed."
+}

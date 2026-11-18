@@ -1,1 +1,8 @@
-{"passed":true,"normal2":true,"fast1":true,"bossUnchanged":true,"noDuplicate":true,"noEscapeReward":true,"popupExpires":true,"pooledReuse":true,"completionRewardSeparate":true}
+{
+    "passed": true,
+    "assertions": 23,
+    "runtimeErrors": 0,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Normal2/fast2/boss100, immediate once-only credit, HUD/popup, escape, reuse, terminal guards and capped income passed."
+}

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -7,6 +8,10 @@ using UnityEngine.UI;
 public sealed class TurnController : MonoBehaviour
 {
     public const int YutThrowCost = 20;
+    [SerializeField] private HeavenlyLuckTalismanEffect heavenlyLuck;
+    [SerializeField] private GoldNumberDisplay throwCostDisplay;
+    public int CurrentYutThrowCost => heavenlyLuck != null && heavenlyLuck.IsApplied
+        ? HeavenlyLuckTalismanEffect.DiscountedThrowCost : YutThrowCost;
     private enum YutAction
     {
         None,
@@ -40,6 +45,7 @@ public sealed class TurnController : MonoBehaviour
 
     public int CurrentTurnNumber => currentTurnNumber;
     public int RemainingLives { get; private set; }
+    public int MaxLives => Mathf.Max(1, startingLives);
     public YutThrowResult? CurrentYutResult { get; private set; }
     public event Action BattleStarted;
     public event Action BattleWon;
@@ -48,12 +54,22 @@ public sealed class TurnController : MonoBehaviour
     // Completed (one-based) wave and the amount actually credited to the wallet.
     public event Action<int, int> WaveCleared;
     public bool IsBattleWon { get; private set; }
+    public bool IsBattleLost { get; private set; }
     internal StageCurrency Currency => currency;
     internal Canvas PreparationCanvas => actionButtons != null ? actionButtons.GetComponentInParent<Canvas>(true) : null;
     private bool preparing;
-    public bool CanUsePreparationInput => isActiveAndEnabled && preparing &&
-        RemainingLives > 0 && !IsBattleWon && Time.timeScale > 0f &&
-        (actionController == null || !actionController.IsResolvingMove) &&
+    private bool endingBattle;
+    private SpecialSummonUI specialSummonUI;
+    private ShopPurchaseController shopPurchases;
+    private StageItemUseController itemUse;
+    internal void SetItemUseController(StageItemUseController controller) => itemUse = controller;
+    internal void SetShopPurchaseController(ShopPurchaseController controller) => shopPurchases = controller;
+    internal void SetSpecialSummonUI(SpecialSummonUI view) => specialSummonUI = view;
+    public bool CanUsePreparationInput => isActiveAndEnabled && preparing && !endingBattle &&
+        RemainingLives > 0 && !IsBattleWon && !IsBattleLost && Time.timeScale > 0f &&
+        (shopPurchases == null || !shopPurchases.IsPurchasing) &&
+        (itemUse == null || !itemUse.IsUsing) &&
+        (actionController == null || (!actionController.IsResolvingMove && !actionController.IsResolvingSummon)) &&
         (waveManager == null || !waveManager.IsRunning);
     public bool IsThrowing => throwController != null && throwController.IsThrowing;
     public bool CanEvolve => CanUsePreparationInput && !IsThrowing && !CurrentYutResult.HasValue;
@@ -62,11 +78,13 @@ public sealed class TurnController : MonoBehaviour
         CurrentYutResult.HasValue && chosenAction == YutAction.Move;
     public bool CanThrowYut => CanUsePreparationInput && !IsThrowing && !CurrentYutResult.HasValue &&
         throwController != null && throwController.isActiveAndEnabled &&
-        currency != null && currency.CanAfford(YutThrowCost) &&
+        currency != null && currency.CanAfford(CurrentYutThrowCost) &&
         (shopPanel == null || !shopPanel.activeInHierarchy) &&
         (inventoryPanel == null || !inventoryPanel.activeInHierarchy);
     private YutAction chosenAction;
     private CanvasGroup summonButtonGroup;
+    private readonly List<Graphic> throwGraphics = new();
+    private readonly Dictionary<Graphic, Color> throwGraphicColors = new();
     private PreparationNotice preparationNotice;
 
     private void Awake()
@@ -82,19 +100,48 @@ public sealed class TurnController : MonoBehaviour
 
     private void LoseLife()
     {
-        if (RemainingLives == 0)
+        if (RemainingLives == 0 || IsBattleWon || IsBattleLost)
         {
             return;
         }
 
         RemainingLives = Mathf.Max(0, RemainingLives - 1);
         if (RemainingLives == 0)
-        {
-            preparing = false;
-            ClosePreparationUI();
-            RefreshYutButtons();
-            BattleLost?.Invoke();
-        }
+            LoseBattle();
+    }
+
+    private void LoseBattle()
+    {
+        if (IsBattleWon || IsBattleLost) return;
+        IsBattleLost = true;
+        preparing = false;
+        waveManager?.StopWave();
+        ClosePreparationUI();
+        RefreshYutButtons();
+        BattleLost?.Invoke();
+    }
+
+    private void HandleBossEscaped()
+    {
+        if (IsFinalBattleRunning()) LoseBattle();
+    }
+
+    private void HandleBossDefeated()
+    {
+        if (!IsFinalBattleRunning()) return;
+        IsBattleWon = true;
+        preparing = false;
+        waveManager.StopWave();
+        ClosePreparationUI();
+        RefreshYutButtons();
+        BattleWon?.Invoke();
+    }
+
+    private bool IsFinalBattleRunning()
+    {
+        return isActiveAndEnabled && !preparing && !IsBattleWon && !IsBattleLost &&
+            RemainingLives > 0 && waveManager != null && waveManager.IsRunning &&
+            currentTurnNumber == waveManager.WaveCount - 1;
     }
 
     private void OnEnable()
@@ -105,6 +152,8 @@ public sealed class TurnController : MonoBehaviour
         {
             waveManager.WaveCompleted += EndBattle;
             waveManager.EnemyArrived += LoseLife;
+            waveManager.BossDefeated += HandleBossDefeated;
+            waveManager.BossEscaped += HandleBossEscaped;
         }
 
         if (throwController != null)
@@ -122,6 +171,8 @@ public sealed class TurnController : MonoBehaviour
         {
             waveManager.WaveCompleted -= EndBattle;
             waveManager.EnemyArrived -= LoseLife;
+            waveManager.BossDefeated -= HandleBossDefeated;
+            waveManager.BossEscaped -= HandleBossEscaped;
         }
 
         if (throwController != null)
@@ -134,6 +185,7 @@ public sealed class TurnController : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (specialSummonUI != null && specialSummonUI.IsOpen) return;
         if (!CanUsePreparationInput || actionController == null)
             return;
 
@@ -163,6 +215,13 @@ public sealed class TurnController : MonoBehaviour
         }
 
         Vector2 worldPoint = boardCamera.ScreenToWorldPoint(mouse.position.ReadValue());
+        HandleBoardClick(worldPoint);
+    }
+
+    private void HandleBoardClick(Vector2 worldPoint)
+    {
+        if (!CanUsePreparationInput || actionController == null ||
+            (specialSummonUI != null && specialSummonUI.IsOpen)) return;
         if (chosenAction == YutAction.Move)
         {
             if (actionController.TryGetDestinationAt(worldPoint, out int cellId))
@@ -171,7 +230,9 @@ public sealed class TurnController : MonoBehaviour
                 return;
             }
 
-            SelectAlly(actionController.GetAllyAt(worldPoint));
+            Ally ally = actionController.GetAllyAt(worldPoint);
+            SelectAlly(ally);
+            if (ally == null) allyRangeDisplay?.Hide();
             return;
         }
 
@@ -218,7 +279,7 @@ public sealed class TurnController : MonoBehaviour
             yutResultSound.PlayOneShot(resultClip);
 
         chosenAction = YutAction.None;
-        preparationNotice?.Hide();
+        if (preparationNotice != null) preparationNotice.Hide();
         actionController?.ClearSelection();
         CurrentYutResult = result;
 
@@ -265,7 +326,7 @@ public sealed class TurnController : MonoBehaviour
             return;
 
         throwController.Throw();
-        if (IsThrowing) preparationNotice?.Hide();
+        if (IsThrowing && preparationNotice != null) preparationNotice.Hide();
         RefreshYutButtons();
     }
 
@@ -275,7 +336,7 @@ public sealed class TurnController : MonoBehaviour
     {
         return CanUsePreparationInput && IsThrowing && !CurrentYutResult.HasValue &&
             (shopPanel == null || !shopPanel.activeInHierarchy) &&
-            currency != null && currency.TrySpend(YutThrowCost);
+            currency != null && currency.TrySpend(CurrentYutThrowCost);
     }
 
     private void HandleCurrencyChanged(int balance)
@@ -285,6 +346,7 @@ public sealed class TurnController : MonoBehaviour
 
     private void RefreshYutButtons()
     {
+        if (throwCostDisplay != null) throwCostDisplay.SetValue(CurrentYutThrowCost);
         bool preparing = CanUsePreparationInput;
         bool throwing = throwController != null && throwController.IsThrowing;
         bool choosing = preparing && !throwing && CurrentYutResult.HasValue;
@@ -313,9 +375,18 @@ public sealed class TurnController : MonoBehaviour
             button.interactable = CanThrowYut;
             if (button.targetGraphic != null)
             {
-                float brightness = currency != null && currency.CanAfford(YutThrowCost) ? 1f : 0.45f;
-                float alpha = button.targetGraphic.color.a;
-                button.targetGraphic.color = new Color(brightness, brightness, brightness, alpha);
+                float brightness = currency != null && currency.CanAfford(CurrentYutThrowCost) ? 1f : 0.45f;
+                button.targetGraphic.GetComponentsInChildren(true, throwGraphics);
+                foreach (Graphic graphic in throwGraphics)
+                {
+                    if (!throwGraphicColors.TryGetValue(graphic, out Color original))
+                    {
+                        original = graphic.color;
+                        throwGraphicColors.Add(graphic, original);
+                    }
+                    graphic.color = new Color(original.r * brightness, original.g * brightness,
+                        original.b * brightness, original.a);
+                }
             }
         }
     }
@@ -325,6 +396,8 @@ public sealed class TurnController : MonoBehaviour
         if (CanOpenPreparationPanel && shopPanel != null)
         {
             SetInventoryOpen(false);
+            allyRangeDisplay?.Hide();
+            if (characterInfoPanel != null) characterInfoPanel.gameObject.SetActive(false);
             shopPanel.SetActive(true);
         }
         RefreshYutButtons();
@@ -340,7 +413,12 @@ public sealed class TurnController : MonoBehaviour
     public void SetInventoryOpen(bool open)
     {
         bool allowed = open && CanOpenPreparationPanel;
-        if (allowed) CloseShop();
+        if (allowed)
+        {
+            CloseShop();
+            allyRangeDisplay?.Hide();
+            if (characterInfoPanel != null) characterInfoPanel.gameObject.SetActive(false);
+        }
         if (inventoryPanel != null)
             inventoryPanel.SetActive(allowed);
         if (inventoryToggle != null)
@@ -350,7 +428,7 @@ public sealed class TurnController : MonoBehaviour
 
     private void ClosePreparationUI()
     {
-        preparationNotice?.Hide();
+        if (preparationNotice != null) preparationNotice.Hide();
         chosenAction = YutAction.None;
         actionController?.ClearSelection();
         allyRangeDisplay?.Hide();
@@ -360,6 +438,12 @@ public sealed class TurnController : MonoBehaviour
             shopPanel.SetActive(false);
         SetInventoryOpen(false);
         EventSystem.current?.SetSelectedGameObject(null);
+    }
+
+    internal void CloseAuxiliaryPanelsForInfo()
+    {
+        CloseShop();
+        SetInventoryOpen(false);
     }
 
     public void ChooseSummon()
@@ -403,12 +487,24 @@ public sealed class TurnController : MonoBehaviour
     {
         // Check the preparation lifetime first; a processing lock also makes
         // CanUsePreparationInput false, but still needs feedback while preparing.
-        if (!isActiveAndEnabled || !preparing || RemainingLives == 0 || IsBattleWon ||
+        if (!isActiveAndEnabled || !preparing || RemainingLives == 0 || IsBattleWon || IsBattleLost ||
             Time.timeScale <= 0f || waveManager == null || waveManager.IsRunning)
             return;
         if (actionController != null && actionController.IsResolvingMove)
         {
             ShowPreparationNotice("이동 처리가 끝난 뒤 전투를 시작할 수 있습니다."); return;
+        }
+        if (actionController != null && actionController.IsResolvingSummon)
+        {
+            ShowPreparationNotice("소환 처리가 끝난 뒤 전투를 시작할 수 있습니다."); return;
+        }
+        if (shopPurchases != null && shopPurchases.IsPurchasing)
+        {
+            ShowPreparationNotice("구매 처리가 끝난 뒤 전투를 시작할 수 있습니다."); return;
+        }
+        if (itemUse != null && itemUse.IsUsing)
+        {
+            ShowPreparationNotice("아이템 사용이 끝난 뒤 전투를 시작할 수 있습니다."); return;
         }
         if (IsThrowing)
         {
@@ -434,7 +530,7 @@ public sealed class TurnController : MonoBehaviour
         else
         {
             // Invalid wave data must leave preparation usable.
-            preparing = !IsBattleWon && RemainingLives > 0;
+            preparing = !IsBattleWon && !IsBattleLost && RemainingLives > 0;
             RefreshYutButtons();
         }
     }
@@ -459,26 +555,31 @@ public sealed class TurnController : MonoBehaviour
 
     private void EndBattle()
     {
-        if (RemainingLives == 0 || IsBattleWon || waveManager == null)
+        if (endingBattle || preparing || RemainingLives == 0 || IsBattleWon || IsBattleLost || waveManager == null || waveManager.IsRunning)
         {
             return;
         }
 
-        if (currentTurnNumber == waveManager.WaveCount - 1)
+        endingBattle = true;
+        try
         {
-            IsBattleWon = true;
-            preparing = false;
-            ClosePreparationUI();
+            if (currentTurnNumber == waveManager.WaveCount - 1)
+            {
+                // Final results come from the boss event, never generic completion.
+                return;
+            }
+
+            int completedWave = currentTurnNumber + 1;
+            int grantedReward = currency != null
+                ? currency.Grant(waveManager.GetCompletionReward(currentTurnNumber)) : 0;
+            EndTurn();
+            WaveCleared?.Invoke(completedWave, grantedReward);
+        }
+        finally
+        {
+            endingBattle = false;
             RefreshYutButtons();
-            BattleWon?.Invoke();
-            return;
         }
-
-        int completedWave = currentTurnNumber + 1;
-        int grantedReward = currency != null
-            ? currency.Grant(waveManager.GetCompletionReward(currentTurnNumber)) : 0;
-        EndTurn();
-        WaveCleared?.Invoke(completedWave, grantedReward);
     }
 
     private void EndTurn()
@@ -493,6 +594,7 @@ public sealed class TurnController : MonoBehaviour
             CurrentYutResult.HasValue && actionController != null)
         {
             actionController.SelectAlly(ally, CurrentYutResult.Value);
+            if (ally != null && actionController.IsRegisteredAlly(ally)) allyRangeDisplay?.Show(ally);
         }
     }
 
@@ -529,7 +631,7 @@ public sealed class TurnController : MonoBehaviour
 
     private void CompleteYutAction()
     {
-        preparationNotice?.Hide();
+        if (preparationNotice != null) preparationNotice.Hide();
         CurrentYutResult = null;
         chosenAction = YutAction.None;
         RefreshYutButtons();

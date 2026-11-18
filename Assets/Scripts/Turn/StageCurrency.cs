@@ -31,8 +31,17 @@ public sealed class StageCurrency : MonoBehaviour
 
     public bool TrySpend(int amount)
     {
-        if (!CanAfford(amount)) return false;
+        return TrySpend(amount, () => true);
+    }
+
+    internal bool TrySpend(int amount, Func<bool> commit)
+    {
+        if (!CanAfford(amount) || commit == null) return false;
         Balance -= amount;
+        bool committed = false;
+        try { committed = commit(); }
+        finally { if (!committed) Balance += amount; }
+        if (!committed) return false;
         Changed?.Invoke(Balance);
         return true;
     }
@@ -48,8 +57,18 @@ public sealed class StageCurrency : MonoBehaviour
 
     public bool TrySpendSpecial(int amount)
     {
-        if (amount <= 0 || SpecialBalance < amount) return false;
+        return TrySpendSpecial(amount, () => true);
+    }
+
+    // Commit placement before notifying observers; failure restores the balance silently.
+    internal bool TrySpendSpecial(int amount, Func<bool> commit)
+    {
+        if (amount <= 0 || SpecialBalance < amount || commit == null) return false;
         SpecialBalance -= amount;
+        bool committed = false;
+        try { committed = commit(); }
+        finally { if (!committed) SpecialBalance += amount; }
+        if (!committed) return false;
         SpecialChanged?.Invoke(SpecialBalance);
         return true;
     }

@@ -59,9 +59,15 @@ public sealed class YutBoardOccupancy
         if (selected == null || !selected.isActiveAndEnabled || !TryGetCell(selected, out int cellId))
             return matching;
 
+        if (!selected.CanStack)
+        {
+            matching.Add(selected);
+            return matching;
+        }
+
         foreach (Ally ally in alliesByCell[cellId])
         {
-            if (ally != null && ally.isActiveAndEnabled && ally.GetType() == selected.GetType() &&
+            if (ally != null && ally.CanStack && ally.isActiveAndEnabled && ally.GetType() == selected.GetType() &&
                 ally.EvolutionStage == selected.EvolutionStage)
                 matching.Add(ally);
         }

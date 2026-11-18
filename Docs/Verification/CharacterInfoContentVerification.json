@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "assertions": 162,
+    "runtimeErrors": 0,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Eleven actual prefabs, direct board hit-testing, individual info/group movement, fixed background, content restoration, names/portraits/stars/live stats, prepaid state, rapid selection, invalid targets and pause/combat guards passed."
+}

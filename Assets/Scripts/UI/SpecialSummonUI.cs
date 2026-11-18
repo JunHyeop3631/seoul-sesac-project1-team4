@@ -2,20 +2,21 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-// This increment opens the approved window; it does not spend or summon.
 public sealed class SpecialSummonUI : MonoBehaviour
 {
     [SerializeField] private TurnController turnController;
     [SerializeField] private WaveManager waveManager;
     [SerializeField] private SpecialCurrency currency;
+    [SerializeField] private SpecialSummonController executor;
+    [SerializeField] private Text availabilityText;
+    [SerializeField] private GameObject startCellHint;
     [SerializeField] private AudioSource clickSound, hoverSound;
     [SerializeField] private Button hudButton, closeButton, randomButton;
     [SerializeField] private GameObject overlay;
     [SerializeField] private SpecialCurrencyDigits hudDigits, ownedDigits;
     public bool IsOpen => overlay != null && overlay.activeSelf;
-    private bool CanOpen => turnController != null && waveManager != null &&
-        turnController.RemainingLives > 0 && !turnController.IsBattleWon &&
-        !waveManager.IsRunning && Time.timeScale > 0;
+    private bool CanOpen => isActiveAndEnabled && turnController != null &&
+        turnController.CanOpenPreparationPanel && waveManager != null && !waveManager.IsRunning;
 
     private void Awake()
     {
@@ -23,16 +24,18 @@ public sealed class SpecialSummonUI : MonoBehaviour
         hudButton.image.alphaHitTestMinimumThreshold = 0.1f;
         hudButton.onClick.AddListener(Open);
         closeButton.onClick.AddListener(Close);
-        // Kept visibly disabled until the actual summon transaction is implemented.
+        randomButton.onClick.AddListener(Summon);
         randomButton.interactable = false;
-        AddHover(hudButton); AddHover(closeButton);
+        AddHover(hudButton); AddHover(closeButton); AddHover(randomButton);
         overlay.SetActive(false);
     }
     private void OnEnable()
     {
         if (currency != null) currency.Changed += RefreshBalance;
+        if (executor != null) executor.Summoned += HandleSummoned;
         if (turnController != null)
         {
+            turnController.SetSpecialSummonUI(this);
             turnController.BattleStarted += Dismiss;
             turnController.BattleWon += Dismiss;
             turnController.BattleLost += Dismiss;
@@ -42,8 +45,10 @@ public sealed class SpecialSummonUI : MonoBehaviour
     private void OnDisable()
     {
         if (currency != null) currency.Changed -= RefreshBalance;
+        if (executor != null) executor.Summoned -= HandleSummoned;
         if (turnController != null)
         {
+            turnController.SetSpecialSummonUI(null);
             turnController.BattleStarted -= Dismiss;
             turnController.BattleWon -= Dismiss;
             turnController.BattleLost -= Dismiss;
@@ -57,8 +62,29 @@ public sealed class SpecialSummonUI : MonoBehaviour
     private void RefreshAvailability()
     {
         hudButton.interactable = CanOpen;
-        if (!CanOpen && IsOpen) Dismiss();
+        randomButton.interactable = IsOpen && CanOpen && executor != null && executor.CanSummon;
+        if (!CanOpen && IsOpen && (executor == null || !executor.IsSummoning)) Dismiss();
+        string reason = executor != null && !executor.HasSpace
+            ? "시작 칸 공간이 부족합니다. (필요 인구 3)"
+            : currency != null && currency.Balance < SpecialSummonController.Cost
+                ? "특별재화가 부족합니다. (필요 30)" : "";
+        if (availabilityText != null && availabilityText.text != reason) availabilityText.text = reason;
+        if (startCellHint != null) startCellHint.SetActive(reason.Length == 0);
+        closeButton.navigation = new Navigation { mode = Navigation.Mode.Explicit,
+            selectOnUp = randomButton.interactable ? randomButton : closeButton,
+            selectOnDown = randomButton.interactable ? randomButton : closeButton,
+            selectOnLeft = closeButton, selectOnRight = closeButton };
+        if (!randomButton.interactable && EventSystem.current != null &&
+            EventSystem.current.currentSelectedGameObject == randomButton.gameObject)
+            EventSystem.current.SetSelectedGameObject(IsOpen ? closeButton.gameObject : null);
     }
+    public void Summon()
+    {
+        if (!IsOpen || !CanOpen || executor == null) return;
+        if (executor.TrySummon() && clickSound != null) clickSound.Play();
+        RefreshAvailability();
+    }
+    private void HandleSummoned(Ally ally) => Dismiss();
     public void Open()
     {
         if (!CanOpen || IsOpen) return;
@@ -81,7 +107,10 @@ public sealed class SpecialSummonUI : MonoBehaviour
         if (selected != null && selected.transform.IsChildOf(overlay.transform)) EventSystem.current.SetSelectedGameObject(null);
         overlay.SetActive(false);
     }
-    private void RefreshBalance(int amount) { hudDigits.SetValue(amount); ownedDigits.SetValue(amount); }
+    private void RefreshBalance(int amount)
+    {
+        hudDigits.SetValue(amount); ownedDigits.SetValue(amount); RefreshAvailability();
+    }
     private void AddHover(Button button)
     {
         var trigger = button.gameObject.AddComponent<EventTrigger>();

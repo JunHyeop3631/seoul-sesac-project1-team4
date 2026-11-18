@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "assertions": 250,
+  "runtimeErrors": 0,
+  "checks": {
+    "StackVerification": {
+      "passed": true,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Three-unit membership, selected-stack movement, capacity, regrouping and cross-stack evolution passed.",
+      "assertions": 117,
+      "runtimeErrors": 0
+    },
+    "ExitVerification": {
+      "passed": true,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Exit boundary, arrival UI, cancellation, pool/occupancy, rewards, regrouping and shared special balance passed.",
+      "assertions": 68,
+      "runtimeErrors": 0
+    },
+    "MovePreviewVerification": {
+      "passed": true,
+      "assertions": 65,
+      "runtimeErrors": 0,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Population, branches, reward preview/commit, cancel, live refresh and rendering passed."
+    }
+  }
+}

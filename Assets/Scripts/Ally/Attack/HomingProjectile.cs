@@ -14,6 +14,7 @@ public class HomingProjectile : MonoBehaviour
     private double launchTime;
     private float flightDuration;
     private bool flying;
+    private Wave wave;
     internal Action<HomingProjectile> ReturnToPool { private get; set; }
 
     private void Awake()
@@ -21,8 +22,11 @@ public class HomingProjectile : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    public void Launch(Enemy enemy, float attackDamage, float duration, HitEffect attackHitEffect = null)
+    public void Launch(Enemy enemy, float attackDamage, float duration, HitEffect attackHitEffect = null, Wave battleWave = null)
     {
+        if (wave != null) wave.Ended -= Finish;
+        wave = battleWave;
+        if (wave != null) wave.Ended += Finish;
         target = enemy;
         targetActivationVersion = enemy != null ? enemy.ActivationVersion : -1;
         damage = attackDamage;
@@ -52,7 +56,7 @@ public class HomingProjectile : MonoBehaviour
         if (!flying)
             return;
 
-        if (target == null || !target.isActiveAndEnabled || target.CurrentHealth <= 0 ||
+        if ((wave != null && !wave.IsRunning) || target == null || !target.isActiveAndEnabled || target.CurrentHealth <= 0 ||
             target.ActivationVersion != targetActivationVersion)
         {
             Finish();
@@ -88,6 +92,9 @@ public class HomingProjectile : MonoBehaviour
 
     private void Finish()
     {
+        if (!flying && target == null) return;
+        if (wave != null) wave.Ended -= Finish;
+        wave = null;
         flying = false;
         target = null;
         if (ReturnToPool != null)
@@ -103,6 +110,8 @@ public class HomingProjectile : MonoBehaviour
 
     private void OnDisable()
     {
+        if (wave != null) wave.Ended -= Finish;
+        wave = null;
         flying = false;
         target = null;
         damage = 0;

@@ -15,14 +15,11 @@ public sealed class AllyActionButtons : MonoBehaviour
     {
         if (actionController == null || !actionController.CanUsePreparationInput)
             ally = null;
-        if (target != ally)
-        {
-            HideCharacterInfo();
-        }
         target = ally;
         targetRenderer = ally != null ? ally.VisualRenderer : null;
         UpdatePosition();
         UpdateEvolutionButton();
+        if (characterInfoPanel != null) characterInfoPanel.Show(ally);
     }
 
     private void LateUpdate()
@@ -42,6 +39,7 @@ public sealed class AllyActionButtons : MonoBehaviour
         if (actionController != null)
         {
             actionController.RequestEvolution(target);
+            UpdateEvolutionButton();
         }
     }
 
@@ -58,7 +56,7 @@ public sealed class AllyActionButtons : MonoBehaviour
     {
         if (characterInfoPanel != null)
         {
-            characterInfoPanel.gameObject.SetActive(false);
+            characterInfoPanel.Hide();
         }
     }
 
@@ -66,7 +64,10 @@ public sealed class AllyActionButtons : MonoBehaviour
     {
         if (evolveButton != null)
         {
-            evolveButton.interactable = actionController != null && actionController.CanEvolve(target);
+            bool visible = actionController != null && actionController.CanUsePreparationInput &&
+                target != null && target.isActiveAndEnabled && target.CanEvolve;
+            evolveButton.gameObject.SetActive(visible);
+            evolveButton.interactable = visible && actionController.CanEvolve(target);
         }
     }
 
@@ -75,6 +76,11 @@ public sealed class AllyActionButtons : MonoBehaviour
         HideCharacterInfo();
         target = null;
         targetRenderer = null;
+        if (evolveButton != null)
+        {
+            evolveButton.interactable = false;
+            evolveButton.gameObject.SetActive(false);
+        }
     }
 
     private void UpdatePosition()

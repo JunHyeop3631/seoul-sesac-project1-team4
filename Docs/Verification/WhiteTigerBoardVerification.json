@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "assertions": 52,
+    "runtimeErrors": 0,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Tiger prefab, mixed capacity, row layout, solo movement/backward/branch, changed-capacity rejection, no evolution, exit15, previews, pooling and battle input protection passed."
+}

@@ -30,12 +30,15 @@ public class Ally : MonoBehaviour
     public float AttackDamage => attackDamage;
     public float AttacksPerSecond => 1f / Mathf.Max(0.01f, attackInterval);
     protected float AttackInterval => attackInterval;
+    protected Wave TargetingWave => wave;
 
     public Enemy CurrentTarget { get; private set; }
     public float AttackRange => attackRange;
     public SpriteRenderer VisualRenderer => visualRenderer;
     public int EvolutionStage => evolutionStage;
-    public int PopulationCost => Mathf.Max(1, populationCost);
+    public virtual int PopulationCost => Mathf.Max(1, populationCost);
+    public virtual bool CanStack => true;
+    public virtual bool CanEvolve => EvolutionStage == 1;
     public virtual int ExitReward => 0;
     protected int GetOrdinaryExitReward(int oneStarReward) => EvolutionStage switch
     {
@@ -69,8 +72,22 @@ public class Ally : MonoBehaviour
 
     internal void SetTargetingWave(Wave targetingWave)
     {
+        if (wave != null) wave.Ended -= ClearCombatTarget;
         wave = targetingWave;
+        if (wave != null && isActiveAndEnabled) wave.Ended += ClearCombatTarget;
+        if (projectileAttack != null) projectileAttack.SetWave(wave);
         CurrentTarget = null;
+    }
+
+    private void OnEnable()
+    {
+        if (wave != null) wave.Ended += ClearCombatTarget;
+    }
+
+    private void ClearCombatTarget()
+    {
+        CurrentTarget = null;
+        OnTargetUnavailable();
     }
 
     private void LateUpdate()
@@ -172,7 +189,7 @@ public class Ally : MonoBehaviour
     }
 
     // Animation Event on both left/right melee attack clips.
-    public void ApplyAttack()
+    public virtual void ApplyAttack()
     {
         if (!TryBeginAttackEvent())
             return;
@@ -220,6 +237,7 @@ public class Ally : MonoBehaviour
 
     protected virtual void OnDisable()
     {
+        if (wave != null) wave.Ended -= ClearCombatTarget;
         OnTargetUnavailable();
         CurrentTarget = null;
     }

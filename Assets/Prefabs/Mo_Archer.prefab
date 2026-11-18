@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cd3cb5eafa360db39a33b4042715659, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Mo_Archer
-  attackRange: 3
+  attackRange: 5
   attackDamage: 8
   attackInterval: 0.333333333
   allyAnimator: {fileID: 9500001}

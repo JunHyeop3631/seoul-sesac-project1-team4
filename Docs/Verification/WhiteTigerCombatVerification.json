@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "assertions": 230,
+    "runtimeErrors": 0,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Four directional sectors, inclusive radius/angle boundaries, invalid/dead/escaped targets, duplicates, natural hit events, pause, effect completion, two-second cadence, wave stop and pool reuse passed."
+}

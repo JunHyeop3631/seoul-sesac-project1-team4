@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d596e36dd0a80c3cc97a31981686e1bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Do_Taoist
-  attackRange: 3
+  attackRange: 4
   attackDamage: 12
   attackInterval: 0.8333333
   allyAnimator: {fileID: 9500001}

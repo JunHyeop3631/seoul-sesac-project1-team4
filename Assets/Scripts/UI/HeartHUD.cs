@@ -7,6 +7,7 @@ public sealed class HeartHUD : MonoBehaviour
     [SerializeField] private Text livesText;
 
     private int displayedLives = -1;
+    private int displayedMaximum = -1;
 
     private void LateUpdate()
     {
@@ -16,10 +17,12 @@ public sealed class HeartHUD : MonoBehaviour
         }
 
         int lives = turnController.RemainingLives;
-        if (displayedLives != lives)
+        int maximum = turnController.MaxLives;
+        if (displayedLives != lives || displayedMaximum != maximum)
         {
-            livesText.text = lives.ToString();
+            livesText.text = $"{lives} / {maximum}";
             displayedLives = lives;
+            displayedMaximum = maximum;
         }
     }
 }

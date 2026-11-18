@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "assertions": 104,
+    "runtimeErrors": 0,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "All ten prefab ranges, scene references, physics acquisition, target retention and rendered range circles passed."
+}

@@ -39,7 +39,7 @@ public static class PreparationInputVerification
             if (EditorApplication.timeSinceStartup - SessionState.GetFloat(Key + "Start", 0f) > 120)
                 throw new Exception("Preparation input verification timed out.");
             if (!EditorApplication.isPlaying || EditorApplication.isCompiling) return;
-            if (state < 8) { SessionState.SetInt(Key, state + 1); return; }
+            if (state < 20) { SessionState.SetInt(Key, state + 1); return; }
             if (checks == null)
             {
                 Application.logMessageReceived += CountErrors;
@@ -192,7 +192,8 @@ public static class PreparationInputVerification
         Require(!turn.CurrentYutResult.HasValue, "Actual throw result resolves normally");
 
         range.Show(ally); buttons.RequestInfo(); inventoryToggle.isOn = true;
-        Require(info.gameObject.activeSelf && inventory.activeSelf && inventoryToggle.isOn, "Panels open before battle");
+        Require(!info.gameObject.activeSelf && inventory.activeSelf && inventoryToggle.isOn,
+            "Inventory replaces info panel before battle");
         actions.SelectAlly(ally, YutThrowResult.Do);
         Require(destinations.Count > 0, "Fixture contains stale candidates before transition");
         int oldDestination = destinations[0];

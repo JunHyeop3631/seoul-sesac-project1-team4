@@ -8,9 +8,8 @@ public sealed class WaveHUD : MonoBehaviour
     [SerializeField] private Text waveNumberText;
     [SerializeField] private Text enemyCountText;
 
-    private int displayedWaveNumber = -1;
-    private int displayedDefeatedCount = -1;
-    private int displayedTotalCount = -1;
+    private string displayedWave;
+    private string displayedEnemies;
 
     private void LateUpdate()
     {
@@ -24,18 +23,26 @@ public sealed class WaveHUD : MonoBehaviour
         int defeatedCount = waveManager.DefeatedEnemyCount;
         int totalCount = waveManager.GetTotalEnemyCount(waveIndex);
 
-        if (waveNumberText != null && displayedWaveNumber != waveNumber)
+        string waveLabel = $"{waveNumber} / {waveManager.WaveCount}";
+        if (waveNumberText != null && displayedWave != waveLabel)
         {
-            waveNumberText.text = waveNumber.ToString();
-            displayedWaveNumber = waveNumber;
+            waveNumberText.text = waveLabel;
+            displayedWave = waveLabel;
         }
 
-        if (enemyCountText != null &&
-            (displayedDefeatedCount != defeatedCount || displayedTotalCount != totalCount))
+        // User-confirmed: pending + alive + escaped, equivalent to total - defeated.
+        int remaining = Mathf.Max(0, totalCount - defeatedCount);
+        string enemyLabel = $"남은 적 {remaining}";
+        int bossMaxHealth = waveManager.GetBossMaxHealth(waveIndex);
+        if (bossMaxHealth > 0)
         {
-            enemyCountText.text = $"{totalCount - defeatedCount} / {totalCount}";
-            displayedDefeatedCount = defeatedCount;
-            displayedTotalCount = totalCount;
+            float health = waveManager.Boss != null ? waveManager.Boss.CurrentHealth : bossMaxHealth;
+            enemyLabel += $"\n보스 {health:0.#} / {bossMaxHealth}";
+        }
+        if (enemyCountText != null && displayedEnemies != enemyLabel)
+        {
+            enemyCountText.text = enemyLabel;
+            displayedEnemies = enemyLabel;
         }
     }
 }

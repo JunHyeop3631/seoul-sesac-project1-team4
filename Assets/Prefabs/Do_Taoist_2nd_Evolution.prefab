@@ -175,7 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Do_Taoist
   evolutionStage: 2
   attackHitEffect: {fileID: 2019873692110887112, guid: af4723e69c2349f8ba6c04ab25336341, type: 3}
-  attackRange: 3
+  attackRange: 4
   attackDamage: 25.2
   attackInterval: 0.833333333
   allyAnimator: {fileID: 9500001}

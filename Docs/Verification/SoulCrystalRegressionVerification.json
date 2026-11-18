@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "assertions": 246,
+  "runtimeErrors": 0,
+  "checks": {
+    "InventoryVerification": {
+      "passed": true,
+      "assertions": 86,
+      "runtimeErrors": 0,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Nine slots, owned-only selection, shared descriptions, passive status, safe effect dispatch, consumption/reentry guards, panel lifetime and preparation restrictions passed."
+    },
+    "SpecialSummonWindowVerification": {
+      "passed": true,
+      "assertions": 43,
+      "runtimeErrors": 0,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "HUD geometry, shortage/open rules, live availability, actual button45-to15, auto-close, no-space3/4/6, duplicate protection, modal keyboard/pointer focus, pause/combat/terminal guards, audio preservation and rendered previews passed."
+    },
+    "ShopPurchaseVerification": {
+      "passed": true,
+      "assertions": 117,
+      "runtimeErrors": 0,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Five exact-price purchases, insufficient guards, atomic observer state, duplicate/reentry rejection, owned vs sold-out lifetime, consumption/no-restock, wave carry, scene reset and state guards passed."
+    }
+  }
+}

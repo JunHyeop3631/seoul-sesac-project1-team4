@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "assertions": 161,
+  "runtimeErrors": 0,
+  "checks": {
+    "PreparationInputVerification": {
+      "passed": true,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Preparation / throw / result / combat / next preparation / terminal states passed.",
+      "assertions": 53,
+      "runtimeErrors": 0
+    },
+    "SpecialSummonWindowVerification": {
+      "passed": true,
+      "assertions": 43,
+      "runtimeErrors": 0,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "HUD geometry, shortage/open rules, live availability, actual button45-to15, auto-close, no-space3/4/6, duplicate protection, modal keyboard/pointer focus, pause/combat/terminal guards, audio preservation and rendered previews passed."
+    },
+    "MovePreviewVerification": {
+      "passed": true,
+      "assertions": 65,
+      "runtimeErrors": 0,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Population, branches, reward preview/commit, cancel, live refresh and rendering passed."
+    }
+  }
+}

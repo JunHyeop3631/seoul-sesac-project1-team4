@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2557f60f8e164494ae2d277705740d6d, type: 3}
+  m_Name: HeavenlyLuckTalisman
+  m_EditorClassIdentifier: Assembly-CSharp::ShopItemDefinition
+  id: 1
+  displayName: "\uCC9C\uC6B4\uBD80"
+  price: 100
+  icon: {fileID: -3685833838849540908, guid: f6507782fea0aa14b9a79b80e04d96a8, type: 3}
+  nameSprite: {fileID: 1529445158, guid: 6e7790942b7bf5a4c8e651d62e9dc7de, type: 3}
+  background: "\uD558\uB298\uC758 \uAE30\uC6B4\uC744 \uC885\uC774\uC5D0 \uB2F4\uC544\uB0B8
+    \uBD80\uC801. \uC9C0\uB2CC \uC790\uC5D0\uAC8C \uB73B\uBC16\uC758 \uD589\uC6B4\uC744
+    \uAC00\uC838\uB2E4\uC900\uB2E4."
+  effect: "\uAD6C\uB9E4 \uC989\uC2DC \uC2A4\uD14C\uC774\uC9C0 \uB3D9\uC548 \uC737
+    \uB358\uC9C0\uAE30 \uBE44\uC6A9 20% \uD560\uC778. \uC0AC\uC6A9 \uC870\uC791 \uC5C6\uC74C."

@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "assertions": 74,
+    "runtimeErrors": 0,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Actual HUD preparation, pending/alive/escaped counts, kills, next wave, zero hearts, boss preparation/damage/win/escape and rendered previews passed."
+}

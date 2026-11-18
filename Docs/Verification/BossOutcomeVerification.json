@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "assertions": 51,
+    "runtimeErrors": 0,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Boss reward before synchronous win,10/1-life escape loss, stop/late-event protection,pending spawns,and no generic final-wave victory passed."
+}

@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "assertions": 242,
+  "runtimeErrors": 0,
+  "checks": {
+    "ShopPurchaseVerification": {
+      "passed": true,
+      "assertions": 117,
+      "runtimeErrors": 0,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Five exact-price purchases, insufficient guards, atomic observer state, duplicate/reentry rejection, owned vs sold-out lifetime, consumption/no-restock, wave carry, scene reset and state guards passed."
+    },
+    "PreparationInputVerification": {
+      "passed": true,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Preparation / throw / result / combat / next preparation / terminal states passed.",
+      "assertions": 53,
+      "runtimeErrors": 0
+    },
+    "CharacterInfoTransitionVerification": {
+      "passed": true,
+      "assertions": 72,
+      "runtimeErrors": 0,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Sequential outgoing/incoming fades, no overlap, latest-target wins, rapid reverse/reselection, original color/layout restoration, gameplay preservation, pause/pool/disable/battle interruption and real rendered frames passed."
+    }
+  }
+}

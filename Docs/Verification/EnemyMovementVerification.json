@@ -1,0 +1,118 @@
+{
+    "passed": true,
+    "assertions": 100,
+    "runtimeErrors": 0,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Measured lap times, speed ratios, enlarged path, pooled reuse, pause, 2x/4x and completion/reset passed.",
+    "measurements": [
+        {
+            "scenario": "scene",
+            "enemy": "NormalEnemy",
+            "pathLength": 31.799999237060548,
+            "speed": 1.059999942779541,
+            "timeScale": 1.0,
+            "gameSeconds": 30.099999999999999,
+            "unscaledSeconds": 0.15358309948979599
+        },
+        {
+            "scenario": "scene",
+            "enemy": "FastEnemy",
+            "pathLength": 31.799999237060548,
+            "speed": 1.5899999141693116,
+            "timeScale": 1.0,
+            "gameSeconds": 20.099999999999999,
+            "unscaledSeconds": 0.10472630385487525
+        },
+        {
+            "scenario": "scene",
+            "enemy": "BossEnemy",
+            "pathLength": 31.799999237060548,
+            "speed": 0.5299999713897705,
+            "timeScale": 1.0,
+            "gameSeconds": 60.099999999999997,
+            "unscaledSeconds": 0.29102830215419508
+        },
+        {
+            "scenario": "expanded1.5",
+            "enemy": "NormalEnemy",
+            "pathLength": 47.70000457763672,
+            "speed": 1.5900001525878907,
+            "timeScale": 1.0,
+            "gameSeconds": 29.999999999999994,
+            "unscaledSeconds": 0.1348244968820861
+        },
+        {
+            "scenario": "expanded1.5",
+            "enemy": "FastEnemy",
+            "pathLength": 47.70000457763672,
+            "speed": 2.385000228881836,
+            "timeScale": 1.0,
+            "gameSeconds": 20.1,
+            "unscaledSeconds": 0.09114460034013605
+        },
+        {
+            "scenario": "expanded1.5",
+            "enemy": "BossEnemy",
+            "pathLength": 47.70000457763672,
+            "speed": 0.7950000762939453,
+            "timeScale": 1.0,
+            "gameSeconds": 59.99999999999999,
+            "unscaledSeconds": 0.257524397675737
+        },
+        {
+            "scenario": "scene",
+            "enemy": "NormalEnemy",
+            "pathLength": 31.799999237060548,
+            "speed": 1.059999942779541,
+            "timeScale": 2.0,
+            "gameSeconds": 30.00026099773241,
+            "unscaledSeconds": 15.000130498866211
+        },
+        {
+            "scenario": "scene",
+            "enemy": "FastEnemy",
+            "pathLength": 31.799999237060548,
+            "speed": 1.5899999141693116,
+            "timeScale": 2.0,
+            "gameSeconds": 20.00070079365078,
+            "unscaledSeconds": 10.000350396825397
+        },
+        {
+            "scenario": "scene",
+            "enemy": "BossEnemy",
+            "pathLength": 31.799999237060548,
+            "speed": 0.5299999713897705,
+            "timeScale": 2.0,
+            "gameSeconds": 60.00067699829931,
+            "unscaledSeconds": 30.000338499149657
+        },
+        {
+            "scenario": "scene",
+            "enemy": "NormalEnemy",
+            "pathLength": 31.799999237060548,
+            "speed": 1.059999942779541,
+            "timeScale": 4.0,
+            "gameSeconds": 30.00028477891155,
+            "unscaledSeconds": 7.500071194727891
+        },
+        {
+            "scenario": "scene",
+            "enemy": "FastEnemy",
+            "pathLength": 31.799999237060548,
+            "speed": 1.5899999141693116,
+            "timeScale": 4.0,
+            "gameSeconds": 20.001312386621295,
+            "unscaledSeconds": 5.000328096655327
+        },
+        {
+            "scenario": "scene",
+            "enemy": "BossEnemy",
+            "pathLength": 31.799999237060548,
+            "speed": 0.5299999713897705,
+            "timeScale": 4.0,
+            "gameSeconds": 60.00035640589567,
+            "unscaledSeconds": 15.000089101473922
+        }
+    ]
+}
