@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-18",
+  "unity": "6000.3.28f1",
+  "localParent": "93dd3b40e7147df92f5bfa4fd8ca7a2e5884ecad",
+  "remoteParent": "50351e5037dd77bee76cbba4adbbe1c5047f0c12",
+  "validation": "Play Mode on byte-identical tracked Assets, Packages, ProjectSettings in fresh validation copy",
+  "prototypeChangesIncluded": false,
+  "checks": {
+    "Currency": {
+      "passed": true,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Two balances, paid throws, HUD, rejected inputs, carryover, and scene restart passed.",
+      "assertions": 32,
+      "runtimeErrors": 0
+    },
+    "PreparationInput": {
+      "passed": true,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Preparation / throw / result / combat / next preparation / terminal states passed.",
+      "assertions": 53,
+      "runtimeErrors": 0
+    },
+    "SpecialSummonUI": {
+      "passed": true,
+      "initialBalanceZero": true,
+      "hudAndPopupBalanceSynced": true,
+      "noSpendOrSpawn": true,
+      "modalBlocksBackground": true,
+      "closeRestoresInput": true,
+      "combatAndPauseBlocked": true,
+      "preparationReopens": true,
+      "pressedSizesStable": true,
+      "existingAudioSourcesPreserved": true,
+      "errors": 0
+    },
+    "WaveComplete": {
+      "passed": true,
+      "unity": "6000.3.28f1",
+      "realScenePlayMode": true,
+      "startScrollRemoved": true,
+      "actualReward": 73,
+      "balanceBefore": 120,
+      "balanceAfter": 193,
+      "preparationInputDuringBanner": true,
+      "deathAnimationWait": true,
+      "leakStillRewards": true,
+      "expandedToTenWaves": true,
+      "finalVictoryUnchanged": true,
+      "defeatNoReward": true,
+      "restartResets": true,
+      "currencyBoundaries": true,
+      "errors": 0
+    },
+    "ResultFlags": {
+      "passed": true,
+      "unity": "6000.3.28f1",
+      "realScenePlayMode": true,
+      "victory2of2": true,
+      "victory10of10": true,
+      "defeat7of12": true,
+      "intermediateWaveUnchanged": true,
+      "actualReward73": true,
+      "unscaledEntrance": true,
+      "backgroundInputBlocked": true,
+      "allFourPressedSprites": true,
+      "buttonDimensionsStable": true,
+      "retryResetsStage": true,
+      "homeAndTitleStartWork": true,
+      "duplicateResultIgnored": true,
+      "errors": 0
+    }
+  }
+}

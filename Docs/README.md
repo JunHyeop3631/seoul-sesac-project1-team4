@@ -13,6 +13,7 @@
 | [전투 효과 애니메이션](CombatEffects.md) | Do_Taoist_Projectile·Mo_Archer_Projectile·Common_Hit의 60fps 클립, Animator 연결, 피격 효과 생성과 수명 |
 | [웨이브 명세](WaveSpec.md) | 몬스터 구성·등장·이탈, 웨이브 완료 조건, 웨이브 데이터·실행·풀링의 책임 |
 | [최종 승리·패배 깃발](ResultFlagUISpec.md) | 실제 웨이브 표시, 등장 연출, 버튼 눌림, 메인 이동·재도전 |
+| [특별재화 HUD·특별소환창](SpecialSummonUISpec.md) | 상단 버튼, 보유량 동기화, 창 열기·닫기, 준비/전투 입력 제한과 후속 소환 연결 범위 |
 | [오디오 구조 설계](AudioSpec.md) | 싱글톤 없는 참조 연결, 공통·유닛별 재생 책임, Mixer 출력과 볼륨 관리 |
 
 ## 검증 기록
