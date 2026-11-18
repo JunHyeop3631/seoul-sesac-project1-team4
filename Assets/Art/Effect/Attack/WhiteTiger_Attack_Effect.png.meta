@@ -472,12 +472,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_0
       rect:
         serializedVersion: 2
-        x: 2407
-        y: 2802
-        width: 33
-        height: 23
+        x: 2240
+        y: 2688
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -494,12 +494,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_1
       rect:
         serializedVersion: 2
-        x: 2854
-        y: 2780
-        width: 55
-        height: 74
+        x: 2688
+        y: 2688
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -516,12 +516,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_2
       rect:
         serializedVersion: 2
-        x: 3302
-        y: 2781
-        width: 54
-        height: 72
+        x: 3136
+        y: 2688
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -538,12 +538,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_3
       rect:
         serializedVersion: 2
-        x: 2855
-        y: 2789
-        width: 6
-        height: 7
+        x: 0
+        y: 2352
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -560,12 +560,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_4
       rect:
         serializedVersion: 2
-        x: 3304
-        y: 2790
-        width: 6
-        height: 7
+        x: 448
+        y: 2352
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -582,12 +582,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_5
       rect:
         serializedVersion: 2
-        x: 165
-        y: 2446
-        width: 54
-        height: 70
+        x: 896
+        y: 2352
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -604,12 +604,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_6
       rect:
         serializedVersion: 2
-        x: 1054
-        y: 2516
-        width: 6
-        height: 7
+        x: 1344
+        y: 2352
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -626,12 +626,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_7
       rect:
         serializedVersion: 2
-        x: 1062
-        y: 2460
-        width: 52
-        height: 66
+        x: 1792
+        y: 2352
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -648,12 +648,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_8
       rect:
         serializedVersion: 2
-        x: 1503
-        y: 2515
-        width: 6
-        height: 7
+        x: 2240
+        y: 2352
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -670,12 +670,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_9
       rect:
         serializedVersion: 2
-        x: 1510
-        y: 2461
-        width: 51
-        height: 64
+        x: 2688
+        y: 2352
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -692,12 +692,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_10
       rect:
         serializedVersion: 2
-        x: 1951
-        y: 2514
-        width: 6
-        height: 7
+        x: 3136
+        y: 2352
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -714,12 +714,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_11
       rect:
         serializedVersion: 2
-        x: 1959
-        y: 2461
-        width: 49
-        height: 63
+        x: 0
+        y: 2016
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -736,12 +736,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_12
       rect:
         serializedVersion: 2
-        x: 2400
-        y: 2514
-        width: 6
-        height: 6
+        x: 448
+        y: 2016
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -758,12 +758,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_13
       rect:
         serializedVersion: 2
-        x: 2405
-        y: 2462
-        width: 50
-        height: 61
+        x: 896
+        y: 2016
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -780,12 +780,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_14
       rect:
         serializedVersion: 2
-        x: 2848
-        y: 2513
-        width: 7
-        height: 7
+        x: 1344
+        y: 2016
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -802,12 +802,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_15
       rect:
         serializedVersion: 2
-        x: 2853
-        y: 2463
-        width: 49
-        height: 59
+        x: 1792
+        y: 2016
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -824,12 +824,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_16
       rect:
         serializedVersion: 2
-        x: 3278
-        y: 2464
-        width: 71
-        height: 57
+        x: 2240
+        y: 2016
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -846,12 +846,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_17
       rect:
         serializedVersion: 2
-        x: 3297
-        y: 2512
-        width: 6
-        height: 7
+        x: 2688
+        y: 2016
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -868,12 +868,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_18
       rect:
         serializedVersion: 2
-        x: 613
-        y: 2447
-        width: 53
-        height: 68
+        x: 3136
+        y: 2016
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -890,12 +890,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_19
       rect:
         serializedVersion: 2
-        x: 1067
-        y: 2468
-        width: 6
-        height: 7
+        x: 0
+        y: 1680
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -912,12 +912,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_20
       rect:
         serializedVersion: 2
-        x: 1515
-        y: 2469
-        width: 6
-        height: 7
+        x: 448
+        y: 1680
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -934,12 +934,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_21
       rect:
         serializedVersion: 2
-        x: 1964
-        y: 2470
-        width: 6
-        height: 7
+        x: 896
+        y: 1680
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -956,12 +956,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_22
       rect:
         serializedVersion: 2
-        x: 169
-        y: 2455
-        width: 6
-        height: 7
+        x: 1344
+        y: 1680
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -978,12 +978,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_23
       rect:
         serializedVersion: 2
-        x: 617
-        y: 2456
-        width: 6
-        height: 7
+        x: 1792
+        y: 1680
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1000,12 +1000,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_24
       rect:
         serializedVersion: 2
-        x: 484
-        y: 2175
-        width: 67
-        height: 53
+        x: 2240
+        y: 1680
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1022,12 +1022,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_25
       rect:
         serializedVersion: 2
-        x: 502
-        y: 2219
-        width: 6
-        height: 7
+        x: 2688
+        y: 1680
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1044,12 +1044,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_26
       rect:
         serializedVersion: 2
-        x: 933
-        y: 2176
-        width: 66
-        height: 51
+        x: 3136
+        y: 1680
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1066,12 +1066,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_27
       rect:
         serializedVersion: 2
-        x: 951
-        y: 2219
-        width: 6
-        height: 7
+        x: 0
+        y: 1344
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1088,12 +1088,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_28
       rect:
         serializedVersion: 2
-        x: 1382
-        y: 2177
-        width: 64
-        height: 49
+        x: 448
+        y: 1344
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1110,12 +1110,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_29
       rect:
         serializedVersion: 2
-        x: 1400
-        y: 2218
-        width: 6
-        height: 7
+        x: 896
+        y: 1344
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1132,12 +1132,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_30
       rect:
         serializedVersion: 2
-        x: 1831
-        y: 2178
-        width: 62
-        height: 47
+        x: 1344
+        y: 1344
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1154,12 +1154,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_31
       rect:
         serializedVersion: 2
-        x: 1848
-        y: 2217
-        width: 6
-        height: 7
+        x: 1792
+        y: 1344
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1176,12 +1176,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_32
       rect:
         serializedVersion: 2
-        x: 2280
-        y: 2179
-        width: 60
-        height: 45
+        x: 2240
+        y: 1344
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1198,12 +1198,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_33
       rect:
         serializedVersion: 2
-        x: 2729
-        y: 2180
-        width: 58
-        height: 43
+        x: 2688
+        y: 1344
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1220,12 +1220,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_34
       rect:
         serializedVersion: 2
-        x: 3186
-        y: 2177
-        width: 56
-        height: 44
+        x: 3136
+        y: 1344
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1242,12 +1242,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_35
       rect:
         serializedVersion: 2
-        x: 3202
-        y: 2214
-        width: 6
-        height: 7
+        x: 0
+        y: 1008
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1264,12 +1264,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_36
       rect:
         serializedVersion: 2
-        x: 143
-        y: 2129
-        width: 69
-        height: 55
+        x: 448
+        y: 1008
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1286,12 +1286,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_37
       rect:
         serializedVersion: 2
-        x: 162
-        y: 2175
-        width: 6
-        height: 7
+        x: 896
+        y: 1008
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1308,12 +1308,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_38
       rect:
         serializedVersion: 2
-        x: 1843
-        y: 2161
-        width: 6
-        height: 7
+        x: 1344
+        y: 1008
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1330,12 +1330,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_39
       rect:
         serializedVersion: 2
-        x: 2291
-        y: 2162
-        width: 6
-        height: 7
+        x: 1792
+        y: 1008
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1352,12 +1352,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_40
       rect:
         serializedVersion: 2
-        x: 2740
-        y: 2163
-        width: 6
-        height: 7
+        x: 2240
+        y: 1008
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1374,12 +1374,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_41
       rect:
         serializedVersion: 2
-        x: 3196
-        y: 2163
-        width: 6
-        height: 7
+        x: 2688
+        y: 1008
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1396,12 +1396,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_42
       rect:
         serializedVersion: 2
-        x: 51
-        y: 1839
-        width: 54
-        height: 45
+        x: 3136
+        y: 1008
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1418,12 +1418,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_43
       rect:
         serializedVersion: 2
-        x: 67
-        y: 1877
-        width: 6
-        height: 7
+        x: 0
+        y: 672
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1440,12 +1440,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_44
       rect:
         serializedVersion: 2
-        x: 500
-        y: 1817
-        width: 55
-        height: 66
+        x: 448
+        y: 672
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1462,12 +1462,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_45
       rect:
         serializedVersion: 2
-        x: 949
-        y: 1818
-        width: 56
-        height: 64
+        x: 896
+        y: 672
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1484,12 +1484,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_46
       rect:
         serializedVersion: 2
-        x: 1398
-        y: 1819
-        width: 58
-        height: 63
+        x: 1344
+        y: 672
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1506,12 +1506,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_47
       rect:
         serializedVersion: 2
-        x: 1847
-        y: 1820
-        width: 58
-        height: 61
+        x: 1792
+        y: 672
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1528,12 +1528,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_48
       rect:
         serializedVersion: 2
-        x: 2307
-        y: 1826
-        width: 58
-        height: 59
+        x: 2240
+        y: 672
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1550,12 +1550,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_49
       rect:
         serializedVersion: 2
-        x: 2756
-        y: 1827
-        width: 70
-        height: 57
+        x: 2688
+        y: 672
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1572,12 +1572,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_50
       rect:
         serializedVersion: 2
-        x: 3205
-        y: 1828
-        width: 68
-        height: 58
+        x: 3136
+        y: 672
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1594,12 +1594,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_51
       rect:
         serializedVersion: 2
-        x: 3265
-        y: 1878
-        width: 7
-        height: 6
+        x: 0
+        y: 336
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1616,12 +1616,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_52
       rect:
         serializedVersion: 2
-        x: 1855
-        y: 1831
-        width: 6
-        height: 7
+        x: 448
+        y: 336
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1638,12 +1638,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_53
       rect:
         serializedVersion: 2
-        x: 2315
-        y: 1837
-        width: 6
-        height: 7
+        x: 896
+        y: 336
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1660,12 +1660,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_54
       rect:
         serializedVersion: 2
-        x: 2764
-        y: 1837
-        width: 6
-        height: 7
+        x: 1344
+        y: 336
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1682,12 +1682,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_55
       rect:
         serializedVersion: 2
-        x: 3212
-        y: 1838
-        width: 6
-        height: 7
+        x: 1792
+        y: 336
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1704,12 +1704,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_56
       rect:
         serializedVersion: 2
-        x: 61
-        y: 1828
-        width: 6
-        height: 7
+        x: 2240
+        y: 336
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1726,12 +1726,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_57
       rect:
         serializedVersion: 2
-        x: 510
-        y: 1828
-        width: 6
-        height: 7
+        x: 2688
+        y: 336
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1748,12 +1748,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_58
       rect:
         serializedVersion: 2
-        x: 958
-        y: 1829
-        width: 6
-        height: 7
+        x: 3136
+        y: 336
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1770,12 +1770,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_59
       rect:
         serializedVersion: 2
-        x: 1407
-        y: 1830
-        width: 6
-        height: 7
+        x: 0
+        y: 0
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1792,12 +1792,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_60
       rect:
         serializedVersion: 2
-        x: 70
-        y: 1493
-        width: 66
-        height: 58
+        x: 448
+        y: 0
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1814,12 +1814,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_61
       rect:
         serializedVersion: 2
-        x: 77
-        y: 1503
-        width: 6
-        height: 7
+        x: 896
+        y: 0
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1836,12 +1836,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_62
       rect:
         serializedVersion: 2
-        x: 540
-        y: 1361
-        width: 259
-        height: 294
+        x: 1344
+        y: 0
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1858,12 +1858,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_63
       rect:
         serializedVersion: 2
-        x: 988
-        y: 1361
-        width: 259
-        height: 294
+        x: 1792
+        y: 0
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1880,12 +1880,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_64
       rect:
         serializedVersion: 2
-        x: 1437
-        y: 1361
-        width: 258
-        height: 293
+        x: 2240
+        y: 0
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1902,12 +1902,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_65
       rect:
         serializedVersion: 2
-        x: 1885
-        y: 1360
-        width: 258
-        height: 294
+        x: 2688
+        y: 0
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1924,12 +1924,12 @@ TextureImporter:
       name: WhiteTiger_Attack_Effect_66
       rect:
         serializedVersion: 2
-        x: 2333
-        y: 1360
-        width: 258
-        height: 279
+        x: 3136
+        y: 0
+        width: 448
+        height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1942,1265 +1942,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_67
-      rect:
-        serializedVersion: 2
-        x: 2781
-        y: 1361
-        width: 257
-        height: 278
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bc2915fd31279cfc0800000000000000
-      internalID: -3474120207863016757
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_68
-      rect:
-        serializedVersion: 2
-        x: 3229
-        y: 1362
-        width: 257
-        height: 277
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4fc3105ef9a6f6e60800000000000000
-      internalID: 7957696301561363700
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_69
-      rect:
-        serializedVersion: 2
-        x: 93
-        y: 1032
-        width: 251
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2d07159aa469f8340800000000000000
-      internalID: 4868274969623228626
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_70
-      rect:
-        serializedVersion: 2
-        x: 541
-        y: 1031
-        width: 251
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a91f203a6be800150800000000000000
-      internalID: 5836822032142234010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_71
-      rect:
-        serializedVersion: 2
-        x: 989
-        y: 1031
-        width: 251
-        height: 269
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0ad6565125e043b10800000000000000
-      internalID: 1960207483522084256
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_72
-      rect:
-        serializedVersion: 2
-        x: 1437
-        y: 1031
-        width: 251
-        height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5695e033eab5b5720800000000000000
-      internalID: 2835961194098874725
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_73
-      rect:
-        serializedVersion: 2
-        x: 1885
-        y: 1031
-        width: 250
-        height: 267
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1ea29db38a8b046d0800000000000000
-      internalID: -3008201518385386783
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_74
-      rect:
-        serializedVersion: 2
-        x: 2333
-        y: 1029
-        width: 250
-        height: 266
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 910786a6af7efe330800000000000000
-      internalID: 3742464878081241113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_75
-      rect:
-        serializedVersion: 2
-        x: 2781
-        y: 1028
-        width: 253
-        height: 201
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 48f57e791464d3c30800000000000000
-      internalID: 4340702863390367620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_76
-      rect:
-        serializedVersion: 2
-        x: 3229
-        y: 1027
-        width: 256
-        height: 202
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 956b4d5804c139730800000000000000
-      internalID: 4004575557111297625
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_77
-      rect:
-        serializedVersion: 2
-        x: 93
-        y: 690
-        width: 258
-        height: 203
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 859ff4868ea6efdc0800000000000000
-      internalID: -3603325105434789544
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_78
-      rect:
-        serializedVersion: 2
-        x: 541
-        y: 690
-        width: 260
-        height: 203
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8343434d1ae6465e0800000000000000
-      internalID: -1917285900024007624
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_79
-      rect:
-        serializedVersion: 2
-        x: 989
-        y: 689
-        width: 261
-        height: 204
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 432a45b2cece80780800000000000000
-      internalID: -8716456579692191180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_80
-      rect:
-        serializedVersion: 2
-        x: 1439
-        y: 689
-        width: 259
-        height: 203
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 164182d9961d4c5c0800000000000000
-      internalID: -4195998701264038815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_81
-      rect:
-        serializedVersion: 2
-        x: 1932
-        y: 689
-        width: 215
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4164882dc824ef550800000000000000
-      internalID: 6196463309903382036
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_82
-      rect:
-        serializedVersion: 2
-        x: 2379
-        y: 694
-        width: 207
-        height: 148
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ec0d71d14a31235f0800000000000000
-      internalID: -778538189998010162
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_83
-      rect:
-        serializedVersion: 2
-        x: 2524
-        y: 689
-        width: 71
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e513b60f0bad310d0800000000000000
-      internalID: -3453176035780382370
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_84
-      rect:
-        serializedVersion: 2
-        x: 2826
-        y: 694
-        width: 208
-        height: 148
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c447f90cd9ca38fa0800000000000000
-      internalID: -5799602101581548468
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_85
-      rect:
-        serializedVersion: 2
-        x: 2972
-        y: 689
-        width: 71
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b56cd907e42d94da0800000000000000
-      internalID: -5960001397509470629
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_86
-      rect:
-        serializedVersion: 2
-        x: 3273
-        y: 694
-        width: 209
-        height: 148
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ae82ec6eaec7f8740800000000000000
-      internalID: 5156477446698969322
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_87
-      rect:
-        serializedVersion: 2
-        x: 3420
-        y: 689
-        width: 71
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 735f658575c3b1870800000000000000
-      internalID: 8654577454764455223
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_88
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 358
-        width: 209
-        height: 148
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 804e089700a96da90800000000000000
-      internalID: -7289469620023401464
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_89
-      rect:
-        serializedVersion: 2
-        x: 284
-        y: 353
-        width: 71
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fa26c0c1f1feb0aa0800000000000000
-      internalID: -6193593945624386897
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_90
-      rect:
-        serializedVersion: 2
-        x: 584
-        y: 358
-        width: 210
-        height: 148
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3d0b48e7fa342d2b0800000000000000
-      internalID: -5561308168828178221
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_91
-      rect:
-        serializedVersion: 2
-        x: 732
-        y: 353
-        width: 71
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 17fa1af38510667a0800000000000000
-      internalID: -6384413943214788751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_92
-      rect:
-        serializedVersion: 2
-        x: 1062
-        y: 493
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1170bfdb25380c360800000000000000
-      internalID: 7187889396681213713
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_93
-      rect:
-        serializedVersion: 2
-        x: 1074
-        y: 358
-        width: 168
-        height: 148
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2da0963bbeae04260800000000000000
-      internalID: 7079916912274639570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_94
-      rect:
-        serializedVersion: 2
-        x: 1180
-        y: 353
-        width: 71
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5e95ece6efed0d140800000000000000
-      internalID: 4742535591983208933
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_95
-      rect:
-        serializedVersion: 2
-        x: 1510
-        y: 495
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b5ebf0174fcb20900800000000000000
-      internalID: 649289054349672027
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_96
-      rect:
-        serializedVersion: 2
-        x: 1523
-        y: 358
-        width: 167
-        height: 148
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3417ca2ef561fc300800000000000000
-      internalID: 274462703373545795
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_97
-      rect:
-        serializedVersion: 2
-        x: 1628
-        y: 353
-        width: 71
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8f2812eff89207b70800000000000000
-      internalID: 8894654962477400824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_98
-      rect:
-        serializedVersion: 2
-        x: 1957
-        y: 497
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4ba60ba692b34eee0800000000000000
-      internalID: -1232795348923028812
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_99
-      rect:
-        serializedVersion: 2
-        x: 1971
-        y: 358
-        width: 167
-        height: 148
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5b64a7787262c7e70800000000000000
-      internalID: 9114201697109558965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_100
-      rect:
-        serializedVersion: 2
-        x: 2076
-        y: 353
-        width: 71
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1341f41b009c3f350800000000000000
-      internalID: 6049399729300640817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_101
-      rect:
-        serializedVersion: 2
-        x: 2405
-        y: 358
-        width: 181
-        height: 148
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d0f861061d57e1630800000000000000
-      internalID: 3899683869470134029
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_102
-      rect:
-        serializedVersion: 2
-        x: 2524
-        y: 353
-        width: 71
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bdaaa7c2fba4d1740800000000000000
-      internalID: 5124334135962938075
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_103
-      rect:
-        serializedVersion: 2
-        x: 2817
-        y: 82
-        width: 217
-        height: 424
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 80813b72da2b41fd0800000000000000
-      internalID: -2372074646952273912
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_104
-      rect:
-        serializedVersion: 2
-        x: 2972
-        y: 353
-        width: 71
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 02559203cac1aa210800000000000000
-      internalID: 1344918964591482144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_105
-      rect:
-        serializedVersion: 2
-        x: 3264
-        y: 80
-        width: 218
-        height: 427
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0b5fe7e1ed8090870800000000000000
-      internalID: 8649454309429147056
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_106
-      rect:
-        serializedVersion: 2
-        x: 3420
-        y: 353
-        width: 71
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ae0bf3674a84fd640800000000000000
-      internalID: 5106880373657153770
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_107
-      rect:
-        serializedVersion: 2
-        x: 1043
-        y: 461
-        width: 13
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0fea578adb7e8cc80800000000000000
-      internalID: -8302131111296389392
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_108
-      rect:
-        serializedVersion: 2
-        x: 1494
-        y: 465
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ca95dc0cd5a719260800000000000000
-      internalID: 7102592630425213356
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_109
-      rect:
-        serializedVersion: 2
-        x: 1931
-        y: 446
-        width: 18
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5f2aa184f77a60b50800000000000000
-      internalID: 6559114072424096501
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_110
-      rect:
-        serializedVersion: 2
-        x: 2378
-        y: 446
-        width: 18
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 04dfe78669b6068d0800000000000000
-      internalID: -2855163870010475200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_111
-      rect:
-        serializedVersion: 2
-        x: 2825
-        y: 446
-        width: 18
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c1948d2db0ec84600800000000000000
-      internalID: 452838312728086812
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_112
-      rect:
-        serializedVersion: 2
-        x: 1038
-        y: 452
-        width: 9
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 93ed7c88f28671670800000000000000
-      internalID: 8509384574307393081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_113
-      rect:
-        serializedVersion: 2
-        x: 1048
-        y: 445
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a015d11445025ca90800000000000000
-      internalID: -7294388475214868214
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_114
-      rect:
-        serializedVersion: 2
-        x: 1485
-        y: 446
-        width: 17
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 78888d1a15ba6fc20800000000000000
-      internalID: 3239965349035673735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_115
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 22
-        width: 211
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3fd4604753d39baf0800000000000000
-      internalID: -380205393746965005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_116
-      rect:
-        serializedVersion: 2
-        x: 284
-        y: 17
-        width: 71
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e3adcb2fc6b497880800000000000000
-      internalID: -8612769881068348866
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_117
-      rect:
-        serializedVersion: 2
-        x: 582
-        y: 22
-        width: 212
-        height: 151
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 89a67bf66447b5f80800000000000000
-      internalID: -8116766057534362984
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_118
-      rect:
-        serializedVersion: 2
-        x: 732
-        y: 17
-        width: 71
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 32f666e8cc3c0a1e0800000000000000
-      internalID: -2188534135572238557
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_119
-      rect:
-        serializedVersion: 2
-        x: 1029
-        y: 23
-        width: 212
-        height: 152
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6ae63fe044e535a80800000000000000
-      internalID: -8479330027006890330
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_120
-      rect:
-        serializedVersion: 2
-        x: 1180
-        y: 18
-        width: 71
-        height: 156
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 82cad6b3794b39c20800000000000000
-      internalID: 3212109520875400232
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_121
-      rect:
-        serializedVersion: 2
-        x: 1476
-        y: 30
-        width: 207
-        height: 137
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ab71a8f0246906750800000000000000
-      internalID: 6296197489536669626
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_122
-      rect:
-        serializedVersion: 2
-        x: 1923
-        y: 30
-        width: 208
-        height: 139
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0a2b83db4c33eb4f0800000000000000
-      internalID: -811153962798894432
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_Effect_123
-      rect:
-        serializedVersion: 2
-        x: 2370
-        y: 30
-        width: 209
-        height: 140
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3ba5941d333c59960800000000000000
-      internalID: 7608201772834314931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f9d56643a1ad4ae4da8a94f0dacc101a
     internalID: 0
     vertices: []
     indices: 
@@ -3208,37 +1954,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":9.0},"gridSpriteSize":{"x":448.0,"y":336.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       WhiteTiger_Attack_Effect_0: -6458964436217270640
       WhiteTiger_Attack_Effect_1: 2572631805999123944
       WhiteTiger_Attack_Effect_10: 8321023285723352862
-      WhiteTiger_Attack_Effect_100: 6049399729300640817
-      WhiteTiger_Attack_Effect_101: 3899683869470134029
-      WhiteTiger_Attack_Effect_102: 5124334135962938075
-      WhiteTiger_Attack_Effect_103: -2372074646952273912
-      WhiteTiger_Attack_Effect_104: 1344918964591482144
-      WhiteTiger_Attack_Effect_105: 8649454309429147056
-      WhiteTiger_Attack_Effect_106: 5106880373657153770
-      WhiteTiger_Attack_Effect_107: -8302131111296389392
-      WhiteTiger_Attack_Effect_108: 7102592630425213356
-      WhiteTiger_Attack_Effect_109: 6559114072424096501
       WhiteTiger_Attack_Effect_11: 5297721867094563980
-      WhiteTiger_Attack_Effect_110: -2855163870010475200
-      WhiteTiger_Attack_Effect_111: 452838312728086812
-      WhiteTiger_Attack_Effect_112: 8509384574307393081
-      WhiteTiger_Attack_Effect_113: -7294388475214868214
-      WhiteTiger_Attack_Effect_114: 3239965349035673735
-      WhiteTiger_Attack_Effect_115: -380205393746965005
-      WhiteTiger_Attack_Effect_116: -8612769881068348866
-      WhiteTiger_Attack_Effect_117: -8116766057534362984
-      WhiteTiger_Attack_Effect_118: -2188534135572238557
-      WhiteTiger_Attack_Effect_119: -8479330027006890330
       WhiteTiger_Attack_Effect_12: -1688197431076957101
-      WhiteTiger_Attack_Effect_120: 3212109520875400232
-      WhiteTiger_Attack_Effect_121: 6296197489536669626
-      WhiteTiger_Attack_Effect_122: -811153962798894432
-      WhiteTiger_Attack_Effect_123: 7608201772834314931
       WhiteTiger_Attack_Effect_13: 4196249904460138097
       WhiteTiger_Attack_Effect_14: 1079652733171548960
       WhiteTiger_Attack_Effect_15: 2881997179943280346
@@ -3298,42 +2022,9 @@ TextureImporter:
       WhiteTiger_Attack_Effect_64: 3309151206345465764
       WhiteTiger_Attack_Effect_65: -581142916151177382
       WhiteTiger_Attack_Effect_66: 965778282890696490
-      WhiteTiger_Attack_Effect_67: -3474120207863016757
-      WhiteTiger_Attack_Effect_68: 7957696301561363700
-      WhiteTiger_Attack_Effect_69: 4868274969623228626
       WhiteTiger_Attack_Effect_7: -1246459596211897399
-      WhiteTiger_Attack_Effect_70: 5836822032142234010
-      WhiteTiger_Attack_Effect_71: 1960207483522084256
-      WhiteTiger_Attack_Effect_72: 2835961194098874725
-      WhiteTiger_Attack_Effect_73: -3008201518385386783
-      WhiteTiger_Attack_Effect_74: 3742464878081241113
-      WhiteTiger_Attack_Effect_75: 4340702863390367620
-      WhiteTiger_Attack_Effect_76: 4004575557111297625
-      WhiteTiger_Attack_Effect_77: -3603325105434789544
-      WhiteTiger_Attack_Effect_78: -1917285900024007624
-      WhiteTiger_Attack_Effect_79: -8716456579692191180
       WhiteTiger_Attack_Effect_8: 5644370146201723649
-      WhiteTiger_Attack_Effect_80: -4195998701264038815
-      WhiteTiger_Attack_Effect_81: 6196463309903382036
-      WhiteTiger_Attack_Effect_82: -778538189998010162
-      WhiteTiger_Attack_Effect_83: -3453176035780382370
-      WhiteTiger_Attack_Effect_84: -5799602101581548468
-      WhiteTiger_Attack_Effect_85: -5960001397509470629
-      WhiteTiger_Attack_Effect_86: 5156477446698969322
-      WhiteTiger_Attack_Effect_87: 8654577454764455223
-      WhiteTiger_Attack_Effect_88: -7289469620023401464
-      WhiteTiger_Attack_Effect_89: -6193593945624386897
       WhiteTiger_Attack_Effect_9: 7052939244275730035
-      WhiteTiger_Attack_Effect_90: -5561308168828178221
-      WhiteTiger_Attack_Effect_91: -6384413943214788751
-      WhiteTiger_Attack_Effect_92: 7187889396681213713
-      WhiteTiger_Attack_Effect_93: 7079916912274639570
-      WhiteTiger_Attack_Effect_94: 4742535591983208933
-      WhiteTiger_Attack_Effect_95: 649289054349672027
-      WhiteTiger_Attack_Effect_96: 274462703373545795
-      WhiteTiger_Attack_Effect_97: 8894654962477400824
-      WhiteTiger_Attack_Effect_98: -1232795348923028812
-      WhiteTiger_Attack_Effect_99: 9114201697109558965
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

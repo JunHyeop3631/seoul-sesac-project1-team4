@@ -136,12 +136,12 @@ TextureImporter:
       name: WhiteTiger_Attack_right_0
       rect:
         serializedVersion: 2
-        x: 57
-        y: 15
-        width: 122
-        height: 85
+        x: 0
+        y: 0
+        width: 202
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -158,12 +158,12 @@ TextureImporter:
       name: WhiteTiger_Attack_right_1
       rect:
         serializedVersion: 2
-        x: 259
-        y: 15
-        width: 122
-        height: 88
+        x: 202
+        y: 0
+        width: 202
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -180,12 +180,12 @@ TextureImporter:
       name: WhiteTiger_Attack_right_2
       rect:
         serializedVersion: 2
-        x: 433
-        y: 22
-        width: 99
-        height: 94
+        x: 404
+        y: 0
+        width: 202
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -202,12 +202,12 @@ TextureImporter:
       name: WhiteTiger_Attack_right_3
       rect:
         serializedVersion: 2
-        x: 640
-        y: 23
-        width: 95
-        height: 96
+        x: 606
+        y: 0
+        width: 202
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: WhiteTiger_Attack_right_4
       rect:
         serializedVersion: 2
-        x: 856
-        y: 22
-        width: 85
-        height: 102
+        x: 808
+        y: 0
+        width: 202
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -246,12 +246,12 @@ TextureImporter:
       name: WhiteTiger_Attack_right_5
       rect:
         serializedVersion: 2
-        x: 1063
-        y: 7
-        width: 136
-        height: 119
+        x: 1010
+        y: 0
+        width: 202
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -268,12 +268,12 @@ TextureImporter:
       name: WhiteTiger_Attack_right_6
       rect:
         serializedVersion: 2
-        x: 1269
+        x: 1212
         y: 0
-        width: 145
-        height: 103
+        width: 202
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -290,12 +290,12 @@ TextureImporter:
       name: WhiteTiger_Attack_right_7
       rect:
         serializedVersion: 2
-        x: 1469
-        y: 8
-        width: 122
-        height: 93
+        x: 1414
+        y: 0
+        width: 202
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -312,12 +312,12 @@ TextureImporter:
       name: WhiteTiger_Attack_right_8
       rect:
         serializedVersion: 2
-        x: 1592
-        y: 21
-        width: 20
-        height: 15
+        x: 1616
+        y: 0
+        width: 202
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -330,77 +330,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_right_9
-      rect:
-        serializedVersion: 2
-        x: 1671
-        y: 8
-        width: 121
-        height: 93
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c1b68fcc8654d98b0800000000000000
-      internalID: -5143878882969490660
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_right_10
-      rect:
-        serializedVersion: 2
-        x: 1597
-        y: 11
-        width: 20
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5d366b7c39f193b90800000000000000
-      internalID: -7261738204586941483
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteTiger_Attack_right_11
-      rect:
-        serializedVersion: 2
-        x: 1589
-        y: 1
-        width: 17
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 979b74453364c7d30800000000000000
-      internalID: 4430493319696988537
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 68264cf35e777544d918ffbb56d7de4c
     internalID: 0
     vertices: []
     indices: 
@@ -408,12 +342,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":9.0,"y":1.0},"gridSpriteSize":{"x":202.0,"y":126.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       WhiteTiger_Attack_right_0: 1704347578983778307
       WhiteTiger_Attack_right_1: 5822461339254067410
-      WhiteTiger_Attack_right_10: -7261738204586941483
-      WhiteTiger_Attack_right_11: 4430493319696988537
       WhiteTiger_Attack_right_2: 6052177888722529999
       WhiteTiger_Attack_right_3: -628211181493421525
       WhiteTiger_Attack_right_4: -7871066907956141359
@@ -421,7 +355,6 @@ TextureImporter:
       WhiteTiger_Attack_right_6: -805273681027966812
       WhiteTiger_Attack_right_7: -8374427607612036215
       WhiteTiger_Attack_right_8: -233879564905969833
-      WhiteTiger_Attack_right_9: -5143878882969490660
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
