@@ -118,7 +118,8 @@ public static class WaveCompleteVerification
         throwObject.GetComponent<Button>().onClick.Invoke();
         Require(thrower.IsThrowing, "Yut button does not accept input during banner");
         foreach (var enemy in enemies) enemy.CompleteDeathAnimation();
-        Require(wallet.Balance == 193 && announcements == 1, "Repeated death callback duplicated payout");
+        Require(wallet.Balance == 193 - TurnController.YutThrowCost && announcements == 1,
+            "Paid throw or repeated death callback changed reward accounting");
         while (banner.IsPlaying) yield return null;
         Require(Get<CanvasGroup>(banner, "whole").alpha == 0, "Banner did not disappear");
         while (thrower.IsThrowing) yield return null;
@@ -133,7 +134,7 @@ public static class WaveCompleteVerification
             foreach (var enemy in Enemies()) enemy.TakeDamage(int.MaxValue);
             yield return null;
         }
-        Require(turn.IsBattleWon && wallet.Balance == 193 && announcements == 1 && !banner.IsPlaying,
+        Require(turn.IsBattleWon && wallet.Balance == 193 - TurnController.YutThrowCost && announcements == 1 && !banner.IsPlaying,
             "Final victory must not award intermediate reward or show banner");
         var hud = Find<BattleStateHUD>();
         var result = Get<ResultFlagView>(hud, "result");

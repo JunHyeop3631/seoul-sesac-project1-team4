@@ -7,7 +7,7 @@
 | [턴 흐름 명세](TurnSpec.md) | 턴 시작, 준비 단계, 전투 시작 조건, 재화·상점 이용 조건, 턴 종료와 다음 턴 전환 |
 | [윷 던지기 명세](YutThrowSpec.md) | 윷 네 개의 면 판정, 결과 확률, 결과 표시와 던지기 완료 알림 |
 | [윷 행동 명세](YutActionSpec.md) | 윷 결과에 따른 아군 소환·이동, 아군과 도착 칸 선택 |
-| [윷판 명세](YutBoardSpec.md) | 칸과 이동 경로, 분기, 점유 상태, 칸 수용량과 미정 규칙 |
+| [윷판 명세](YutBoardSpec.md) | 실제 맵 노드 도식·29칸 좌표/연결표, 시작·마지막·퇴장 경계, 전진 분기와 허용 후퇴, 현재 구현과 후속 작업 |
 | [아군 명세](AllySpec.md) | 종류와 배치, 대상 선택과 유지, 도·모의 발사 이벤트·공격 간격·투사체 명중 규칙, 현재 구현과 미정 사항 |
 | [적군 명세](EnemySpec.md) | 종류, 체력, 경로 이동, 처치, 풀 재사용 시 초기화 |
 | [전투 효과 애니메이션](CombatEffects.md) | Do_Taoist_Projectile·Mo_Archer_Projectile·Common_Hit의 60fps 클립, Animator 연결, 피격 효과 생성과 수명 |

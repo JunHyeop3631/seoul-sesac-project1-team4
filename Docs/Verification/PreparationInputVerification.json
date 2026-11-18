@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Preparation / throw / result / combat / next preparation / terminal states passed.",
+    "assertions": 53,
+    "runtimeErrors": 0
+}

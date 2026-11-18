@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed1caa8c19254f459d180db46b170cdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turnController: {fileID: 2602}
   sticks:
   - {fileID: 2013}
   - {fileID: 1544373716}
@@ -1243,10 +1244,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 93000}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2602}
+        m_TargetAssemblyTypeName: TurnController, Assembly-CSharp
+        m_MethodName: OpenShop
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1390,9 +1391,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2610}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 2602}
+        m_TargetAssemblyTypeName: TurnController, Assembly-CSharp
+        m_MethodName: SetInventoryOpen
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1950,6 +1951,11 @@ MonoBehaviour:
   moveButton: {fileID: 2524}
   waveManager: {fileID: 2702}
   currency: {fileID: 9901001}
+  shopPanel: {fileID: 93000}
+  inventoryPanel: {fileID: 2610}
+  shopButton: {fileID: 2544}
+  inventoryToggle: {fileID: 2554}
+  characterInfoPanel: {fileID: 100400}
   yutResultSound: {fileID: 1925671105}
   doSound: {fileID: 8300000, guid: 9ad6586239553ab4aaf3f18299f5c095, type: 3}
   gaeSound: {fileID: 8300000, guid: 9dff11002cb61e14cac694303614830d, type: 3}
@@ -1971,6 +1977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0b02263bd9348e5add42d5a8375fc17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turnController: {fileID: 2602}
   doTaoistPrefab: {fileID: 11400001, guid: 307125cc8c8c81340b81980cd651e6ff, type: 3}
   gaeWarriorPrefab: {fileID: 11400001, guid: ac11ebdd36d42d44ca2f5f30af620129, type: 3}
   geolSpearmanPrefab: {fileID: 11400001, guid: 41e64d8c96ae2444ba81b73c78eacc27, type: 3}
@@ -2005,6 +2012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901b44e4f4da4b1a99a6b68e34d19cfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turnController: {fileID: 2602}
   attackRangeSprite: {fileID: 3057090387456978289, guid: 525348de962ef454bb62417f00d26291, type: 3}
   visibilityChanged:
     m_PersistentCalls:
@@ -7784,10 +7792,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 93000}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2602}
+        m_TargetAssemblyTypeName: TurnController, Assembly-CSharp
+        m_MethodName: CloseShop
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10693,6 +10701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eac206d340034ba898e3e7cd22bcb871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turnController: {fileID: 2602}
   characterName: {fileID: 100123}
   characterPortrait: {fileID: 100323}
   firstStar: {fileID: 100130}
@@ -10924,6 +10933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingBalance: 120
+  startingSpecialBalance: 0
 --- !u!114 &9901002
 MonoBehaviour:
   m_ObjectHideFlags: 0
