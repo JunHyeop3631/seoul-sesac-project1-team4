@@ -22,6 +22,13 @@ public sealed class TurnController : MonoBehaviour
     [SerializeField] private Button moveButton;
     [SerializeField] private WaveManager waveManager;
     [SerializeField] private StageCurrency currency;
+    [SerializeField] private AudioSource yutResultSound;
+    [SerializeField] private AudioClip doSound;
+    [SerializeField] private AudioClip gaeSound;
+    [SerializeField] private AudioClip geolSound;
+    [SerializeField] private AudioClip yutSound;
+    [SerializeField] private AudioClip moSound;
+    [SerializeField] private AudioClip backdoSound;
     [SerializeField, Min(0)] private int currentTurnNumber = 0;
     [SerializeField, Min(1)] private int startingLives = 10;
 
@@ -141,6 +148,33 @@ public sealed class TurnController : MonoBehaviour
 
     private void ReceiveYutResult(YutThrowResult result)
     {
+        AudioClip resultClip = null;
+
+        switch (result)
+        {
+            case YutThrowResult.Do:
+                resultClip = doSound;
+                break;
+            case YutThrowResult.Gae:
+                resultClip = gaeSound;
+                break;
+            case YutThrowResult.Geol:
+                resultClip = geolSound;
+                break;
+            case YutThrowResult.Yut:
+                resultClip = yutSound;
+                break;
+            case YutThrowResult.Mo:
+                resultClip = moSound;
+                break;
+            case YutThrowResult.Backdo:
+                resultClip = backdoSound;
+                break;
+        }
+
+        if (yutResultSound != null && resultClip != null)
+            yutResultSound.PlayOneShot(resultClip);
+
         chosenAction = YutAction.None;
         actionController?.ClearSelection();
         CurrentYutResult = result;
@@ -150,6 +184,7 @@ public sealed class TurnController : MonoBehaviour
             CompleteYutAction();
             return;
         }
+
         RefreshYutButtons();
     }
 
