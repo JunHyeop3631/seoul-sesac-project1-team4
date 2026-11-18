@@ -21,6 +21,7 @@ public sealed class TurnController : MonoBehaviour
     [SerializeField] private Button summonButton;
     [SerializeField] private Button moveButton;
     [SerializeField] private WaveManager waveManager;
+    [SerializeField] private StageCurrency currency;
     [SerializeField, Min(0)] private int currentTurnNumber = 0;
     [SerializeField, Min(1)] private int startingLives = 10;
 
@@ -31,6 +32,8 @@ public sealed class TurnController : MonoBehaviour
     public event Action BattleWon;
     public event Action BattleLost;
     public event Action PreparationStarted;
+    // Completed (one-based) wave and the amount actually credited to the wallet.
+    public event Action<int, int> WaveCleared;
     public bool IsBattleWon { get; private set; }
     private YutAction chosenAction;
     private CanvasGroup summonButtonGroup;
@@ -255,7 +258,11 @@ public sealed class TurnController : MonoBehaviour
             return;
         }
 
+        int completedWave = currentTurnNumber + 1;
+        int grantedReward = currency != null
+            ? currency.Grant(waveManager.GetCompletionReward(currentTurnNumber)) : 0;
         EndTurn();
+        WaveCleared?.Invoke(completedWave, grantedReward);
     }
 
     private void EndTurn()

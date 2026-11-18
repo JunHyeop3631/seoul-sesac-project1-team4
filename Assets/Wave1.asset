@@ -19,3 +19,4 @@ MonoBehaviour:
     count: 1
   - enemyId: 2
     count: 1
+  completionReward: 60
