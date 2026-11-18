@@ -12,6 +12,8 @@ public class WaveData : ScriptableObject
     }
 
     [SerializeField] private EnemyGroup[] enemies = Array.Empty<EnemyGroup>();
+    [SerializeField, Min(0)] private int completionReward = 60;
 
     public EnemyGroup[] Enemies => enemies;
+    public int CompletionReward => Mathf.Max(0, completionReward);
 }

@@ -16,6 +16,12 @@ public class WaveManager : MonoBehaviour
     public int WaveCount => waves != null ? waves.Length : 0;
     public int DefeatedEnemyCount => wave != null ? wave.DefeatedEnemyCount : 0;
 
+    public int GetCompletionReward(int waveIndex)
+    {
+        return waves != null && waveIndex >= 0 && waveIndex < waves.Length && waves[waveIndex] != null
+            ? waves[waveIndex].CompletionReward : 0;
+    }
+
     public int GetTotalEnemyCount(int waveNumber)
     {
         if (waves == null || waveNumber < 0 || waveNumber >= waves.Length || waves[waveNumber] == null)

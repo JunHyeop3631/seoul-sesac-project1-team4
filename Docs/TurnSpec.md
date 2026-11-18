@@ -77,8 +77,8 @@
 - 경로 끝에 도달해 사라진 적은 처치 수에 포함하지 않는다. 적이 일부 도착했더라도 마지막 [웨이브 완료](WaveSpec.md#완료-조건) 시 하트가 남아 있으면 승리 패널을 표시한다. 전원 처치는 승리 조건이 아니다.
 - 패배를 승리보다 우선한다. 하트가 0인 상태에서 웨이브가 완료되어도 승리를 알리거나 다음 턴 시작 흐름을 실행하지 않는다.
 - 게임 시작 시 결과 패널은 숨겨진다. 최종 승리 패널은 표시 상태를 유지한다. 하트가 0이거나 최종 승리한 뒤에는 새 전투를 시작할 수 없다.
-- `TurnController`가 `PreparationStarted`, `BattleStarted`, `BattleWon`, `BattleLost` 이벤트를 보내고, [BattleStateHUD](../Assets/Scripts/UI/BattleStateHUD.cs)가 이를 받아 전투 시작 안내와 승리·패배 패널을 전환한다.
-- [ThrowYut 씬](../Assets/Scenes/ThrowYut.unity)의 `Canvas`에 `BattleStateHUD`를 연결하고 `Start Wave Panel`, `Victory Panel`, `Defeat Panel`을 참조한다. 전투 시작 안내는 전투가 실제로 시작되면 표시되고, 배속에 관계없이 실제 시간 1초 후 숨겨진다. 그 전에 승리·패배 또는 다음 준비 단계로 전환되면 즉시 숨겨진다. 각 패널은 왼쪽 화면 영역을 덮으며 이미지를 자식으로 가진다.
+- `TurnController`가 `PreparationStarted`, `BattleStarted`, `BattleWon`, `BattleLost` 이벤트를 보내고, [BattleStateHUD](../Assets/Scripts/UI/BattleStateHUD.cs)가 승패 이벤트에 맞춰 [결과 깃발](ResultFlagUISpec.md)을 표시한다. 판정 로직은 유지한다.
+- [ThrowYut 씬](../Assets/Scenes/ThrowYut.unity)의 `Canvas`에 `BattleStateHUD`를 연결하고 `TurnController`, `WaveManager`, `ResultFlag` 프리팹을 참조한다. 중앙 깃발은 실제 도달/전체 웨이브, 등장 연출, 메인화면·다시 도전 버튼을 제공한다. 최종 결과에서는 전투를 멈추고 뒤쪽 입력을 차단한다. 전투 시작 안내는 제거했으며 중간 웨이브 완료는 별도 [두루마리](WaveCompleteUISpec.md)를 사용한다.
 - 다음 턴 버튼 오브젝트와 버튼 참조, 클릭 함수 및 버튼 대기 상태는 제거했다. 다음 준비 단계 전환은 `EndBattle`에서 직접 처리한다.
 
 ### 행동 선택과 준비 중 상점 이용
@@ -99,7 +99,7 @@
 
 ### 이번 논의에서 제외하는 항목
 
-- 잔여 하트 0에 따른 패배 깃발 표시는 위 규칙으로 확정했다. 재시작·종료 버튼과 패배 후 전체 전투 중단 등의 추가 처리는 이번 변경 범위에서 다루지 않는다.
+- 결과 화면의 메인 이동·재도전과 전투 정지는 [최종 승리·패배 깃발](ResultFlagUISpec.md)에 구현 내용을 기록한다. 승패 판정 자체는 이 문서의 기존 규칙을 유지한다.
 - 일반 진화와 특별진화는 턴 흐름 명세에서 제외한다. 진화 승인이나 특별진화 처리를 턴 전환의 필수 조건으로 추가하지 않는다.
 - 링크 문서의 목표지점 도착은 아군이 목표에 도착한 뒤 다음 윷 던지기로 특별진화한다는 구상이다. 현재 로컬 명세에서 완주 규칙은 미정이며, 이번 턴 논의에서 해당 구상을 확정하거나 턴 흐름에 포함하지 않는다.
 

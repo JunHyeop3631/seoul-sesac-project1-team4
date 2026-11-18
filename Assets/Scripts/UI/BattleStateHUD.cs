@@ -1,18 +1,15 @@
-using System.Collections;
 using UnityEngine;
 
 public sealed class BattleStateHUD : MonoBehaviour
 {
     [SerializeField] private TurnController turnController;
-    [SerializeField] private GameObject startWavePanel;
-    [SerializeField] private GameObject victoryPanel;
-    [SerializeField] private GameObject defeatPanel;
-
-    private Coroutine startWaveHideRoutine;
+    [SerializeField] private WaveManager waveManager;
+    [SerializeField] private ResultFlagView resultPrefab;
+    private ResultFlagView result;
 
     private void Awake()
     {
-        HidePanels();
+        if (resultPrefab != null) result = Instantiate(resultPrefab, transform);
     }
 
     private void OnEnable()
@@ -22,7 +19,7 @@ public sealed class BattleStateHUD : MonoBehaviour
             return;
         }
 
-        turnController.BattleStarted += ShowStartWave;
+        turnController.BattleStarted += HidePanels;
         turnController.PreparationStarted += HidePanels;
         turnController.BattleWon += ShowVictory;
         turnController.BattleLost += ShowDefeat;
@@ -37,7 +34,7 @@ public sealed class BattleStateHUD : MonoBehaviour
             return;
         }
 
-        turnController.BattleStarted -= ShowStartWave;
+        turnController.BattleStarted -= HidePanels;
         turnController.PreparationStarted -= HidePanels;
         turnController.BattleWon -= ShowVictory;
         turnController.BattleLost -= ShowDefeat;
@@ -45,67 +42,25 @@ public sealed class BattleStateHUD : MonoBehaviour
 
     private void HidePanels()
     {
-        if (startWaveHideRoutine != null)
-        {
-            StopCoroutine(startWaveHideRoutine);
-            startWaveHideRoutine = null;
-        }
-
-        if (startWavePanel != null)
-        {
-            startWavePanel.SetActive(false);
-        }
-
-        SetPanels(false, false);
-    }
-
-    private void ShowStartWave()
-    {
-        HidePanels();
-        if (startWavePanel != null)
-        {
-            startWavePanel.SetActive(true);
-            startWaveHideRoutine = StartCoroutine(HideStartWaveAfterDelay());
-        }
-    }
-
-    private IEnumerator HideStartWaveAfterDelay()
-    {
-        yield return new WaitForSecondsRealtime(1f);
-
-        if (startWavePanel != null)
-        {
-            startWavePanel.SetActive(false);
-        }
-
-        startWaveHideRoutine = null;
+        if (result != null) result.Hide();
     }
 
     private void ShowVictory()
     {
         if (turnController != null && turnController.IsBattleWon && turnController.RemainingLives > 0)
         {
-            HidePanels();
-            SetPanels(true, false);
+            ShowResult(true);
         }
     }
 
     private void ShowDefeat()
     {
-        HidePanels();
-        SetPanels(false, true);
+        ShowResult(false);
     }
 
-    private void SetPanels(bool victory, bool defeat)
+    private void ShowResult(bool victory)
     {
-        if (victoryPanel != null)
-        {
-            victoryPanel.SetActive(victory);
-        }
-
-        if (defeatPanel != null)
-        {
-            defeatPanel.SetActive(defeat);
-        }
+        if (result == null || turnController == null || waveManager == null) return;
+        result.Show(victory, turnController.CurrentTurnNumber + 1, waveManager.WaveCount, gameObject.scene.name);
     }
 }
