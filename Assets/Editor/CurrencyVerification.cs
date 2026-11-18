@@ -152,6 +152,7 @@ public static class CurrencyVerification
         int specialBefore = wallet.SpecialBalance;
         Set(waves, "spawnInterval", 0f);
         int reward = waves.GetCompletionReward(turn.CurrentTurnNumber);
+        int killIncome = 0; foreach(var g in Get<WaveData[]>(waves,"waves")[turn.CurrentTurnNumber].Enemies) killIncome += g.count * (g.enemyId==EnemyId.NormalEnemy?2:g.enemyId==EnemyId.FastEnemy?1:0);
         turn.StartBattle();
         Require(waves.IsRunning, "Zero balance does not block battle start");
         turn.ThrowYut(); thrower.Throw();
@@ -163,12 +164,12 @@ public static class CurrencyVerification
             { enemy.TakeDamage(int.MaxValue); enemy.CompleteDeathAnimation(); }
             yield return null;
         }
-        Require(turn.CurrentTurnNumber == 1 && turn.CanUsePreparationInput && wallet.Balance == 7 + reward &&
+        Require(turn.CurrentTurnNumber == 1 && turn.CanUsePreparationInput && wallet.Balance == 7 + reward + killIncome &&
             wallet.SpecialBalance == specialBefore, "Next wave retains both balances plus existing completion reward");
-        Require(Get<int>(display, "value") == 7 + reward && turn.CanThrowYut && throwButton.interactable,
+        Require(Get<int>(display, "value") == 7 + reward + killIncome && turn.CanThrowYut && throwButton.interactable,
             "Completion credit restores HUD and throw availability");
         turn.ThrowYut();
-        Require(wallet.Balance == 7 + reward - 20 && wallet.SpecialBalance == specialBefore,
+        Require(wallet.Balance == 7 + reward + killIncome - 20 && wallet.SpecialBalance == specialBefore,
             "Next-wave throw spends carried normal balance only");
 
         // Wallet API boundaries are isolated from the stage progression fixture.

@@ -9,6 +9,8 @@ public class WaveData : ScriptableObject
     {
         public EnemyId enemyId;
         [Min(1)] public int count;
+        [Tooltip("Per-enemy health for this wave. Zero keeps the prefab default.")]
+        [Min(0)] public int health;
     }
 
     [SerializeField] private EnemyGroup[] enemies = Array.Empty<EnemyGroup>();

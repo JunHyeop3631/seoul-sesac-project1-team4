@@ -58,7 +58,8 @@ public sealed class TurnController : MonoBehaviour
     public bool CanThrowYut => CanUsePreparationInput && !IsThrowing && !CurrentYutResult.HasValue &&
         throwController != null && throwController.isActiveAndEnabled &&
         currency != null && currency.CanAfford(YutThrowCost) &&
-        (shopPanel == null || !shopPanel.activeInHierarchy);
+        (shopPanel == null || !shopPanel.activeInHierarchy) &&
+        (inventoryPanel == null || !inventoryPanel.activeInHierarchy);
     private YutAction chosenAction;
     private CanvasGroup summonButtonGroup;
 
@@ -264,7 +265,10 @@ public sealed class TurnController : MonoBehaviour
     public void OpenShop()
     {
         if (CanOpenPreparationPanel && shopPanel != null)
+        {
+            SetInventoryOpen(false);
             shopPanel.SetActive(true);
+        }
         RefreshYutButtons();
     }
 
@@ -278,10 +282,12 @@ public sealed class TurnController : MonoBehaviour
     public void SetInventoryOpen(bool open)
     {
         bool allowed = open && CanOpenPreparationPanel;
+        if (allowed) CloseShop();
         if (inventoryPanel != null)
             inventoryPanel.SetActive(allowed);
         if (inventoryToggle != null)
             inventoryToggle.SetIsOnWithoutNotify(allowed);
+        RefreshYutButtons();
     }
 
     private void ClosePreparationUI()

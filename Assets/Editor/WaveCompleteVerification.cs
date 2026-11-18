@@ -45,7 +45,7 @@ public static class WaveCompleteVerification
             if (checks.MoveNext()) return;
             Require(errors == 0, "Runtime error(s) during validation");
             File.WriteAllText(Output + "/report.json", "{\"passed\":true,\"unity\":\"" + Application.unityVersion +
-                "\",\"realScenePlayMode\":true,\"startScrollRemoved\":true,\"actualReward\":73,\"balanceBefore\":120,\"balanceAfter\":193,\"preparationInputDuringBanner\":true,\"deathAnimationWait\":true,\"leakStillRewards\":true,\"expandedToTenWaves\":true,\"finalVictoryUnchanged\":true,\"defeatNoReward\":true,\"restartResets\":true,\"currencyBoundaries\":true,\"errors\":0}");
+                "\",\"realScenePlayMode\":true,\"startScrollRemoved\":true,\"actualReward\":73,\"balanceBefore\":120,\"killIncomeSeparate\":true,\"preparationInputDuringBanner\":true,\"deathAnimationWait\":true,\"leakStillRewards\":true,\"expandedToTenWaves\":true,\"finalVictoryUnchanged\":true,\"defeatNoReward\":true,\"restartResets\":true,\"currencyBoundaries\":true,\"errors\":0}");
             SessionState.SetInt(Key, 0);
             EditorApplication.Exit(0);
         }
@@ -78,7 +78,14 @@ public static class WaveCompleteVerification
         Require(turn && waves && wallet && banner, "Scene integration references missing");
         Require(wallet.Balance == 120 && !banner.IsPlaying, "Initial balance/banner state");
         // A non-default reward proves the display and wallet are driven by actual wave data.
-        WaveData[] data = Get<WaveData[]>(waves, "waves").Select(d => UnityEngine.Object.Instantiate(d)).ToArray();
+        WaveData[] data = Get<WaveData[]>(waves, "waves").Take(2).Select(d => UnityEngine.Object.Instantiate(d)).ToArray();
+        // This regression fixture deliberately tests a 2-wave stage and a 3-enemy leak.
+        // The real 10-wave composition and HP are checked by WaveHealthVerification.
+        Set(data[0], "enemies", new[] {
+            new WaveData.EnemyGroup { enemyId = EnemyId.NormalEnemy, count = 1 },
+            new WaveData.EnemyGroup { enemyId = EnemyId.FastEnemy, count = 1 },
+            new WaveData.EnemyGroup { enemyId = EnemyId.BossEnemy, count = 1 }
+        });
         Set(data[0], "completionReward", 73);
         Set(waves, "waves", data);
         Set(waves, "spawnInterval", 0f);
@@ -94,12 +101,14 @@ public static class WaveCompleteVerification
         Require(enemies.Length == 3, "Test fixture should have 3 enemies");
         // Let one leak; survivors still receive completion reward.
         Set(enemies[0], "moveSpeed", 10000f);
+        int killIncome=enemies.Skip(1).Sum(e=>e is NormalEnemy?2:e is FastEnemy?1:0);
+        int finalKillIncome=data[1].Enemies.Sum(g=>g.count*(g.enemyId==EnemyId.NormalEnemy?2:g.enemyId==EnemyId.FastEnemy?1:0));
         foreach (var enemy in enemies.Skip(1)) enemy.TakeDamage(int.MaxValue);
-        Require(wallet.Balance == 120 && announcements == 0 && waves.IsRunning,
+        Require(wallet.Balance == 120 + killIncome && announcements == 0 && waves.IsRunning,
             "Reward granted before death/arrival processing finished");
         while (waves.IsRunning) yield return null;
         Require(turn.RemainingLives == 9 && turn.CurrentTurnNumber == 1, "Surviving leak / next preparation changed");
-        Require(wallet.Balance == 193 && announcements == 1 && completedNumber == 1 && granted == 73,
+        Require(wallet.Balance == 193 + killIncome && announcements == 1 && completedNumber == 1 && granted == 73,
             "Reward must grant exactly once with completed wave 1 and actual amount 73");
         Require(banner.IsPlaying && banner.DisplayedWave == 1 && banner.DisplayedReward == 73, "Banner data mismatch");
         var coin = GameObject.Find("Coin HUD").GetComponent<GoldNumberDisplay>();
@@ -118,7 +127,7 @@ public static class WaveCompleteVerification
         throwObject.GetComponent<Button>().onClick.Invoke();
         Require(thrower.IsThrowing, "Yut button does not accept input during banner");
         foreach (var enemy in enemies) enemy.CompleteDeathAnimation();
-        Require(wallet.Balance == 193 - TurnController.YutThrowCost && announcements == 1,
+        Require(wallet.Balance == 193 + killIncome - TurnController.YutThrowCost && announcements == 1,
             "Paid throw or repeated death callback changed reward accounting");
         while (banner.IsPlaying) yield return null;
         Require(Get<CanvasGroup>(banner, "whole").alpha == 0, "Banner did not disappear");
@@ -134,7 +143,7 @@ public static class WaveCompleteVerification
             foreach (var enemy in Enemies()) enemy.TakeDamage(int.MaxValue);
             yield return null;
         }
-        Require(turn.IsBattleWon && wallet.Balance == 193 - TurnController.YutThrowCost && announcements == 1 && !banner.IsPlaying,
+        Require(turn.IsBattleWon && wallet.Balance == 193 + killIncome + finalKillIncome - TurnController.YutThrowCost && announcements == 1 && !banner.IsPlaying,
             "Final victory must not award intermediate reward or show banner");
         var hud = Find<BattleStateHUD>();
         var result = Get<ResultFlagView>(hud, "result");
@@ -147,6 +156,7 @@ public static class WaveCompleteVerification
         Require(wallet.Balance == 120 && turn.CurrentTurnNumber == 0 && !banner.IsPlaying, "Restart did not reset");
         // Growing the registered list to ten requires no UI/progression code change.
         var expanded = Enumerable.Range(0, 10).Select(i => UnityEngine.Object.Instantiate(Get<WaveData[]>(waves, "waves")[0])).ToArray();
+        int expandedKillIncome=expanded[0].Enemies.Sum(g=>g.count*(g.enemyId==EnemyId.NormalEnemy?2:g.enemyId==EnemyId.FastEnemy?1:0));
         Set(waves, "waves", expanded);
         Set(waves, "spawnInterval", 0f);
         Set(turn, "currentTurnNumber", 8);
@@ -156,7 +166,7 @@ public static class WaveCompleteVerification
             foreach (var enemy in Enemies()) enemy.TakeDamage(int.MaxValue);
             yield return null;
         }
-        Require(turn.CurrentTurnNumber == 9 && !turn.IsBattleWon && wallet.Balance == 180 &&
+        Require(turn.CurrentTurnNumber == 9 && !turn.IsBattleWon && wallet.Balance == 180 + expandedKillIncome &&
             banner.IsPlaying && banner.DisplayedWave == 9, "Expanded wave 9 should announce and enter wave 10 preparation");
         turn.StartBattle();
         while (waves.IsRunning)
@@ -164,7 +174,7 @@ public static class WaveCompleteVerification
             foreach (var enemy in Enemies()) enemy.TakeDamage(int.MaxValue);
             yield return null;
         }
-        Require(turn.IsBattleWon && wallet.Balance == 180 && !banner.IsPlaying, "Expanded wave 10 should only show final victory");
+        Require(turn.IsBattleWon && wallet.Balance == 180 + 2 * expandedKillIncome && !banner.IsPlaying, "Expanded wave 10 should only show final victory");
         SceneManager.LoadScene("ThrowYut");
         for (int i = 0; i < 8; i++) yield return null;
         turn = Find<TurnController>(); waves = Find<WaveManager>(); wallet = Find<StageCurrency>(); banner = Find<WaveCompleteBanner>();
