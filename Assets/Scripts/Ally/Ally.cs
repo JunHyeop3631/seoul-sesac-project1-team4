@@ -12,6 +12,7 @@ public class Ally : MonoBehaviour
     [SerializeField] private SpriteRenderer visualRenderer;
     [SerializeField] private HitEffect attackHitEffect;
     [SerializeField, Min(1)] private int evolutionStage = 1;
+    [SerializeField, Min(1)] private int populationCost = 1;
 
     private static readonly int IdleLeftState = Animator.StringToHash("IdleLeft");
     private static readonly int IdleRightState = Animator.StringToHash("IdleRight");
@@ -34,6 +35,7 @@ public class Ally : MonoBehaviour
     public float AttackRange => attackRange;
     public SpriteRenderer VisualRenderer => visualRenderer;
     public int EvolutionStage => evolutionStage;
+    public int PopulationCost => Mathf.Max(1, populationCost);
 
     internal void ResetForReuse()
     {

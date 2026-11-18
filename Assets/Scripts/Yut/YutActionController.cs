@@ -56,7 +56,7 @@ public sealed class YutActionController : MonoBehaviour
                 {
                     int previousCell = GetPreviousCell(ally);
                     if (previousCell >= 0 && GetCell(previousCell) != null &&
-                        occupancy.HasSpace(previousCell, group.Count))
+                        occupancy.HasSpace(previousCell, YutBoardOccupancy.GetPopulationCost(group)))
                         return true;
                 }
                 else
@@ -64,7 +64,7 @@ public sealed class YutActionController : MonoBehaviour
                     foreach (int destination in YutBoard.GetDestinationCells(cellId, result))
                     {
                         if (GetCell(destination) != null &&
-                            (destination == cellId || occupancy.HasSpace(destination, group.Count)))
+                            (destination == cellId || occupancy.HasSpace(destination, YutBoardOccupancy.GetPopulationCost(group))))
                             return true;
                     }
                 }
@@ -225,7 +225,7 @@ public sealed class YutActionController : MonoBehaviour
             return false;
         }
 
-        if (!occupancy.HasSpace(DeploymentCellId))
+        if (!occupancy.HasSpace(DeploymentCellId, prefab.PopulationCost))
         {
             return false;
         }
@@ -245,7 +245,7 @@ public sealed class YutActionController : MonoBehaviour
     {
         if (!occupancy.TryAddAlly(cellId, ally))
         {
-            Debug.LogWarning($"Cell {cellId:00} cannot register more than {YutBoardOccupancy.MaxAlliesPerCell} allies or duplicate allies.", ally);
+            Debug.LogWarning($"Cell {cellId:00} cannot exceed population {YutBoardOccupancy.MaxPopulationPerCell} or register duplicate allies.", ally);
             return false;
         }
 
@@ -317,7 +317,7 @@ public sealed class YutActionController : MonoBehaviour
         {
             int previousCell = GetPreviousCell(ally);
             if (previousCell >= 0 && GetCell(previousCell) != null &&
-                occupancy.HasSpace(previousCell, selectedAllies.Count))
+                occupancy.HasSpace(previousCell, YutBoardOccupancy.GetPopulationCost(selectedAllies)))
             {
                 destinationCellIds.Add(previousCell);
             }
@@ -328,7 +328,7 @@ public sealed class YutActionController : MonoBehaviour
             {
                 int cellId = path[path.Length - 1];
                 if (GetCell(cellId) != null &&
-                    (cellId == currentCellId || occupancy.HasSpace(cellId, selectedAllies.Count)) &&
+                    (cellId == currentCellId || occupancy.HasSpace(cellId, YutBoardOccupancy.GetPopulationCost(selectedAllies))) &&
                     !destinationPaths.ContainsKey(cellId))
                 {
                     destinationCellIds.Add(cellId);

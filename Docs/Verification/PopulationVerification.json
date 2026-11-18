@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Normal prefabs, weighted add/move/replace, candidate filtering, and commit recheck passed.",
+    "assertions": 56,
+    "runtimeErrors": 0
+}

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 public sealed class YutBoardOccupancy
 {
-    internal const int MaxAlliesPerCell = 6;
+    internal const int MaxPopulationPerCell = 6;
 
     private readonly List<Ally>[] alliesByCell = new List<Ally>[YutBoard.CellCount];
 
@@ -14,20 +14,34 @@ public sealed class YutBoardOccupancy
         }
     }
 
-    internal bool HasSpace(int cellId, int incomingCount = 1)
+    internal static int GetPopulationCost(IReadOnlyList<Ally> allies)
     {
-        alliesByCell[cellId].RemoveAll(ally => ally == null);
-        return incomingCount > 0 && alliesByCell[cellId].Count + incomingCount <= MaxAlliesPerCell;
+        int population = 0;
+        foreach (Ally ally in allies)
+        {
+            if (ally != null)
+                population = (int)System.Math.Min((long)population + ally.PopulationCost, int.MaxValue);
+        }
+        return population;
+    }
+
+    internal int GetPopulation(int cellId) => GetPopulationCost(alliesByCell[cellId]);
+
+    internal bool HasSpace(int cellId, int incomingPopulation)
+    {
+        return cellId >= 0 && cellId < alliesByCell.Length && incomingPopulation > 0 &&
+            incomingPopulation <= MaxPopulationPerCell - GetPopulation(cellId);
     }
 
     internal bool TryAddAlly(int cellId, Ally ally)
     {
-        if (ally == null || !HasSpace(cellId) || TryGetCell(ally, out _))
+        if (ally == null || !HasSpace(cellId, ally.PopulationCost) || TryGetCell(ally, out _))
         {
             return false;
         }
 
-         alliesByCell[cellId].Add(ally);
+        alliesByCell[cellId].RemoveAll(occupant => occupant == null);
+        alliesByCell[cellId].Add(ally);
         return true;
     }
 
@@ -57,6 +71,7 @@ public sealed class YutBoardOccupancy
 
     internal bool TryReplaceAllies(int cellId, IReadOnlyList<Ally> materials, Ally replacement)
     {
+        if (cellId < 0 || cellId >= alliesByCell.Length) return false;
         var occupants = alliesByCell[cellId];
         var unique = new HashSet<Ally>(materials);
         if (replacement == null || materials.Count != 3 || unique.Count != 3 ||
@@ -67,6 +82,9 @@ public sealed class YutBoardOccupancy
             if (ally == null || !occupants.Contains(ally))
                 return false;
         }
+
+        if ((long)GetPopulation(cellId) - GetPopulationCost(materials) + replacement.PopulationCost > MaxPopulationPerCell)
+            return false;
 
         foreach (Ally ally in materials)
             occupants.Remove(ally);
@@ -97,7 +115,7 @@ public sealed class YutBoardOccupancy
             return true;
         }
 
-        if (!HasSpace(destinationCellId, allies.Count))
+        if (!HasSpace(destinationCellId, GetPopulationCost(allies)))
         {
             return false;
         }
