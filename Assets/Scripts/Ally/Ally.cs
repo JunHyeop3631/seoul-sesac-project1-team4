@@ -14,6 +14,12 @@ public class Ally : MonoBehaviour
     [SerializeField, Min(1)] private int evolutionStage = 1;
     [SerializeField, Min(1)] private int populationCost = 1;
 
+    [Header("Attack Audio")]
+    [Tooltip("Sound played once when a valid attack is released. Optional.")]
+    [SerializeField] private AudioClip attackSound;
+    [SerializeField, Range(0f, 1f)] private float attackVolume = 1f;
+    private AudioSource attackAudioSource;
+
     private static readonly int IdleLeftState = Animator.StringToHash("IdleLeft");
     private static readonly int IdleRightState = Animator.StringToHash("IdleRight");
     private bool attacking;
@@ -211,7 +217,30 @@ public class Ally : MonoBehaviour
         }
 
         released = true;
+        PlayAttackSound();
         return true;
+    }
+
+    private void PlayAttackSound()
+    {
+        if (attackSound == null || attackVolume <= 0f)
+            return;
+
+        // Reuse a dedicated source without changing other audio on the prefab.
+        if (attackAudioSource == null)
+        {
+            attackAudioSource = gameObject.AddComponent<AudioSource>();
+            attackAudioSource.playOnAwake = false;
+            attackAudioSource.loop = false;
+            attackAudioSource.spatialBlend = 0f;
+        }
+
+        attackAudioSource.volume = Mathf.Clamp01(attackVolume);
+        // Generated clips may contain long silent tails. Replace the previous
+        // attack instead of accumulating a new voice for every animation event.
+        attackAudioSource.Stop();
+        attackAudioSource.clip = attackSound;
+        attackAudioSource.Play();
     }
 
     private bool HasTargetInRange(Vector2 origin)

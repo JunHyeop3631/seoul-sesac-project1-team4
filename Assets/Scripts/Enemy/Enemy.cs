@@ -18,6 +18,11 @@ public class Enemy : MonoBehaviour
     [SerializeField] private HitEffect hitEffectPrefab;
     [SerializeField] private HitEffectPool hitEffectPool;
 
+    [Header("Death Audio")]
+    [Tooltip("Sound played once when this enemy is defeated. Optional.")]
+    [SerializeField] private AudioClip deathSound;
+    [SerializeField, Range(0f, 1f)] private float deathVolume = 1f;
+
     internal void SetHitEffectPool(HitEffectPool pool)
     {
         hitEffectPool = pool;
@@ -74,12 +79,31 @@ public class Enemy : MonoBehaviour
         if (CurrentHealth == 0)
         {
             StopMoving();
+            PlayDeathSound();
             Defeated?.Invoke(this);
             if (isActiveAndEnabled)
             {
                 PlayDeathAnimation();
             }
         }
+    }
+
+    private void PlayDeathSound()
+    {
+        if (deathSound == null || deathVolume <= 0f)
+            return;
+
+        // Keep playback independent of the enemy's death animation and pool return.
+        var soundObject = new GameObject("Enemy Death Sound");
+        soundObject.transform.position = transform.position;
+        var source = soundObject.AddComponent<AudioSource>();
+        source.playOnAwake = false;
+        source.loop = false;
+        source.spatialBlend = 0f;
+        source.volume = Mathf.Clamp01(deathVolume);
+        source.clip = deathSound;
+        source.Play();
+        Destroy(soundObject, deathSound.length);
     }
 
     private void PlayDeathAnimation()

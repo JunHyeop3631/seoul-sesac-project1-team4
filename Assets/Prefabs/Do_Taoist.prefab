@@ -182,6 +182,8 @@ MonoBehaviour:
   attackHitEffect: {fileID: 0}
   evolutionStage: 1
   populationCost: 1
+  attackSound: {fileID: 8300000, guid: 2c02319d94a561e48ada29f8f80a2597, type: 3}
+  attackVolume: 0.05
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 0

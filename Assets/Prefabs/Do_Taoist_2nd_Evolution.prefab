@@ -173,13 +173,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d596e36dd0a80c3cc97a31981686e1bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Do_Taoist
-  evolutionStage: 2
-  attackHitEffect: {fileID: 2019873692110887112, guid: af4723e69c2349f8ba6c04ab25336341, type: 3}
   attackRange: 4
   attackDamage: 25.2
-  attackInterval: 0.833333333
+  attackInterval: 0.8333333
   allyAnimator: {fileID: 9500001}
   visualRenderer: {fileID: 310511580605650270}
+  attackHitEffect: {fileID: 2019873692110887112, guid: af4723e69c2349f8ba6c04ab25336341, type: 3}
+  evolutionStage: 2
+  populationCost: 1
+  attackSound: {fileID: 8300000, guid: 2c02319d94a561e48ada29f8f80a2597, type: 3}
+  attackVolume: 0.05
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,4 +197,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileAttack
   projectilePrefab: {fileID: 11400001, guid: 171c01a91dab431d8fa86df71a73feea, type: 3}
   flightDuration: 0.3
+  projectilePool: {fileID: 0}
   launchCenterRenderer: {fileID: 310511580605650270}
