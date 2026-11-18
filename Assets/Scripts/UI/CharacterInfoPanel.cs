@@ -22,6 +22,7 @@ public sealed class CharacterInfoPanel : MonoBehaviour
         public Sprite nameSprite = null;
         public Sprite idleLeft = null;
         public Sprite evolvedIdleLeft = null;
+        [TextArea(3, 3)] public string story = string.Empty;
     }
 
     [SerializeField] private Image characterName;
@@ -30,6 +31,7 @@ public sealed class CharacterInfoPanel : MonoBehaviour
     [SerializeField] private GameObject secondStar;
     [SerializeField] private Text attackValue;
     [SerializeField] private Text attackSpeedValue;
+    [SerializeField] private Text[] storyLines = Array.Empty<Text>();
     [SerializeField] private Profile[] profiles = Array.Empty<Profile>();
 
     public void Show(Ally ally)
@@ -46,6 +48,13 @@ public sealed class CharacterInfoPanel : MonoBehaviour
         {
             gameObject.SetActive(false);
             return;
+        }
+
+        string[] lines = profile.story.Replace("\r", string.Empty).Split('\n');
+        for (int i = 0; i < storyLines.Length; i++)
+        {
+            if (storyLines[i] != null)
+                storyLines[i].text = i < lines.Length ? lines[i] : string.Empty;
         }
 
         bool evolved = ally.EvolutionStage >= 2;

@@ -19,6 +19,7 @@ public class Wave : MonoBehaviour
     public int DefeatedEnemyCount { get; private set; }
     public event Action Completed;
     public event Action EnemyArrived;
+    public event Action<Enemy> EnemyDefeated;
 
     public void Prepare()
     {
@@ -76,6 +77,7 @@ public class Wave : MonoBehaviour
                 Enemy enemy = enemyPool.RequestEnemy(group.enemyId, waypoints[0].position, waypoints[0].rotation);
                 if (enemy != null)
                 {
+                    enemy.ConfigureHealth(group.health);
                     spawnedEnemies.Add(enemy);
                     enemy.Defeated += defeatEnemy;
                     enemy.DeathCompleted += releaseEnemy;
@@ -93,6 +95,7 @@ public class Wave : MonoBehaviour
             {
                 DefeatedEnemyCount++;
                 dyingEnemies.Add(enemy);
+                EnemyDefeated?.Invoke(enemy);
             }
         }
 

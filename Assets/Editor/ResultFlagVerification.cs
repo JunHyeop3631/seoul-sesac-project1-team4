@@ -68,12 +68,15 @@ public static class ResultFlagVerification
     static IEnumerator Check()
     {
         var turn = Find<TurnController>(); var waves = Find<WaveManager>(); var wallet = Find<StageCurrency>();
-        var data = Get<WaveData[]>(waves, "waves").Select(UnityEngine.Object.Instantiate).ToArray();
+        // Preserve the explicit 2/2 result fixture independently of the real stage size.
+        var data = Get<WaveData[]>(waves, "waves").Take(2).Select(UnityEngine.Object.Instantiate).ToArray();
         Set(data[0], "completionReward", 73); Set(waves, "waves", data); Set(waves, "spawnInterval", 0f);
+        int firstKills=data[0].Enemies.Sum(g=>g.count*(g.enemyId==EnemyId.NormalEnemy?2:g.enemyId==EnemyId.FastEnemy?1:0));
+        int finalKills=data[1].Enemies.Sum(g=>g.count*(g.enemyId==EnemyId.NormalEnemy?2:g.enemyId==EnemyId.FastEnemy?1:0));
         int announced = 0; turn.WaveCleared += (_, __) => announced++;
         turn.StartBattle();
         while (waves.IsRunning) { foreach (var e in Enemies()) e.TakeDamage(int.MaxValue); yield return null; }
-        Require(!turn.IsBattleWon && turn.CurrentTurnNumber == 1 && wallet.Balance == 193 && announced == 1,
+        Require(!turn.IsBattleWon && turn.CurrentTurnNumber == 1 && wallet.Balance == 193 + firstKills && announced == 1,
             "Intermediate progression/reward changed");
         Require(Find<WaveCompleteBanner>().IsPlaying, "Intermediate completion banner missing");
         Require(View() == null || !Prop<bool>(View(), "IsVisible"), "Result shown on intermediate wave");
@@ -83,7 +86,7 @@ public static class ResultFlagVerification
         Require(view != null, "Victory event has no integrated result flag with buttons");
         Require(Prop<bool>(view, "IsVisible") && Prop<int>(view, "ReachedWave") == 2 && Prop<int>(view, "TotalWaves") == 2,
             "Actual 2/2 wave value missing");
-        Require(wallet.Balance == 193 && !Find<WaveCompleteBanner>().IsPlaying, "Final result changed reward/scroll behavior");
+        Require(wallet.Balance == 193 + firstKills + finalKills && !Find<WaveCompleteBanner>().IsPlaying, "Final result changed reward/scroll behavior");
         Require(Time.timeScale == 0 && !Prop<bool>(view, "ButtonsReady"), "Result must freeze battle and gate entrance input");
         var flag = Get<RectTransform>(view, "flag"); float startY = flag.anchoredPosition.y;
         float start = Time.realtimeSinceStartup;

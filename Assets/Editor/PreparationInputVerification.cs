@@ -234,8 +234,11 @@ public static class PreparationInputVerification
         Require(!ally.isActiveAndEnabled && Allies().Count(a => a.EvolutionStage == 2) == 1 && Allies().Length == count - 2,
             "Allowed evolution consumes three materials and produces one evolved ally");
 
-        turn.StartBattle();
-        while (waves.IsRunning) { KillActiveEnemies(); yield return null; }
+        while (!turn.IsBattleWon)
+        {
+            turn.StartBattle();
+            while (waves.IsRunning) { KillActiveEnemies(); yield return null; }
+        }
         Require(turn.IsBattleWon && !turn.CanUsePreparationInput, "Victory remains blocked after wave stops");
         shopButton.onClick.Invoke(); inventoryToggle.onValueChanged.Invoke(true); thrower.Throw();
         Require(!shop.activeSelf && !inventory.activeSelf && !thrower.IsThrowing, "Victory cannot reopen preparation");

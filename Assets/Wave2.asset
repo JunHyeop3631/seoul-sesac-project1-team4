@@ -14,5 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - enemyId: 0
-    count: 3
+    count: 10
+    health: 200
+  - enemyId: 1
+    count: 6
+    health: 100
   completionReward: 60

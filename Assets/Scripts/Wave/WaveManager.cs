@@ -10,6 +10,7 @@ public class WaveManager : MonoBehaviour
 
     public event Action WaveCompleted;
     public event Action EnemyArrived;
+    public event Action<Enemy> EnemyDefeated;
 
     public int AliveEnemyCount => wave != null ? wave.AliveEnemyCount : 0;
     public bool IsRunning => wave != null && wave.IsRunning;
@@ -47,6 +48,7 @@ public class WaveManager : MonoBehaviour
         {
             wave.Completed += HandleWaveCompleted;
             wave.EnemyArrived += HandleEnemyArrived;
+            wave.EnemyDefeated += HandleEnemyDefeated;
         }
     }
 
@@ -56,6 +58,7 @@ public class WaveManager : MonoBehaviour
         {
             wave.Completed -= HandleWaveCompleted;
             wave.EnemyArrived -= HandleEnemyArrived;
+            wave.EnemyDefeated -= HandleEnemyDefeated;
         }
     }
 
@@ -80,6 +83,8 @@ public class WaveManager : MonoBehaviour
     {
         EnemyArrived?.Invoke();
     }
+
+    private void HandleEnemyDefeated(Enemy enemy) => EnemyDefeated?.Invoke(enemy);
 
     private void HandleWaveCompleted()
     {

@@ -259,7 +259,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  maxHealth: 10
+  lapDurationSeconds: 20
+  maxHealth: 20
   healthBarFill: {fileID: 61023}
   enemyAnimator: {fileID: 9500001}
   hitEffectPrefab: {fileID: 2019873692110887112, guid: c98a23fed6a638c4985b77d73c761eaa, type: 3}

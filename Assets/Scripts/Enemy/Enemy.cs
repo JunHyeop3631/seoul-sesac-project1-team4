@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour
     private static readonly int DeathRightState = Animator.StringToHash("DeathRight");
 
     [SerializeField, Min(0.01f)] private float moveSpeed = 2f;
+    [Tooltip("Seconds per closed lap at 1x. Zero uses Move Speed directly.")]
+    [SerializeField, Min(0f)] private float lapDurationSeconds;
     [SerializeField, Min(1)] private int maxHealth = 10;
     [SerializeField] private Image healthBarFill;
     [SerializeField] private Animator enemyAnimator;
@@ -26,6 +28,7 @@ public class Enemy : MonoBehaviour
     private Action<Enemy> onArrived;
     private bool facingLeft = true;
     private bool awaitingDeathAnimation;
+    private int spawnedMaxHealth;
 
     public bool IsMoving { get; private set; }
     public float CurrentHealth { get; private set; }
@@ -36,8 +39,7 @@ public class Enemy : MonoBehaviour
     protected virtual void OnEnable()
     {
         awaitingDeathAnimation = false;
-        CurrentHealth = maxHealth;
-        UpdateHealthBar();
+        ConfigureHealth(0);
         facingLeft = true;
         if (enemyAnimator != null)
         {
@@ -45,6 +47,15 @@ public class Enemy : MonoBehaviour
             enemyAnimator.speed = 1f;
             enemyAnimator.Play(WalkLeftState, 0, 0f);
         }
+    }
+
+    // Called after pool activation, before the enemy can move or be targeted.
+    // Keep the prefab default intact so pooled reuse never inherits a prior wave's HP.
+    internal void ConfigureHealth(int health)
+    {
+        spawnedMaxHealth = health > 0 ? health : Mathf.Max(1, maxHealth);
+        CurrentHealth = spawnedMaxHealth;
+        UpdateHealthBar();
     }
 
     public void TakeDamage(float damage, HitEffect attackHitEffect = null)
@@ -106,7 +117,7 @@ public class Enemy : MonoBehaviour
     {
         if (healthBarFill != null)
         {
-            healthBarFill.fillAmount = (float)CurrentHealth / Mathf.Max(1, maxHealth);
+            healthBarFill.fillAmount = CurrentHealth / Mathf.Max(1, spawnedMaxHealth);
         }
     }
 
@@ -132,6 +143,14 @@ public class Enemy : MonoBehaviour
         }
 
         pathPoints = points;
+        if (lapDurationSeconds > 0f)
+        {
+            // Update traverses the closing segment from the last point to point zero too.
+            float length = 0f;
+            for (int index = 0; index < points.Length; index++)
+                length += Vector3.Distance(points[index], points[(index + 1) % points.Length]);
+            if (length > 0f) moveSpeed = length / lapDurationSeconds;
+        }
         this.onArrived = onArrived;
         transform.position = pathPoints[0];
         targetIndex = 1;
