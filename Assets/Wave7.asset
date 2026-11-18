@@ -14,9 +14,81 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WaveData
   enemies:
   - enemyId: 0
-    count: 18
-    health: 600
+    count: 1
+    health: 335
+  - enemyId: 0
+    count: 1
+    health: 335
+  - enemyId: 0
+    count: 1
+    health: 335
   - enemyId: 1
-    count: 8
-    health: 350
+    count: 1
+    health: 180
+  - enemyId: 0
+    count: 1
+    health: 335
+  - enemyId: 0
+    count: 1
+    health: 335
+  - enemyId: 1
+    count: 1
+    health: 180
+  - enemyId: 0
+    count: 1
+    health: 335
+  - enemyId: 0
+    count: 1
+    health: 335
+  - enemyId: 1
+    count: 1
+    health: 180
+  - enemyId: 0
+    count: 1
+    health: 335
+  - enemyId: 0
+    count: 1
+    health: 335
+  - enemyId: 1
+    count: 1
+    health: 180
+  - enemyId: 0
+    count: 1
+    health: 335
+  - enemyId: 0
+    count: 1
+    health: 335
+  - enemyId: 0
+    count: 1
+    health: 335
+  - enemyId: 1
+    count: 1
+    health: 180
+  - enemyId: 0
+    count: 1
+    health: 335
+  - enemyId: 0
+    count: 1
+    health: 335
+  - enemyId: 1
+    count: 1
+    health: 180
+  - enemyId: 0
+    count: 1
+    health: 335
+  - enemyId: 0
+    count: 1
+    health: 335
+  - enemyId: 1
+    count: 1
+    health: 180
+  - enemyId: 0
+    count: 1
+    health: 335
+  - enemyId: 0
+    count: 1
+    health: 335
+  - enemyId: 1
+    count: 1
+    health: 180
   completionReward: 60

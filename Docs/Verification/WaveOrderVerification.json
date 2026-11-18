@@ -1,0 +1,33 @@
+{
+    "passed": true,
+    "assertions": 1859,
+    "runtimeErrors": 0,
+    "spawnedEnemies": 406,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Stored per-enemy order, balanced ratios, counts/HP, immediate first spawn, one-second cadence and two deterministic passes passed.",
+    "firstPass": [
+        "NNNNNNNNNNNN",
+        "NNFNNFNFNNFNNFNF",
+        "NNFNFNNFNFNNFNFNNFNF",
+        "NNFNNFNNFNFNNFNNFNNFNF",
+        "NNFNFNNFNFNFNNFNFNNFNFNF",
+        "NNFNNFNNFNNFNNFNNFNNFNNF",
+        "NNNFNNFNNFNNFNNNFNNFNNFNNF",
+        "NNFNNFNNFNNFNFNNFNNFNNFNNFNF",
+        "NNFNNFNNFNNFNNFNNFNNFNNFNNFNNF",
+        "B"
+    ],
+    "secondPass": [
+        "NNNNNNNNNNNN",
+        "NNFNNFNFNNFNNFNF",
+        "NNFNFNNFNFNNFNFNNFNF",
+        "NNFNNFNNFNFNNFNNFNNFNF",
+        "NNFNFNNFNFNFNNFNFNNFNFNF",
+        "NNFNNFNNFNNFNNFNNFNNFNNF",
+        "NNNFNNFNNFNNFNNNFNNFNNFNNF",
+        "NNFNNFNNFNNFNFNNFNNFNNFNNFNF",
+        "NNFNNFNNFNNFNNFNNFNNFNNFNNFNNF",
+        "B"
+    ]
+}

@@ -14,9 +14,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - enemyId: 0
-    count: 10
-    health: 200
+    count: 1
+    health: 240
+  - enemyId: 0
+    count: 1
+    health: 240
   - enemyId: 1
-    count: 6
-    health: 100
+    count: 1
+    health: 105
+  - enemyId: 0
+    count: 1
+    health: 240
+  - enemyId: 0
+    count: 1
+    health: 240
+  - enemyId: 1
+    count: 1
+    health: 105
+  - enemyId: 0
+    count: 1
+    health: 240
+  - enemyId: 1
+    count: 1
+    health: 105
+  - enemyId: 0
+    count: 1
+    health: 240
+  - enemyId: 0
+    count: 1
+    health: 240
+  - enemyId: 1
+    count: 1
+    health: 105
+  - enemyId: 0
+    count: 1
+    health: 240
+  - enemyId: 0
+    count: 1
+    health: 240
+  - enemyId: 1
+    count: 1
+    health: 105
+  - enemyId: 0
+    count: 1
+    health: 240
+  - enemyId: 1
+    count: 1
+    health: 105
   completionReward: 60

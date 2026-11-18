@@ -15,5 +15,5 @@ MonoBehaviour:
   enemies:
   - enemyId: 2
     count: 1
-    health: 12000
+    health: 6000
   completionReward: 60

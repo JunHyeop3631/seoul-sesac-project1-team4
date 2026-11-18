@@ -1,1 +1,10 @@
-{"passed":true,"tenWaves":true,"enemyCounts":true,"bossOnlyWave10":true,"allTenSpawnAndComplete":true,"waveHealthAndPoolReset":true,"healthBarRatio":true,"fractionalDamage":true}
+{
+    "passed": true,
+    "assertions": 907,
+    "runtimeErrors": 0,
+    "spawnedEnemies": 203,
+    "reusedSpawns": 200,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Ten wave assets, scene order, exact counts/HP/totals, immediate spawn, health bars, fractional damage and pooled reuse passed."
+}

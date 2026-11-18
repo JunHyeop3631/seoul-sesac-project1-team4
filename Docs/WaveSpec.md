@@ -1,6 +1,6 @@
 # 웨이브 명세
 
-> 2026-11-18 최신 난이도 설정: 일반 적 한 바퀴30초·빠른 적20초·보스60초(1배속), 웨이브별 개체 HP는 직전 설정의2배(최종 보스12000). [현재 체력 표·이동 시간 설정](WaveHealthSpec.md).
+> 2026-11-18 작업12: 지정한 Google Docs 탭4의12장을 다시 확인해 웨이브별 개체HP를 원문 표로 적용했다(1웨이브125,최종 보스6000). 이전 HP2배/보스12000 기록을 대체한다. 기존 일반30초·빠른20초·보스60초 이동 설정은 유지한다. [현재 체력 표·연결·검증 범위](WaveHealthSpec.md).
 
 > 2026-11-18 최신 처치 보상: 일반 적 2·빠른 적 1를 즉시 지급하고 작은 코인·금액 표시를 띄운다. [처치 보상 규칙과 표시 설정](KillRewardsSpec.md). 이전 일반10·빠른5 설정은 이 값으로 대체한다.
 
@@ -44,9 +44,10 @@
 - 준비 단계에서 전투 시작 버튼을 누르면 이번 턴의 전투(웨이브)를 시작한다.
 - 첫 몬스터는 즉시 등장한다. 첫 등장 전 카운트다운이나 대기시간은 두지 않는다.
 - 한 웨이브에 정해진 수의 몬스터가 시간 간격을 두고 순차 등장한다.
+- 일반/빠른 적은 [고정 혼합 등장 목록](WaveSpawnOrderSpec.md)을 에셋에 저장한 순서로 생성한다. 각 항목의 count는1이며 재도전 시 무작위로 다시 섞지 않는다.10웨이브는 보스1기만 즉시 생성한다.
 - 몬스터 수는 웨이브별로 다르게 설정할 수 있다.
 - 등장 간격은 모든 웨이브에서 같은 값을 사용한다.
-- 웨이브별 몬스터 수와 공통 등장 간격의 구체적인 값은 미정이다.
+- 웨이브별 몬스터 수·HP는 [현재 표](WaveHealthSpec.md)를 따른다. 현재 씬의 공통 등장 간격은1초이며 작업12에서 바꾸지 않았다.
 
 ### 전투와 몬스터 이탈
 
@@ -132,7 +133,7 @@ pools
 | 실제 선언 | 사용 방법 | 선택한 이유 |
 | --- | --- | --- |
 | `WaveManager.waves : WaveData[]` | 현재 턴 번호로 `waves[index]`에 접근 | 웨이브 순서를 보관하고 번호로 바로 선택하기 위한 설정 목록이다. |
-| `WaveData.enemies : EnemyGroup[]` | `foreach`로 그룹을 순회하고 각 그룹의 `count`만큼 요청 | 웨이브에 어떤 적이 몇 마리 나오는지 Inspector에서 편집하고 순서대로 읽기 위한 설정 목록이다. 현재 구현은 등록 순서로 처리한다. |
+| `WaveData.enemies : EnemyGroup[]` | `foreach`로 항목을 순회하고 각 항목의 `count`만큼 요청 | 작업13의 Wave1~10은 count=1인 개체별 고정 목록이다. Inspector 배열 순서가 실제 등장 순서이며 종류/HP를 함께 저장한다. 다른 테스트 데이터의 count>1 표현도 기존대로 지원한다. |
 | `EnemyPool.enemyPrefabs : EnemyPrefabEntry[]` | Inspector에 ID·프리팹을 등록하고 `FindPrefab`에서 순회 | 프리팹 참조를 편집 가능한 설정으로 보관한다. 아직 실행 중 조회용 딕셔너리로 변환하지 않았다. |
 | `EnemyPool.pools : Dictionary<EnemyId, ObjectPool<Enemy>>` | enum ID로 `TryGetValue`하여 종류별 풀 조회 | 풀 목록 전체를 순회하지 않고 요청 ID의 풀을 찾으며, 문자열 오타를 방지한다. |
 | `EnemyPool.owners : Dictionary<Enemy, ObjectPool<Enemy>>` | 반환할 객체로 `TryGetValue`하여 소속 풀 조회 | 반환 시 모든 종류의 풀이나 전체 객체 목록을 뒤질 필요 없이 원래 풀을 찾는다. |
@@ -183,10 +184,9 @@ pools
 ## 씬 구성과 구현 상태
 
 - [ThrowYut 씬](../Assets/Scenes/ThrowYut.unity)의 `TurnController` 아래에 `WaveManager`, `Wave`, `EnemyPool`을 배치하고 참조를 연결했다.
-- [Wave1](../Assets/Wave1.asset)를 첫 번째 웨이브로 등록했다. 적 종류와 수량은 해당 데이터 에셋에서 설정한다.
-- [Wave2](../Assets/Wave2.asset)를 두 번째 웨이브인 `waves[1]`에 등록했다. 현재 구성은 등록된 두 적 종류가 각 3마리씩, 총 6마리다. 첫 웨이브 완료 후 자동으로 다음 준비 단계에 진입하며 Start Battle 버튼을 누르면 이 데이터를 실행한다.
-- [NormalEnemy 프리팹](../Assets/Prefabs/NormalEnemy.prefab)과 [FastEnemy 프리팹](../Assets/Prefabs/FastEnemy.prefab)을 `EnemyPool`에 종류별 ID로 등록했다.
-- 전투 시작 버튼을 누르면 첫 적이 즉시 등장하고, 이후에는 현재 테스트 설정인 0.1초 간격으로 구성 목록의 순서에 따라 소환한다.
+- Wave1~Wave10을 씬의 waves[0]~waves[9]에 등록했다. [Wave1](../Assets/Wave1.asset)은 일반12기,[Wave2](../Assets/Wave2.asset)는 일반10기/빠른6기이며 전체 편성/HP는 [현재 표](WaveHealthSpec.md)를 따른다. 일반 웨이브 완료 후 다음 준비 단계에서 해당 데이터를 실행한다.
+- [NormalEnemy](../Assets/Prefabs/NormalEnemy.prefab)·[FastEnemy](../Assets/Prefabs/FastEnemy.prefab)·[BossEnemy](../Assets/Prefabs/BossEnemy.prefab)를 `EnemyPool`에 종류별 ID로 등록했다.
+- 전투 시작 버튼을 누르면 첫 적이 즉시 등장하고, 이후에는 게임 시간1초 간격으로 저장된 개체별 목록 순서에 따라 소환한다. 작업13의 [고정 목록](WaveSpawnOrderSpec.md)을 따른다.
 - `Wave`의 `Waypoints` 배열에 오른쪽 아래 → 오른쪽 위 → 왼쪽 위 → 왼쪽 아래 순서로 경유점을 지정한다. 네 경유점은 모두 `Wave`의 자식이다. 첫 경유점은 소환 위치인 `Path 00 Bottom Right` `(1.65, -3.9, 0)`이며, 나머지는 `Path 01 Top Right`, `Path 02 Top Left`, `Path 03 Bottom Left`다. 경유점 좌표는 씬에서 조정할 수 있다.
 - `EnemyPool`은 종류별로 풀을 만들고 요청 시 적을 활성화하여 지정한 위치에 놓는다. 반환 시 비활성화하며 이후 같은 종류의 요청에 재사용한다.
 - 실행 중인 웨이브에 시작 요청이 반복되어도 중복 소환하지 않는다.
@@ -200,8 +200,7 @@ pools
 
 ## 미정 및 후속 범위
 
-- 웨이브별 적 종류·수량과 공통 등장 간격의 실제 값.
-- 여러 적 종류가 한 웨이브에 포함될 때 등장 순서.
+- 웨이브별 수량·HP는 작업12,고정 혼합 순서는 작업13에서 연결했다. 이동 시간의 원문 대조는 작업14에서 확인한다.
 - 기지 도달 피해와 처치 재화 지급 연결.
 - 웨이브 데이터가 없는 경우 및 마지막 웨이브 이후 처리.
 
