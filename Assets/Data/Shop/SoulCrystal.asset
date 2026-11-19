@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 0
   displayName: "\uC601\uD63C\uC758 \uACB0\uC815"
   price: 150
-  icon: {fileID: -8285428674139105644, guid: 9c8e2485aebe523408a7b191b4a4dfe1, type: 3}
+  icon: {fileID: 21300000, guid: 9c8e2485aebe523408a7b191b4a4dfe1, type: 3}
   nameSprite: {fileID: -5576068477224708040, guid: 6e7790942b7bf5a4c8e651d62e9dc7de, type: 3}
   background: "\uC804\uC7A5\uC5D0\uC11C \uC4F0\uB7EC\uC9C4 \uC6A9\uC0AC\uB4E4\uC758
     \uD63C\uC774 \uC624\uB79C \uC138\uC6D4 \uC751\uCD95\uB418\uC5B4 \uB9CC\uB4E4\uC5B4\uC9C4

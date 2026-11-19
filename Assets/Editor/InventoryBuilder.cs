@@ -7,7 +7,12 @@ using UnityEngine.UI;
 public static class InventoryBuilder
 {
     const string Art = "Assets/Art/Item/UI/Inventory/";
-    static Sprite Sprite(string file) => AssetDatabase.LoadAllAssetsAtPath(Art + file + ".png").OfType<Sprite>().OrderByDescending(s => s.rect.width * s.rect.height).First();
+    static Sprite Sprite(string file)
+    {
+        var sprite = AssetDatabase.LoadAssetAtPath<Sprite>(Art + file + ".png");
+        if (sprite == null) throw new System.InvalidOperationException("Missing inventory Sprite: " + file);
+        return sprite;
+    }
     static RectTransform Rect(Transform parent, string name, Vector2 position, Vector2 size)
     {
         var existing = parent.Find(name);
@@ -49,12 +54,14 @@ public static class InventoryBuilder
         {
             var slot = panel.transform.Find("Empty Slot " + (i+1));
             var image = slot.GetComponent<Image>(); image.raycastTarget = true;
+            image.sprite = Sprite("아이템창_안눌림"); image.preserveAspect = true;
             var button = Component<Button>(slot.gameObject); button.targetGraphic = image;
             var colors = button.colors; colors.disabledColor = Color.white; button.colors = colors;
-            // Slot artwork has a lower decorative edge; center the icon in its visible inset.
-            var icon = Picture(slot, "Owned Icon", new Vector2(0,8), new Vector2(94,98), null);
-            var highlight = Picture(slot, "Selection", Vector2.zero, new Vector2(142,162), image.sprite);
-            highlight.color = new Color(1,.75f,.2f,.5f); highlight.enabled = false;
+            // Fit the icon inside the visible selection border, excluding the sprite's transparent margins.
+            var icon = Picture(slot, "Owned Icon", new Vector2(-2, 2), new Vector2(60, 60), null);
+            icon.enabled = false;
+            var highlight = Picture(slot, "Selection", Vector2.zero, new Vector2(142,162), Sprite("아이템창_눌림"));
+            highlight.color = Color.white; highlight.enabled = false;
             highlight.transform.SetAsFirstSibling();
             data.FindProperty("slots").GetArrayElementAtIndex(i).objectReferenceValue = button;
             data.FindProperty("icons").GetArrayElementAtIndex(i).objectReferenceValue = icon;
