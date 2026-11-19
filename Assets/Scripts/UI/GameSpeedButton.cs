@@ -29,6 +29,7 @@ public sealed class GameSpeedButton : MonoBehaviour
 
     private void CycleSpeed()
     {
+        if (Time.timeScale <= 0f) return;
         SetSpeed(CurrentSpeed == 4 ? 1 : CurrentSpeed * 2);
     }
 

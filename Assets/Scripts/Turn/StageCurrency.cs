@@ -10,6 +10,13 @@ public sealed class StageCurrency : MonoBehaviour
     public int SpecialBalance { get; private set; }
     public event Action<int> Changed;
     public event Action<int> SpecialChanged;
+    public bool IsNotifying { get; private set; }
+    private void Notify(Action<int> listeners, int balance)
+    {
+        bool previous = IsNotifying; IsNotifying = true;
+        try { listeners?.Invoke(balance); }
+        finally { IsNotifying = previous; }
+    }
 
     private void Awake()
     {
@@ -23,7 +30,7 @@ public sealed class StageCurrency : MonoBehaviour
         int credited = Math.Min(Math.Max(0, amount), int.MaxValue - Balance);
         if (credited == 0) return 0;
         Balance += credited;
-        Changed?.Invoke(Balance);
+        Notify(Changed, Balance);
         return credited;
     }
 
@@ -42,7 +49,7 @@ public sealed class StageCurrency : MonoBehaviour
         try { committed = commit(); }
         finally { if (!committed) Balance += amount; }
         if (!committed) return false;
-        Changed?.Invoke(Balance);
+        Notify(Changed, Balance);
         return true;
     }
 
@@ -51,7 +58,7 @@ public sealed class StageCurrency : MonoBehaviour
         int credited = Math.Min(Math.Max(0, amount), int.MaxValue - SpecialBalance);
         if (credited == 0) return 0;
         SpecialBalance += credited;
-        SpecialChanged?.Invoke(SpecialBalance);
+        Notify(SpecialChanged, SpecialBalance);
         return credited;
     }
 
@@ -69,7 +76,7 @@ public sealed class StageCurrency : MonoBehaviour
         try { committed = commit(); }
         finally { if (!committed) SpecialBalance += amount; }
         if (!committed) return false;
-        SpecialChanged?.Invoke(SpecialBalance);
+        Notify(SpecialChanged, SpecialBalance);
         return true;
     }
 }

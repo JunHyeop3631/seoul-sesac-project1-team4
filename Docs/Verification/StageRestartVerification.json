@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "assertions": 171,
+    "runtimeErrors": 0,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Actual retry after normal loss/boss loss/victory and title new game, single-load guards, complete scene-owned reset, destroyed old pools/units/UI and restored120/0/10/1x passed."
+}

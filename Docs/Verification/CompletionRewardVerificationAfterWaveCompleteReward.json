@@ -1,0 +1,82 @@
+{
+    "passed": true,
+    "assertions": 88,
+    "runtimeErrors": 0,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "All nine actual waves with one escape each:60 once/540 total, separate kill income, carryover, reward callback reentry and no wave10 base reward passed.",
+    "waves": [
+        {
+            "wave": 1,
+            "kills": 11,
+            "escaped": 1,
+            "completionReward": 60,
+            "balance": 202,
+            "lives": 9
+        },
+        {
+            "wave": 2,
+            "kills": 15,
+            "escaped": 1,
+            "completionReward": 60,
+            "balance": 292,
+            "lives": 8
+        },
+        {
+            "wave": 3,
+            "kills": 19,
+            "escaped": 1,
+            "completionReward": 60,
+            "balance": 390,
+            "lives": 7
+        },
+        {
+            "wave": 4,
+            "kills": 21,
+            "escaped": 1,
+            "completionReward": 60,
+            "balance": 492,
+            "lives": 6
+        },
+        {
+            "wave": 5,
+            "kills": 23,
+            "escaped": 1,
+            "completionReward": 60,
+            "balance": 598,
+            "lives": 5
+        },
+        {
+            "wave": 6,
+            "kills": 23,
+            "escaped": 1,
+            "completionReward": 60,
+            "balance": 704,
+            "lives": 4
+        },
+        {
+            "wave": 7,
+            "kills": 25,
+            "escaped": 1,
+            "completionReward": 60,
+            "balance": 814,
+            "lives": 3
+        },
+        {
+            "wave": 8,
+            "kills": 27,
+            "escaped": 1,
+            "completionReward": 60,
+            "balance": 928,
+            "lives": 2
+        },
+        {
+            "wave": 9,
+            "kills": 29,
+            "escaped": 1,
+            "completionReward": 60,
+            "balance": 1046,
+            "lives": 1
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "assertions": 69,
+    "runtimeErrors": 0,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Next-battle reservation, exact4/4/120/200 rewards and popups, leak survival, boss credit-before-win, expiration/no carry, duplicate/state/reentry guards and reset passed."
+}

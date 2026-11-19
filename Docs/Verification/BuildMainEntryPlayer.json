@@ -1,0 +1,16 @@
+{
+    "passed": true,
+    "quitConfirmed": true,
+    "assertions": 30,
+    "runtimeErrors": 0,
+    "bootIndex": 0,
+    "bootScene": "Title",
+    "unity": "6000.3.28f1",
+    "detail": "Windows player booted Title0; start, cancel, confirmed home, restart, paid throw and actual Application.Quit passed.",
+    "scenes": [
+        "Title",
+        "ThrowYut",
+        "Title",
+        "ThrowYut"
+    ]
+}

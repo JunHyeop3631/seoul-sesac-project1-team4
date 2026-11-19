@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "assertions": 545,
+  "runtimeErrors": 0,
+  "checks": {
+    "CurrencyVerification": {
+      "passed": true,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Two balances, paid throws, HUD, rejected inputs, carryover, and scene restart passed.",
+      "assertions": 31,
+      "runtimeErrors": 0
+    },
+    "PreparationInputVerification": {
+      "passed": true,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Preparation / throw / result / combat / next preparation / terminal states passed.",
+      "assertions": 53,
+      "runtimeErrors": 0
+    },
+    "CharacterInfoTransitionVerification": {
+      "passed": true,
+      "assertions": 161,
+      "runtimeErrors": 0,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Sequential outgoing/incoming fades, no overlap, latest-target wins, rapid reverse/reselection, original color/layout restoration, gameplay preservation, pause/pool/disable/battle interruption and real rendered frames passed."
+    },
+    "InventoryVerification": {
+      "passed": true,
+      "assertions": 86,
+      "runtimeErrors": 0,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Nine slots, owned-only selection, shared descriptions, passive status, safe effect dispatch, consumption/reentry guards, panel lifetime and preparation restrictions passed."
+    },
+    "SpecialSummonWindowVerification": {
+      "passed": true,
+      "assertions": 43,
+      "runtimeErrors": 0,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "HUD geometry, shortage/open rules, live availability, actual button45-to15, auto-close, no-space3/4/6, duplicate protection, modal keyboard/pointer focus, pause/combat/terminal guards, audio preservation and rendered previews passed."
+    },
+    "StageRestartVerification": {
+      "passed": true,
+      "assertions": 171,
+      "runtimeErrors": 0,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Actual retry after normal loss/boss loss/victory and title new game, single-load guards, complete scene-owned reset, destroyed old pools/units/UI and restored120/0/10/1x passed."
+    }
+  }
+}

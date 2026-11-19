@@ -27,6 +27,7 @@ public sealed class AllyRangeDisplay : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (turnController != null && turnController.IsExitConfirmationOpen) return;
         if (turnController == null || !turnController.CanUsePreparationInput ||
             rangeAlly == null || !rangeAlly.isActiveAndEnabled || rangeAlly.AttackRange <= 0f)
         {

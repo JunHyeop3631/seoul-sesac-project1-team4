@@ -1,0 +1,18 @@
+{
+    "passed": true,
+    "unity": "6000.3.28f1",
+    "target": "StandaloneWindows64",
+    "backend": "Mono2x",
+    "output": "C:/ProgrammerJunHyeop/청취사_1차_4팀_프로젝트/Builds/Verification/Task42/MainEntry.exe",
+    "result": "Succeeded",
+    "activeProfile": "Global scene list",
+    "detail": "",
+    "scenes": [
+        "Assets/Scenes/Title.unity",
+        "Assets/Scenes/ThrowYut.unity"
+    ],
+    "errors": 0,
+    "warnings": 0,
+    "bytes": 3282766781,
+    "seconds": 59.242666099999997
+}

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "buildErrors": 0,
+  "buildWarnings": 0,
+  "playerAssertions": 30,
+  "playerRuntimeErrors": 0,
+  "playerExitCode": 0,
+  "bootScene": "Title",
+  "bootIndex": 0,
+  "sceneTrace": [
+    "Title",
+    "ThrowYut",
+    "Title",
+    "ThrowYut"
+  ],
+  "comparedSourceFiles": 74,
+  "sourceMismatches": [],
+  "verificationProbeOnlyInCopy": true,
+  "probeTemplateMatches": true,
+  "exeSha256": "0e74ad636ce1132a6165c348645008943dc1a5201978378827adf1d52de0312e",
+  "managedAssemblySha256": "daeaddeef3377ab66da280bd274f27247e568c7bcde38029fee3e8be43019ec0",
+  "shutdownMessages": [
+    "GarbageCollector disposing of ComputeBuffer. Please use ComputeBuffer.Release() or .Dispose() to manually release the buffer.",
+    "PlayerConnection::Cleanup[d3d12] Unreleased non-evictable resource 000001CD92A9EF00 (size 4096 B, lastUsedFence 9) 'Buffer-16-4096'"
+  ]
+}

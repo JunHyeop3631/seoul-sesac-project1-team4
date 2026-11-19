@@ -17,6 +17,7 @@ public sealed class TitleScreenController : MonoBehaviour
 
     public bool IsMenuOpen => menu.activeSelf;
     public int SelectedIndex { get; private set; }
+    private bool startingGame;
 
     private void Awake()
     {
@@ -82,6 +83,9 @@ public sealed class TitleScreenController : MonoBehaviour
 
     private void StartGame()
     {
+        if (startingGame || !isActiveAndEnabled) return;
+        startingGame = true;
+        Time.timeScale = 1f;
         SceneManager.LoadScene("ThrowYut");
     }
 

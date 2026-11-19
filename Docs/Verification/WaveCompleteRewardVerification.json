@@ -1,0 +1,39 @@
+{
+    "passed": true,
+    "assertions": 1468,
+    "runtimeErrors": 0,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "Actual60/120 display, centered13-frame art, real-time unfold/hold/fade at1x/4x, preparation input, no duplicate payout, cap17 and terminal/next-battle lifetime guards passed.",
+    "timings": [
+        {
+            "speed": 1,
+            "reward": 60,
+            "opened": 0.4001174867153168,
+            "fadeStarted": 1.9003268480300904,
+            "hidden": 2.2000248432159426
+        },
+        {
+            "speed": 4,
+            "reward": 120,
+            "opened": 0.4000282883644104,
+            "fadeStarted": 1.9005192518234254,
+            "hidden": 2.2000036239624025
+        }
+    ],
+    "frameWidths": [
+        64,
+        66,
+        82,
+        122,
+        200,
+        330,
+        524,
+        718,
+        848,
+        926,
+        966,
+        982,
+        984
+    ]
+}

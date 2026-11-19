@@ -14,6 +14,8 @@ public sealed class TurnController : MonoBehaviour
         ? HeavenlyLuckTalismanEffect.DiscountedThrowCost : YutThrowCost;
     [SerializeField] private HeavenlyMandateEffect heavenlyMandate;
     public int BattleRewardMultiplier => heavenlyMandate != null && heavenlyMandate.IsActive ? 2 : 1;
+    [SerializeField] private StageExitConfirmation exitConfirmation;
+    public bool IsExitConfirmationOpen => exitConfirmation != null && exitConfirmation.IsOpen;
     private enum YutAction
     {
         None,

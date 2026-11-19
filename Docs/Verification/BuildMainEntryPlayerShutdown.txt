@@ -1,0 +1,2 @@
+GarbageCollector disposing of ComputeBuffer. Please use ComputeBuffer.Release() or .Dispose() to manually release the buffer.
+PlayerConnection::Cleanup[d3d12] Unreleased non-evictable resource 000001CD92A9EF00 (size 4096 B, lastUsedFence 9) 'Buffer-16-4096'

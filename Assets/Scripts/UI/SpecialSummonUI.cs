@@ -57,6 +57,7 @@ public sealed class SpecialSummonUI : MonoBehaviour
     }
     private void Update()
     {
+        if (turnController != null && turnController.IsExitConfirmationOpen) return;
         RefreshAvailability();
     }
     private void RefreshAvailability()

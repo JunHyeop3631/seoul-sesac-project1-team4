@@ -37,6 +37,7 @@ public sealed class InventoryUI : MonoBehaviour
     }
     private void LateUpdate()
     {
+        if (turnController != null && turnController.IsExitConfirmationOpen) return;
         if (!CanSelect) { turnController.SetInventoryOpen(false); return; }
         if (pendingEffectStatus != null)
         {

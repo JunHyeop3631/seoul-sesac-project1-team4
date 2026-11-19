@@ -158,6 +158,7 @@ public sealed class CharacterInfoPanel : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (turnController != null && turnController.IsExitConfirmationOpen) return;
         if (turnController == null || !turnController.CanUsePreparationInput ||
             (phase != Phase.ToDefault && CurrentAlly == null) ||
             (CurrentAlly != null && !CurrentAlly.isActiveAndEnabled))

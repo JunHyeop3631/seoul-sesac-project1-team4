@@ -32,6 +32,9 @@ public sealed class WaveCompleteHUD : MonoBehaviour
 
     private void Show(int waveNumber, int grantedReward)
     {
+        // Preparation callbacks can end the battle before the completion signal arrives.
+        if (!isActiveAndEnabled || turnController == null ||
+            turnController.IsBattleWon || turnController.IsBattleLost) return;
         if (banner != null) banner.Play(waveNumber, grantedReward);
     }
 

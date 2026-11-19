@@ -49,6 +49,7 @@ public sealed class YutActionController : MonoBehaviour
     public bool IsRegisteredAlly(Ally ally) => ally != null && occupancy.TryGetCell(ally, out _);
     public bool CanUsePreparationInput => isActiveAndEnabled && turnController != null &&
         turnController.CanUsePreparationInput;
+    public bool IsExitConfirmationOpen => turnController != null && turnController.IsExitConfirmationOpen;
 
     public bool CanMove(YutThrowResult result)
     {

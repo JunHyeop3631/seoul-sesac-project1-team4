@@ -24,6 +24,7 @@ public sealed class AllyActionButtons : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (actionController != null && actionController.IsExitConfirmationOpen) return;
         if (actionController == null || !actionController.CanUsePreparationInput ||
             target == null || !target.isActiveAndEnabled)
         {

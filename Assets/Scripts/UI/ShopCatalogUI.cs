@@ -62,6 +62,7 @@ public sealed class ShopCatalogUI : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (turnController != null && turnController.IsExitConfirmationOpen) return;
         if (!CanSelect) gameObject.SetActive(false);
         else RefreshPurchaseState();
     }
