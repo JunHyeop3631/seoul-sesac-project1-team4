@@ -12,7 +12,8 @@ public static class InventoryBuilder
     {
         var existing = parent.Find(name);
         if (existing == null) { existing = new GameObject(name, typeof(RectTransform)).transform; existing.SetParent(parent, false); existing.gameObject.layer = parent.gameObject.layer; }
-        var rect = (RectTransform)existing; rect.anchorMin = rect.anchorMax = new Vector2(.5f, .5f);
+        var rect = (RectTransform)existing; rect.anchorMin = rect.anchorMax = rect.pivot = new Vector2(.5f, .5f);
+        rect.localScale = Vector3.one;
         rect.anchoredPosition = position; rect.sizeDelta = size; return rect;
     }
     static T Component<T>(GameObject go) where T : Component => go.GetComponent<T>() ?? go.AddComponent<T>();
@@ -29,6 +30,7 @@ public static class InventoryBuilder
     }
     public static void Build()
     {
+        if (EditorApplication.isPlaying) throw new System.InvalidOperationException("Stop Play Mode before arranging inventory UI.");
         var scene = EditorSceneManager.OpenScene("Assets/Scenes/ThrowYut.unity");
         var turn = Object.FindFirstObjectByType<TurnController>(); var turnData = new SerializedObject(turn);
         var panel = (GameObject)turnData.FindProperty("inventoryPanel").objectReferenceValue;
@@ -49,7 +51,8 @@ public static class InventoryBuilder
             var image = slot.GetComponent<Image>(); image.raycastTarget = true;
             var button = Component<Button>(slot.gameObject); button.targetGraphic = image;
             var colors = button.colors; colors.disabledColor = Color.white; button.colors = colors;
-            var icon = Picture(slot, "Owned Icon", Vector2.zero, new Vector2(116,130), null);
+            // Slot artwork has a lower decorative edge; center the icon in its visible inset.
+            var icon = Picture(slot, "Owned Icon", new Vector2(0,8), new Vector2(94,98), null);
             var highlight = Picture(slot, "Selection", Vector2.zero, new Vector2(142,162), image.sprite);
             highlight.color = new Color(1,.75f,.2f,.5f); highlight.enabled = false;
             highlight.transform.SetAsFirstSibling();
@@ -57,24 +60,33 @@ public static class InventoryBuilder
             data.FindProperty("icons").GetArrayElementAtIndex(i).objectReferenceValue = icon;
             data.FindProperty("highlights").GetArrayElementAtIndex(i).objectReferenceValue = highlight;
         }
-        var detail = Rect(panel.transform, "Item Detail", new Vector2(-20,0), new Vector2(650,526));
-        detail.anchorMin = detail.anchorMax = new Vector2(0,.5f); detail.pivot = new Vector2(1,.5f);
-        var background = Component<Image>(detail.gameObject); background.sprite = Sprite("아이템정보창_배경화면"); background.preserveAspect = true;
-        const string materialPath = "Assets/Data/Shop/InventoryFrame.mat";
-        var material = AssetDatabase.LoadAssetAtPath<Material>(materialPath);
-        if (material == null) { material = new Material(Shader.Find("UI/InventoryFrame")); AssetDatabase.CreateAsset(material, materialPath); }
-        background.material = material;
-        var selectedIcon = Picture(detail, "Icon", new Vector2(-190,90), new Vector2(135,145), null);
-        var title = Label(detail, "Name", new Vector2(50,120), new Vector2(360,55), 30);
-        var status = Label(detail, "Status", new Vector2(50,65), new Vector2(340,36), 24);
-        var description = Label(detail, "Description", new Vector2(0,-65), new Vector2(530,190), 23); description.alignment = TextAnchor.UpperLeft;
-        var useImage = Picture(detail, "Use", new Vector2(95,-205), new Vector2(225,85), Sprite("아이템정보창_사용하기버튼"));
+        var detail = Rect(panel.transform, "Item Detail", new Vector2(0,-300), new Vector2(480,300));
+        // Integrate the detail into the inventory's existing backdrop instead of covering the board.
+        var background = Component<Image>(detail.gameObject); background.enabled = false;
+        background.sprite = null; background.material = null; background.raycastTarget = false;
+        var divider = Picture(detail, "Divider", new Vector2(0,154), new Vector2(440,2), null);
+        divider.color = new Color32(223,157,65,160); divider.preserveAspect = false;
+        var selectedIcon = Picture(detail, "Icon", new Vector2(-175,102), new Vector2(68,68), null);
+        var title = Label(detail, "Name", new Vector2(38,115), new Vector2(310,36), 26);
+        var status = Label(detail, "Status", new Vector2(38,78), new Vector2(310,30), 18);
+        status.color = new Color32(231,189,122,255);
+        var description = Label(detail, "Description", new Vector2(0,-11), new Vector2(420,132), 20);
+        description.alignment = TextAnchor.UpperLeft; description.lineSpacing = .95f;
+        description.resizeTextForBestFit = true; description.resizeTextMinSize = 18; description.resizeTextMaxSize = 20;
+        var useImage = Picture(detail, "Use", new Vector2(125,-118), new Vector2(180,60), Sprite("아이템정보창_사용하기버튼"));
         useImage.raycastTarget = true; var useButton = Component<Button>(useImage.gameObject); useButton.targetGraphic = useImage;
         useButton.transition = Selectable.Transition.SpriteSwap; useButton.spriteState = new SpriteState { pressedSprite = Sprite("아이템정보창_사용하기버튼_눌림") };
-        var backImage = Picture(detail, "Back", new Vector2(-185,-205), new Vector2(140,65), Sprite("아이템정보창_뒤로버튼"));
+        var backImage = Picture(detail, "Back", new Vector2(-150,-118), new Vector2(120,50), Sprite("아이템정보창_뒤로버튼"));
         backImage.raycastTarget = true; var back = Component<Button>(backImage.gameObject); back.targetGraphic = backImage;
         back.transition = Selectable.Transition.SpriteSwap; back.spriteState = new SpriteState { pressedSprite = Sprite("아이템정보창_뒤로버튼_눌림") };
-        var hint = Label(panel.transform, "Empty Hint", new Vector2(0,-300), new Vector2(440,80), 26); hint.text = "보유한 아이템이 없습니다.";
+        var hint = Label(panel.transform, "Empty Hint", new Vector2(0,-300), new Vector2(440,80), 24); hint.text = "보유한 아이템이 없습니다.";
+        var pending = panel.transform.Find("Pending Effect Status");
+        if (pending != null)
+        {
+            var pendingRect = Rect(panel.transform, pending.name, new Vector2(0,-480), new Vector2(440,36));
+            var pendingText = pendingRect.GetComponent<Text>(); pendingText.fontSize = 17;
+            pendingText.color = new Color32(231,189,122,255);
+        }
         data.FindProperty("detail").objectReferenceValue = detail.gameObject;
         data.FindProperty("selectedIcon").objectReferenceValue = selectedIcon;
         data.FindProperty("selectedName").objectReferenceValue = title;

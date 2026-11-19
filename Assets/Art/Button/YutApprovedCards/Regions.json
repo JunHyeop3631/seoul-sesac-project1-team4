@@ -1,0 +1,244 @@
+{
+  "regions": [
+    {
+      "file": "OtherNormal.png",
+      "name": "Do_Summon_Normal",
+      "x": 0.0037831021,
+      "y": 0.71860814,
+      "width": 0.4930643,
+      "height": 0.14227892
+    },
+    {
+      "file": "OtherNormal.png",
+      "name": "Do_Move_Normal",
+      "x": 0.5031526,
+      "y": 0.71860814,
+      "width": 0.49306428,
+      "height": 0.14227892
+    },
+    {
+      "file": "GaeNormal.png",
+      "name": "Gae_Summon_Normal",
+      "x": 0.017578125,
+      "y": 0.07291663,
+      "width": 0.46728516,
+      "height": 0.88151044
+    },
+    {
+      "file": "GaeNormal.png",
+      "name": "Gae_Move_Normal",
+      "x": 0.5107422,
+      "y": 0.07291663,
+      "width": 0.46972656,
+      "height": 0.88151044
+    },
+    {
+      "file": "OtherNormal.png",
+      "name": "Geol_Summon_Normal",
+      "x": 0.0037831021,
+      "y": 0.56580937,
+      "width": 0.4930643,
+      "height": 0.14220878
+    },
+    {
+      "file": "OtherNormal.png",
+      "name": "Geol_Move_Normal",
+      "x": 0.5031526,
+      "y": 0.56580937,
+      "width": 0.49306428,
+      "height": 0.1417045
+    },
+    {
+      "file": "OtherNormal.png",
+      "name": "Yut_Summon_Normal",
+      "x": 0.0037831021,
+      "y": 0.4130106,
+      "width": 0.4930643,
+      "height": 0.14170447
+    },
+    {
+      "file": "OtherNormal.png",
+      "name": "Yut_Move_Normal",
+      "x": 0.5031526,
+      "y": 0.4130106,
+      "width": 0.49306428,
+      "height": 0.14170447
+    },
+    {
+      "file": "OtherNormal.png",
+      "name": "Mo_Summon_Normal",
+      "x": 0.0037831021,
+      "y": 0.26021183,
+      "width": 0.4930643,
+      "height": 0.14220876
+    },
+    {
+      "file": "OtherNormal.png",
+      "name": "Mo_Move_Normal",
+      "x": 0.5031526,
+      "y": 0.26021183,
+      "width": 0.49306428,
+      "height": 0.14220876
+    },
+    {
+      "file": "OtherNormal.png",
+      "name": "Backdo_Summon_Normal",
+      "x": 0.0037831021,
+      "y": 0.10640442,
+      "width": 0.4930643,
+      "height": 0.14271307
+    },
+    {
+      "file": "OtherNormal.png",
+      "name": "Backdo_Move_Normal",
+      "x": 0.5031526,
+      "y": 0.10640442,
+      "width": 0.49306428,
+      "height": 0.14271307
+    },
+    {
+      "file": "OtherPressed.png",
+      "name": "Do_Summon_Pressed",
+      "x": 0.0037831021,
+      "y": 0.71860814,
+      "width": 0.4930643,
+      "height": 0.14227892
+    },
+    {
+      "file": "OtherPressed.png",
+      "name": "Do_Move_Pressed",
+      "x": 0.5031526,
+      "y": 0.71860814,
+      "width": 0.49306428,
+      "height": 0.14227892
+    },
+    {
+      "file": "GaePressed.png",
+      "name": "Gae_Summon_Pressed",
+      "x": 0.017578125,
+      "y": 0.07291663,
+      "width": 0.46728516,
+      "height": 0.88151044
+    },
+    {
+      "file": "GaePressed.png",
+      "name": "Gae_Move_Pressed",
+      "x": 0.5107422,
+      "y": 0.07291663,
+      "width": 0.46972656,
+      "height": 0.88151044
+    },
+    {
+      "file": "OtherPressed.png",
+      "name": "Geol_Summon_Pressed",
+      "x": 0.0037831021,
+      "y": 0.56580937,
+      "width": 0.4930643,
+      "height": 0.14220878
+    },
+    {
+      "file": "OtherPressed.png",
+      "name": "Geol_Move_Pressed",
+      "x": 0.5031526,
+      "y": 0.56580937,
+      "width": 0.49306428,
+      "height": 0.1417045
+    },
+    {
+      "file": "OtherPressed.png",
+      "name": "Yut_Summon_Pressed",
+      "x": 0.0037831021,
+      "y": 0.4130106,
+      "width": 0.4930643,
+      "height": 0.14170447
+    },
+    {
+      "file": "OtherPressed.png",
+      "name": "Yut_Move_Pressed",
+      "x": 0.5031526,
+      "y": 0.4130106,
+      "width": 0.49306428,
+      "height": 0.14170447
+    },
+    {
+      "file": "OtherPressed.png",
+      "name": "Mo_Summon_Pressed",
+      "x": 0.0037831021,
+      "y": 0.26021183,
+      "width": 0.4930643,
+      "height": 0.14220876
+    },
+    {
+      "file": "OtherPressed.png",
+      "name": "Mo_Move_Pressed",
+      "x": 0.5031526,
+      "y": 0.26021183,
+      "width": 0.49306428,
+      "height": 0.14220876
+    },
+    {
+      "file": "OtherPressed.png",
+      "name": "Backdo_Summon_Pressed",
+      "x": 0.0037831021,
+      "y": 0.10640442,
+      "width": 0.4930643,
+      "height": 0.14271307
+    },
+    {
+      "file": "OtherPressed.png",
+      "name": "Backdo_Move_Pressed",
+      "x": 0.5031526,
+      "y": 0.10640442,
+      "width": 0.49306428,
+      "height": 0.14271307
+    },
+    {
+      "file": "Results.png",
+      "name": "Do_Result",
+      "x": 0.08956983,
+      "y": 0.59870553,
+      "width": 0.1826753,
+      "height": 0.21898597
+    },
+    {
+      "file": "Results.png",
+      "name": "Gae_Result",
+      "x": 0.38833234,
+      "y": 0.592233,
+      "width": 0.21272835,
+      "height": 0.23408845
+    },
+    {
+      "file": "Results.png",
+      "name": "Geol_Result",
+      "x": 0.7159694,
+      "y": 0.5674218,
+      "width": 0.18797879,
+      "height": 0.2588997
+    },
+    {
+      "file": "Results.png",
+      "name": "Yut_Result",
+      "x": 0.08721273,
+      "y": 0.15210354,
+      "width": 0.19033588,
+      "height": 0.26537216
+    },
+    {
+      "file": "Results.png",
+      "name": "Mo_Result",
+      "x": 0.3847967,
+      "y": 0.17152107,
+      "width": 0.1826753,
+      "height": 0.22545847
+    },
+    {
+      "file": "Results.png",
+      "name": "Backdo_Result",
+      "x": 0.66411316,
+      "y": 0.14778852,
+      "width": 0.28933412,
+      "height": 0.25782093
+    }
+  ]
+}

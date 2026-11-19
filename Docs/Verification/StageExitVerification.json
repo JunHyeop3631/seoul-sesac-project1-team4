@@ -1,8 +1,8 @@
 {
-    "passed": true,
-    "assertions": 54,
-    "runtimeErrors": 0,
-    "unity": "6000.3.28f1",
-    "scene": "ThrowYut (Play Mode)",
-    "detail": "Cancel preservation, confirmed home/new game, direct result home and actual editor quit passed."
+  "passed": true,
+  "assertions": 54,
+  "runtimeErrors": 0,
+  "unity": "6000.3.28f1",
+  "scene": "ThrowYut (Play Mode)",
+  "detail": "Cancel preservation, confirmed home/new game, direct result home and actual editor quit passed."
 }

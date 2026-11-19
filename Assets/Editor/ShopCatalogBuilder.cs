@@ -41,7 +41,9 @@ public static class ShopCatalogBuilder
         for (int i = 0; i < rows.Length; i++)
         {
             var row = Find("Shop Item - " + rows[i]); var icon = row.transform.Find("Icon").GetComponent<Image>();
-            var rowRect = row.GetComponent<RectTransform>(); rowRect.anchoredPosition = new Vector2(rowRect.anchoredPosition.x, -280 - 160 * i);
+            var rowRect = row.GetComponent<RectTransform>();
+            rowRect.anchorMin = rowRect.anchorMax = rowRect.pivot = Vector2.one * .5f;
+            rowRect.anchoredPosition = new Vector2(0, 320 - 160 * i);
             string path = Folder + "/" + ids[i] + ".asset";
             var item = AssetDatabase.LoadAssetAtPath<ShopItemDefinition>(path);
             if (item == null) { item = ScriptableObject.CreateInstance<ShopItemDefinition>(); AssetDatabase.CreateAsset(item, path); }

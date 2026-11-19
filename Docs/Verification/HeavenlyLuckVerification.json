@@ -1,8 +1,8 @@
 {
-    "passed": true,
-    "assertions": 36,
-    "runtimeErrors": 0,
-    "unity": "6000.3.28f1",
-    "scene": "ThrowYut (Play Mode)",
-    "detail": "Immediate purchase discount, passive status, cost display, exact16/reentry/insufficient guards, stage carryover, unchanged rewards and fresh-scene20 passed."
+  "passed": true,
+  "assertions": 36,
+  "runtimeErrors": 0,
+  "unity": "6000.3.28f1",
+  "scene": "ThrowYut (Play Mode)",
+  "detail": "Immediate purchase discount, passive status, cost display, exact16/reentry/insufficient guards, stage carryover, unchanged rewards and fresh-scene20 passed."
 }

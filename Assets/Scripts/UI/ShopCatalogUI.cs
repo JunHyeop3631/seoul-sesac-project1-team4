@@ -17,6 +17,7 @@ public sealed class ShopCatalogUI : MonoBehaviour
     [SerializeField] private ShopPurchaseController purchases;
     [SerializeField] private Text purchaseStatus;
     [SerializeField] private Text[] rowStatus;
+    [SerializeField] private Image[] purchasedStamps;
     [SerializeField] private CanvasGroup[] backgroundControls;
     private float[] previousAlpha;
     private bool[] previousInteractable, previousRaycasts;
@@ -118,6 +119,9 @@ public sealed class ShopCatalogUI : MonoBehaviour
             bool affordable = purchases.Currency != null && purchases.Currency.CanAfford(item.Price);
             string status = sold ? "구매 완료" : affordable ? "" : "재화 부족";
             if (i < rowStatus.Length && rowStatus[i] != null && rowStatus[i].text != status) rowStatus[i].text = status;
+            bool hasStamp = purchasedStamps != null && i < purchasedStamps.Length && purchasedStamps[i] != null;
+            if (hasStamp) purchasedStamps[i].enabled = sold;
+            if (i < rowStatus.Length && rowStatus[i] != null) rowStatus[i].enabled = !sold || !hasStamp;
             Color color = sold ? new Color(.55f, .55f, .55f, 1f) : Color.white;
             rowIcons[i].color = color;
             foreach (var digit in rowPrices[i].GetComponentsInChildren<Image>()) digit.color = color;

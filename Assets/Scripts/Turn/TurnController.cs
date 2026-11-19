@@ -199,10 +199,8 @@ public sealed class TurnController : MonoBehaviour
         if (CurrentYutResult.HasValue) RefreshYutButtons();
 
         Mouse mouse = Mouse.current;
-        Keyboard keyboard = Keyboard.current;
         // Cancellation is independent of left-click hit testing and UI hover.
-        if (CanCancelYutAction && ((mouse != null && mouse.rightButton.wasPressedThisFrame) ||
-            (keyboard != null && keyboard.escapeKey.wasPressedThisFrame)))
+        if (CanCancelYutAction && mouse != null && mouse.rightButton.wasPressedThisFrame)
         {
             CancelYutAction();
             return;

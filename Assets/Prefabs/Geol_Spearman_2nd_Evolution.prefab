@@ -181,4 +181,4 @@ MonoBehaviour:
   evolutionStage: 2
   populationCost: 1
   attackSound: {fileID: 8300000, guid: 6e0d94a0d76f0fb49924c29f7063bd28, type: 3}
-  attackVolume: 0.05
+  attackVolume: 0.009

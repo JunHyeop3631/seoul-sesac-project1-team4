@@ -1,8 +1,8 @@
 {
-    "passed": true,
-    "assertions": 117,
-    "runtimeErrors": 0,
-    "unity": "6000.3.28f1",
-    "scene": "ThrowYut (Play Mode)",
-    "detail": "Five exact-price purchases, insufficient guards, atomic observer state, duplicate/reentry rejection, owned vs sold-out lifetime, consumption/no-restock, wave carry, scene reset and state guards passed."
+  "passed": true,
+  "assertions": 117,
+  "runtimeErrors": 0,
+  "unity": "6000.3.28f1",
+  "scene": "ThrowYut (Play Mode)",
+  "detail": "Five exact-price purchases, insufficient guards, atomic observer state, duplicate/reentry rejection, owned vs sold-out lifetime, consumption/no-restock, wave carry, scene reset and state guards passed."
 }

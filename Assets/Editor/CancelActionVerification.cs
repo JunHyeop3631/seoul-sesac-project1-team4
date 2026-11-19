@@ -46,7 +46,7 @@ public static class CancelActionVerification
             if (checks == null) { Application.logMessageReceived += CountError; checks = Check(); }
             if (checks.MoveNext()) return;
             Require(errors == 0, "No runtime errors during checks");
-            Finish(true, "Right-click/Escape cancellation, preserved paid result, summon switching, Backdo limits and phase guards passed.");
+            Finish(true, "Right-click cancellation; Escape belongs to the pause menu, preserved paid result, summon switching, Backdo limits and phase guards passed.");
         }
         catch (Exception e) { Debug.LogException(e); Finish(false, e.ToString()); }
     }
@@ -80,17 +80,6 @@ public static class CancelActionVerification
         ((IReadOnlyList<Ally>)Call(Get<YutBoardOccupancy>(actions, "occupancy"), "GetAllies", cell)).ToArray();
     static void ResultFixture(TurnController turn, YutThrowController thrower, YutThrowResult result)
     { Call(thrower, "ShowResult", result); Call(turn, "ReceiveYutResult", result); }
-    static void Escape(TurnController turn)
-    {
-        var keyboard = InputSystem.AddDevice<Keyboard>();
-        try
-        {
-            InputSystem.QueueStateEvent(keyboard, new KeyboardState(UnityEngine.InputSystem.Key.Escape)); InputSystem.Update();
-            Require(keyboard.escapeKey.wasPressedThisFrame, "Virtual Escape reaches game input");
-            Call(turn, "LateUpdate");
-        }
-        finally { InputSystem.RemoveDevice(keyboard); }
-    }
     static void RightClick(TurnController turn)
     {
         var mouse = InputSystem.AddDevice<Mouse>();
@@ -130,7 +119,7 @@ public static class CancelActionVerification
         actions.DeployAlly(YutThrowResult.Do); Ally ally = Allies()[0]; wallet.GrantSpecial(9);
         Get<GameObject>(turn, "throwButton").GetComponent<Button>().onClick.Invoke();
         Require(thrower.IsThrowing && wallet.Balance == 100, "Real throw pays its cost before cancellation tests");
-        turn.CancelYutAction(); Escape(turn);
+        turn.CancelYutAction(); RightClick(turn);
         Require(thrower.IsThrowing && !turn.CanCancelYutAction && wallet.Balance == 100, "Cancel cannot interrupt or refund throw animation");
         while (thrower.IsThrowing) yield return null;
         Require(turn.CurrentYutResult.HasValue, "Paid result is available with a movable ally");
@@ -149,7 +138,7 @@ public static class CancelActionVerification
         turn.SelectDestination(staleDestination);
         Require(!actions.MoveSelectedAlly(staleDestination) && turn.CurrentYutResult == original && ally.transform.parent == parents[ally],
             "Old candidate callback cannot commit after cancellation");
-        turn.ChooseMove(); turn.SelectAlly(ally); Escape(turn);
+        turn.ChooseMove(); turn.SelectAlly(ally); RightClick(turn);
         CheckCancelled(turn, actions, wallet, original, 100, 9, parents);
         turn.CancelYutAction(); turn.ThrowYut(); thrower.Throw(); turn.StartBattle();
         Require(turn.CurrentYutResult == original && !thrower.IsThrowing && !waves.IsRunning &&
@@ -172,14 +161,14 @@ public static class CancelActionVerification
 
         // Deterministic normal-result fixture covers the summon transition even if real RNG gave Backdo.
         ResultFixture(turn, thrower, YutThrowResult.Do); turn.ChooseMove(); turn.SelectAlly(ally);
-        turn.OpenShop(); turn.SetInventoryOpen(true); Escape(turn);
-        Require(Get<GameObject>(turn, "shopPanel").activeSelf && Get<GameObject>(turn, "inventoryPanel").activeSelf,
+        turn.OpenShop(); turn.SetInventoryOpen(true); RightClick(turn);
+        Require(!Get<GameObject>(turn, "shopPanel").activeSelf && Get<GameObject>(turn, "inventoryPanel").activeSelf,
             "Cancel does not reset unrelated open shop or inventory panels");
         turn.CloseShop(); turn.SetInventoryOpen(false);
         int count = Allies().Length;
         Get<Button>(turn, "summonButton").onClick.Invoke();
         Require(!turn.CurrentYutResult.HasValue && Allies().Length == count + 1 && wallet.Balance == 100,
-            "Same normal result summons after Escape without another payment");
+            "Same normal result summons after right-click without another payment");
         turn.ChooseSummon(); turn.CancelYutAction();
         Require(Allies().Length == count + 1 && !turn.CurrentYutResult.HasValue, "Repeated summon or cancel cannot duplicate or undo completed action");
         ResultFixture(turn, thrower, YutThrowResult.Backdo); turn.ChooseMove(); turn.SelectAlly(ally); RightClick(turn);
@@ -198,14 +187,14 @@ public static class CancelActionVerification
         turn.ChooseMove(); turn.SelectAlly(At(actions, 1)[0]); turn.SelectDestination(2);
         Require(!turn.CurrentYutResult.HasValue && At(actions, 2).Length > 0, "Failed summon can return to movement and complete normally");
         Require(wallet.TrySpend(100) && wallet.Balance == 0, "Set zero balance through wallet API");
-        ResultFixture(turn, thrower, YutThrowResult.Do); turn.ChooseMove(); turn.SelectAlly(ally); Escape(turn);
+        ResultFixture(turn, thrower, YutThrowResult.Do); turn.ChooseMove(); turn.SelectAlly(ally); RightClick(turn);
         Require(turn.CurrentYutResult == YutThrowResult.Do && wallet.Balance == 0 && !turn.CanThrowYut &&
             Get<Button>(turn, "summonButton").interactable, "Zero balance still allows cancelling and using a prepaid result");
         turn.ChooseSummon();
         Require(!turn.CurrentYutResult.HasValue && wallet.Balance == 0, "Prepaid summon completes after zero-balance cancellation");
         turn.StartBattle();
         Require(waves.IsRunning && !turn.CanCancelYutAction, "Battle starts after result completion with no cancellation state left");
-        float speed = Time.timeScale; turn.CancelYutAction(); Escape(turn); RightClick(turn);
+        float speed = Time.timeScale; turn.CancelYutAction(); RightClick(turn); RightClick(turn);
         Require(waves.IsRunning && !turn.CurrentYutResult.HasValue && wallet.Balance == 0 && Time.timeScale == speed,
             "Combat cancellation inputs do not alter progression, balance, or speed");
     }

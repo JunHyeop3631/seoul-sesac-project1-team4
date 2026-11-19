@@ -119,8 +119,12 @@ public static class InventoryVerification
         yield return new WaitForSecondsRealtime(.6f);Capture("InventoryPassive");
         use.Unregister(ShopItemId.HeavenlyLuckTalisman,passiveEffect);yield return null;
         Require(Get<Text>(view,"status").text=="보유 중","Removing provider refreshes state");
-        view.SelectSlot(0);yield return null;Capture("InventoryConsumable");
-        Require(detail.GetComponent<Image>().material.shader.isSupported && detail.GetComponent<Image>().material.shader.name=="UI/InventoryFrame" && button.image.color.r<.6f,"Frame cutout shader supported and unavailable use visibly dimmed");
+        view.SelectSlot(0);yield return null;Canvas.ForceUpdateCanvases();
+        var panelRect=((RectTransform)view.transform).rect;
+        var detailBounds=RectTransformUtility.CalculateRelativeRectTransformBounds(view.transform,detail.transform);
+        var lastRow=RectTransformUtility.CalculateRelativeRectTransformBounds(view.transform,slots[6].transform);
+        Require(detailBounds.min.x>=panelRect.xMin && detailBounds.max.x<=panelRect.xMax && detailBounds.min.y>=panelRect.yMin && detailBounds.max.y<lastRow.min.y && button.image.color.r<.6f,"Detail fits below slots inside inventory; unavailable use visibly dimmed: panel="+panelRect+" detail="+detailBounds+" row="+lastRow+" color="+button.image.color);
+        Capture("InventoryConsumable");
         var effect=new Effect{succeeds=false};Require(use.Register(ShopItemId.SoulCrystal,effect) && !use.Register(ShopItemId.SoulCrystal,new Effect()),"One explicit effect per item");
         yield return null;Require(button.interactable,"Registered eligible effect enables real use button");
         button.OnPointerClick(pointer);Require(effect.calls==1 && inv.Contains(ShopItemId.SoulCrystal) && !use.IsUsing,"Failed effect retains item and releases lock");

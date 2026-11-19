@@ -386,7 +386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  lapDurationSeconds: 60
+  lapDurationSeconds: 50
   maxHealth: 20
   healthBarFill: {fileID: 61023}
   enemyAnimator: {fileID: 9500001}
