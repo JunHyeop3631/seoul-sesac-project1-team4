@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "assertions": 101,
+    "runtimeErrors": 0,
+    "unity": "6000.3.28f1",
+    "scene": "ThrowYut (Play Mode)",
+    "detail": "All five equal-probability outcomes through actual UI, one payout/consumption, HUD, no item rewards/restock, reentry/state/cap guards, carryover and scene reset passed."
+}

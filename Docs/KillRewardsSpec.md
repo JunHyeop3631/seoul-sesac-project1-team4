@@ -30,3 +30,7 @@ Unity6000.3.28f1 ThrowYut 씬 복사본 Play Mode **23개 검사 통과·검사 
 검증한 변경 코드·씬·검증 도구의 SHA-256을 작업본과 대조했다. 기존 검증 복사본/캐시를 재사용하고 원본 에디터는 유지했다. 초기 검색 인덱스 예외는 검사 시작 전이며 오류0은 검사 구간 기준이다. 배치 재실행은 별도 복사본에서 `-executeMethod KillRewardVerification.ReimportAndRun -force-d3d11 -screen-width 1920 -screen-height 1080`을 사용한다. Logs/KillRewardVerification.json과 Verification/SpecialSummon/kill-rewards-task21.png에 결과를 쓰고 검증 편집기를 종료하므로 원본의 열린 에디터에서 직접 실행하지 않는다.
 
 표시 크기는 이전의 1.6배다. Popup Scale 설정으로 코인·숫자·더하기 기호를 함께 조절한다.
+
+## 작업39 천명전 배율 (2026-11-19)
+
+기본2/2/100은 유지하며 해당 전투 활성 배율을 지급 직전에 적용해4/4/200을 지급한다. HUD와 팝업은 실제 지급액을 표시하고 보스 지급 후 승리 순서를 유지한다. [구현/검증](HeavenlyMandateSpec.md).

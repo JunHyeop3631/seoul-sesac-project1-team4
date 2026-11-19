@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "assertions": 309,
+  "runtimeErrors": 0,
+  "checks": {
+    "InventoryVerification": {
+      "passed": true,
+      "assertions": 86,
+      "runtimeErrors": 0,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Nine slots, owned-only selection, shared descriptions, passive status, safe effect dispatch, consumption/reentry guards, panel lifetime and preparation restrictions passed."
+    },
+    "ShopPurchaseVerification": {
+      "passed": true,
+      "assertions": 117,
+      "runtimeErrors": 0,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Five exact-price purchases, insufficient guards, atomic observer state, duplicate/reentry rejection, owned vs sold-out lifetime, consumption/no-restock, wave carry, scene reset and state guards passed."
+    },
+    "HeavenlyLuckVerification": {
+      "passed": true,
+      "assertions": 36,
+      "runtimeErrors": 0,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Immediate purchase discount, passive status, cost display, exact16/reentry/insufficient guards, stage carryover, unchanged rewards and fresh-scene20 passed."
+    },
+    "SoulCrystalVerification": {
+      "passed": true,
+      "assertions": 70,
+      "runtimeErrors": 0,
+      "unity": "6000.3.28f1",
+      "scene": "ThrowYut (Play Mode)",
+      "detail": "Real soul crystal UI use, exact +5 and one consumption, atomic notifications, both special displays, state/reentry/cap guards, carryover and scene reset passed."
+    }
+  }
+}

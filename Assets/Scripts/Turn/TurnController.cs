@@ -12,6 +12,8 @@ public sealed class TurnController : MonoBehaviour
     [SerializeField] private GoldNumberDisplay throwCostDisplay;
     public int CurrentYutThrowCost => heavenlyLuck != null && heavenlyLuck.IsApplied
         ? HeavenlyLuckTalismanEffect.DiscountedThrowCost : YutThrowCost;
+    [SerializeField] private HeavenlyMandateEffect heavenlyMandate;
+    public int BattleRewardMultiplier => heavenlyMandate != null && heavenlyMandate.IsActive ? 2 : 1;
     private enum YutAction
     {
         None,
@@ -114,6 +116,7 @@ public sealed class TurnController : MonoBehaviour
     {
         if (IsBattleWon || IsBattleLost) return;
         IsBattleLost = true;
+        heavenlyMandate?.FinishBattle();
         preparing = false;
         waveManager?.StopWave();
         ClosePreparationUI();
@@ -130,6 +133,7 @@ public sealed class TurnController : MonoBehaviour
     {
         if (!IsFinalBattleRunning()) return;
         IsBattleWon = true;
+        heavenlyMandate?.FinishBattle();
         preparing = false;
         waveManager.StopWave();
         ClosePreparationUI();
@@ -487,7 +491,7 @@ public sealed class TurnController : MonoBehaviour
     {
         // Check the preparation lifetime first; a processing lock also makes
         // CanUsePreparationInput false, but still needs feedback while preparing.
-        if (!isActiveAndEnabled || !preparing || RemainingLives == 0 || IsBattleWon || IsBattleLost ||
+        if (!isActiveAndEnabled || endingBattle || !preparing || RemainingLives == 0 || IsBattleWon || IsBattleLost ||
             Time.timeScale <= 0f || waveManager == null || waveManager.IsRunning)
             return;
         if (actionController != null && actionController.IsResolvingMove)
@@ -520,6 +524,7 @@ public sealed class TurnController : MonoBehaviour
         }
 
         preparing = false;
+        heavenlyMandate?.BeginBattle();
         waveManager.StartWave(currentTurnNumber);
         if (waveManager.IsRunning)
         {
@@ -530,6 +535,7 @@ public sealed class TurnController : MonoBehaviour
         else
         {
             // Invalid wave data must leave preparation usable.
+            heavenlyMandate?.CancelBattleStart();
             preparing = !IsBattleWon && !IsBattleLost && RemainingLives > 0;
             RefreshYutButtons();
         }
@@ -566,12 +572,14 @@ public sealed class TurnController : MonoBehaviour
             if (currentTurnNumber == waveManager.WaveCount - 1)
             {
                 // Final results come from the boss event, never generic completion.
+                heavenlyMandate?.FinishBattle();
                 return;
             }
 
             int completedWave = currentTurnNumber + 1;
             int grantedReward = currency != null
-                ? currency.Grant(waveManager.GetCompletionReward(currentTurnNumber)) : 0;
+                ? currency.Grant(waveManager.GetCompletionReward(currentTurnNumber) * BattleRewardMultiplier) : 0;
+            heavenlyMandate?.FinishBattle();
             EndTurn();
             WaveCleared?.Invoke(completedWave, grantedReward);
         }

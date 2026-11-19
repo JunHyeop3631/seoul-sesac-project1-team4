@@ -80,6 +80,9 @@ public static class InventoryVerification
         // Isolate the generic dispatch fixture. Real soul-crystal effects are covered separately.
         Find<SoulCrystalEffect>().enabled=false;
         Find<HeavenlyLuckTalismanEffect>().enabled=false;
+        Find<DokkaebiPouchEffect>().enabled=false;
+        Find<DokkaebiYutEffect>().enabled=false;
+        Find<HeavenlyMandateEffect>().enabled=false;
         var turn=Find<TurnController>(); var inv=Find<StageInventory>(); var use=Find<StageItemUseController>(); var wallet=Find<StageCurrency>();
         var view=UnityEngine.Object.FindFirstObjectByType<InventoryUI>(FindObjectsInactive.Include);
         var shop=UnityEngine.Object.FindFirstObjectByType<ShopCatalogUI>(FindObjectsInactive.Include);var purchases=Find<ShopPurchaseController>();

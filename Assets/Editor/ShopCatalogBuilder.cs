@@ -94,7 +94,10 @@ public static class ShopCatalogBuilder
                 go.layer = button.gameObject.layer; marker = go.transform; marker.SetParent(button.transform, false); marker.SetAsFirstSibling();
                 var rect = (RectTransform)marker; rect.anchorMin = Vector2.zero; rect.anchorMax = Vector2.one; rect.offsetMin = rect.offsetMax = Vector2.zero;
             }
-            var image = marker.GetComponent<Image>(); image.sprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/Item/UI/Shop/Shop_Item_Button_Glow.png");
+            var image = marker.GetComponent<Image>();
+            var glow = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/Item/UI/Shop/Shop_Item_Button_Glow.png");
+            image.sprite = glow != null ? glow : button.image.sprite;
+            image.color = glow != null ? Color.white : new Color(1f,.85f,.3f,.25f);
             image.raycastTarget = false; image.enabled = i == 0; markers.GetArrayElementAtIndex(i).objectReferenceValue = image;
         }
         data.ApplyModifiedPropertiesWithoutUndo();

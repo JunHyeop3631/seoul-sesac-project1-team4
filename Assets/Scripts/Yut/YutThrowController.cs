@@ -18,6 +18,7 @@ public class YutThrowController : MonoBehaviour
 {
     private const int StickCount = 4;
     [SerializeField] private TurnController turnController;
+    [SerializeField] private DokkaebiYutEffect dokkaebiYut;
 
     [SerializeField] private YutStick[] sticks = new YutStick[StickCount];
     [SerializeField] private Image resultImage;
@@ -67,11 +68,17 @@ public class YutThrowController : MonoBehaviour
         HideResult();
 
         int backdoStickIndex = UnityEngine.Random.Range(0, sticks.Length);
+        YutThrowResult adjustedResult = default;
+        bool adjusted = dokkaebiYut != null && dokkaebiYut.TryConsumeForThrow(this, out adjustedResult);
+        int mask = adjusted ? CreateFaceMask(adjustedResult, backdoStickIndex) : 0;
         int bellyCount = 0;
         bool markedStickIsBelly = false;
         for (int index = 0; index < sticks.Length; index++)
         {
-            if (sticks[index].Throw(index == backdoStickIndex) == YutFace.Belly)
+            YutFace face = adjusted
+                ? sticks[index].Throw((mask & (1 << index)) != 0 ? YutFace.Belly : YutFace.Back, index == backdoStickIndex)
+                : sticks[index].Throw(index == backdoStickIndex);
+            if (face == YutFace.Belly)
             {
                 bellyCount++;
                 markedStickIsBelly |= index == backdoStickIndex;
@@ -90,6 +97,26 @@ public class YutThrowController : MonoBehaviour
 
         LastResult = result;
         StartCoroutine(CompleteThrow(result));
+    }
+
+    private static int CreateFaceMask(YutThrowResult result, int markedIndex)
+    {
+        var candidates = new List<int>();
+        for (int mask = 0; mask < 16; mask++)
+        {
+            int count = 0;
+            for (int i = 0; i < StickCount; i++) if ((mask & (1 << i)) != 0) count++;
+            var actual = count switch
+            {
+                0 => YutThrowResult.Mo,
+                1 => (mask & (1 << markedIndex)) != 0 ? YutThrowResult.Backdo : YutThrowResult.Do,
+                2 => YutThrowResult.Gae,
+                3 => YutThrowResult.Geol,
+                _ => YutThrowResult.Yut
+            };
+            if (actual == result) candidates.Add(mask);
+        }
+        return candidates[UnityEngine.Random.Range(0, candidates.Count)];
     }
 
     private IEnumerator CompleteThrow(YutThrowResult result)

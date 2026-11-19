@@ -43,7 +43,7 @@ public sealed class EnemyKillRewards : MonoBehaviour
         // Wallet listeners may return/reuse the enemy; capture the kill position first.
         var visual=enemy.GetComponentInChildren<SpriteRenderer>();
         Vector3 position=visual!=null?new Vector3(visual.bounds.center.x,visual.bounds.max.y+.35f,0):enemy.transform.position+Vector3.up;
-        int credited=currency.Grant(amount);
+        int credited=currency.Grant(amount * turn.BattleRewardMultiplier);
         if(credited<=0||turn.RemainingLives<=0||turn.IsBattleWon||turn.IsBattleLost||!waves.IsRunning)return;
         Show(position,credited);
     }

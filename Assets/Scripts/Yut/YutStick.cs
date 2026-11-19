@@ -55,12 +55,17 @@ public class YutStick : MonoBehaviour
 
     public YutFace Throw(bool marked)
     {
+        if (!CanThrow) throw new InvalidOperationException("The yut stick is not ready.");
+        return Throw(UnityEngine.Random.Range(0, 2) == 0 ? YutFace.Back : YutFace.Belly, marked);
+    }
+
+    internal YutFace Throw(YutFace face, bool marked)
+    {
         if (!CanThrow)
         {
             throw new InvalidOperationException("The yut stick is busy or its display and animation settings are unavailable.");
         }
 
-        YutFace face = UnityEngine.Random.Range(0, 2) == 0 ? YutFace.Back : YutFace.Belly;
         isMarked = marked;
         targetFace = face;
         AnimationClip clip = (currentFace, face) switch

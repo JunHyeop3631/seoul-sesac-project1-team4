@@ -13,6 +13,7 @@ public sealed class InventoryUI : MonoBehaviour
     [SerializeField] private Image selectedIcon;
     [SerializeField] private Text selectedName, description, status, emptyHint;
     [SerializeField] private Button useButton, backButton;
+    [SerializeField] private Text pendingEffectStatus;
     private readonly ShopItemDefinition[] contents = new ShopItemDefinition[9];
     public ShopItemDefinition SelectedItem { get; private set; }
     private bool CanSelect => isActiveAndEnabled && turnController != null && turnController.CanOpenPreparationPanel;
@@ -37,6 +38,13 @@ public sealed class InventoryUI : MonoBehaviour
     private void LateUpdate()
     {
         if (!CanSelect) { turnController.SetInventoryOpen(false); return; }
+        if (pendingEffectStatus != null)
+        {
+            bool yut = itemUse != null && itemUse.IsApplied(ShopItemId.DokkaebiYut);
+            bool mandate = itemUse != null && itemUse.IsApplied(ShopItemId.HeavenlyMandateCoin);
+            pendingEffectStatus.text = (yut ? "도깨비 윷: 다음 던지기 대기 중" : "") +
+                (yut && mandate ? "\n" : "") + (mandate ? "천명전: 다음 전투 보상 2배 대기 중" : "");
+        }
         RefreshSelection();
     }
     private void Refresh()
