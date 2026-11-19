@@ -41,8 +41,8 @@ public static class CharacterInfoContentBuilder
         var idle = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/Ally/Idle/WhiteTiger_left.png");
         tiger.FindPropertyRelative("idleLeft").objectReferenceValue = idle;
         tiger.FindPropertyRelative("evolvedIdleLeft").objectReferenceValue = idle;
-        // No approved tiger story text was supplied; do not invent lore.
-        tiger.FindPropertyRelative("story").stringValue = "";
+        // Approved White Tiger story shared by the info panel.
+        tiger.FindPropertyRelative("story").stringValue = "도깨비를 봉인한 전설의 장군.\n수호자들의 간절한 부름에\n잠들었던 창을 다시 들어 올린다.";
         data.ApplyModifiedPropertiesWithoutUndo();
         var surface = panel.GetComponent<Image>(); surface.color = Color.clear; surface.raycastTarget = true;
         foreach (var graphic in panel.GetComponentsInChildren<Graphic>(true))

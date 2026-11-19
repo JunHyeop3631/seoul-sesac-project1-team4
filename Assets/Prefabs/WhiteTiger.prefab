@@ -154,7 +154,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.15, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9500101}
@@ -181,6 +181,8 @@ MonoBehaviour:
   attackHitEffect: {fileID: 0}
   evolutionStage: 1
   populationCost: 3
+  attackSound: {fileID: 8300000, guid: e48555a2fb121464d8ebe633a7a493c0, type: 3}
+  attackVolume: 0.05
   slash: {fileID: 8272115341653093805}
 --- !u!1 &7914460106312743477
 GameObject:

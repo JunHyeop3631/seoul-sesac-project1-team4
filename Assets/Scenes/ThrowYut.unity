@@ -11104,7 +11104,9 @@ MonoBehaviour:
     nameSprite: {fileID: 21300000, guid: 1b087e1653a9efb4393e10b3485cc1ae, type: 3}
     idleLeft: {fileID: 21300000, guid: fed37ceeab9ec1c43a3fe4513391133d, type: 3}
     evolvedIdleLeft: {fileID: 21300000, guid: fed37ceeab9ec1c43a3fe4513391133d, type: 3}
-    story: 
+    story: "\uB3C4\uAE68\uBE44\uB97C \uBD09\uC778\uD55C \uC804\uC124\uC758 \uC7A5\uAD70.\n\uC218\uD638\uC790\uB4E4\uC758
+      \uAC04\uC808\uD55C \uBD80\uB984\uC5D0\n\uC7A0\uB4E4\uC5C8\uB358 \uCC3D\uC744
+      \uB2E4\uC2DC \uB4E4\uC5B4 \uC62C\uB9B0\uB2E4."
   defaultContent:
   - {fileID: 2115}
   - {fileID: 2304}

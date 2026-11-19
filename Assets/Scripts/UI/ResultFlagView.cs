@@ -26,6 +26,12 @@ public sealed class ResultFlagView : MonoBehaviour
     [SerializeField] private Button homeButton, retryButton;
     [SerializeField] private Theme victory, defeat;
     [SerializeField] private string homeScene = "Title";
+    [Header("Result Audio")]
+    [SerializeField] private AudioClip victorySound;
+    [SerializeField, Range(0f, 1f)] private float victoryVolume = 1f;
+    [SerializeField] private AudioClip defeatSound;
+    [SerializeField, Range(0f, 1f)] private float defeatVolume = 1f;
+    private AudioSource resultAudioSource;
     private Coroutine activeRoutine;
     private Vector2 restPosition;
     private float previousTimeScale;
@@ -52,7 +58,8 @@ public sealed class ResultFlagView : MonoBehaviour
         whole.alpha = 1f; whole.blocksRaycasts = true; whole.interactable = true;
         previousTimeScale = Time.timeScale; ownsPause = true; Time.timeScale = 0f;
         EventSystem.current?.SetSelectedGameObject(null);
-        SetButtonsReady(false); activeRoutine = StartCoroutine(Enter());
+        SetButtonsReady(false);
+        activeRoutine = StartCoroutine(Enter(won ? victorySound : defeatSound, won ? victoryVolume : defeatVolume));
     }
     private void ApplyTheme(Theme theme)
     {
@@ -94,11 +101,35 @@ public sealed class ResultFlagView : MonoBehaviour
         button.spriteState = new SpriteState { highlightedSprite = normal, selectedSprite = normal,
             pressedSprite = pressed, disabledSprite = normal };
     }
-    private IEnumerator Enter()
+    private void PlayResultSound(AudioClip sound, float volume)
+    {
+        if (sound == null || volume <= 0f) return;
+        if (resultAudioSource == null)
+        {
+            resultAudioSource = gameObject.AddComponent<AudioSource>();
+            resultAudioSource.playOnAwake = false;
+            resultAudioSource.loop = false;
+            resultAudioSource.spatialBlend = 0f;
+            resultAudioSource.ignoreListenerPause = true;
+            resultAudioSource.priority = 32;
+        }
+        resultAudioSource.Stop();
+        resultAudioSource.clip = sound;
+        resultAudioSource.volume = Mathf.Clamp01(volume);
+        resultAudioSource.Play();
+    }
+    private IEnumerator Enter(AudioClip sound, float volume)
     {
         float elapsed = 0f;
+        bool soundStarted = false;
         while (elapsed < .98f)
         {
+            // The entrance has a short lead-in before the flag begins to fall.
+            if (!soundStarted && elapsed >= .12f)
+            {
+                soundStarted = true;
+                PlayResultSound(sound, volume);
+            }
             float drop = Mathf.Clamp01((elapsed - .12f) / .56f);
             float y = 1130f * Mathf.Pow(1f - drop, 3f), angle = 0f;
             if (elapsed >= .68f)
@@ -138,6 +169,7 @@ public sealed class ResultFlagView : MonoBehaviour
     }
     public void Hide()
     {
+        if (resultAudioSource != null) resultAudioSource.Stop();
         if (activeRoutine != null) { StopCoroutine(activeRoutine); activeRoutine = null; }
         if (ownsPause) { Time.timeScale = previousTimeScale; ownsPause = false; }
         IsVisible = false; navigating = false; SetButtonsReady(false);
